@@ -1,8 +1,11 @@
-# IntelliJ project files
+# IntelliJ
 .idea
 *.iml
 out
-# Composer template
+# Composer
 composer.phar
 composer.lock
 /vendor/
+# NodeJS
+/node_modules/
+package-lock.json
