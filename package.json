@@ -1,0 +1,22 @@
+{
+  "name": "wptheme",
+  "description": "Skeleton for Wordpress Theme",
+  "version": "1.0.0",
+  "keywords": [
+    "Wordpress",
+    "Theme"
+  ],
+  "license": "GPL-3.0",
+  "author": "Vitalii Lupu",
+  "main": "index.js",
+  "dependencies": {
+    "google-maps-infobox-window": "^2.0.1",
+    "google-marker-clusterer-plus": "^2.1.2",
+    "lazysizes": "^4.0.1",
+    "swipebox": "^1.4.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

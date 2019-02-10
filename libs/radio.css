@@ -1,0 +1,19 @@
+input[type=radio] {
+    background-color: #ffffff;
+    border: 1px solid #989898;
+    border-radius: 100%;
+    cursor: pointer;
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    margin: 0.1rem;
+    vertical-align: middle;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+input[type=radio]:checked {
+    /*background: #ffffff url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2020%2020%22%3E%3Ccircle%20cx%3D%2210%22%20cy%3D%2210%22%20r%3D%225%22%20fill%3D%22%239c27b0%22%2F%3E%3C%2Fsvg%3E') no-repeat 50% 50%;
+    border-color: #af0035;*/
+    background: #ffffff url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2020%2020%22%3E%3Ccircle%20cx%3D%2210%22%20cy%3D%2210%22%20r%3D%225%22%20fill%3D%22%23a37542%22%2F%3E%3C%2Fsvg%3E') no-repeat 50% 50%;
+    border-color: #a37542;
+}

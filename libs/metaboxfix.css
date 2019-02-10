@@ -1,0 +1,42 @@
+/* ------------------------------------------------- Fixes for Meta Box  */
+.rwmb-field .rwmb-radio-wrapper .rwmb-input label {
+    display: block;
+    margin: 5px 0;
+}
+.rwmb-column .rwmb-label {
+    margin-bottom: 5px;
+}
+.rwmb-column .rwmb-label label {
+    font-weight: bold;
+}
+.rwmb-column .rwmb-input .rwmb-map-goto-address-button {
+    margin-top: 10px;
+}
+.rwmb-column .rwmb-input input[type="text"],
+.rwmb-column .rwmb-input input[type="password"],
+.rwmb-column .rwmb-input input[type="email"],
+.rwmb-column .rwmb-input input[type="number"],
+.rwmb-column .rwmb-input input[type="search"],
+.rwmb-column .rwmb-input input[type="tel"],
+.rwmb-column .rwmb-input input[type="time"],
+.rwmb-column .rwmb-input input[type="url"],
+.rwmb-column .rwmb-input select,
+.rwmb-column .rwmb-input textarea {
+    width: 100%;
+}
+
+.rwmb-tabs-left .rwmb-tab-panel {
+    padding: 20px 25px;
+}
+
+.rwmb-tabs-left .rwmb-tab-nav li {
+    border-bottom: 1px solid #eee;
+}
+
+.rwmb-tabs-left .rwmb-tab-nav a {
+    padding: 10px 20px 13px 10px;
+}
+
+.rwmb-input .rwmb-button {
+    float: none;
+}

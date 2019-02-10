@@ -1,0 +1,9 @@
+.card-blog .row .category {
+    margin-bottom: 0;
+}
+.card-blog .card-title {
+    margin-top: 5px;
+}
+.card-blog .card-image + .category {
+    margin-top: 20px;
+}

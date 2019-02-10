@@ -1,0 +1,92 @@
+input[type=range]{
+    vertical-align: middle;
+    -webkit-appearance: none;
+}
+input[type=range]:focus {
+    outline: none;
+}
+/*SAFARI/CHROME/OPERA*/
+input[type=range]::-webkit-slider-runnable-track {
+    background: #989898;
+    margin-top: 0.6rem;
+    margin-bottom: 0.6rem;
+    border-radius: 1rem;
+    height: 0.3rem;
+}
+input[type=range]::-webkit-slider-thumb {
+    background-color: #ffffff;
+    border: 1px solid #af0035;
+    border-radius: 100%;
+    box-sizing: border-box;
+    cursor: pointer;
+    width: 1rem;
+    height: 1rem;
+    margin-top: -0.38rem;
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    -webkit-appearance: none;
+}
+input[type=range]:active::-webkit-slider-thumb {
+    transform: scale3d(1.4, 1.4, 1.4);
+}
+/*FIREFOX*/
+input[type=range]::-moz-range-track {
+    background: #989898;
+    border-radius: 1rem;
+    height: 0.2rem;
+}
+input[type=range]::-moz-range-progress {
+    background: #af0035;
+    border-radius: 1rem;
+    height: 0.2rem;
+}
+input[type=range]::-moz-focus-outer {
+    border: 0;
+    outline: none;
+}
+input[type=range]::-moz-range-thumb {
+    background-color: #ffffff;
+    border: 1px solid #af0035;
+    border-radius: 100%;
+    box-sizing: border-box;
+    cursor: pointer;
+    width: 1rem;
+    height: 1rem;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    -moz-appearance: none;
+}
+input[type=range]:active::-moz-range-thumb {
+    transform: scale3d(1.4, 1.4, 1.4);
+}
+/*INTERNET EXPLORER*/
+input[type=range]::-ms-track {
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+    height: 1.2rem;
+}
+input[type=range]::-ms-fill-lower {
+    background: #af0035;
+    border-radius: 1rem;
+    height: 0.2rem;
+}
+input[type=range]::-ms-fill-upper {
+    background: #989898;
+    border-radius: 1rem;
+    height: 0.2rem;
+}
+input[type=range]::-ms-thumb {
+    background-color: #ffffff;
+    border: 1px solid #af0035;
+    border-radius: 100%;
+    box-sizing: border-box;
+    cursor: pointer;
+    width: 1rem;
+    height: 1rem;
+    margin: 3px;
+    transition: all 0.2s ease-out;
+}
+input[type=range]:active::-ms-thumb {
+    transform: scale3d(1.4, 1.4, 1.4);
+}

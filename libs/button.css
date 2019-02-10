@@ -1,0 +1,106 @@
+/* BUTTON */
+button:not([class]),
+[type=button]:not(.link),
+[type=submit]:not(.link),
+[type=reset]:not(.link),
+.button:not(.link) {
+    box-shadow: 0 2px 2px 0 rgba(185, 0, 41, 0.14), 0 3px 1px -2px rgba(185, 0, 41, 0.2), 0 1px 5px 0 rgba(185, 0, 41, 0.12);
+    background: #af0035  center; /*#af0035 - current violet, #2196f3 - blue*/
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1rem;
+    letter-spacing: 0;
+    line-height: 1.5;
+    outline: none;
+    padding: .375rem .75rem;
+    text-align: center;
+    text-decoration: none;
+    transition: background 0.8s;
+    vertical-align: middle;
+    white-space: nowrap;
+    will-change: box-shadow, transform;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+button:hover:not([class]),
+[type=button]:hover:not(.link),
+[type=submit]:hover:not(.link),
+[type=reset]:hover:not(.link),
+.button:hover:not(.link) {
+    box-shadow: 0 14px 26px -12px rgba(185, 0, 41, 0.42), 0 4px 23px 0 rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(185, 0, 41, 0.2);
+    background: #af0035 radial-gradient(circle, transparent 1%, #af0035  1%) center/15000%;
+    color: #ffffff;
+}
+button:active:not([class]),
+[type=button]:active:not(.link),
+[type=submit]:active:not(.link),
+[type=reset]:active:not(.link),
+.button:active {
+    background-color: rgba(185, 0, 41, 0.7);
+    background-size: 100%;
+    color: #ffffff;
+    transition: background 0s;
+}
+button[disabled]:not([class]),
+button[disabled]:hover:not([class]),
+button[disabled]:active:not([class]),
+button[disabled]:focus:not([class]),
+[type=button][disabled]:not(.link),
+[type=button][disabled]:hover:not(.link),
+[type=button][disabled]:active:not(.link),
+[type=button][disabled]:focus:not(.link),
+[type=submit][disabled]:not(.link),
+[type=submit][disabled]:hover:not(.link),
+[type=submit][disabled]:active:not(.link),
+[type=submit][disabled]:focus:not(.link),
+[type=reset][disabled]:not(.link),
+[type=reset][disabled]:hover:not(.link),
+[type=reset][disabled]:active:not(.link),
+[type=reset][disabled]:focus:not(.link),
+.button[disabled]:not(.link),
+.button[disabled]:hover:not(.link),
+.button[disabled]:active:not(.link),
+.button[disabled]:focus:not(.link) {
+    background: #af0035 center !important;
+    box-shadow: none !important;
+    cursor: not-allowed;
+    color: #ffffff !important;
+    filter: alpha(opacity=65);
+    opacity: .65;
+    transition: none;
+}
+input[type=file]::-webkit-file-upload-button {
+    box-shadow: 0 2px 2px 0 rgba(185, 0, 41, 0.14), 0 3px 1px -2px rgba(185, 0, 41, 0.2), 0 1px 5px 0 rgba(185, 0, 41, 0.12);
+    background: #af0035 center; /*#af0035 - current violet, #2196f3 - blue*/
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1rem;
+    letter-spacing: 0;
+    line-height: 1.5;
+    outline: none;
+    padding: .375rem .75rem;
+    text-align: center;
+    transition: background 0.8s;
+    vertical-align: middle;
+    white-space: nowrap;
+    will-change: box-shadow, transform;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+input[type=file]:hover::-webkit-file-upload-button {
+    box-shadow: 0 2px 2px 0 rgba(185, 0, 41, 0.14), 0 3px 1px -2px rgba(185, 0, 41, 0.2), 0 1px 5px 0 rgba(185, 0, 41, 0.12);
+    background: #af0035 radial-gradient(circle, transparent 1%, #af0035 1%) center/15000%;
+    color: #ffffff;
+}
+input[type=file]:active::-webkit-file-upload-button {
+    background-color: #af0035;
+    background-size: 100%;
+    color: #ffffff;
+    transition: background 0s;
+}

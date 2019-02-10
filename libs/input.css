@@ -1,0 +1,56 @@
+/*INPUT*/
+input:not([type=button]):not([type=checkbox]):not([type=file]):not([type=image]):not([type=submit]):not([type^='r']),
+textarea, select{
+    background-color: transparent;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#af0035), to(#af0035)), -webkit-gradient(linear, left top, left bottom, from(#d2d2d2), to(#d2d2d2));
+    background-image: -webkit-linear-gradient(#af0035, #af0035), -webkit-linear-gradient(#d2d2d2, #d2d2d2);
+    background-image: linear-gradient(#af0035, #af0035), linear-gradient(#D2D2D2, #D2D2D2);
+    background-position: center bottom, center 100%;
+    background-repeat: no-repeat;
+    background-size: 0 2px, 100% 1px;
+    border: none;
+    border-radius: 0;
+    display: block;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    padding: .35rem .35rem;
+    -moz-transition: background 0s ease-out;
+    -webkit-transition: background 0s ease-out;
+    transition: background 0s ease-out;
+    width: 100%;
+}
+input:not([type=button]):not([type=checkbox]):not([type=file]):not([type=image]):not([type=submit]):not([type^='r']):focus,
+textarea:focus, select:focus{
+    background-size: 100% 2px, 100% 1px;
+    outline: none;
+    -moz-transition-duration: 0.3s;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+/*LABEL - Parent must be relative or find other way to float label*/
+input ~ label.label-float{
+    color: #999;
+    margin-bottom: 0;
+    pointer-events: none;
+    position: absolute;
+    left: 0.35rem;
+    top: 0.35rem; /*Same as Input padding top*/
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+    transition: 0.2s ease all;
+}
+input:focus ~ label.label-float,
+input:valid ~ label.label-float,
+input[type=email]:not([value=""]) ~ label.label-float{
+    top: -1.2rem;
+    font-size: 0.8rem;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    border-bottom: 2px solid #af0035 !important;
+    /*-webkit-transition: background-color 9999s ease-out !important;*/
+}

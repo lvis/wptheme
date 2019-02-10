@@ -1,0 +1,41 @@
+{
+  "name": "lvis/wptheme",
+  "type": "project",
+  "description": "Wordpress: Skeleton for Theme",
+  "keywords": [
+    "wordpress",
+    "theme"
+  ],
+  "homepage": "https://github.com/lvis/wptheme",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Vitalii Lupu",
+      "email": "vitaliix@gmail.com",
+      "homepage": "https://github.com/lvis"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "git",
+      "url": "https://github.com/lvis/wplib"
+    },
+    {
+      "type": "git",
+      "url": "https://github.com/lvis/wpwidgets"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=7",
+    "lvis/wpwidgets": "dev-master"
+  },
+  "autoload": {
+    "psr-4": {
+      "wp\\": "wp/"
+    }
+  },
+  "config": {
+    "discard-changes": true
+  }
+}

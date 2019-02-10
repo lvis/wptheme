@@ -1,0 +1,13 @@
+/* Meta Box Styles Improvements */
+.subsubsub .all,
+.subsubsub .publish,
+.subsubsub a .count,
+.subsubsub a.current .count,
+.attachment-info{
+	display: none !important;
+}
+.attachment-media-view,
+.edit-attachment-frame{
+	float: none !important;
+	width: 100% !important;
+}

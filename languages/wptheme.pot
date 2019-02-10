@@ -1,0 +1,276 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: wpTheme\n"
+"POT-Creation-Date: 2016-11-17 19:45+0200\n"
+"PO-Revision-Date: 2017-01-30 00:42+0200\n"
+"Last-Translator: Vitali Lupu <vitaliix@gmail.com>\n"
+"Language-Team: Vitalii Lupu <vitaliix@gmail.com>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.8.7\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: images\n"
+"X-Poedit-SearchPathExcluded-1: libs\n"
+"X-Poedit-SearchPathExcluded-2: languages\n"
+"X-Poedit-SearchPathExcluded-3: node_modules\n"
+
+#: 404.php:4
+msgid "Nothing was found"
+msgstr ""
+
+#: comments.php:4
+msgid "This post is password protected. Enter the password to view comments."
+msgstr ""
+
+#: comments.php:12
+msgid "No Comment"
+msgstr ""
+
+#: comments.php:12
+msgid "One Comment"
+msgstr ""
+
+#: comments.php:12
+msgid "(%) Comments"
+msgstr ""
+
+#: comments.php:17
+msgid "Pingback:"
+msgstr ""
+
+#: comments.php:17
+msgid "(Edit)"
+msgstr ""
+
+#: comments.php:31
+#, php-format
+msgid "%s"
+msgstr ""
+
+#: comments.php:34
+msgid "on"
+msgstr ""
+
+#: comments.php:37
+#, php-format
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: comments.php:40
+msgid "said"
+msgstr ""
+
+#: comments.php:69
+msgid "Comments are closed."
+msgstr ""
+
+msgid "Copyright"
+msgstr ""
+
+#: wp/WpApp.php:105
+msgid "An hour"
+msgstr ""
+
+#: wp/WpApp.php:106 wp/WpApp.php:358
+msgid "1 day"
+msgstr ""
+
+#: wp/WpApp.php:107
+msgid "1 week"
+msgstr ""
+
+#: wp/WpApp.php:108
+msgid "1 month"
+msgstr ""
+
+#: wp/WpApp.php:109
+msgid "3 months"
+msgstr ""
+
+#: wp/WpApp.php:110
+msgid "6 months"
+msgstr ""
+
+#: wp/WpApp.php:111
+msgid "1 year"
+msgstr ""
+
+#: wp/WpApp.php:112
+msgid "infinity"
+msgstr ""
+
+#: wp/WpApp.php:161 wp/WpApp.php:170
+msgid "Cheatin&#8217; huh?"
+msgstr ""
+
+#: wp/WpApp.php:262
+msgid "Cookie Notice"
+msgstr ""
+
+#: wp/WpApp.php:271
+msgid ""
+"By continuing to use this website, you consent to the use of cookies in "
+"accordance with our Cookie Policy."
+msgstr ""
+
+#: wp/WpApp.php:276
+msgid "Content"
+msgstr ""
+
+#: wp/WpApp.php:291
+msgid "Close Target"
+msgstr ""
+
+#: wp/WpApp.php:297
+msgid "Button"
+msgstr ""
+
+#: wp/WpApp.php:298
+msgid "Close Icon"
+msgstr ""
+
+#: wp/WpApp.php:307
+msgid "Accept"
+msgstr ""
+
+#: wp/WpApp.php:312
+msgid "Button Text"
+msgstr ""
+
+#: wp/WpApp.php:330
+msgid "Style"
+msgstr ""
+
+#: wp/WpApp.php:336
+msgid "Fly-Ins"
+msgstr ""
+
+#: wp/WpApp.php:337
+msgid "Floating Bar"
+msgstr ""
+
+#: wp/WpApp.php:351
+msgid "Cookie Expiry"
+msgstr ""
+
+#: wp/WpApp.php:357
+msgid "An Hour"
+msgstr ""
+
+#: wp/WpApp.php:359
+msgid "1 Week"
+msgstr ""
+
+#: wp/WpApp.php:360
+msgid "1 Month"
+msgstr ""
+
+#: wp/WpApp.php:361
+msgid "3 Months"
+msgstr ""
+
+#: wp/WpApp.php:362
+msgid "6 Months"
+msgstr ""
+
+#: wp/WpApp.php:363
+msgid "1 Year"
+msgstr ""
+
+#: wp/WpApp.php:364
+msgid "Infinity"
+msgstr ""
+
+#: wp/WpApp.php:376
+msgid "Styling: General"
+msgstr ""
+
+#: wp/WpApp.php:390
+msgid "Max Width (px)"
+msgstr ""
+
+#: wp/WpApp.php:456 wp/WpApp.php:749
+msgid "Padding (px)"
+msgstr ""
+
+#: wp/WpApp.php:490 wp/WpApp.php:636
+msgid "Background Color"
+msgstr ""
+
+#: wp/WpApp.php:505
+msgid "Border Width (px)"
+msgstr ""
+
+#: wp/WpApp.php:526
+msgid "Border Style"
+msgstr ""
+
+#: wp/WpApp.php:532
+msgid "None"
+msgstr ""
+
+#: wp/WpApp.php:533
+msgid "Solid"
+msgstr ""
+
+#: wp/WpApp.php:534
+msgid "Double"
+msgstr ""
+
+#: wp/WpApp.php:535
+msgid "Dotted"
+msgstr ""
+
+#: wp/WpApp.php:536
+msgid "Dashed"
+msgstr ""
+
+#: wp/WpApp.php:537
+msgid "Groove"
+msgstr ""
+
+#: wp/WpApp.php:550
+msgid "Border Color"
+msgstr ""
+
+#: wp/WpApp.php:564
+msgid "Styling: Content"
+msgstr ""
+
+#: wp/WpApp.php:579
+msgid "Text Color"
+msgstr ""
+
+#: wp/WpApp.php:597 wp/WpApp.php:864
+msgid "Typography"
+msgstr ""
+
+#: wp/WpApp.php:620
+msgid "Styling: Button"
+msgstr ""
+
+#: wp/WpApp.php:653 wp/WpApp.php:904
+msgid "Color"
+msgstr ""
+
+#: wp/WpApp.php:670
+msgid "Hover: Background Color"
+msgstr ""
+
+#: wp/WpApp.php:687 wp/WpApp.php:921
+msgid "Hover: Color"
+msgstr ""
+
+#: wp/WpApp.php:828
+msgid "Border Radius (px)"
+msgstr ""
+
+#: wp/WpApp.php:888
+msgid "Styling: Close Icon"
+msgstr ""

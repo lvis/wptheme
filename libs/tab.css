@@ -1,0 +1,27 @@
+.tabs{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.tabs > label{
+    cursor: pointer;
+    width: auto;
+    margin: 0 1rem 1rem;
+    border-bottom: 0.1rem solid transparent;
+}
+.tabs > input[type=radio][name=tab]{
+    display: none;
+}
+.tabs > input[type=radio][name=tab]:checked + label {
+    box-shadow: 0 0.15rem 0 #af0035;
+}
+.tabs > input[type=radio][name=tab]:checked + .tab-content,
+.tabs > input[type=radio][name=tab]:checked + label + .tab-content {
+    display: block;
+}
+.tabs .tab-content {
+    display: none;
+    order: 1;
+    width: 100%;
+}

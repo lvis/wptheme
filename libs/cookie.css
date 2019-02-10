@@ -1,0 +1,113 @@
+#ocn-cookie-wrap {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    background-color: #fff;
+    color: #777;
+    font-size: 14px;
+    z-index: 999999;
+}
+#ocn-cookie-wrap.flyin {
+    left: 0;
+    border-radius: 0 4px 0 0;
+    padding: 30px;
+    width: 350px;
+    max-width: 100%;
+    -webkit-box-shadow: 0 20px 150px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 20px 150px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 20px 150px rgba(0, 0, 0, 0.1);
+}
+#ocn-cookie-wrap.flyin .ocn-btn {
+    margin-top: 20px;
+}
+#ocn-cookie-wrap.floating {
+    padding: 8px 15px;
+    width: 100%;
+    -webkit-box-shadow: 0 20px 100px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 20px 100px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 20px 100px rgba(0, 0, 0, 0.1);
+}
+#ocn-cookie-wrap.floating #ocn-cookie-inner {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    width: 1100px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+#ocn-cookie-wrap.floating .ocn-btn {
+    margin-left: 25px;
+}
+#ocn-cookie-wrap .ocn-cookie-content {
+    margin: 0;
+}
+#ocn-cookie-wrap .ocn-icon {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+#ocn-cookie-wrap .ocn-icon svg {
+    fill: #777;
+    height: 15px;
+    width: 15px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#ocn-cookie-wrap .ocn-icon:hover svg {
+    fill: #333;
+}
+#ocn-cookie-wrap .ocn-btn {
+    font-weight: 700;
+}
+#ocn-cookie-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 999998;
+}
+/* RTL */
+body.rtl #ocn-cookie-wrap.flyin {
+    right: 0;
+    left: auto;
+    border-radius: 0 0 0 4px;
+}
+body.rtl #ocn-cookie-wrap.floating .ocn-btn {
+    margin-right: 25px;
+    margin-left: 0;
+}
+body.rtl #ocn-cookie-wrap .ocn-icon {
+    left: 10px;
+    right: auto;
+}
+/* Responsive */
+@media screen and (max-width: 959px) {
+    #ocn-cookie-wrap.floating {
+        text-align: center;
+    }
+    #ocn-cookie-wrap.floating #ocn-cookie-inner {
+        -ms-flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-justify-content: center;
+        justify-content: center;
+    }
+    #ocn-cookie-wrap.floating p {
+        margin: 0 0 15px;
+    }
+}

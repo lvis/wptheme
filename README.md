@@ -1,2 +1,2 @@
-# wptheme
-Skeleton for Wordpress Theme
+# wpTheme
+Wordpress: Skeleton for Theme

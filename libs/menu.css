@@ -1,0 +1,95 @@
+/*MENU*/
+.widget_nav_menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.widget_nav_menu .menu {
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 3px;
+}
+
+.widget_nav_menu .menu > li {
+    display: inline-block;
+}
+
+.widget_nav_menu a:hover{
+    /*color: #af0035;*/
+    color: #a37542;
+}
+.widget_nav_menu li.current-menu-item a{
+    color: #c1003b;
+}
+.widget_nav_menu a {
+    display: block;
+    cursor: pointer;
+    padding: 10px 14px;
+    color: #2b180a;
+    text-align: left;
+    text-decoration: none;
+    outline: 0;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.widget_nav_menu .menu li.menu-item-has-children > a:after {
+    content: ' ';
+    border: solid #000000;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 3px;
+    margin-left: 5px;
+    margin-bottom: 4px;
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    pointer-events: none;
+}
+
+.widget_nav_menu .sub-menu {
+    background-color: #e3e3e3;
+    opacity: 0; /*To instant Hide the menu*/
+    min-width: 7.5rem;
+    position: absolute;
+    visibility: hidden;
+    z-index: 888;
+    -moz-transition: visibility 0.2s;
+    -webkit-transition: visibility 0.2s;
+    transition: visibility 0.2s; /*To receive focus event on link*/
+}
+
+.widget_nav_menu li.menu-item-has-children > a:focus {
+    pointer-events: none; /*Prevent Navigation on Link */
+    background-color: #e3e3e3;
+}
+
+.widget_nav_menu li.menu-item-has-children > a:focus + .sub-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+header .widget_nav_menu .menu > li:not(.menu-item-has-children) > a:hover{
+    box-shadow: 0 0.15rem 0 #a37542;
+}
+header .widget_nav_menu .menu > li.current-menu-item:not(.menu-item-has-children) {
+    box-shadow: 0 0.15rem 0 #af0035;
+}
+
+.widget_nav_menu ul.sub-menu > li.menu-item > a:hover {
+    background-color: #d6d6d6;
+}
+
+/* CSS for iOS devices */
+@supports (-webkit-overflow-scrolling: touch) {
+}
+
+/* CSS for other than iOS devices */
+@supports not (-webkit-overflow-scrolling: touch) {
+}
+
+@media print {
+    .widget_nav_menu {
+        display: none;
+    }
+}

@@ -1,0 +1,74 @@
+/* ------------------------------------------------- Fixes for Widget*/
+label.wide-title {
+    display: block;
+    margin-bottom: 5px;
+}
+input#post_name {
+    width: 100%;
+}
+img.attachment-thumb {
+    max-width: 100%;
+}
+select[multiple] {
+    height: auto !important;
+}
+@media all {
+    .customize-control input[type="tel"],
+    .customize-control input[type="url"],
+    .customize-control input[type="text"],
+    .customize-control input[type="password"],
+    .customize-control input[type="email"],
+    .customize-control input[type="number"],
+    .customize-control input[type="search"] {
+        line-height: 27px;
+        border-radius: 0.28571429rem;
+        height: 35px;
+        padding-left: 0.91666667em;
+        padding-right: 0.91666667em;
+    }
+}
+/* ------------------------------------------------- Hide Settings*/
+.user-googleplus-wrap,
+.user-twitter-wrap,
+.user-facebook-wrap,
+.user-capabilities-wrap,
+form#your-profile h3#wordpress-seo,
+form#your-profile h3#wordpress-seo + table,
+div.yoast.yoast-settings {
+    display: none !important;
+}
+/* ------------------------------------------------- Change Icons*/
+#adminmenu #toplevel_page_woocommerce .menu-icon-generic div.wp-menu-image::before {
+    font-family: dashicons, sans-serif !important;
+    content: "\f513";
+}
+#wpadminbar #wp-admin-bar-customize > .ab-item:before {
+    /*content: "\f540";*/
+    content: "\f108" !important;
+}
+/* ------------------------------------------------- Editor*/
+.mce-edit-area #content_ifr{
+    height: 245px !important;
+}
+/* ------------------------------------------------- Plugins Page Icons*/
+body.plugins-php .plugins .plugin-title .row-actions .dashicons:before {
+    font-size: 20px;
+    background-color: transparent;
+    color: inherit;
+    box-shadow: none;
+}
+body.plugins-php .plugins .plugin-title .row-actions .dashicons,
+body.plugins-php .plugins .plugin-title .row-actions img {
+    float: left;
+    padding: 0 10px 0 0;
+    width: 20px;
+    height: 20px;
+}
+/* ------------------------------------------------- WooCommerce*/
+.woocommerce table.form-table .select2-container{
+    width: auto !important;
+}
+.woocommerce table.form-table input.regular-input,
+.woocommerce table.form-table textarea {
+    width: 100% !important;
+}
