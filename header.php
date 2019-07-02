@@ -5,25 +5,13 @@ use wp\WPUtils;
 use wp\WPSidebar;
 use wp\WidgetSiteBranding;
 
-if (is_home() || is_front_page()) {
-    $pageTitle = get_the_title(get_option('page_for_posts', true));
-}
-if (is_category() || is_tax() || is_tag()) {
-    $termPageTitle = single_term_title('', false);
-    if (empty($termPageTitle) == false) {
-        $pageTitle = $termPageTitle;
-    }
-} else if (is_404()) {
-    $pageTitle = '404';
-} else {
-    $pageTitle = get_the_title();
-}
 $siteName = get_bloginfo('name', 'display');
 $siteLanguage = get_bloginfo('language');
 $siteCharset = get_bloginfo('charset', 'display');
 //TODO Check if urlSiteIcon is empty then apply theme site icon
 $urlSiteIcon = get_site_icon_url();
 $contentHead = WPUtils::doAction('wp_head');
+$contentBody = WPUtils::doAction('wp_body_open');
 $bodyClasses = join(' ', get_body_class());
 $content = '';
 $content .= WPUtils::getSidebarContent(WidgetArea::HEADER_TOP);
@@ -38,7 +26,6 @@ if (empty($content)) {
 }
 echo "<!DOCTYPE html><html lang='{$siteLanguage}'>
 <head>
-    <title>{$siteName} - {$pageTitle}</title>
     <meta charset='{$siteCharset}'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=no'>
     <meta name='apple-mobile-web-app-title' content='{$siteName}'>
@@ -50,5 +37,6 @@ echo "<!DOCTYPE html><html lang='{$siteLanguage}'>
     {$contentHead}
 </head>
 <body class='{$bodyClasses}'>
+{$contentBody}
 <header>{$content}</header>
 <main>";

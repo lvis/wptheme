@@ -746,7 +746,54 @@ values: left, right and none
         float: none !important;
     }
 }
-
+.p-fixed-xs, .p-fixed-sm, .p-fixed-md, .p-fixed-lg, .p-fixed-xl {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+.p-fixed-xs:before, .p-fixed-sm:before, .p-fixed-md:before, .p-fixed-lg:before, .p-fixed-xl:before {
+    background-color: rgba(255, 255, 255, .7);
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.12), 0 7px 10px -5px rgba(0, 0, 0, 0.15);
+    content: ' ';
+    position: absolute;
+    height: 100%;
+    left: calc(100% / 2 - 100vw / 2);
+    right: calc(100% / 2 - 100vw / 2);
+}
+@media (max-width: 576px) {
+    .p-fixed-sm{
+        position: initial;
+    }
+    .p-fixed-sm:before{
+        content: '';
+    }
+}
+@media (max-width: 768px) {
+    .p-fixed-md{
+        position: initial;
+    }
+    .p-fixed-md:before{
+        content: '';
+    }
+}
+@media (max-width: 992px) {
+    .p-fixed-lg{
+        position: initial;
+    }
+    .p-fixed-lg:before{
+        content: '';
+    }
+}
+@media (max-width: 1200px) {
+    .p-fixed-xl{
+        position: initial;
+    }
+    .p-fixed-xl:before{
+        content: '';
+    }
+}
 .arrow-right:after{
     content: ' ';
     border: 0 solid #000000;

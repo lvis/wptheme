@@ -28,7 +28,8 @@
   "minimum-stability": "dev",
   "require": {
     "php": ">=7",
-    "lvis/wpwidgets": "dev-master"
+    "lvis/wpwidgets": "dev-master",
+    "wpmetabox/meta-box": "4.18.2"
   },
   "autoload": {
     "psr-4": {

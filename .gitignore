@@ -1,11 +1,5 @@
-# IntelliJ
-.idea
-*.iml
-out
-# Composer
-composer.phar
+.idea/
+vendor/
 composer.lock
-/vendor/
-# NodeJS
-/node_modules/
-package-lock.json
+composer.phar
+wptheme.iml

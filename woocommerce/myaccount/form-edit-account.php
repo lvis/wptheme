@@ -26,7 +26,7 @@ $textPasswordNew = __('New password (leave blank to leave unchanged)', 'woocomme
 $textPasswordConfirm = __('Confirm new password', 'woocommerce');
 $textSaveChanges = __('Save changes', 'woocommerce');
 $nonceSaveAccountDetails = wp_nonce_field('save_account_details', 'save-account-details-nonce', true, false);
-$actionBeforeEditAccountForm = WPUtils::doAction('woocommerce_before_edit_account_form');
+$actionBeforeEditAccountForm = WPUtils::doAction('x');
 $actionEditAccountFormTag = WPUtils::doAction('woocommerce_edit_account_form_tag');
 $actionAfterEditAccountForm = WPUtils::doAction('woocommerce_after_edit_account_form');
 $actionEditAccountFormStart = WPUtils::doAction('woocommerce_edit_account_form_start');
@@ -38,26 +38,24 @@ echo "{$actionBeforeEditAccountForm}
 <div class='col-xs-12 col-md-6'>
     <div class='card'>
         <div class='card-content'>
-        <h4 class='text-xs-center'><i class='far fa-user-edit'></i> {$textEditAccount}</h4>
-        <fieldset class='row'>
-        <div class='col-xs-6'>
-            <label for='account_first_name' class='required'><i class='far fa-user'></i> {$textFirstName}</label>
-            <input id='account_first_name' name='account_first_name' type='text' autocomplete='given-name' value='{$valueFirstName}'>
-        </div>
-        <div class='col-xs-6'>
-            <label for='account_last_name' class='required'><i class='far fa-user'></i> {$textLastName}</label>
-            <input id='account_last_name' name='account_last_name' type='text' autocomplete='family-name' value='{$valueLastName}'>
-        </div>
-        </fieldset>
-        <fieldset>
-            <label for='account_display_name' class='required'><i class='far fa-eye'></i> {$textDisplayName}</label>
-            <input id='account_display_name' name='account_display_name' type='text' value='{$valueDisplayName}'>
-            <small>{$textDisplayNameInfo}</small>
-        </fieldset>
-        <fieldset>
-            <label for='account_email' class='required'><i class='far fa-envelope'></i> {$textEmailAddress}</label>
-            <input id='account_email' name='account_email' type='email' autocomplete='email' value='{$valueEmailAddress}'>
-        </fieldset>
+            <h4 class='text-xs-center'><i class='far fa-user-edit'></i> {$textEditAccount}</h4>
+            <fieldset>
+                <label for='account_first_name' class='required'><i class='far fa-user'></i> {$textFirstName}</label>
+                <input id='account_first_name' name='account_first_name' type='text' autocomplete='given-name' value='{$valueFirstName}'>
+            </fieldset>
+            <fieldset>
+                <label for='account_last_name' class='required'><i class='far fa-user'></i> {$textLastName}</label>
+                <input id='account_last_name' name='account_last_name' type='text' autocomplete='family-name' value='{$valueLastName}'>
+            </fieldset>
+            <fieldset>
+                <label for='account_display_name' class='required'><i class='far fa-eye'></i> {$textDisplayName}</label>
+                <input id='account_display_name' name='account_display_name' type='text' value='{$valueDisplayName}'>
+                <small>{$textDisplayNameInfo}</small>
+            </fieldset>
+            <fieldset>
+                <label for='account_email' class='required'><i class='far fa-envelope'></i> {$textEmailAddress}</label>
+                <input id='account_email' name='account_email' type='email' autocomplete='email' value='{$valueEmailAddress}'>
+            </fieldset>
         </div>
     </div>
 </div>

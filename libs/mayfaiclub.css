@@ -1,8 +1,14 @@
+@font-face {
+    font-family: "Ames' Roman Bold";
+    font-style: normal;
+    font-weight: 300;
+    src: url("fonts/ames/Ames.ttf");
+}
 body {
     margin: 0;
     font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 1.3125;
     color: #000;
     text-align: left;
@@ -29,7 +35,7 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
 a:not([href]):not([tabindex]):focus {
     outline: 0;
 }
-.widget-area.main-content > .widget{
+/*.widget-area.main-content > .widget{
     position: relative;
     border-top: 1px solid #492d10;
     margin-top: 64px;
@@ -45,6 +51,52 @@ a:not([href]):not([tabindex]):focus {
     width: 120px;
     height: 46px;
     background: #fff url("../images/MayFairLogo.svg") center/contain no-repeat
+}*/
+.widget-area.main-content section.elementor-top-section{
+    position: relative;
+    border-top: 1px solid #492d10;
+    margin-top: 64px;
+    padding-top: 44px;
+}
+.widget-area.main-content section.elementor-top-section:before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: -23px;
+    left: 50%;
+    margin-left: -60px;
+    width: 120px;
+    height: 46px;
+    background: #fff url("../images/MayFairLogo.svg") center/contain no-repeat
+}
+.elementor .custom-logo,
+.custom-logo{
+    height: 90px;
+    width: auto;
+}
+h1.blogname{
+    font-family: "Ames' Roman Bold", sans-serif;
+    font-weight: normal;
+    letter-spacing: 6px;
+    font-size: 32px;
+    margin-bottom: 4px;
+    margin-top: 12px;
+    color: #686f3e;
+}
+.logo-only .blogname,
+.logo-only .blogdescription {
+    display: none;
+}
+small.blogdescription{
+    color: #492d10;
+    font-size: 8px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+}
+.custom-logo-link{
+    display: block !important;
+    text-align: center !important;
 }
 h2.widgettitle{
     color: #c6c8ac;

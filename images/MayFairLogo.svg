@@ -1,31 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="5742 3650 189 217">
-  <defs>
-    <style>
-      .cls-1, .cls-5 {
-        fill: #492d10;
-      }
-
-      .cls-2 {
-        fill: none;
-      }
-
-      .cls-3 {
-        fill: #686f3e;
-      }
-
-      .cls-4, .cls-5 {
-        stroke: none;
-      }
+<svg id="LogoLayer" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 78.1 89.9"
+     style="enable-background:new 0 0 78.1 89.9;">
+    <style type="text/css">
+        .logoBorder{fill:#492D10;}
+        .logoText{fill:#686F3E;}
     </style>
-  </defs>
-  <g id="Group_1382" data-name="Group 1382" transform="translate(459)">
-    <path id="Union_1" data-name="Union 1" class="cls-1" d="M90,20H0V0H10V10H45V0H55V10H90V0h10V20Z" transform="translate(5328.16 3650)"/>
-    <g id="Path_5246" data-name="Path 5246" class="cls-2" transform="translate(5283 3678)">
-      <path class="cls-4" d="M0,0H189V94.5a94.5,94.5,0,0,1-189,0Z"/>
-      <path class="cls-5" d="M 94.5 179 C 141.0934600830078 179 179 141.0934600830078 179 94.5 L 179 10 L 10 10 L 10 94.5 C 10 141.0934600830078 47.90653228759766 179 94.5 179 M 94.5 189 C 42.30910110473633 189 0 146.6909027099609 0 94.5 L 0 0 L 189 0 L 189 94.5 C 189 146.6909027099609 146.6909027099609 189 94.5 189 Z"/>
+    <g id="LogoGroup" transform="translate(459)">
+        <path id="LogoShield" class="logoBorder" d="M-419.8,85.9c19.3,0,35-15.7,35-35v-35h-70.1v35C-454.9,70.1-439.1,85.9-419.8,85.9
+		 M-419.8,90c-21.6,0-39.2-17.5-39.2-39.2V11.6h78.4v39.2C-380.6,72.5-398.2,90-419.8,90z"/>
+        <path id="LogoTextF" class="logoText" d="M-405.2,60.9v0.7h-12.7v-0.7c1.9,0,2.5-2.3,2.5-5.3V36.8c0-2.7-0.6-5.3-2.5-5.3v-0.7h8.9v24.9
+		C-409,60.6-407.1,60.9-405.2,60.9z M-406.2,30.7h13v8.3h-0.7c-1.2-6.4-9.2-7.4-12.3-7.5V30.7z M-399.9,41.1h0.7V51h-0.7
+		c-0.6-3.4-4.4-4.3-6.4-4.5v-0.9C-404.3,45.4-400.5,44.6-399.9,41.1z"/>
+        <path id="LogoTextM" class="logoText" d="M-434.3,30.7l11,23.1l-3.3,8.2h-0.7l-13.1-27.6c-1.7-2.9-3.9-2.9-5-3v-0.7
+		C-445.4,30.7-434.3,30.7-434.3,30.7z"/>
+        <path id="LogoTextMBottom" class="logoText" d="M-433.7,60.9v0.7H-447v-0.7c6.6,0,6.6-10.4,6.6-10.4h0.7
+		C-439.7,50.6-439.8,60.9-433.7,60.9z"/>
+        <path id="LogoCrown" class="logoBorder" d="M-402.9,8.3h-37.3V0h4.1v4.1h14.5V0h4.1v4.1h14.5V0h4.1v8.3H-402.9z"/>
     </g>
-    <path id="Path_5240" data-name="Path 5240" class="cls-3" d="M214.8,149.9v1.8H182.7v-1.8c15.9,0,15.9-25,15.9-25h1.8S200.2,149.9,214.8,149.9Z" transform="translate(5129.16 3647)"/>
-    <path id="Path_5241" data-name="Path 5241" class="cls-3" d="M213.4,77.1l26.5,55.8-8,19.8h-1.8L198.6,86.2c-4-7.1-9.3-7.1-12-7.3V77.1Z" transform="translate(5129.16 3647)"/>
-    <path id="Path_5242" data-name="Path 5242" class="cls-3" d="M283.5,149.9v1.8H252.9v-1.8c4.6,0,6.1-5.5,6.1-12.7V91.7c0-6.6-1.5-12.8-6.1-12.8V77.1h21.5v60.1C274.4,149.2,278.9,149.9,283.5,149.9ZM281,77.1h31.4V97.2h-1.8c-3-15.5-22.2-17.9-29.6-18.2Zm15.3,25h1.8V126h-1.8c-1.4-8.3-10.6-10.3-15.4-10.8V113C285.7,112.4,294.9,110.5,296.3,102.1Z" transform="translate(5129.16 3647)"/>
-  </g>
 </svg>

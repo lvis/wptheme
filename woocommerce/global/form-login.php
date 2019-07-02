@@ -48,12 +48,12 @@ if (is_user_logged_in() == false) {
     <fieldset>
         <div class='float-xs-right'><input id='rememberme' name='rememberme' type='checkbox' value='forever'>
         <label for='rememberme'>{$textRememberMe}</label></div>
-        <label for='username' class='required'><i class='far fa-envelope'></i> {$textEmailAddress}</label>
+        <label for='username' class='required d-xs-inline-block'><i class='far fa-envelope'></i> {$textEmailAddress}</label>
         <input id='username' name='username' type='text' autocomplete='username' value='{$valueUserName}'>
     </fieldset>
     <fieldset>
         <a href='{$urlLostPassword}' class='float-xs-right'>{$textLostPassword}</a>
-        <label for='password' class='required'><i class='far fa-key'></i> {$textPassword}</label>
+        <label for='password' class='required d-xs-inline-block'><i class='far fa-key'></i> {$textPassword}</label>
         <input id='password' name='password' type='password' autocomplete='current-password'>
     </fieldset>
     {$actionLoginForm}

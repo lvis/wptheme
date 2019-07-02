@@ -4,7 +4,8 @@
  * This template can be overridden by copying it to yourtheme/woocommerce/checkout/form-billing.php.
  * @see     https://docs.woocommerce.com/document/template-structure/
  * @package WooCommerce/Templates
- * @version 3.0.9
+ * @version 3.6.0
+ * @global WC_Checkout $checkout
  */
 defined('ABSPATH') || exit;
 
@@ -18,10 +19,10 @@ $actionCheckoutBillingFormBefore = WPUtils::doAction('woocommerce_before_checkou
 $contentFormFields = '';
 $fieldsBilling = $checkout->get_checkout_fields('billing');
 foreach ($fieldsBilling as $key => $field) {
+    //Todo Investigate code bellow and remove this check if now more needed
     if (isset($field['country_field'], $fieldsBilling[$field['country_field']])) {
         $field['country'] = $checkout->get_value($field['country_field']);
     }
-    $field['return'] = true;
     $contentFormFields .= UtilsWooCommerce::getFormField($key, $field, $checkout->get_value($key));
 }
 $actionCheckoutBillingFormAfter = WPUtils::doAction('woocommerce_after_checkout_billing_form', $checkout);
@@ -50,7 +51,6 @@ if (is_user_logged_in() === false && $checkout->is_registration_enabled()) {
     if ($fieldsAccount) {
         $contentCreateAccountFields = '';
         foreach ($fieldsAccount as $key => $field) {
-            $field['return'] = true;
             $contentCreateAccountFields .= UtilsWooCommerce::getFormField($key, $field, $checkout->get_value($key));
         }
         $contentCreateAccount .= "<div class='create-account'>{$contentCreateAccountFields}</div>";

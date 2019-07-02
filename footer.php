@@ -8,12 +8,10 @@ $content .= WPUtils::getSidebarContent(WidgetArea::FOOTER_TOP);
 $content .= WPUtils::getSidebarContent(WidgetArea::FOOTER_BOTTOM);
 $siteName = get_bloginfo('name');
 $currentYear = date('Y');
-ob_start();
-wp_footer();
-$contentAfterFooter = ob_get_clean();
+$contentAfterFooter = WPUtils::doAction('wp_footer');
 $textCopyright = __('Copyright');
 echo "</main><footer>{$content}
-<div class='copyright'>{$textCopyright} © {$currentYear} {$siteName}</div></footer>{$contentAfterFooter}</body></html>";
+<div class='text-xs-center'>{$textCopyright} © {$currentYear} {$siteName}</div></footer>{$contentAfterFooter}</body></html>";
 //TODO Add this Code as default in Customizer and make optional
 /*
 $currentLanguage = WPUtils::getLanguageShortCode();

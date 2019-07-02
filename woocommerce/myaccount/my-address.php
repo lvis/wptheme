@@ -71,7 +71,6 @@ foreach ($customerAddresses as $name => $title) {
                 $defaultAddress = $address[$field['country_field']]['value'];
                 $field['country'] = wc_get_post_data_by_key($field['country_field'], $defaultAddress);
             }
-            $field['return'] = true;
             $contentAddress .= UtilsWooCommerce::getFormField($key, $field, wc_get_post_data_by_key($key, $field['value']));
         }
         $actionEditAddressFormBefore = WPUtils::doAction("woocommerce_before_edit_address_form_{$load_address}");

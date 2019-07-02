@@ -72,3 +72,8 @@ body.plugins-php .plugins .plugin-title .row-actions img {
 .woocommerce table.form-table textarea {
     width: 100% !important;
 }
+/* ------------------------------------------------- MetaBox*/
+.rwmb-input input, .rwmb-input select {
+    max-width: 99% !important;
+    width: 100% !important;
+}

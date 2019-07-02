@@ -18,7 +18,7 @@ if (post_password_required()) {
 if (empty($content)) {
     ob_start();
     the_widget(WidgetPost::class);
-    echo WPUtils::getSidebar(WidgetArea::CONTENT_MAIN, ob_get_clean());
+    echo WPUtils::getSidebar(WidgetArea::CONTENT_MAIN, ob_get_clean(), 'main', ['container']);
 } else {
     echo $content;
 }

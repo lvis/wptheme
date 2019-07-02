@@ -21,7 +21,6 @@ if (wc()->cart->needs_shipping_address() === true) {
         if (isset($field['country_field'], $fieldsShipping[$field['country_field']])) {
             $field['country'] = $checkout->get_value($field['country_field']);
         }
-        $field['return'] = true;
         $contentFormShipping .= UtilsWooCommerce::getFormField($key, $field, $checkout->get_value($key));
     }
     $textShippingAddress = __('Shipping address', 'woocommerce');
@@ -60,7 +59,6 @@ if ($enableOrderComments) {
     }
     $fieldsOrder = $checkout->get_checkout_fields('order');
     foreach ($fieldsOrder as $key => $field) {
-        $field['return'] = true;
         $contentNotes .= UtilsWooCommerce::getFormField($key, $field, $checkout->get_value($key));
     }
     $contentNotes = "<div class='woocommerce-additional-fields__field-wrapper'>{$contentNotes}</div>";

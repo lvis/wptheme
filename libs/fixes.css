@@ -197,10 +197,6 @@ select[name^='cart'] {
     padding-left: 0.6rem;
     padding-right: 0.6rem;
 }
-.woocommerce .woocommerce-breadcrumb,
-.woocommerce .woocommerce-products-header {
-    text-align: center;
-}
 .woocommerce ul.products li.product .button {
     margin-top: 0;
 }
@@ -222,44 +218,44 @@ select[name^='cart'] {
 .elementor-element.elementor-wc-products ul.products.columns-3 li.product,
 .elementor-element.elementor-wc-products ul.products.columns-4 li.product,
 .elementor-element.elementor-wc-products ul.products.columns-5 li.product {
-    width: 92%;
+    width: 92% !important;
 }
 @media (min-width: 576px) {
     .elementor-element.elementor-wc-products ul.products.columns-4 li.product,
     .elementor-element.elementor-wc-products ul.products.columns-5 li.product {
-        width: 46%;
+        width: 46% !important;
     }
 }
 @media (min-width: 768px) {
     .elementor-element.elementor-wc-products ul.products.columns-3 li.product {
-        width: 30%;
+        width: 30% !important;
     }
     .elementor-element.elementor-wc-products ul.products.columns-4 li.product {
-        width: 30%;
+        width: 30% !important;
     }
     .elementor-element.elementor-wc-products ul.products.columns-5 li.product {
-        width: 30%;
+        width: 30% !important;
     }
 }
 @media (min-width: 992px) {
     .elementor-element.elementor-wc-products ul.products.columns-5 li.product {
-        width: 23%;
+        width: 23% !important;
     }
 }
 @media (min-width: 1200px) {
     .elementor-element.elementor-wc-products ul.products.columns-1 li.product {
-        width: 92%;
+        width: 92% !important;
     }
     .elementor-element.elementor-wc-products ul.products.columns-2 li.product {
-        width: 46%;
+        width: 46% !important;
     }
     .elementor-element.elementor-wc-products ul.products.columns-3 li.product {
-        width: 30%;
+        width: 30% !important;
     }
     .elementor-element.elementor-wc-products ul.products.columns-4 li.product {
-        width: 23%;
+        width: 23% !important;
     }
     .elementor-element.elementor-wc-products ul.products.columns-5 li.product {
-        width: 18.4%;
+        width: 18.4% !important;
     }
 }
