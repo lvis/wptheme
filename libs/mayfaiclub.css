@@ -35,30 +35,13 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
 a:not([href]):not([tabindex]):focus {
     outline: 0;
 }
-/*.widget-area.main-content > .widget{
-    position: relative;
-    border-top: 1px solid #492d10;
-    margin-top: 64px;
-    padding-top: 64px;
-}
-.widget-area.main-content > .widget:before{
-    content: "";
-    display: block;
-    position: absolute;
-    top: -23px;
-    left: 50%;
-    margin-left: -60px;
-    width: 120px;
-    height: 46px;
-    background: #fff url("../images/MayFairLogo.svg") center/contain no-repeat
-}*/
-.widget-area.main-content section.elementor-top-section{
+.logo-separator{
     position: relative;
     border-top: 1px solid #492d10;
     margin-top: 64px;
     padding-top: 44px;
 }
-.widget-area.main-content section.elementor-top-section:before{
+.logo-separator:before{
     content: "";
     display: block;
     position: absolute;

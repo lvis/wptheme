@@ -1,13 +1,6 @@
 <?php
-/**
- * Created by IntelliJ IDEA.
- * User: lvis
- * Date: 2019-02-16
- * Time: 19:35
- */
 
 namespace wp;
-
 
 class EtnikWines extends WpApp
 {
@@ -31,6 +24,7 @@ class EtnikWines extends WpApp
         add_image_size(WPImages::LARGE, 0, 0);
         add_image_size(WPImages::FULL, 1920, 1080);
     }
+
     function enqueueScriptsTheme()
     {
         parent::enqueueScriptsTheme();
@@ -45,6 +39,7 @@ class EtnikWines extends WpApp
         wp_enqueue_style('card', $this->uriToLibs . 'card.css');
         wp_enqueue_style('fixes', $this->uriToLibs . 'fixes.css');
     }
+
     function initSidebarWidgets()
     {
         parent::initSidebarWidgets();

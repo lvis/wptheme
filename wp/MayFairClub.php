@@ -12,6 +12,15 @@ class MayFairClub extends WpApp
     {
         parent::__construct();
         add_filter(MetaBoxFilter::REGISTER, [$this, 'registerMetaBoxesForUser']);
+        //Temporary solution to show in builder in Display Conditions view users without posts
+        add_action('pre_get_users',[$this, 'handlePreGetUsers']);
+    }
+
+    function handlePreGetUsers(\WP_User_Query $query){
+        if ($query->query_vars['who'] == 'authors'){
+            $query->query_vars['has_published_posts'] = false;
+        }
+        return $query;
     }
 
     function enqueueScriptsTheme()

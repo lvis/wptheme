@@ -4,6 +4,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 if (defined('PROJECT'))
 {
     switch (PROJECT){
+        case 'realestate': wp\RealEstate::i(); break;
         case 'etnikwines': wp\EtnikWines::i(); break;
         case 'luckyagency': wp\PartyMaker::i(); break;
         case 'mayfairclub': wp\MayFairClub::i(); break;

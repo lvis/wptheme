@@ -80,8 +80,7 @@ class PostEvent extends PostBase
         $textEventLocation = __("Event Location", "framework");
         $textAddress = __("Address");
         $textAddressDescription = __("Address Name");
-//        $mapKey = get_option(Customizer::GOOGLE_MAP_API) ? get_option(Customizer::GOOGLE_MAP_API) : "";
-        $mapKey = "AIzaSyCkMVt4hMf6fK1E0kXqXwREfzAB3pF16WQ";
+        $mapKey = get_option(Customizer::GOOGLE_MAP_API) ? get_option(Customizer::GOOGLE_MAP_API) : "";
         //$siteAddress = get_option(Customizer::SITE_ADDRESS);
         //$siteAddress = apply_filters('translate_text', $siteAddress);
         $siteAddress = "Park Avenue, Moscow Oblast, Russia, 143582";//Park Avenue, Moscow Oblast, Russia, 143582 //Новорижское ш., Москва, Московская обл., 143082
