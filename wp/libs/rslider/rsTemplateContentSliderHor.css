@@ -1,0 +1,22 @@
+.rsContentSliderHor .rs-left-img,
+.rsContentSliderHor .rs-right-details {
+    display: block;
+    float: left;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.rsContentSliderHor .rs-left-img img {
+    width: 50%;
+    margin: 0 auto;
+    height: auto;
+}
+.rsContentSliderHor .rs-right-details {
+    margin-right: 0;
+}
+.rsContentSliderHor .rs-right-details h3 {
+    font-size: 28px;
+    line-height: 32px;
+    margin: 0 0 10px;
+    padding: 0;
+}

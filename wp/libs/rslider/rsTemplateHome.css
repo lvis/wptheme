@@ -1,0 +1,56 @@
+.rsHome {
+    font-weight: bold;
+}
+.rsHome .rsThumbsHor {
+    height: 44px;
+    padding: 0;
+}
+.rsHome .rsLearnMore {
+    padding: 5px 12px 6px;
+    background: #FFF;
+    position: absolute;
+    color: #BB0202;
+    right: 12px;
+    bottom: 12px;
+    text-decoration: none;
+    font-weight: normal;
+}
+.rsHome .rsLearnMore:hover {
+    text-decoration: none;
+    background: #C00;
+    color: #FFF;
+}
+.rsWebkit3d .rsLearnMore {
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+}
+.rsHome .rsThumb {
+    width: 172px;
+    height: 44px;
+    cursor: pointer;
+}
+.rsHome .rsTmb {
+    text-align: center;
+    margin-top: 11px;
+    font-weight: bold;
+}
+.rsHome .rsThumb i {
+    font-style: normal;
+    font-weight: bold;
+}
+@media screen and (min-width: 0px) and (max-width: 960px) {
+    .rsHome .rsThumb {
+        font-size: 12px;
+        width: 115px;
+        height: 44px;
+        cursor: pointer;
+    }
+    .rsHome .rsTmb {
+        margin-top: 12px;
+    }
+}
+@media screen and (min-width: 0px) and (max-width: 500px) {
+    .rsHome .rs {
+        height: 300px !important;
+    }
+}

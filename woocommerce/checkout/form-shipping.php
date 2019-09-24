@@ -5,11 +5,11 @@
  * @see     https://docs.woocommerce.com/document/template-structure/
  * @author  WooThemes
  * @package WooCommerce/Templates
- * @version 3.0.9
+ * @version 3.6.0
  */
 defined('ABSPATH') || exit;
 
-use wp\WPUtils;
+use wp\UtilsWp;
 use wp\UtilsWooCommerce;
 
 /** @global WC_Checkout $checkout */
@@ -21,6 +21,7 @@ if (wc()->cart->needs_shipping_address() === true) {
         if (isset($field['country_field'], $fieldsShipping[$field['country_field']])) {
             $field['country'] = $checkout->get_value($field['country_field']);
         }
+        //woocommerce_form_field( $key, $field, $checkout->get_value( $key ) );
         $contentFormShipping .= UtilsWooCommerce::getFormField($key, $field, $checkout->get_value($key));
     }
     $textShippingAddress = __('Shipping address', 'woocommerce');
@@ -31,13 +32,13 @@ if (wc()->cart->needs_shipping_address() === true) {
     } else {
         $checkedShipToDest = 0;
     }
-    $actionCheckoutShippingFormBefore = WPUtils::doAction('woocommerce_before_checkout_shipping_form', $checkout);
-    $actionCheckoutShippingFormAfter = WPUtils::doAction('woocommerce_after_checkout_shipping_form', $checkout);
+    $actionCheckoutShippingFormBefore = UtilsWp::doAction('woocommerce_before_checkout_shipping_form', $checkout);
+    $actionCheckoutShippingFormAfter = UtilsWp::doAction('woocommerce_after_checkout_shipping_form', $checkout);
     $checkedShipToDest = apply_filters('woocommerce_ship_to_different_address_checked', $checkedShipToDest);
     $checkedShipToDiffAddress = checked($checkedShipToDest, 1, false);
     $contentFormShipping = "
     <label id='ship-to-different-address' for='shipToDifferentAdd'>
-        <h3><i class='fa fa-truck'></i> {$textShipToDiffAddress}
+        <h3><i class='fas fa-truck'></i> {$textShipToDiffAddress}
         <input id='shipToDifferentAdd' name='ship_to_different_address' type='checkbox' {$checkedShipToDiffAddress} value='1'>
         </h3>
     </label>
@@ -63,8 +64,8 @@ if ($enableOrderComments) {
     }
     $contentNotes = "<div class='woocommerce-additional-fields__field-wrapper'>{$contentNotes}</div>";
 }
-$actionOrderNotesBefore = WPUtils::doAction('woocommerce_before_order_notes', $checkout);
-$actionOrderNotesAfter = WPUtils::doAction('woocommerce_after_order_notes', $checkout);
+$actionOrderNotesBefore = UtilsWp::doAction('woocommerce_before_order_notes', $checkout);
+$actionOrderNotesAfter = UtilsWp::doAction('woocommerce_after_order_notes', $checkout);
 echo "<div class='woocommerce-shipping-fields'>
 {$contentFormShipping}
 </div>

@@ -4,33 +4,35 @@
  * This template can be overridden by copying it to yourtheme/woocommerce/cart/cart.php.
  * @see     https://docs.woocommerce.com/document/template-structure/
  * @package WooCommerce/Templates
- * @version 3.5.0
+ * @version 3.7.0
  */
 defined('ABSPATH') || exit;
 
-use wp\WPUtils;
+use wp\UtilsWp;
 use wp\UtilsWooCommerce;
 
 $contentCartItems = '';
 $contentCartItems .= UtilsWooCommerce::getCartContents();
-$actionCartActions = WPUtils::doAction('woocommerce_cart_actions');
-$actionCartContentsBefore = WPUtils::doAction('woocommerce_before_cart_contents');
-$actionCartContents = WPUtils::doAction('woocommerce_cart_contents');
-$actionCartContentAfter = WPUtils::doAction('woocommerce_after_cart_contents');
-$actionCartTableBefore = WPUtils::doAction('woocommerce_before_cart_table');
-$actionCartTableAfter = WPUtils::doAction('woocommerce_after_cart_table');
+$actionCartActions = UtilsWp::doAction('woocommerce_cart_actions');
+$actionCartContentsBefore = UtilsWp::doAction('woocommerce_before_cart_contents');
+$actionCartContents = UtilsWp::doAction('woocommerce_cart_contents');
+$actionCartContentAfter = UtilsWp::doAction('woocommerce_after_cart_contents');
+$actionCartTableBefore = UtilsWp::doAction('woocommerce_before_cart_table');
+$actionCartTableAfter = UtilsWp::doAction('woocommerce_after_cart_table');
+$actionCartCollateralsBefore = UtilsWp::doAction('woocommerce_before_cart_collaterals');
 /**
  * Trigger Action: Cart Totals and Cross Sells
  * @hooked woocommerce_cross_sell_display
  * @hooked woocommerce_cart_totals - 10
  */
-$actionCartCollaterals = WPUtils::doAction('woocommerce_cart_collaterals');
+$actionCartCollaterals = UtilsWp::doAction('woocommerce_cart_collaterals');
+
 /**
  * Trigger Action: Before Cart
  * @hooked woocommerce_output_all_notices - 10
  */
-$actionCartBefore = WPUtils::doAction('woocommerce_before_cart');
-$actionCartAfter = WPUtils::doAction('woocommerce_after_cart');
+$actionCartBefore = UtilsWp::doAction('woocommerce_before_cart');
+$actionCartAfter = UtilsWp::doAction('woocommerce_after_cart');
 $textProduct = __('Product', 'woocommerce');
 $textPrice = __('Price', 'woocommerce');
 $textQuantity = __('Quantity', 'woocommerce');
@@ -41,7 +43,7 @@ $textUpdateCart = __('Update cart', 'woocommerce');
 $cartFormActionUrl = esc_url(wc_get_cart_url());
 $cartNonce = wp_nonce_field('woocommerce-cart', 'woocommerce-cart-nonce', true, false);
 if (wc_coupons_enabled()) {
-    $actionCartCoupon = WPUtils::doAction('woocommerce_cart_coupon');
+    $actionCartCoupon = UtilsWp::doAction('woocommerce_cart_coupon');
     $textCoupon = __('Coupon:', 'woocommerce');
     $textCouponCode = __('Coupon code', 'woocommerce');
     $textApplyCoupon = __('Apply coupon', 'woocommerce');
@@ -81,6 +83,7 @@ echo "{$actionCartBefore}
 </div></section>
 {$actionCartTableAfter}
 </div>
+{$actionCartCollateralsBefore}
 {$actionCartCollaterals}
 </form>
 {$actionCartAfter}";

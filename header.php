@@ -1,7 +1,7 @@
 <?php
 
 use wp\WidgetArea;
-use wp\WPUtils;
+use wp\UtilsWp;
 use wp\WPSidebar;
 use wp\WidgetSiteBranding;
 
@@ -10,19 +10,19 @@ $siteLanguage = get_bloginfo('language');
 $siteCharset = get_bloginfo('charset', 'display');
 //TODO Check if urlSiteIcon is empty then apply theme site icon
 $urlSiteIcon = get_site_icon_url();
-$contentHead = WPUtils::doAction('wp_head');
-$contentBody = WPUtils::doAction('wp_body_open');
+$contentHead = UtilsWp::doAction('wp_head');
+$contentBody = UtilsWp::doAction('wp_body_open');
 $bodyClasses = join(' ', get_body_class());
 $content = '';
-$content .= WPUtils::getSidebarContent(WidgetArea::HEADER_TOP);
-$content .= WPUtils::getSidebarContent(WidgetArea::HEADER_MAIN);
-$content .= WPUtils::getSidebarContent(WidgetArea::HEADER_BOTTOM);
+$content .= UtilsWp::getSidebarContent(WidgetArea::HEADER_TOP);
+$content .= UtilsWp::getSidebarContent(WidgetArea::HEADER_MAIN);
+$content .= UtilsWp::getSidebarContent(WidgetArea::HEADER_BOTTOM);
 if (empty($content)) {
     ob_start();
     the_widget(WidgetSiteBranding::class, [], [
         WPSidebar::BEFORE_WIDGET => '<div class="widget %s text-xs-center">'
     ]);
-    $content = WPUtils::getSidebar(WidgetArea::HEADER_TOP, ob_get_clean());
+    $content = UtilsWp::getSidebar(WidgetArea::HEADER_TOP, ob_get_clean());
 }
 echo "<!DOCTYPE html><html lang='{$siteLanguage}'>
 <head>

@@ -9,7 +9,7 @@
  */
 defined('ABSPATH') || exit;
 
-use wp\WPUtils;
+use wp\UtilsWp;
 use wp\UtilsWooCommerce;
 
 $contentMiniCart = '';
@@ -17,10 +17,12 @@ if (wc()->cart->is_empty()) {
     $textNoProductsInTheCart = __('No products in the cart.', 'woocommerce');
     $contentMiniCart = "<p class='woocommerce-mini-cart__empty-message'>{$textNoProductsInTheCart}</p>";
 } else {
-    $actionMiniCartContentsBefore = WPUtils::doAction('woocommerce_before_mini_cart_contents');
-    $actionMiniCartContents = WPUtils::doAction('woocommerce_mini_cart_contents');
-    $actionShoppingCartButtonsBefore = WPUtils::doAction('woocommerce_widget_shopping_cart_before_buttons');
-    //$actionShoppingCartButtons = WPUtils::doAction('woocommerce_widget_shopping_cart_buttons');
+    $actionMiniCartContentsBefore = UtilsWp::doAction('woocommerce_before_mini_cart_contents');
+    $actionMiniCartContents = UtilsWp::doAction('woocommerce_mini_cart_contents');
+    $actionShoppingCartButtonsBefore = UtilsWp::doAction('woocommerce_widget_shopping_cart_before_buttons');
+    //$actionShoppingCartButtons = UtilsWp::doAction('woocommerce_widget_shopping_cart_buttons');
+    $actionShoppingCartButtonsAfter = UtilsWp::doAction('woocommerce_widget_shopping_cart_after_buttons');
+
     $textCheckout = __('Checkout', 'woocommerce');
     $urlCheckout = wc_get_checkout_url();
     $contentMiniCart = UtilsWooCommerce::getCartContents();
@@ -31,7 +33,8 @@ if (wc()->cart->is_empty()) {
         {$actionMiniCartContents}
     </div>
     {$actionShoppingCartButtonsBefore}
-    <div class='text-xs-center'><a href='{$urlCheckout}' class='button'>{$textCheckout}</a></div>";
+    <div class='text-xs-center'><a href='{$urlCheckout}' class='button'>{$textCheckout}</a></div>
+    {$actionShoppingCartButtonsAfter}";
 }
-$actionMiniCartAfter = WPUtils::doAction('woocommerce_after_mini_cart');
+$actionMiniCartAfter = UtilsWp::doAction('woocommerce_after_mini_cart');
 echo "{$contentMiniCart}{$actionMiniCartAfter}";

@@ -4,12 +4,12 @@
  * This template can be overridden by copying it to yourtheme/woocommerce/content-single-product.php.
  * @see     https://docs.woocommerce.com/document/template-structure/
  * @package WooCommerce/Templates
- * @version 3.4.0
+ * @version 3.6.0
  */
 
 defined('ABSPATH') || exit;
 
-use wp\WPUtils;
+use wp\UtilsWp;
 
 if (post_password_required()) {
     echo get_the_password_form(); // WPCS: XSS ok.
@@ -135,10 +135,10 @@ if (post_password_required()) {
     switch ($productType) {
         case 'external':
             {
-                $htmlBeforeAddToCartForm = WPUtils::doAction('woocommerce_before_add_to_cart_form');
-                $htmlAfterAddToCartForm = WPUtils::doAction('woocommerce_after_add_to_cart_form');
-                $htmlBeforeAddToCartButton = WPUtils::doAction('woocommerce_before_add_to_cart_button');
-                $htmlAfterAddToCartButton = WPUtils::doAction('woocommerce_after_add_to_cart_button');
+                $htmlBeforeAddToCartForm = UtilsWp::doAction('woocommerce_before_add_to_cart_form');
+                $htmlAfterAddToCartForm = UtilsWp::doAction('woocommerce_after_add_to_cart_form');
+                $htmlBeforeAddToCartButton = UtilsWp::doAction('woocommerce_before_add_to_cart_button');
+                $htmlAfterAddToCartButton = UtilsWp::doAction('woocommerce_after_add_to_cart_button');
                 $urlToProduct = $product->add_to_cart_url();
                 $htmlFormFields = wc_query_string_form_fields($urlToProduct, [], '', true);
                 $urlToProduct = esc_url($urlToProduct);
@@ -146,7 +146,7 @@ if (post_password_required()) {
                 $htmlProductAddToCart = "{$htmlBeforeAddToCartForm}<form class='cart' method='get' action='{$urlToProduct}'>
                     {$htmlBeforeAddToCartButton}
                     <button type='submit' class='single_add_to_cart_button button alt'>
-                        <i class='fa fa-cart-plus'></i> <span>{$textAddToCart}</span>
+                        <i class='fas fa-cart-plus'></i> <span>{$textAddToCart}</span>
                     </button>
                     {$htmlFormFields}
                     {$htmlAfterAddToCartButton}
@@ -183,8 +183,8 @@ if (post_password_required()) {
                                         $contentGroupedProduct .= "<input name='{$groupedProductName}' value='1' type='checkbox'  
                                         class='wc-grouped-product-add-to-cart-checkbox'>";
                                     } else {
-                                        $actionAddToCartQuantityBefore = WPUtils::doAction('woocommerce_before_add_to_cart_quantity');
-                                        $actionAddToCartQuantityAfter = WPUtils::doAction('woocommerce_after_add_to_cart_quantity');
+                                        $actionAddToCartQuantityBefore = UtilsWp::doAction('woocommerce_before_add_to_cart_quantity');
+                                        $actionAddToCartQuantityAfter = UtilsWp::doAction('woocommerce_after_add_to_cart_quantity');
                                         $groupedProductName = "quantity[{$groupedProductId}]";
                                         $inputMin = apply_filters('woocommerce_quantity_input_min', 0, $groupedProduct);
                                         $inputMax = $groupedProduct->get_max_purchase_quantity();
@@ -225,9 +225,9 @@ if (post_password_required()) {
                                     break;
                             }
                             $actionName = 'woocommerce_grouped_product_list_before_' . $groupedProductColumn;
-                            $actionGroupedProductListBefore = WPUtils::doAction($actionName, $groupedProduct);
+                            $actionGroupedProductListBefore = UtilsWp::doAction($actionName, $groupedProduct);
                             $actionName = 'woocommerce_grouped_product_list_after_' . $groupedProductColumn;
-                            $actionGroupedProductListAfter = WPUtils::doAction($actionName, $groupedProduct);
+                            $actionGroupedProductListAfter = UtilsWp::doAction($actionName, $groupedProduct);
                             $actionName = 'woocommerce_grouped_product_list_column_' . $groupedProductColumn;
                             $actionGroupedProductListColumn = apply_filters($actionName, $contentGroupedProduct, $groupedProduct);
                             $groupedProductColumnEsc = esc_attr($groupedProductColumn);
@@ -244,16 +244,16 @@ if (post_password_required()) {
                     $post = $postPrev;
                     setup_postdata($post);
                     if ($requiredQts) {
-                        $actionAddToCartButtonBefore = WPUtils::doAction('woocommerce_before_add_to_cart_button');
-                        $actionAddToCartButtonAfter = WPUtils::doAction('woocommerce_after_add_to_cart_button');
+                        $actionAddToCartButtonBefore = UtilsWp::doAction('woocommerce_before_add_to_cart_button');
+                        $actionAddToCartButtonAfter = UtilsWp::doAction('woocommerce_after_add_to_cart_button');
                         $textSingleAddToCart = esc_html($product->single_add_to_cart_text());
                         $contentAddToCartButton = "{$actionAddToCartButtonBefore}
                         <button type='submit' class='single_add_to_cart_button button alt'>
                         {$textSingleAddToCart}
                         </button>{$actionAddToCartButtonAfter}";
                     }
-                    $actionAddToCartFormBefore = WPUtils::doAction('woocommerce_before_add_to_cart_form');
-                    $actionAddToCartFormAfter = WPUtils::doAction('woocommerce_after_add_to_cart_form');
+                    $actionAddToCartFormBefore = UtilsWp::doAction('woocommerce_before_add_to_cart_form');
+                    $actionAddToCartFormAfter = UtilsWp::doAction('woocommerce_after_add_to_cart_form');
                     $productIdEsc = esc_attr($product->get_id());
                     $urlAddToCartFormAction = esc_url(apply_filters('woocommerce_add_to_cart_form_action', $product->get_permalink()));
                     $htmlProductAddToCart = "{$actionAddToCartFormBefore}
@@ -270,12 +270,12 @@ if (post_password_required()) {
                 if ($product->is_purchasable()) {
                     $htmlStockQuantity = wc_get_stock_html($product);
                     if ($product->is_in_stock()) {
-                        $addToCartFormBefore = WPUtils::doAction('woocommerce_before_add_to_cart_form');
-                        $addToCartFormAfter = WPUtils::doAction('woocommerce_after_add_to_cart_form');
-                        $addToCartButtonBefore = WPUtils::doAction('woocommerce_before_add_to_cart_button');
-                        $addToCartButtonAfter = WPUtils::doAction('woocommerce_after_add_to_cart_button');
-                        $addToCartQuantityButtonBefore = WPUtils::doAction('woocommerce_before_add_to_cart_quantity');
-                        $addToCartQuantityButtonAfter = WPUtils::doAction('woocommerce_after_add_to_cart_quantity');
+                        $addToCartFormBefore = UtilsWp::doAction('woocommerce_before_add_to_cart_form');
+                        $addToCartFormAfter = UtilsWp::doAction('woocommerce_after_add_to_cart_form');
+                        $addToCartButtonBefore = UtilsWp::doAction('woocommerce_before_add_to_cart_button');
+                        $addToCartButtonAfter = UtilsWp::doAction('woocommerce_after_add_to_cart_button');
+                        $addToCartQuantityButtonBefore = UtilsWp::doAction('woocommerce_before_add_to_cart_quantity');
+                        $addToCartQuantityButtonAfter = UtilsWp::doAction('woocommerce_after_add_to_cart_quantity');
                         $textQuantity = __('Quantity', 'woocommerce');
                         $purchaseQuantityValue = $product->get_min_purchase_quantity();
                         if (isset($_POST['quantity'])) {
@@ -303,7 +303,7 @@ if (post_password_required()) {
                             {$htmlQuantityInput}
                             {$addToCartQuantityButtonAfter}
                             <button name='add-to-cart' value='{$productId}' type='submit' class='single_add_to_cart_button button alt'>
-                                <i class='fa fa-cart-plus'></i> <span>{$textAddToCart}</span>
+                                <i class='fas fa-cart-plus'></i> <span>{$textAddToCart}</span>
                             </button>
                             {$addToCartButtonAfter}
                         </div>
@@ -351,18 +351,18 @@ if (post_password_required()) {
                 $productIdAbs = absint($product->get_id());
                 $urlAddToCartFormAction = esc_url(apply_filters('woocommerce_add_to_cart_form_action', $product->get_permalink()));
                 $jsonAvailableVariation = htmlspecialchars(wp_json_encode($available_variations));
-                $actionAddToCartFormBefore = WPUtils::doAction('woocommerce_before_add_to_cart_form');
-                $actionAddToCartFormAfter = WPUtils::doAction('woocommerce_after_add_to_cart_form');
-                $actionVariationsFormBefore = WPUtils::doAction('woocommerce_before_variations_form');
-                $actionVariationsFormAfter = WPUtils::doAction('woocommerce_after_variations_form');
-                $actionSingleVariationBefore = WPUtils::doAction('woocommerce_before_single_variation');
-                $actionSingleVariationAfter = WPUtils::doAction('woocommerce_after_single_variation');
+                $actionAddToCartFormBefore = UtilsWp::doAction('woocommerce_before_add_to_cart_form');
+                $actionAddToCartFormAfter = UtilsWp::doAction('woocommerce_after_add_to_cart_form');
+                $actionVariationsFormBefore = UtilsWp::doAction('woocommerce_before_variations_form');
+                $actionVariationsFormAfter = UtilsWp::doAction('woocommerce_after_variations_form');
+                $actionSingleVariationBefore = UtilsWp::doAction('woocommerce_before_single_variation');
+                $actionSingleVariationAfter = UtilsWp::doAction('woocommerce_after_single_variation');
                 /**
                  * Hook: Used to output the cart button and placeholder for variation data.
                  * @hooked woocommerce_single_variation - 10 Empty div for variation data.
                  * @hooked woocommerce_single_variation_add_to_cart_button - 20 Qty and cart button.
                  */
-                //$actionSingleVariation = WPUtils::doAction('woocommerce_single_variation');
+                //$actionSingleVariation = UtilsWp::doAction('woocommerce_single_variation');
                 $purchaseQtyValue = $product->get_min_purchase_quantity();
                 if (isset($_POST['quantity'])) {
                     $purchaseQtyValue = wc_stock_amount(wp_unslash($_POST['quantity']));
@@ -373,10 +373,10 @@ if (post_password_required()) {
                 }
                 $purchaseQtyMin = apply_filters('woocommerce_quantity_input_min', $product->get_min_purchase_quantity(), $product);
                 $purchaseQtyMax = apply_filters('woocommerce_quantity_input_max', $product->get_max_purchase_quantity(), $product);
-                $addToCartButtonBefore = WPUtils::doAction('woocommerce_before_add_to_cart_button');
-                $addToCartButtonAfter = WPUtils::doAction('woocommerce_after_add_to_cart_button');
-                $addToCartQuantityButtonBefore = WPUtils::doAction('woocommerce_before_add_to_cart_quantity');
-                $addToCartQuantityButtonAfter = WPUtils::doAction('woocommerce_after_add_to_cart_quantity');
+                $addToCartButtonBefore = UtilsWp::doAction('woocommerce_before_add_to_cart_button');
+                $addToCartButtonAfter = UtilsWp::doAction('woocommerce_after_add_to_cart_button');
+                $addToCartQuantityButtonBefore = UtilsWp::doAction('woocommerce_before_add_to_cart_quantity');
+                $addToCartQuantityButtonAfter = UtilsWp::doAction('woocommerce_after_add_to_cart_quantity');
                 $textQuantity = __('Quantity', 'woocommerce');
                 $productIdAbs = absint($product->get_id());
                 $textAddToCart = esc_html($product->single_add_to_cart_text());
@@ -431,7 +431,7 @@ if (post_password_required()) {
             }
     }
     // [SHARE]
-    $htmlProductShare = WPUtils::doAction('woocommerce_share');
+    $htmlProductShare = UtilsWp::doAction('woocommerce_share');
     //[ATTRIBUTES]
     $htmlProductMeasures = '';
     $display_dimensions = $product->has_weight() || $product->has_dimensions();
@@ -590,13 +590,13 @@ if (post_password_required()) {
      * Hook: woocommerce_before_single_product.
      * @hooked wc_print_notices - 10
      */
-    $actionSingleProductBefore = WPUtils::doAction('woocommerce_before_single_product');
-    $actionSingleProductAfter = WPUtils::doAction('woocommerce_after_single_product');
-    $actionProductMetaStart = WPUtils::doAction('woocommerce_product_meta_start');
+    $actionSingleProductBefore = UtilsWp::doAction('woocommerce_before_single_product');
+    $actionSingleProductAfter = UtilsWp::doAction('woocommerce_after_single_product');
+    $actionProductMetaStart = UtilsWp::doAction('woocommerce_product_meta_start');
     //Variation
     $contentVariations = '';
     if (is_a($product, WC_Product_Variable::class)) {
-        //$actionProductMetaEnd = WPUtils::doAction('woocommerce_product_meta_end');
+        //$actionProductMetaEnd = UtilsWp::doAction('woocommerce_product_meta_end');
         $actionProductMetaEnd = '';
         $textOptions = __('Variations', 'woocommerce');
         $contentVariations = "<h4>{$textOptions}</h4>{$actionProductMetaEnd}";
@@ -607,7 +607,7 @@ if (post_password_required()) {
     if ($htmlProductDescription) {
         $textDescription = __('Description', 'woocommerce');
         $contentDescription = "<div id='description' class='col-md-12'>
-        <h4 class='title text-xs-center'><i class='fa fa-file-alt'></i> {$textDescription}</h4>
+        <h4 class='title text-xs-center'><i class='fas fa-file-alt'></i> {$textDescription}</h4>
         <p>{$htmlProductDescription}</p></div>";
     }
     $cssProduct = esc_attr(join(' ', wc_get_product_class('', $productId)));

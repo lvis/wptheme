@@ -9,7 +9,7 @@
  */
 defined('ABSPATH') || exit;
 
-use wp\WPUtils;
+use wp\UtilsWp;
 use wp\UtilsWooCommerce;
 
 $cssTitle = 'col-xs-9 title';
@@ -56,7 +56,7 @@ if (wc_coupons_enabled()) {
     $textApplyCoupon = __('Apply coupon', 'woocommerce');
     $textAddCoupon = __('Add coupon', 'woocommerce');
     $textAdd = __('Add');
-    $actionCartCoupon = WPUtils::doAction('woocommerce_cart_coupon');
+    $actionCartCoupon = UtilsWp::doAction('woocommerce_cart_coupon');
     $contentCoupons = "<div class='row coupons'>
     <div class='col-xs-12 clearfix'><span class='title'><i class='fas fa-ticket-alt'></i> {$textCoupons}:</span> {$textIfYouHaveCoupon}</div>
     {$contentCoupons}
@@ -91,7 +91,7 @@ if (wc()->cart->needs_shipping()) {
                 $contentShippingMethods = '';
                 foreach ($shippingMethods as $shippingMethod) {
                     /**@var $shippingMethod WC_Shipping_Rate */
-                    $actionShippingRateAfter = WPUtils::doAction('woocommerce_after_shipping_rate', $shippingMethod, $index);
+                    $actionShippingRateAfter = UtilsWp::doAction('woocommerce_after_shipping_rate', $shippingMethod, $index);
                     $methodId = "shipping_method_{$index}_" . sanitize_title($shippingMethod->id);
                     $methodValue = esc_attr($shippingMethod->id);
                     $methodLabel = UtilsWooCommerce::getShippingMethodLabel($shippingMethod);
@@ -142,10 +142,10 @@ if (wc()->cart->needs_shipping()) {
             </div>
             {$contentShippingMethod}</div>";
         }
-        $actionReviewOrderShippingBefore = WPUtils::doAction('woocommerce_review_order_before_shipping');
-        $actionReviewOrderShippingAfter = WPUtils::doAction('woocommerce_review_order_after_shipping');
-        $actionCartTotalsShippingBefore = WPUtils::doAction('woocommerce_cart_totals_before_shipping');
-        $actionCartTotalsShippingAfter = WPUtils::doAction('woocommerce_cart_totals_after_shipping');
+        $actionReviewOrderShippingBefore = UtilsWp::doAction('woocommerce_review_order_before_shipping');
+        $actionReviewOrderShippingAfter = UtilsWp::doAction('woocommerce_review_order_after_shipping');
+        $actionCartTotalsShippingBefore = UtilsWp::doAction('woocommerce_cart_totals_before_shipping');
+        $actionCartTotalsShippingAfter = UtilsWp::doAction('woocommerce_cart_totals_after_shipping');
         $contentShipping = "{$actionReviewOrderShippingBefore}{$contentShipping}{$actionReviewOrderShippingAfter}";
     } else if (get_option('woocommerce_enable_shipping_calc') === 'yes') {
         //yourtheme/woocommerce/cart/shipping-calculator.php.
@@ -204,14 +204,14 @@ if (wc()->cart->needs_shipping()) {
         $textUpdateTotals = __('Update totals', 'woocommerce');
         $textCalculateShipping = __('Calculate shipping', 'woocommerce');
         $textSelectCountry = __('Select a country&hellip;', 'woocommerce');
-        $actionShippingCalculatorBefore = WPUtils::doAction('woocommerce_before_shipping_calculator');
-        $actionShippingCalculatorAfter = WPUtils::doAction('woocommerce_after_shipping_calculator');
+        $actionShippingCalculatorBefore = UtilsWp::doAction('woocommerce_before_shipping_calculator');
+        $actionShippingCalculatorAfter = UtilsWp::doAction('woocommerce_after_shipping_calculator');
         $urlCart = esc_url(wc_get_cart_url());
         $nonceShippingCalculator = wp_nonce_field('woocommerce-shipping-calculator',
             'woocommerce-shipping-calculator-nonce', true, false);
         $textShipping = __('Shipping', 'woocommerce');
         $contentShipping = "<div class='row shipping'>
-        <div class='col-xs-8 title'><i class='fa fa-truck'></i> {$textShipping}</div>
+        <div class='col-xs-8 title'><i class='fas fa-truck'></i> {$textShipping}</div>
         <div class='col-xs-4'>{$actionShippingCalculatorBefore}
         <form class='woocommerce-shipping-calculator' action='{$urlCart}' method='post'>
         <p id='calc_shipping_country_field' class='form-row form-row-wide'>
@@ -310,18 +310,18 @@ $isCheckoutFilter = apply_filters('woocommerce_is_checkout', false);
 $checkoutLink = wc_get_page_permalink('checkout');
 //$_GET['wc-ajax'] == 'update_order_review';
 if (is_checkout()) {
-    $actionOrderTotalBefore = WPUtils::doAction('woocommerce_review_order_before_order_total');
-    $actionOrderTotalAfter = WPUtils::doAction('woocommerce_review_order_after_order_total');
+    $actionOrderTotalBefore = UtilsWp::doAction('woocommerce_review_order_before_order_total');
+    $actionOrderTotalAfter = UtilsWp::doAction('woocommerce_review_order_after_order_total');
 } else if (is_cart()) {
-    $actionOrderTotalBefore = WPUtils::doAction('woocommerce_cart_totals_before_order_total');
-    $actionOrderTotalAfter = WPUtils::doAction('woocommerce_cart_totals_after_order_total');
+    $actionOrderTotalBefore = UtilsWp::doAction('woocommerce_cart_totals_before_order_total');
+    $actionOrderTotalAfter = UtilsWp::doAction('woocommerce_cart_totals_after_order_total');
     $urlCheckout = esc_url(wc_get_checkout_url());
     $textProceedToCheckout = __('Proceed to checkout', 'woocommerce');
     $contentCheckoutButton = "<div class='row'><div class='col-xs-12 text-xs-right'>
     <a href='{$urlCheckout}' class='button'>{$textProceedToCheckout}</a></div></div>";
 }
-$actionCartTotalsBefore = WPUtils::doAction('woocommerce_before_cart_totals');
-$actionCartTotalsAfter = WPUtils::doAction('woocommerce_after_cart_totals');
+$actionCartTotalsBefore = UtilsWp::doAction('woocommerce_before_cart_totals');
+$actionCartTotalsAfter = UtilsWp::doAction('woocommerce_after_cart_totals');
 $htmlCartOrderTotal = apply_filters('woocommerce_cart_totals_order_total_html', $htmlCartOrderTotal);
 $textSubtotal = __('Subtotal', 'woocommerce');
 $contentCartSubtotal = wc()->cart->get_cart_subtotal();

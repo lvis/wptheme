@@ -9,13 +9,13 @@
  */
 defined('ABSPATH') || exit;
 
-use wp\WPUtils;
+use wp\UtilsWp;
 use wp\UtilsWooCommerce;
 
 /** @global WC_Checkout $checkout */
 /** ---------------------------------------- Billing*/
 $formBillingTitle = __('Billing &amp; Shipping', 'woocommerce');
-$actionCheckoutBillingFormBefore = WPUtils::doAction('woocommerce_before_checkout_billing_form', $checkout);
+$actionCheckoutBillingFormBefore = UtilsWp::doAction('woocommerce_before_checkout_billing_form', $checkout);
 $contentFormFields = '';
 $fieldsBilling = $checkout->get_checkout_fields('billing');
 foreach ($fieldsBilling as $key => $field) {
@@ -25,9 +25,9 @@ foreach ($fieldsBilling as $key => $field) {
     }
     $contentFormFields .= UtilsWooCommerce::getFormField($key, $field, $checkout->get_value($key));
 }
-$actionCheckoutBillingFormAfter = WPUtils::doAction('woocommerce_after_checkout_billing_form', $checkout);
+$actionCheckoutBillingFormAfter = UtilsWp::doAction('woocommerce_after_checkout_billing_form', $checkout);
 $contentFormBilling = "<div class='woocommerce-billing-fields'>
-<h3><i class='fa fa-receipt'></i> {$formBillingTitle}</h3>
+<h3><i class='fas fa-receipt'></i> {$formBillingTitle}</h3>
 {$actionCheckoutBillingFormBefore}
 <div class='woocommerce-billing-fields__field-wrapper'>{$contentFormFields}</div>
 {$actionCheckoutBillingFormAfter}
@@ -42,7 +42,7 @@ if (is_user_logged_in() === false && $checkout->is_registration_enabled()) {
         $checkedCreateAccount = ($checkout->get_value('createaccount' === true) || ($checkedCreateAccount === true));
         $checkedCreateAccount = checked($checkedCreateAccount, true, false);
         $contentCreateAccount .= "<label for='createaccount'><h3>
-        <i class='fa fa-user-plus'></i>
+        <i class='fas fa-user-plus'></i>
         <span>{$textCreateAccount}</span>
         <input id='createaccount' type='checkbox' name='createaccount' value='1' {$checkedCreateAccount}>
         </h3></label>";
@@ -55,8 +55,8 @@ if (is_user_logged_in() === false && $checkout->is_registration_enabled()) {
         }
         $contentCreateAccount .= "<div class='create-account'>{$contentCreateAccountFields}</div>";
     }
-    $actionCheckoutRegFormBefore = WPUtils::doAction('woocommerce_before_checkout_registration_form', $checkout);
-    $actionCheckoutRegFormAfter = WPUtils::doAction('woocommerce_after_checkout_registration_form', $checkout);
+    $actionCheckoutRegFormBefore = UtilsWp::doAction('woocommerce_before_checkout_registration_form', $checkout);
+    $actionCheckoutRegFormAfter = UtilsWp::doAction('woocommerce_after_checkout_registration_form', $checkout);
     $contentAccountFields = "<div class='woocommerce-account-fields'>
     {$actionCheckoutRegFormBefore}
     {$contentCreateAccount}

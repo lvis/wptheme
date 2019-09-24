@@ -321,6 +321,14 @@ input[type^='r'] {
     clear: both;
     content: "";
 }
+.enable{
+    pointer-events: auto;
+    opacity: 1;
+}
+.disable{
+    pointer-events: none;
+    opacity: 0.4;
+}
 .visible {
     visibility: visible !important;
 }

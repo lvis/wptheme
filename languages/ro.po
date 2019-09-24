@@ -1,0 +1,221 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: wpTheme\n"
+"POT-Creation-Date: 2019-08-17 23:00+0200\n"
+"PO-Revision-Date: 2019-08-25 00:02+0300\n"
+"Language-Team: Vitalie Lupu <vitaliix@gmail.com>\n"
+"Last-Translator: Vitalie Lupu <vitaliix@gmail.com>\n"
+"Language: ro\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?2:1));\n"
+"X-Generator: Poedit 1.8.7\n"
+
+#: footer.php:12
+msgid "Copyright"
+msgstr "Depturile de Autor"
+
+#: 404.php:4
+msgid "Nothing was found"
+msgstr "Nimic nu a fost găsit"
+
+#: comments.php:12
+msgid "No Comment"
+msgstr "Nu sunt Comentarii"
+
+#: comments.php:12
+msgid "One Comment"
+msgstr "Un Comentariu"
+
+#: comments.php:12
+msgid "(%) Comments"
+msgstr "(%) Comentarii"
+
+#: comments.php:69
+msgid "Comments are closed."
+msgstr "Comentariile sunt interzise."
+
+#: comments.php:17
+msgid "(Edit)"
+msgstr "(Editează)"
+
+#: comments.php:34
+msgid "on"
+msgstr "pe"
+
+#: comments.php:37
+#, php-format
+msgid "%1$s at %2$s"
+msgstr "%1$s la %2$s"
+
+#: comments.php:40
+msgid "said"
+msgstr "a spus"
+
+#: comments.php:4
+msgid "This post is password protected. Enter the password to view comments."
+msgstr "Această înregistrare este protejată de praolă. Introduceți parola, pentru a vedea comentariile."
+
+#: wp/PostBase.php:79 wp/PostBase.php:92
+msgid "All %s"
+msgstr "Toate %s"
+
+#: wp/PostBase.php:87
+msgid "Add %s"
+msgstr "Adaugă %s"
+
+#: wp/PostBase.php:282
+msgid "All Authors"
+msgstr "Toți Autorii"
+
+#: wp/Customizer.php:379
+msgid "Enable on contact forms?"
+msgstr "Activați pe formularele de contact?"
+
+# -------------------- Partners
+#: wp/PostPartner.php:7
+msgid "Partner"
+msgstr "Partener"
+
+#: wp/PostPartner.php:8
+msgid "Partners"
+msgstr "Parteneri"
+
+#: wp/PostPartner.php:25
+msgid "Partner Information"
+msgstr "Informație Partener"
+
+# -------------------- Events
+#: wp/PostEvent.php:21
+msgid "Event"
+msgstr "Eveniment"
+
+#: wp/PostEvent.php:22
+msgid "Events"
+msgstr "Evenimente"
+
+# -------------------- Properties
+#: wp/PostProperty.php:359
+msgid "To publish the Property please complete the required fields: Status, Type, Location and Price"
+msgstr "Pentru a publica Imobilul completați câmpurile obligatorii: Stare, Tip, Locație și Preț"
+
+#: wp/PostProperty.php:333
+msgid "Value Example: %s"
+msgstr "Exemplu de valoare: %s"
+
+#: wp/PostProperty.php:49
+msgid "Status"
+msgstr "Stare"
+
+#: wp/PostProperty.php:50
+msgid "Statuses"
+msgstr "Stări"
+
+#: wp/PostProperty.php:60
+msgid "Type"
+msgstr "Tip"
+
+#: wp/PostProperty.php:61
+msgid "Types"
+msgstr "Tipuri"
+
+#: wp/PostProperty.php:71
+msgid "Location"
+msgstr "Locație"
+
+#: wp/PostProperty.php:72
+msgid "Locations"
+msgstr "Locații"
+
+#: wp/PostProperty.php:82
+msgid "Feature"
+msgstr "Caracteristică"
+
+#: wp/PostProperty.php:83
+msgid "Features"
+msgstr "Caracteristici"
+
+#: wp/PostProperty.php:93
+msgid "Property"
+msgstr "Imobil"
+
+#: wp/PostProperty.php:94
+msgid "Properties"
+msgstr "Imobile"
+
+#: wp/PostProperty.php:395
+msgid "Price"
+msgstr "Preț"
+
+#: wp/PostProperty.php:405
+msgid "Promotional Price"
+msgstr "Preț Promoțional"
+
+#: wp/PostProperty.php:414
+msgid "Price Currency"
+msgstr "Valuta Prețului"
+
+#: wp/PostProperty.php:441
+msgid "Price Prefix"
+msgstr "Prefixul Prețului"
+
+#: wp/PostProperty.php:792
+msgid "from"
+msgstr "de la"
+
+#: wp/PostProperty.php:793
+msgid "to"
+msgstr "până la"
+
+#: wp/PostProperty.php:794
+msgid "min."
+msgstr "min."
+
+#: wp/PostProperty.php:795
+msgid "max."
+msgstr "max."
+
+#: wp/PostProperty.php:454
+msgid "Rental price criteria"
+msgstr "Criteriul prețului de închiriere"
+
+#: wp/PostProperty.php:762
+msgid "per m²"
+msgstr "per m²"
+
+#: wp/PostProperty.php:763
+msgid "per day"
+msgstr "zilnic"
+
+#: wp/PostProperty.php:764
+msgid "per week"
+msgstr "săptămânal"
+
+#: wp/PostProperty.php:765
+msgid "per month"
+msgstr "lunar"
+
+#: wp/PostProperty.php:766
+msgid "per year"
+msgstr "anual"
+
+#: wp/PostProperty.php:468
+msgid "The financing company"
+msgstr "Compania ce finanțează"
+
+#: wp/PostProperty.php:481
+msgid "First rate"
+msgstr "Prima rată"
+
+#: wp/PostProperty.php:492
+msgid "Monthly payment"
+msgstr "Plata lunară"
+
+#: wp/PostProperty.php:503
+msgid "Property area size"
+msgstr "Mărimea suprafeței imobilului"
+
+#: wp/PostProperty.php:512
+msgid "%s measure unit"
+msgstr "%s, unitatea de măsură"

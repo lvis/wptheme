@@ -1,0 +1,96 @@
+/*------------------------------------------------------------------- General*/
+.wide-title {
+    font-weight: bold;
+}
+#customize-controls .customize-info,
+#customize-theme-controls .control-panel-themes > .accordion-section-title,
+#customize-theme-controls .control-panel-themes > .accordion-section-title:hover {
+    margin-bottom: 0;
+}
+.gallery img {
+    border: 1px solid #ccc;
+    padding: 2px;
+    background-color: #fff;
+    margin: 0 5px 5px 0;
+    float: left;
+}
+/* TextArea*/
+#customize-control-custom_css textarea {
+    height: 200px !important;
+}
+/*------------------------------------------------------------------- Icons*/
+#customize-theme-controls li > h3.accordion-section-title:before {
+    font-weight: normal;
+    font-family: dashicons, sans-serif;
+    font-size: 18px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    float: left;
+    padding-right: 4px;
+    text-align: center;
+}
+/*Identity*/
+#customize-theme-controls li#accordion-section-title_tagline > h3.accordion-section-title:before {
+    content: "\f115";
+}
+/*Backgrounds*/
+#customize-theme-controls li#accordion-section-background_image > h3.accordion-section-title:before {
+    content: "\f128";
+}
+/*Menus*/
+#customize-theme-controls li#accordion-panel-nav_menus > h3.accordion-section-title:before {
+    content: "\f333";
+}
+/*Login*/
+#customize-theme-controls li#accordion-panel-loginpress_panel > h3.accordion-section-title:before {
+    content: "\f332";
+}
+/*Widgets*/
+#customize-theme-controls li#accordion-panel-widgets > h3.accordion-section-title:before {
+    content: "\f116";
+}
+/*Static Front Page*/
+#customize-theme-controls li#accordion-section-static_front_page > h3.accordion-section-title:before {
+    content: "\f102";
+}
+/*Google Services*/
+#customize-theme-controls li#accordion-section-google_services > h3.accordion-section-title:before {
+    font-family: FontAwesome, sans-serif;
+    content: "\f1a0";
+}
+/*Payments*/
+#customize-theme-controls li#accordion-section-payments > h3.accordion-section-title:before {
+    content: "\f486";
+}
+/*Styles*/
+#customize-theme-controls li#accordion-section-custom_css > h3.accordion-section-title:before {
+    content: "\f540";
+}
+/*WooCommerce*/
+#customize-theme-controls li#accordion-panel-woocommerce > h3.accordion-section-title:before {
+    content: "\f513";
+}
+/*WooCommerce Cart Tab*/
+#customize-theme-controls li#accordion-section-woocommerce_cart_tab > h3.accordion-section-title:before {
+    content: "\f174";
+}
+/*Hide Theme Switcher*/
+li#accordion-section-themes.accordion-section.control-panel-themes {
+    display: none !important;
+}
+/* ------------------------------------------------- Widget Filters */
+#available-menu-items-search .accordion-section-title,
+#available-widgets-filter {
+    padding: 5px 15px !important;
+}
+#available-menu-items-search .search-icon,
+#available-widgets-filter .search-icon {
+    top: 7px !important;
+}
+#available-widgets-list {
+    top: 45px !important;
+}
+#customize-controls .customize-info .customize-section-description{
+    display: none !important;
+}

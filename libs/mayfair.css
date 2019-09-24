@@ -1,0 +1,112 @@
+@font-face {
+    font-family: 'Ames';
+    font-style: normal;
+    font-weight: 300;
+    src: url('fonts/ames/Ames.ttf');
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto Slab', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.3125;
+    color: #000;
+    text-align: left;
+    background-color: #fff;
+}
+
+a {
+    color: #a07d53;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+
+a:hover {
+    color: #6e5639;
+    text-decoration: underline;
+}
+
+a:not([href]):not([tabindex]) {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:not([href]):not([tabindex]):focus {
+    outline: 0;
+}
+
+.logo-separator {
+    position: relative;
+    border-top: 1px solid #492d10;
+    margin-top: 64px;
+    padding-top: 44px;
+}
+
+.custom-logo, .elementor .custom-logo {
+    width: auto;
+    height: 64px;
+}
+
+.logo-separator:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -23px;
+    left: 50%;
+    margin-left: -60px;
+    width: 120px;
+    height: 46px;
+    background: #fff url("../images/MayFairLogo.svg") center/contain no-repeat
+}
+
+h1.blogname {
+    font-family: 'Ames', sans-serif;
+    font-weight: normal;
+    font-size: 28px;
+    letter-spacing: 6px;
+    margin-bottom: 4px;
+    margin-top: 12px;
+    color: #686f3e;
+}
+
+small.blogdescription {
+    font-family: sans-serif;
+    font-weight: 300;
+    font-size: 9px;
+    color: #492d10;
+    letter-spacing: 1px;
+}
+
+.logo-only .blogname,
+.logo-only .blogdescription {
+    display: none;
+}
+
+.custom-logo-link {
+    display: block !important;
+    text-align: center !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+h2.widgettitle {
+    color: #c6c8ac;
+    margin-bottom: 40px;
+    font-size: 1.875rem;
+    font-weight: 400;
+}
+
+footer:first-of-type {
+    border-top: 1px solid #492d10;
+}
+
+.menu-actions {
+    z-index: 99999 !important;
+}

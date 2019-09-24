@@ -1,0 +1,3848 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Real Estate Theme\n"
+"POT-Creation-Date: 2016-03-16 16:24+0500\n"
+"PO-Revision-Date: 2017-08-25 22:48+0300\n"
+"Last-Translator: Vitali Lupu <vitaliix@gmail.com>\n"
+"Language-Team: Vitali Lupu <vitaliix@gmail.com>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.7\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: framework/meta-box\n"
+"X-Poedit-SearchPathExcluded-1: images\n"
+"X-Poedit-SearchPathExcluded-2: libs\n"
+"X-Poedit-SearchPathExcluded-3: languages\n"
+"X-Poedit-SearchPathExcluded-4: node_modules\n"
+
+#: archive-property.php:69
+msgid "No Property Found"
+msgstr "Недвижимость не найдена"
+
+msgid "Archives"
+msgstr "Архив"
+
+msgid "All Posts in Category"
+msgstr "Все Сообщения в Категории"
+
+msgid "All Posts in Tag"
+msgstr "Все Сообщения в Теге"
+
+msgid "All Posts By"
+msgstr "Все Сообщения По"
+
+#: author.php:8
+msgid "All Properties"
+msgstr "Все Недвижимости"
+
+#: framework/customizer/contact.php:90 author.php:82 single-agent.php:63
+msgid "Contact Details"
+msgstr "Контактная информация"
+
+msgid "Office"
+msgstr "Офис"
+
+#: author.php:90 tp/property-detail/property-contacts-for-sidebar.php:50
+#: single-agent.php:70 template-contact.php:69 template-users-listing.php:122
+msgid "Mobile"
+msgstr "Мобильный"
+
+#: author.php:94 single-agent.php:73 template-contact.php:73
+#: template-users-listing.php:125
+msgid "Fax"
+msgstr "Факс"
+
+#: author.php:174 framework/include/shortcodes/elements.php:265
+#: template-my-properties.php:171
+msgid "No Properties Found!"
+msgstr "Ни одна Недвижимость не Найдена!"
+
+#: framework/customizer/news.php:31
+msgid "News"
+msgstr "Новости"
+
+#: comments.php:4
+msgid "This post is password protected. Enter the password to view comments."
+msgstr "Эта запись защищена паролем. Введите пароль, чтобы увидеть комментарии."
+
+#: comments.php:11
+msgid "No Comment"
+msgstr "Нет комментариев"
+
+#: comments.php:11
+msgid "One Comment"
+msgstr "Один комментарий"
+
+#: comments.php:11
+msgid "(%) Comments"
+msgstr "(%) Комментарий"
+
+#: comments.php:30
+msgid "Comments are closed."
+msgstr "Комментарии закрыты."
+
+#: framework/customizer/agents.php:15
+msgid "Agents Pages"
+msgstr "Страницы Агентов"
+
+#: framework/customizer/agents.php:26
+msgid "Number of Agents"
+msgstr "Количество Агентов"
+
+#: framework/customizer/agents.php:27
+msgid "Select the maximum number of agents to display on an agents list page."
+msgstr "Выберите максимальное количество агентов для отображения на странице Список Агентов"
+
+#: framework/customizer/agents.php:60
+msgid "Number of Properties on Agent Detail Page"
+msgstr "Количество объектов Недвижимости на Странице Описание Агента"
+
+#: framework/customizer/agents.php:61
+msgid "Select the number of properties to display on Agent detail page."
+msgstr "Выберите количество объектов Недвижимости для отображения на Странице Об Агенте"
+
+#: framework/customizer/contact.php:15
+msgid "Contact Page"
+msgstr "Контактная Страница"
+
+#: framework/customizer/contact.php:25
+msgid "Google Map on Contact Page"
+msgstr "Карта Google на Контактной Странице"
+
+#: framework/customizer/contact.php:29 framework/customizer/contact.php:94
+#: framework/customizer/footer.php:37 framework/customizer/header.php:54
+#: framework/customizer/header.php:177 framework/customizer/home.php:147
+#: framework/customizer/home.php:204 framework/customizer/home.php:363
+#: framework/customizer/home.php:425 framework/customizer/members.php:340
+#: framework/customizer/property.php:39 framework/customizer/property.php:120
+#: framework/customizer/property.php:174 framework/customizer/property.php:223
+#: framework/customizer/property.php:260 framework/customizer/property.php:298
+#: framework/customizer/property.php:335 framework/customizer/property.php:390
+#: framework/meta-box/config-meta-boxes.php:558
+msgid "Show"
+msgstr "Показать"
+
+#: framework/customizer/contact.php:30 framework/customizer/contact.php:95
+#: framework/customizer/footer.php:38 framework/customizer/header.php:55
+#: framework/customizer/header.php:178 framework/customizer/home.php:148
+#: framework/customizer/home.php:205 framework/customizer/home.php:364
+#: framework/customizer/home.php:426 framework/customizer/members.php:341
+#: framework/customizer/property.php:40 framework/customizer/property.php:121
+#: framework/customizer/property.php:175 framework/customizer/property.php:224
+#: framework/customizer/property.php:261 framework/customizer/property.php:299
+#: framework/customizer/property.php:336 framework/customizer/property.php:391
+#: framework/meta-box/config-meta-boxes.php:559
+msgid "Hide"
+msgstr "Спрятать"
+
+#: framework/customizer/contact.php:41
+msgid "Google Map Latitude"
+msgstr "Карта Google Широта"
+
+#: framework/customizer/contact.php:54
+msgid "Google Map Longitude"
+msgstr "Карта Google Долгота"
+
+#: framework/customizer/contact.php:66
+msgid "Google Map Zoom Level"
+msgstr "Уровень масштабирования Карты Google"
+
+#: framework/customizer/contact.php:67
+msgid "Provide Google Map Zoom Level."
+msgstr "Укажите уровень масштабирования Карты Google"
+
+#: framework/customizer/contact.php:105
+msgid "Contact Details Title"
+msgstr "Контактная информация Заголовок"
+
+#: framework/customizer/contact.php:116
+msgid "Contact Address"
+msgstr "Контактный Аадрес"
+
+#: framework/customizer/contact.php:127
+msgid "Cell Number"
+msgstr "Номер Мобильного"
+
+#: framework/customizer/contact.php:138 framework/customizer/header.php:208
+#: template-contact.php:130
+msgid "Phone Number"
+msgstr "Номер Телефона"
+
+msgid "Phone Numbers"
+msgstr "Телефонные Номера"
+
+msgid "Your Phone Number"
+msgstr "Ваш Номер Телефона"
+
+#: framework/customizer/contact.php:149 framework/functions/basic.php:307
+#: framework/meta-box/config-meta-boxes.php:473
+msgid "Fax Number"
+msgstr "Номер Факса"
+
+#: framework/customizer/contact.php:160
+msgid "Display Email"
+msgstr "Показать Электронную почту"
+
+#: framework/customizer/contact.php:161
+msgid "Provide Email that will be displayed in contact details section."
+msgstr "Предоставьте электронной почты, который будет отображаться в разделе контактной информации."
+
+#: framework/customizer/contact.php:184
+msgid "Contact Form Heading"
+msgstr "Форма контакта Заголовок"
+
+#: framework/customizer/contact.php:196
+msgid "Contact Form Email"
+msgstr "Форма контакта Электронная почта"
+
+#: framework/customizer/contact.php:197
+msgid "Provide email address that will get messages from contact form."
+msgstr "Предоставьте адреса электронной почты, которые будут получать сообщения от контактной формы."
+
+#: framework/customizer/contact.php:208
+msgid "Contact Form Shortcode ( To Replace Default Form )"
+msgstr "Форма контакта Сокращенный Код ( Для замены формы по умолчанию )"
+
+#: framework/customizer/contact.php:209
+msgid "If you want to replace default contact form with a plugin based form then provide its shortcode here."
+msgstr "Если вы хотите заменить контактную форму по умолчанию с формой на основе плагина то предоставите Сокращенный Код здесь."
+
+#: framework/customizer/customizer.php:43
+#: framework/functions/property-submit-handler.php:251
+#: framework/functions/property-submit-handler.php:253
+#: framework/functions/property-submit-handler.php:298
+#: framework/functions/property-submit-handler.php:300
+#: framework/functions/real-estate-search.php:260
+#: framework/meta-box/config-meta-boxes.php:53
+msgid "None"
+msgstr "Ни одна"
+
+#: framework/customizer/footer.php:14
+msgid "Footer"
+msgstr "Нижний Колонтитул"
+
+#: framework/customizer/footer.php:23
+#: framework/include/partners-post-type.php:7
+msgid "Partners"
+msgstr "Партнеры"
+
+#: framework/customizer/footer.php:33
+msgid "Partners Carousel Above Footer"
+msgstr "Карусель Партнеров Вверху Нижнего Колонтитула"
+
+#: framework/customizer/footer.php:48
+msgid "Partners Title"
+msgstr "Партнеры Заголовок"
+
+#: framework/customizer/footer.php:58
+msgid "Text"
+msgstr "Текст"
+
+#: framework/customizer/footer.php:68
+msgid "Copyright Text"
+msgstr "Авторские права Текст"
+
+#: framework/customizer/footer.php:80
+msgid "Designed by Text"
+msgstr "Разработанный Текст"
+
+#: framework/customizer/footer.php:90 framework/customizer/header.php:375
+#: framework/customizer/colors.php:16
+msgid "Styles"
+msgstr "Стили"
+
+#: framework/customizer/footer.php:104
+msgid "Footer Widget Title Color"
+msgstr "Виджет Нижний колонтитул Цвет Заголовка"
+
+#: framework/customizer/footer.php:120
+msgid "Footer Text Color"
+msgstr "Нижний колонтитул Цвет Текста"
+
+#: framework/customizer/footer.php:136
+msgid "Footer Link Color"
+msgstr "Нижний колонтитул Цвет Ссылки"
+
+#: framework/customizer/footer.php:152
+msgid "Footer Link Hover Color"
+msgstr "Нижний колонтитул Цвет Ссылки при наведений курсора"
+
+#: framework/customizer/footer.php:168
+msgid "Footer Border Color"
+msgstr "Нижний колонтитул Цвет Границы"
+
+#: framework/customizer/colors.php:414
+msgid "Disable footer background image?"
+msgstr "Отключить фоновое изображение нижнего колонтитула?"
+
+#: framework/customizer/footer.php:183 framework/customizer/header.php:248
+#: framework/customizer/header.php:354 framework/customizer/misc.php:58
+#: framework/customizer/misc.php:108 framework/customizer/payments.php:30
+#: framework/customizer/payments.php:71 framework/customizer/payments.php:115
+#: framework/customizer/property.php:351 framework/customizer/search.php:420
+#: framework/customizer/search.php:435 framework/customizer/colors.php:40
+#: framework/meta-box/config-meta-boxes.php:190
+#: framework/meta-box/config-meta-boxes.php:359
+msgid "Yes"
+msgstr "Да"
+
+#: framework/customizer/footer.php:184 framework/customizer/header.php:249
+#: framework/customizer/header.php:355 framework/customizer/misc.php:59
+#: framework/customizer/misc.php:109 framework/customizer/payments.php:31
+#: framework/customizer/payments.php:72 framework/customizer/payments.php:116
+#: framework/customizer/property.php:352 framework/customizer/search.php:421
+#: framework/customizer/search.php:436 framework/customizer/colors.php:41
+#: framework/meta-box/config-meta-boxes.php:398
+msgid "No"
+msgstr "Нет"
+
+#: framework/customizer/footer.php:197
+msgid "Footer Background Image"
+msgstr "Нижний колонтитул Фоновое Изображение"
+
+#: framework/customizer/footer.php:198
+msgid "Note: Default background image is 235px in height and 1770px in width."
+msgstr "Примечание: По умолчанию фоновое изображение 235px в высоту и 1770px по ширине."
+
+#: framework/customizer/gallery.php:26 framework/customizer/news.php:35
+#: framework/meta-box/config-meta-boxes.php:515
+msgid "Banner Title"
+msgstr "Баннер Заголовок"
+
+#: framework/customizer/news.php:47
+#: framework/meta-box/config-meta-boxes.php:521
+msgid "Banner Sub Title"
+msgstr "Баннер Под Заголовок"
+
+#: framework/customizer/header.php:30
+msgid "Header"
+msgstr "Заголовок"
+
+#: framework/customizer/header.php:40
+msgid "Social Icons"
+msgstr "Значки Социальных Сетей"
+
+#: framework/customizer/header.php:50
+msgid "Show or Hide Social Icons"
+msgstr "Показать или Скрыть Значки Социальных Сетей"
+
+#: framework/customizer/header.php:130
+msgid "Skype Username"
+msgstr "Имя пользователя Skype"
+
+#: framework/customizer/header.php:163
+msgid "Login Form"
+msgstr "Форма Входа"
+
+#: framework/customizer/header.php:173
+msgid "Header Navigation for User Login and Register"
+msgstr "Заголовок навигации для Входа и Регистраций пользователя"
+
+#: framework/customizer/header.php:187
+msgid "Contact Information"
+msgstr "Контактная информация"
+
+#: framework/customizer/header.php:197
+#: framework/meta-box/config-meta-boxes.php:455
+msgid "Email Address"
+msgstr "Адрес электронной Почты"
+
+#: framework/customizer/header.php:324
+msgid "Others"
+msgstr "Другие"
+
+#: framework/customizer/header.php:334
+msgid "Sticky Header"
+msgstr "Липкий Верхний колонтитул"
+
+#: framework/customizer/header.php:349
+msgid "Display WPML Language Switcher in Top Header"
+msgstr "Отображать WPML Language Switcher в верхнем заголовке"
+
+#: framework/customizer/header.php:350
+msgid "Only works if WPML is installed."
+msgstr "Работает только если установлен WPML"
+
+#: framework/customizer/header.php:364
+msgid "Google Analytics"
+msgstr "Google Аналитика"
+
+#: framework/customizer/header.php:390
+msgid "Header Background Color"
+msgstr "Верхний колонтитул Цвет Фона"
+
+#: framework/customizer/header.php:407
+msgid "Logo Text Color"
+msgstr "Логотип Цвет Текста"
+
+#: framework/customizer/header.php:424
+msgid "Logo Text Hover Color"
+msgstr "Логотип Цвет Текста при наведений курсора"
+
+#: framework/customizer/header.php:441
+msgid "Tagline Text Color"
+msgstr "Тэглайн Цвет Текста"
+
+#: framework/customizer/header.php:458
+msgid "Tagline Background Color"
+msgstr "Тэглайн Цвет Фона"
+
+#: framework/customizer/header.php:475
+msgid "Header Text Color"
+msgstr "Верхний колонтитул Цвет Текста"
+
+#: framework/customizer/header.php:492
+msgid "Header Links Hover Color"
+msgstr "Верхний колонтитул Цвет Ссылок при наведений курсора"
+
+#: framework/customizer/header.php:509
+msgid "Header Borders Color"
+msgstr "Верхний колонтитул Цвет Границ"
+
+#: framework/customizer/header.php:526
+msgid "Main Menu Text Color"
+msgstr "Главное Меню Цвет Текста"
+
+#: framework/customizer/header.php:543
+msgid "Drop Down Menu Background Color"
+msgstr "Выпадающее Меню Цвет Фона"
+
+#: framework/customizer/header.php:560
+msgid "Drop Down Menu Text Color"
+msgstr "Выпадающее Меню Цвет Текста"
+
+#: framework/customizer/header.php:577
+msgid "Drop Down Menu Background Color on Mouse Over"
+msgstr "Выпадающее Меню Цвет Фона при наведений курсора"
+
+#: framework/customizer/home.php:37
+msgid "Home Page"
+msgstr "Главная Страница"
+
+#: framework/customizer/home.php:46
+msgid "Slider Area"
+msgstr "Область Слайдера"
+
+#: framework/customizer/home.php:56
+msgid "What to Display Below Header?"
+msgstr "Что отображать ниже Верхнего Колонтитула?"
+
+#: framework/customizer/home.php:60
+msgid "Slider Based on Properties"
+msgstr "Слайдер на основе Недвижимостей"
+
+#: framework/customizer/home.php:61
+msgid "Slider Based on Slides"
+msgstr "Слайдер на основе Слайдов"
+
+#: framework/customizer/home.php:62
+msgid "Google Map with Properties Markers"
+msgstr "Карта Google с Маркерами Недвижимости"
+
+#: framework/customizer/home.php:120
+#: framework/meta-box/config-meta-boxes.php:536
+msgid "Revolution Slider Alias"
+msgstr "Ссылка на Revolution Slider"
+
+#: framework/customizer/home.php:121
+msgid "If you want to display Revolution Slider then provide its alias here."
+msgstr "если вы хотите отобразить Revolution Slider тогда предоставьте его алиас здесь."
+
+#: framework/customizer/home.php:132
+msgid "Search Form"
+msgstr "Форма Поиска"
+
+#: framework/customizer/home.php:142
+msgid "Properties Search Form on Homepage"
+msgstr "Форма Поиска Недвижимости на Главной Странице"
+
+#: framework/customizer/home.php:143
+msgid "You can configure properties search form using related section."
+msgstr "Вы можете настроить Форму Поиска Недвижимости используя связанный раздел."
+
+#: framework/customizer/home.php:158
+msgid "Slogan"
+msgstr "Слоган"
+
+#: framework/customizer/home.php:168
+msgid "Slogan Title"
+msgstr "Слоган Заголовок"
+
+#: framework/customizer/home.php:179
+msgid "Description Text Below Slogan"
+msgstr "Текст Описания Ниже Слогана"
+
+#: framework/customizer/home.php:190
+msgid "Home Properties"
+msgstr "Недвижимость на Главной Странице"
+
+#: framework/customizer/home.php:200
+msgid "Show Properties on Homepage ?"
+msgstr "Показать Недвижимость на Главной Странице ?"
+
+#: framework/customizer/home.php:215
+msgid "What Kind of Properties You Want to Display on Homepage ?"
+msgstr "Какую Недвижимость вы хотите отобразить на Главной Странице ?"
+
+#: framework/customizer/home.php:219
+msgid "Recent Properties"
+msgstr "Последние Недвижимости"
+
+#: framework/customizer/home.php:220 framework/customizer/home.php:349
+#: widgets/featured-properties-widget.php:7
+msgid "Featured Properties"
+msgstr "Рекомендуемые Недвижимости"
+
+#: framework/customizer/home.php:221
+msgid "Properties Based on Selected Locations, Statuses and Types from Below"
+msgstr "Недвижимости на основе Выбранных ниже Локаций, Статусов и Типов"
+
+#: framework/customizer/home.php:237
+msgid "Select Property Locations"
+msgstr "Выберите Местонахождение Недвижимости"
+
+#: framework/customizer/home.php:255
+msgid "Select Property Statuses"
+msgstr "Выберите Статус Недвижимости"
+
+#: framework/customizer/home.php:273
+msgid "Select Property Types"
+msgstr "Выберите Типы Недвижимости"
+
+#: framework/customizer/home.php:285
+msgid "Sort Properties By"
+msgstr "Сортировать Недвижимость По"
+
+#: framework/customizer/home.php:289
+msgid "Time - Recent First"
+msgstr "Времени - Последние Первые"
+
+#: framework/customizer/home.php:290
+#: framework/customizer/list-and-taxonomy.php:97
+msgid "Price - Low to High"
+msgstr "Цене - от Низкой к Высокой"
+
+#: framework/customizer/home.php:291
+#: framework/customizer/list-and-taxonomy.php:98
+msgid "Price - High to Low"
+msgstr "Цене - от Высокой к Низкой"
+
+#: framework/customizer/home.php:301
+msgid "Number of Properties on Each Page"
+msgstr "Количество Недвижимости на каждой странице"
+
+#: framework/customizer/home.php:359
+msgid "Featured Properties on Homepage"
+msgstr "Рекомендуемые Недвижимость на Главной Странице"
+
+#: framework/customizer/home.php:374 framework/customizer/home.php:436
+msgid "Title"
+msgstr "Заголовок"
+
+#: framework/customizer/home.php:385 framework/customizer/home.php:447
+msgid "Description Text"
+msgstr "Текст описания"
+
+#: framework/customizer/home.php:396
+msgid "Exclude or Include Featured Properties from Recent Properties on Homepage"
+msgstr "Исключить или Включить Рекомендуемые Недвижимости из Последних Недвижимостей на Главной Странице"
+
+#: framework/customizer/home.php:411
+msgid "News or Blog Posts"
+msgstr "Новости или Сообщения в блоге"
+
+#: framework/customizer/home.php:421
+msgid "News Posts on Homepage"
+msgstr "Новостные Сообщения на Главной Странице"
+
+#: framework/customizer/taxonomy.php:29
+msgid "Taxonomies"
+msgstr "Таксономий"
+
+#: framework/customizer/list-and-taxonomy.php:26
+msgid "Module Below Header"
+msgstr "Модуль Ниже Верхнего колонтитула"
+
+#: framework/customizer/list-and-taxonomy.php:27
+msgid "What to display in area below header on Properties List Templates and Taxonomy Archive pages ?"
+msgstr "Что отображать в области ниже заголовка в Шаблоне Список Недвижимости и и Страницы Архив Таксономий ?"
+
+#: framework/customizer/list-and-taxonomy.php:31
+msgid "Google Map With Properties Markers"
+msgstr "Карта Google с Маркерами Недвижимости"
+
+#: framework/customizer/list-and-taxonomy.php:32
+#: framework/customizer/search.php:63
+msgid "Image Banner"
+msgstr "Баннер изображения"
+
+#: framework/customizer/list-and-taxonomy.php:42
+msgid "Default Layout"
+msgstr "Раскладка По умолчанию"
+
+#: framework/customizer/list-and-taxonomy.php:43
+msgid "Select the default layout for Properties List Templates and Taxonomy Archive pages."
+msgstr "Выберите раскладку по умолчанию для Шаблона Список Недвижимости и Страницы Архив Таксономий."
+
+#: framework/customizer/list-and-taxonomy.php:47
+msgid "List Layout"
+msgstr "Раскладка Список"
+
+#: framework/customizer/list-and-taxonomy.php:48
+msgid "Grid Layout"
+msgstr "Раскладка Сетка"
+
+#: framework/customizer/list-and-taxonomy.php:58
+#: widgets/agent-featured-properties-widget.php:142
+#: widgets/agent-properties-widget.php:149
+#: widgets/featured-properties-widget.php:119
+msgid "Number of Properties"
+msgstr "Количество Недвижимости"
+
+#: framework/customizer/list-and-taxonomy.php:59
+msgid "Select the maximum number of properties to display on a page."
+msgstr "Выберите максимальное количество Недвижимости отображаемые на странице."
+
+#: framework/customizer/list-and-taxonomy.php:92
+msgid "Default Sort Order"
+msgstr "Сортировать По умолчанию"
+
+#: framework/customizer/list-and-taxonomy.php:93
+msgid "Select the default sort order for Search Results, List Templates and Taxonomy Archive pages."
+msgstr "Выберите порядок сортировки по умолчанию для Результатов Поиска, Спискa Щаблонов и Страниц Архива Таксономий."
+
+#: framework/customizer/list-and-taxonomy.php:99
+msgid "Date - Old to New"
+msgstr "Дате - Cтарая к Новой"
+
+#: framework/customizer/list-and-taxonomy.php:100
+msgid "Date - New to Old"
+msgstr "Дате - Новая к Cтарой"
+
+#: framework/customizer/members.php:15
+msgid "Members"
+msgstr "Участники"
+
+#: framework/customizer/members.php:24 framework/customizer/colors.php:25
+msgid "Basic"
+msgstr "Базовый"
+
+#: framework/customizer/members.php:35
+msgid "Restrict Admin Side Access"
+msgstr "Ограничение доступа Администратора со Стороны"
+
+#: framework/customizer/members.php:36
+msgid "Restrict admin side access to any user level equal to or below the selected user level."
+msgstr "Ограничение доступа Администратора со Стороны к любому уровню пользователя равного или меньше выбранного уровня пользователя."
+
+#: framework/customizer/members.php:40
+msgid "Subscriber ( Level 0 )"
+msgstr "Абонент (Уровень 0)"
+
+#: framework/customizer/members.php:41
+msgid "Contributor ( Level 1 )"
+msgstr "Вкладчик (Уровень 1)"
+
+#: framework/customizer/members.php:42
+msgid "Author ( Level 2 )"
+msgstr "Автор ( Уровень 2 )"
+
+msgid "Login / Register"
+msgstr "Вход / Регистрация"
+
+msgid "Login"
+msgstr "Вход"
+
+msgid "Register"
+msgstr "Регистрация"
+
+msgid "Sign In"
+msgstr "Войти"
+
+msgid "Sign Up"
+msgstr "Зарегистрироваться"
+
+#: framework/customizer/members.php:68 framework/customizer/property.php:148
+msgid "Enable"
+msgstr "Включить"
+
+#: framework/customizer/members.php:69 framework/customizer/property.php:149
+msgid "Disable"
+msgstr "Выключить"
+
+#: framework/customizer/members.php:79
+msgid "Select Login and Register Page (Optional)"
+msgstr "Выберите Страницу Входа и Регистраций (Необязательно)"
+
+#: framework/customizer/members.php:80
+msgid "Selected page should have Login & Register Template assigned to it. By default the login modal box will appear and you do not need to configure this option."
+msgstr "Выбранная страница должна иметь Щаблон Входа и Регистраций присвоены ей. По умолчанию модальное окно Входа появится и вам не нужно настраивать этот параметр."
+
+#: framework/customizer/members.php:105
+msgid "Login & Register Page URL (Optional)"
+msgstr "Вход и Регистрация URL Страницы (Необязательно)"
+
+#: framework/customizer/members.php:117
+msgid "Edit Profile"
+msgstr "Редактировать Профиль"
+
+#: framework/customizer/members.php:126
+msgid "Select Edit Profile Page"
+msgstr "Выберите Страницу Редактировать Профиля"
+
+#: framework/customizer/members.php:127
+msgid "Selected page should have Edit Profile Template assigned to it."
+msgstr "Выбранная страница должна иметь Щаблон Редактировать Профиль присвоен ей."
+
+#: framework/customizer/members.php:152
+msgid "Edit Profile Page URL"
+msgstr "Редактировать URL Страницы Профиля"
+
+#: framework/customizer/members.php:164
+msgid "Submit Property"
+msgstr "Добавить Недвижимость"
+
+#: framework/customizer/members.php:173
+msgid "Select Submit Property Page"
+msgstr "Выберите Страницу Добавление Недвижимости"
+
+#: framework/customizer/members.php:174
+msgid "Selected page should have Submit Property Template assigned to it."
+msgstr "Выбранная страница должна иметь Щаблон Добавить Недвижимость присвоен ей."
+
+#: framework/customizer/members.php:187
+msgid "Submitted Property Status"
+msgstr "Статус Добавленной Недвижимости"
+
+#: framework/customizer/members.php:188
+msgid "Select the default status for submitted property."
+msgstr "Выберите статус по умолчанию для добавленной недвижимости"
+
+#: framework/customizer/members.php:192
+msgid "Pending ( Recommended )"
+msgstr "В ожидании ( Рекомендуется )"
+
+#: framework/customizer/members.php:193
+msgid "Publish"
+msgstr "Опубликовать"
+
+#: framework/customizer/members.php:204
+msgid "Default Address in Submit Form"
+msgstr "Адрес по умолчанию в Форме Отправки"
+
+#: framework/customizer/members.php:216
+msgid "Default Map Location in Submit Form (Latitude,Longitude)"
+msgstr "Местоположение По умолчанию на Карте в Форме Отправки (Широта,Долгота)"
+
+#: framework/customizer/members.php:225
+msgid "Thanks for Submitting Property!"
+msgstr "Благодарим Вас за добавление Недвижимости"
+
+#: framework/customizer/members.php:230
+msgid "Message After Successful Submit"
+msgstr "Сообщение После Успешной Отправки"
+
+#: framework/customizer/members.php:243
+msgid "Submit Notice Email"
+msgstr "Добавить Email Уведомление"
+
+#: framework/customizer/members.php:267
+msgid "Submit Property Page URL"
+msgstr "Добавить URL Страницы Недвижимости"
+
+#: framework/customizer/members.php:279
+msgid "My Properties"
+msgstr "Моя Недвижимость"
+
+#: framework/customizer/members.php:288
+msgid "Select My Properties Page"
+msgstr "Выберите Страницу Моей Недвижимости"
+
+#: framework/customizer/members.php:289
+msgid "Selected page should have My Properties Template assigned to it."
+msgstr "Выбранная страница должна иметь Щаблон Моей Недвижимость присвоен ей."
+
+#: framework/customizer/members.php:314
+msgid "My Properties Page URL"
+msgstr "URL Страницы Моей Недвижимость"
+
+#: framework/customizer/members.php:326
+msgid "Favorites"
+msgstr "Избранные"
+
+#: framework/customizer/members.php:336
+msgid "Add to Favorites Button on Property Detail Page"
+msgstr "Кнопка Добавить в Избранное на Странице Описание Недвижимости"
+
+#: framework/customizer/members.php:350
+msgid "Select Favorite Properties Page"
+msgstr "Выберите Страницу Избранных Недвижимостей"
+
+#: framework/customizer/members.php:351
+msgid "Selected page should have Favorite Properties Template assigned to it."
+msgstr "Выбранная страница должна иметь Щаблон Избранные Недвижимости присвоен ей."
+
+#: framework/customizer/members.php:376
+msgid "Favorite Properties Page URL"
+msgstr "URL Страницы Избранные Недвижимости"
+
+#: framework/customizer/misc.php:15 framework/meta-box/config-meta-boxes.php:88
+msgid "Misc"
+msgstr "Разное"
+
+#: framework/customizer/misc.php:25
+msgid "Lightbox Plugin"
+msgstr "Плагин Lightbox"
+
+#: framework/customizer/misc.php:26
+msgid "Select the lightbox plugin that you want to use"
+msgstr "Выберите lightbox плагин, который вы хотите использовать"
+
+#: framework/customizer/misc.php:30
+msgid "Swipebox Plugin"
+msgstr "Плагин Swipebox"
+
+#: framework/customizer/misc.php:31
+msgid "Pretty Photo Plugin"
+msgstr "Плагин Pretty Photo "
+
+#: framework/customizer/misc.php:53
+msgid "Google reCAPTCHA for Spam Protection"
+msgstr "Google reCAPTCHA для защита от спамаы"
+
+#: framework/customizer/misc.php:54
+msgid "Do you want to enable Google reCAPTCHA on contact forms ?"
+msgstr "Хотите ли вы включить Google reCAPTCHA в контактных форм?"
+
+#: framework/customizer/misc.php:69
+msgid "Google reCAPTCHA Public Key"
+msgstr "Google reCAPTCHA Общедоступный Ключ"
+
+#: framework/customizer/misc.php:70
+msgid "Get reCAPTCHA public and private keys for your website by <a href=\"https://www.google.com/recaptcha/admin#whyrecaptcha\" target=\"_blank\">signing up here</a> "
+msgstr "Получите reCAPTCHA Общедоступный и Секретный Ключ для вашего сайта от <a href=\"https://www.google.com/recaptcha/admin#whyrecaptcha\" target=\"_blank\">Зарегистрируитесь здесь</a> "
+
+#: framework/customizer/misc.php:81
+msgid "Google reCAPTCHA Private Key"
+msgstr "Google reCAPTCHA Секретный Ключ"
+
+#: framework/customizer/misc.php:104
+msgid "Localize Google Map"
+msgstr "Локализовать Карту Google-a"
+
+#: framework/customizer/news.php:15
+msgid "Various Pages"
+msgstr "Разные Сстраницы"
+
+#: framework/customizer/news.php:24
+msgid "News/Blog Page"
+msgstr "Страница Новости/Блога"
+
+#: framework/customizer/payments.php:14
+msgid "Payments"
+msgstr "Платежи"
+
+#: framework/customizer/payments.php:26
+msgid "Enable PayPal Payments for Submitted Property"
+msgstr "Включить PayPal Платежи для Добавленной Недвижимости"
+
+#: framework/customizer/payments.php:42
+msgid "PayPal IPN URL"
+msgstr "PayPal IPN URL"
+
+#: framework/customizer/payments.php:55
+msgid "PayPal merchant account ID or Email"
+msgstr "PayPal счет продавца ID или Эл. адрес"
+
+#: framework/customizer/payments.php:67
+msgid "Enable PayPal Sandbox for Testing"
+msgstr "Включить PayPal Sandbox для тестирования"
+
+#: framework/customizer/payments.php:84
+msgid "Payment Amount Per Property"
+msgstr "Сумма Платежа За Недвижимость"
+
+#: framework/customizer/payments.php:85
+msgid "Provide the amount that you want to charge for one property. Example: 20.00"
+msgstr "Укажите сумму, которую вы хотите, взимать за одну Недвижимость. Пример: 20.00"
+
+#: framework/customizer/payments.php:98
+msgid "Currency Code"
+msgstr "Код валюты"
+
+#: framework/customizer/payments.php:99
+msgid "Provide currency code that you want to use. Example: USD"
+msgstr "Укажите код валюты, который вы хотите использовать. Пример: USD"
+
+#: framework/customizer/payments.php:111
+msgid "Automatically Publish Submitted Property after Payment"
+msgstr "Автоматическая публикация Недвижимости после Оплаты"
+
+#: framework/customizer/price.php:15
+msgid "Price Format"
+msgstr "Цена Формат"
+
+#: framework/customizer/price.php:26
+msgid "Currency Sign"
+msgstr "Знак Валюты"
+
+#: framework/customizer/price.php:27
+msgid "Provide currency sign. For Example: $"
+msgstr "Укажите знак валюты. К Примеру: $"
+
+#: framework/customizer/price.php:38
+msgid "Position of Currency Sign"
+msgstr "Расположение знака валюты"
+
+#: framework/customizer/price.php:42
+msgid "Before the numbers"
+msgstr "Перед цифрами"
+
+#: framework/customizer/price.php:43
+msgid "After the numbers"
+msgstr "После цифр"
+
+#: framework/customizer/price.php:53
+msgid "Number of Decimals Points"
+msgstr "Количество знаков после запятой"
+
+#: framework/customizer/price.php:78
+msgid "Decimal Point Separator"
+msgstr "Десятичный Разделитель"
+
+#: framework/customizer/price.php:90
+msgid "Thousands Separator"
+msgstr "Разделитель Тысячи"
+
+#: framework/customizer/price.php:101
+msgid "Empty Price Text"
+msgstr "Пустой Текст Цены"
+
+#: framework/customizer/price.php:102
+msgid "Text to display when no price is provided."
+msgstr "Текст для отображения когда цена не введенна."
+
+#: framework/customizer/property.php:16
+msgid "Property Detail Page"
+msgstr "Страница Описание Недвижимости"
+
+msgid "Property Location"
+msgstr "Местонахождение Недвижимости"
+
+msgid "Location"
+msgstr "Местонахождение"
+
+msgid "Property Type"
+msgstr "Тип Недвижимости"
+
+msgid "Property Status"
+msgstr "Статус Недвижимости"
+
+msgid "Property Statuses"
+msgstr "Статусы Недвижимости"
+
+msgid "Type of offer"
+msgstr "Тип предложения"
+
+#: framework/customizer/property.php:66
+msgid "Basics"
+msgstr "Основы"
+
+#: framework/customizer/property.php:76
+msgid "Property Detail Page Layout Variation ?"
+msgstr "Страница Описание Недвижимости Варианты Раскладки ?"
+
+#: framework/customizer/property.php:80
+msgid "Agent info below Google Map"
+msgstr "Информация о Агенте ниже карты Google-а"
+
+#: framework/customizer/property.php:81
+msgid "Agent info in Sidebar"
+msgstr "Информация о Агенте в Боковой Панели"
+
+#: framework/customizer/property.php:88
+msgid "Additional Details"
+msgstr "Дополнительные Детали"
+
+#: framework/customizer/property.php:92
+msgid "Additional Details Title"
+msgstr "Дополнительные Детали Заголовок"
+
+#: framework/customizer/property.php:93
+msgid "This will only display if a property has additional details."
+msgstr "Это будет отображаться только если Недвижимость имеет дополнительные детали."
+
+#: framework/customizer/property.php:101
+#: framework/meta-box/config-meta-boxes.php:638
+msgid "Features"
+msgstr "Характеристики"
+
+#: framework/customizer/property.php:105
+msgid "Features Title"
+msgstr "Характеристики Заголовок"
+
+#: framework/customizer/property.php:116
+msgid "Social Share Icons"
+msgstr "Социальные иконки"
+
+#: framework/customizer/property.php:128
+msgid "Sub Properties"
+msgstr "Под Недвижимости"
+
+#: framework/customizer/property.php:132
+msgid "Child Properties Title"
+msgstr "Дочерний Недвижимости Заголовок"
+
+#: framework/customizer/property.php:133
+msgid "This will only display if a property has child properties."
+msgstr "Это будет отображаться только если свойство имеет дочерние свойства."
+
+#: framework/customizer/property.php:144
+msgid "Open Graph Meta Tags"
+msgstr "Мета-теги Open Graph"
+
+#: framework/customizer/property.php:160 framework/customizer/property.php:170
+#: framework/customizer/property.php:197
+msgid "Common Note"
+msgstr "Общая Заметка"
+
+#: framework/customizer/property.php:182
+msgid "Note"
+msgstr "Заметка"
+
+#: framework/customizer/property.php:186
+msgid "Common Note Title"
+msgstr "Общая Заметка Заголовок"
+
+#: framework/customizer/property.php:198
+msgid "Provide common note text. It will be displayed on all properties detail pages."
+msgstr "Предоставить общий текст заметки. Он будет отображаться на страницах Детали Недвижимости"
+
+#: framework/customizer/property.php:209
+msgid "Video"
+msgstr "Видео"
+
+#: framework/customizer/property.php:219 framework/customizer/property.php:231
+#: framework/meta-box/config-meta-boxes.php:80
+msgid "Property Video"
+msgstr "Недвижимость Видео"
+
+#: framework/customizer/property.php:235
+msgid "Property Video Title"
+msgstr "Недвижимость Видео Заголовок"
+
+#: framework/customizer/property.php:246
+msgid "Map"
+msgstr "Карта"
+
+#: framework/customizer/property.php:256
+msgid "Google Map"
+msgstr "Google Map"
+
+#: framework/customizer/property.php:268
+msgid "Property on Map"
+msgstr "Недвижимость на Карте"
+
+#: framework/customizer/property.php:272
+msgid "Property Map Title"
+msgstr "Карта Недвижимости Заголовок"
+
+#: framework/customizer/property.php:283
+#: framework/meta-box/config-meta-boxes.php:365
+msgid "Attachments"
+msgstr "Вложения"
+
+#: framework/customizer/property.php:293 framework/customizer/property.php:306
+msgid "Property Attachments"
+msgstr "Вложения Недвижимости"
+
+#: framework/customizer/property.php:294
+msgid "Attachments will only appear if there are any."
+msgstr "Вложения будут отображаться только, если таковые имеются."
+
+#: framework/customizer/property.php:310
+msgid "Property Attachments Title"
+msgstr "Вложения Недвижимости Заголовок"
+
+#: framework/include/agent-post-type.php:9
+msgid "Agency"
+msgstr "Агентство"
+
+#: framework/customizer/property.php:321
+#: framework/include/agent-post-type.php:9
+#: framework/meta-box/config-meta-boxes.php:344
+msgid "Agent"
+msgstr "Агент"
+
+#: framework/customizer/property.php:331
+#: framework/meta-box/config-meta-boxes.php:84
+msgid "Agent Information"
+msgstr "Информация об Агенте"
+
+#: framework/customizer/property.php:347
+msgid "Get Copy of Message Sent to Agent"
+msgstr "Получить копию сообщения, отправленного Агенту"
+
+#: framework/customizer/property.php:363
+msgid "Email Address to Get Copy of Message"
+msgstr "Адрес электронной Почты, чтобы получить Копию Сообщения"
+
+#: framework/customizer/property.php:364
+msgid "Given email address will get a copy of message sent to agent."
+msgstr "Указаный Адрес электронной почты получит копию сообщения отправляную Агенту."
+
+#: framework/customizer/property.php:376 framework/customizer/property.php:386
+#: framework/customizer/property.php:398
+msgid "Similar Properties"
+msgstr "Похожие Недвижимости"
+
+#: framework/customizer/property.php:402
+msgid "Similar Properties Title"
+msgstr "Похожие Недвижимости Заголовок"
+
+#: framework/customizer/search.php:25
+msgid "Properties Search"
+msgstr "Поиск Недвижимости"
+
+#: framework/customizer/search.php:35
+msgid "Properties Search Page"
+msgstr "Страница Поиска Недвижимости"
+
+#: framework/customizer/search.php:44
+msgid "Select Search Page"
+msgstr "Выберите Страницу Поиска"
+
+#: framework/customizer/search.php:45
+msgid "Selected page should have Property Search Template assigned to it. Also, Make sure to Configure Pretty Permalinks."
+msgstr "Выбранная страница должна иметь Щаблон Поиска Недвижимости присвоен ей. Кроме того, убедитесь в настройке Pretty Permalinks."
+
+#: framework/customizer/search.php:57
+msgid "Search Results Page Header"
+msgstr "Страница Результатов Поиска Верхний колонтитул"
+
+#: framework/customizer/search.php:58
+msgid "What you want to display in area below header on properties search results page ?"
+msgstr "Что вы хотите отобразить в области ниже заголовка в странице с результатами поиска недвижимости ?"
+
+#: framework/customizer/search.php:62
+msgid "Google Map with Property Markers"
+msgstr "Карта Google с маркерами Недвижимости"
+
+#: framework/customizer/search.php:73
+msgid "Properties Per Page"
+msgstr "Недвижимости на странице"
+
+#: framework/customizer/search.php:74
+msgid "Number of properties to display on search results page"
+msgstr "Количество Недвижимости отображаемой на странице результатов поиска"
+
+#: framework/customizer/search.php:119
+msgid "Search Page URL"
+msgstr "Страница Поиска URL"
+
+#: framework/customizer/search.php:132
+msgid "Search Form Basics"
+msgstr "Форма Поиска Основы"
+
+#: framework/customizer/search.php:140
+msgid "Find Your Home"
+msgstr "Найди свой дом"
+
+#: framework/customizer/search.php:143
+msgid "Search Form Title"
+msgstr "Форма Поиска Заголовок"
+
+#: framework/customizer/search.php:160
+msgid "Search Criteria"
+msgstr "Критерии Поиска"
+
+#: framework/customizer/search.php:162
+msgid "Keyword Search"
+msgstr "Поиск по Ключевым Словам"
+
+#: framework/customizer/search.php:163 framework/customizer/search.php:228
+#: framework/functions/real-estate.php:88 framework/PostProperty.php:290
+#: framework/meta-box/config-meta-boxes.php:169
+msgid "Property Code"
+msgstr "Код недвижимости"
+
+#: framework/customizer/search.php:167 framework/customizer/search.php:453
+msgid "Min Beds"
+msgstr "Минимум Спален"
+
+#: framework/customizer/search.php:168 framework/customizer/search.php:478
+msgid "Min Baths"
+msgstr "Минимум Ванных"
+
+#: framework/customizer/search.php:169
+msgid "Min and Max Price"
+msgstr "Мин и Макс Цена"
+
+#: framework/customizer/search.php:170
+msgid "Min and Max Area"
+msgstr "Мин и Макс Площадь"
+
+#: framework/customizer/search.php:171 framework/PostProperty.php:66
+#: framework/PostProperty.php:67 framework/PostProperty.php:80
+msgid "Property Features"
+msgstr "Характеристики Недвижимости"
+
+#: framework/customizer/search.php:192
+msgid "Keyword"
+msgstr "Ключевое Слово"
+
+#: framework/customizer/search.php:196
+msgid "Label for Keyword Search"
+msgstr "Метка для Поиска по Ключевым Словам"
+
+#: framework/customizer/search.php:204 framework/customizer/search.php:240
+#: framework/customizer/search.php:312 framework/customizer/search.php:624
+#: framework/customizer/search.php:648
+#: framework/functions/real-estate-search.php:98
+msgid "Any"
+msgstr "Не важно"
+
+#: framework/customizer/search.php:208
+msgid "Placeholder Text for Keyword Search"
+msgstr "Текст Местозаполнителя Поиска по Ключевым Словам"
+
+#: framework/customizer/search.php:232
+msgid "Label for Property ID"
+msgstr "Метка для ID Недвижимости"
+
+#: framework/customizer/search.php:244
+msgid "Placeholder Text for Property ID"
+msgstr "Текст Местозаполнителя для ID Недвижимости"
+
+#: framework/customizer/search.php:268
+msgid "Label for Property Status"
+msgstr "Метка Статуса Недвижимости"
+
+#: framework/customizer/search.php:280
+msgid "Label for Property Type"
+msgstr "Метка Типа Недвижимости"
+
+#: framework/customizer/search.php:288
+msgid "Search"
+msgstr "Поиск"
+
+#: framework/customizer/search.php:292
+msgid "Search Button Text"
+msgstr "Кнопка Поиска Текст"
+
+#: framework/customizer/search.php:316
+msgid "Any Text"
+msgstr "Любой Текст"
+
+#: framework/customizer/search.php:324
+msgid "Looking for certain features"
+msgstr "Ищете определенные характеристики"
+
+#: framework/customizer/search.php:328
+msgid "Title for Features Toggle"
+msgstr "Заголовок для Переключателя Характеристик"
+
+#: framework/customizer/search.php:339
+msgid "Search Form Locations"
+msgstr "Форма Поиска Местонахождения"
+
+#: framework/customizer/search.php:349
+msgid "Number of Location Select Boxes"
+msgstr "Количество Полей Выбора Местонахождения"
+
+#: framework/customizer/search.php:350
+msgid "In case of 1 location box, all locations will be listed in that select box. In case of 2 or more, Each select box will list parent locations of a level that matches its number and all the remaining children locations will be listed in last select box."
+msgstr "В случае одного Поля Выбора Местонахождения, все местоположения будут перечислены в этом Поле Выбора.В случае двух или более Полей Выбора Местонахождения, каждое поле выбора будет перечислять родителя уровня который соответствует его номеру и все уровни остальных детей будут перечислены в последнем Поле Выбора"
+
+#: framework/customizer/search.php:367
+msgid "Title for 1st Location Select Box"
+msgstr "Название первого Поля Выбора Местонахождения"
+
+#: framework/customizer/search.php:368
+msgid "Example: Country"
+msgstr "Пример: Страна"
+
+#: framework/customizer/search.php:379
+msgid "Title for 2nd Location Select Box"
+msgstr "Название второго Поля Выбора Местонахождения"
+
+#: framework/customizer/search.php:380
+msgid "Example: State"
+msgstr "Пример: Штат"
+
+#: framework/customizer/search.php:391
+msgid "Title for 3rd Location Select Box"
+msgstr "Название третьего Поля Выбора Местонахождения"
+
+#: framework/customizer/search.php:392
+msgid "Example: City"
+msgstr "Пример: Город"
+
+#: framework/customizer/search.php:403
+msgid "Title for 4th Location Select Box"
+msgstr "Название четвёртого Поля Выбора Местонахождения"
+
+#: framework/customizer/search.php:404
+msgid "Example: Area"
+msgstr "Пример: Область"
+
+#: framework/customizer/search.php:415
+msgid "Hide Empty Locations ?"
+msgstr "Скрыть пустые Местонахождения ?"
+
+#: framework/customizer/search.php:416
+msgid "Optimize Locations by hiding the ones with zero property."
+msgstr "Оптимизация Местонахождений, скрывая те из них, что без Недвижимости."
+
+#: framework/customizer/search.php:431
+msgid "Sort Locations Alphabetically ?"
+msgstr "Сортировать в алфавитном порядке Местонахождения ?"
+
+#: framework/customizer/search.php:446
+msgid "Search Form Beds & Baths"
+msgstr "Форма Поиска Спальни & Ванны"
+
+#: framework/customizer/search.php:457
+msgid "Label for Min Beds Field"
+msgstr "Метка для Поля Мин Спален"
+
+#: framework/customizer/search.php:469
+msgid "Minimum Beds Values"
+msgstr "Минимум Спален Значения"
+
+#: framework/customizer/search.php:470 framework/customizer/search.php:495
+msgid "Only provide comma separated numbers."
+msgstr "Укажите только разделенные запятыми номера."
+
+#: framework/customizer/search.php:482
+msgid "Label for Min Baths Field"
+msgstr "Метка для Поля Мин Ванн"
+
+#: framework/customizer/search.php:494
+msgid "Minimum Baths Values"
+msgstr "Минимум Ванн Значения"
+
+#: framework/customizer/search.php:480
+msgid "Prices"
+msgstr "Цены"
+
+#: framework/customizer/search.php:513
+msgid "Min Price"
+msgstr "Мин Цена"
+
+#: framework/customizer/search.php:517
+msgid "Label for Min Price Field"
+msgstr "Метка для Поля Мин Цена"
+
+#: framework/customizer/search.php:492 framework/customizer/search.php:505
+#: framework/customizer/search.php:531 framework/customizer/search.php:544
+msgid "Indicate only number. Do not add decimal points, dashes, spaces and currency signs."
+msgstr "Укажите только число. Не добавляйте десятичные точки, тире, пробелы и валютные знаки."
+
+#: framework/customizer/search.php:538
+msgid "Max Price"
+msgstr "Макс Цена"
+
+#: framework/customizer/search.php:542
+msgid "Label for Max Price Field"
+msgstr "Метка для Поля Макс Цена"
+
+#: framework/customizer/search.php:566
+msgid "Status That Represents Rent"
+msgstr "Статус, Который представляет Аренду"
+
+#: framework/customizer/search.php:567
+msgid "Visitor expects smaller values for rent prices. So provide the list of minimum and maximum rent prices below. The rent prices will be displayed based on rent status selected here."
+msgstr "Посетитель ожидает меньшие значения арендных ставок. Таким образом, укажите ниже список минимальных и максимальных цен на аренду. Цены аренды будут отображены на основе статуса аренды выбранного здесь."
+
+msgid "Price for Rent"
+msgstr "Цена аренды"
+
+#: framework/customizer/search.php:528
+msgid "Minimum Price for Rent Only."
+msgstr "Минимальная цена за аренду."
+
+#: framework/customizer/search.php:541
+msgid "Maximum Price for Rent Only."
+msgstr "Максимальная цена за аренду."
+
+#: framework/customizer/search.php:612
+msgid "Min Area"
+msgstr "Мин Площадь"
+
+#: framework/customizer/search.php:616
+msgid "Label for Min Area Field"
+msgstr "Метка для Поля Мин Площадь"
+
+#: framework/customizer/search.php:628
+msgid "Placeholder Text for Min Area"
+msgstr "Текст Местозаполнителя для Мин Площадь"
+
+#: framework/customizer/search.php:636
+msgid "Max Area"
+msgstr "Макс Площадь"
+
+#: framework/customizer/search.php:640
+msgid "Label for Max Area Field"
+msgstr "Метка для Поля Макс Площадь"
+
+#: framework/customizer/search.php:652
+msgid "Placeholder Text for Max Area"
+msgstr "Текст Местозаполнителя для Макс Площадь"
+
+#: framework/customizer/search.php:558
+msgid "sq m"
+msgstr "кв.м"
+
+#: framework/customizer/search.php:562
+msgid "Area Measurement Unit."
+msgstr "Единица измерения Площади."
+
+#: framework/customizer/search.php:665
+msgid "Example: sq ft"
+msgstr "Пример: кв.м"
+
+#: framework/customizer/colors.php:51
+msgid "Quick CSS"
+msgstr "Быстрый CSS"
+
+#: framework/customizer/colors.php:52
+msgid "Enter small CSS changes here. If you need to change major portions of the theme then use child-custom.css file in child theme."
+msgstr "Введите небольшие изменения CSS здесь. Если вам нужно изменить основные части темы тогда используйте файл child-custom.css в дочерней теме."
+
+# --------------------------------------Customizer Slider
+#: framework/customizer/colors.php:79
+msgid "Slider Colors"
+msgstr "Цвета Слайдера"
+
+#: framework/customizer/colors.php:89 framework/customizer/colors.php:188
+msgid "Title Text Color"
+msgstr "Заголовок Цвет Текста"
+
+#: framework/customizer/colors.php:99 framework/customizer/colors.php:198
+msgid "Title Text Color on Hover"
+msgstr "Заголовок Цвет Текста при наведений"
+
+#: framework/customizer/colors.php:109 framework/customizer/colors.php:248
+msgid "Description Text Color"
+msgstr "Описание Цвет Текста"
+
+#: framework/customizer/colors.php:119 framework/customizer/colors.php:208
+msgid "Price Text Color"
+msgstr "Цена Цвет Текста"
+
+#: framework/customizer/colors.php:129 framework/customizer/colors.php:278
+msgid "More Details Text Color"
+msgstr "Подробнее Цвет Текста"
+
+#: framework/customizer/colors.php:268
+msgid "More Details Text Hover Color"
+msgstr "Подробнее Цвет Текста при наведений"
+
+#: framework/customizer/colors.php:139
+msgid "More Details Button Background Color"
+msgstr "Кнопка Подробнее Цвет Фона"
+
+#: framework/customizer/colors.php:149
+msgid "More Details Button Background Color on Hover"
+msgstr "Кнопка Подробнее Цвет Фона при наведений"
+
+# --------------------------------------Customizer Real Estate Card
+#: framework/customizer/colors.php:158
+msgid "Real Estate Card"
+msgstr "Карточка Недвижимости"
+
+#: framework/customizer/colors.php:168
+msgid "Card Background Color"
+msgstr "Карта Цвет Фона"
+
+#: framework/customizer/colors.php:178
+msgid "Card Border Color"
+msgstr "Карта Цвет Границы"
+
+#: framework/customizer/colors.php:228
+msgid "Status Text Color"
+msgstr "Статус Цвет Текста"
+
+#: framework/customizer/colors.php:238
+msgid "Status Background Color"
+msgstr "Статус Цвет Фона"
+
+#: framework/customizer/colors.php:278
+msgid "Metadata Text Color"
+msgstr "Метаданные Цвет Текста"
+
+#: framework/customizer/colors.php:288
+msgid "Metadata Background Color"
+msgstr "Метаданные Цвет Фона"
+
+# --------------------------------------Customizer Buttons
+#: framework/customizer/colors.php:404
+msgid "Buttons"
+msgstr "Кнопки"
+
+#: framework/customizer/colors.php:418
+msgid "Button Text Color"
+msgstr "Кнопка Цвет Текста"
+
+#: framework/customizer/colors.php:434
+msgid "Button Background Color"
+msgstr "Кнопка Цвет Фона"
+
+#: framework/customizer/colors.php:450
+msgid "Button Hover Text Color"
+msgstr "Кнопка Цвет текста при наведений курсора"
+
+#: framework/customizer/colors.php:466
+msgid "Button Hover Background Color"
+msgstr "Кнопка Цвет Фона при наведений курсора"
+
+#: framework/customizer/url-slugs.php:14
+msgid "URL Slugs"
+msgstr "URL Ярлыки"
+
+#: framework/customizer/url-slugs.php:27
+msgid "Important Note for URL Slugs"
+msgstr "Важное примечание для URL Ярлыков"
+
+#: framework/customizer/url-slugs.php:28
+msgid "Make sure to re-save permalinks settings after every change in URL slugs to avoid 404 errors. You can do this from Settings > Permalinks"
+msgstr "Убедитесь в том, чтобы повторно сохранить Permalinks настройки после каждого изменения URL Ярлыков чтобы избежать ошибок 404. Вы можете сделать это в меню Настройки > Permalinks"
+
+#: framework/customizer/url-slugs.php:42 framework/PostProperty.php:33
+msgid "property"
+msgstr "недвижимость"
+
+#: framework/customizer/url-slugs.php:46
+msgid "Property Slug"
+msgstr "Ярлык Недвижимости"
+
+#: framework/customizer/url-slugs.php:57
+#: framework/include/agent-post-type.php:34
+msgid "agency"
+msgstr "агентство"
+
+#: framework/customizer/url-slugs.php:61
+msgid "Agent Slug"
+msgstr "Ярлык Агента"
+
+#: framework/customizer/url-slugs.php:76
+msgid "Property City Slug"
+msgstr "Ярлык Города Недвижимости"
+
+#: framework/customizer/url-slugs.php:87 framework/PostProperty.php:183
+msgid "property-status"
+msgstr "недвижимость-статус"
+
+#: framework/customizer/url-slugs.php:91
+msgid "Property Status Slug"
+msgstr "Ярлык Статуса Недвижимости"
+
+#: framework/customizer/url-slugs.php:102 framework/PostProperty.php:122
+msgid "property-type"
+msgstr "недвижимость-тип"
+
+#: framework/customizer/url-slugs.php:106
+msgid "Property Type Slug"
+msgstr "Ярлык Типа Недвижимости"
+
+#: framework/customizer/url-slugs.php:117 framework/PostProperty.php:91
+msgid "property-feature"
+msgstr "недвижимость-особенность"
+
+#: framework/customizer/url-slugs.php:121
+msgid "Property Feature Slug"
+msgstr "Ярлык Особенностей Недвижимости"
+
+#: framework/functions/basic.php:305
+#: framework/meta-box/config-meta-boxes.php:461
+msgid "Mobile Number"
+msgstr "Мобильный номер"
+
+#: framework/functions/basic.php:306
+#: framework/meta-box/config-meta-boxes.php:467
+msgid "Office Number"
+msgstr "Рабочий телефон"
+
+msgid "Home"
+msgstr "Главная страница"
+
+msgid "Unverified Nonce!"
+msgstr "Непроверенный Нонс!"
+
+msgid "Provided Email address is invalid!"
+msgstr "Введённый адрес Электронной почты недействителен!"
+
+msgid "New message sent by"
+msgstr "Новое сообщение, отправленно "
+
+msgid "message from"
+msgstr "сообщение от"
+
+msgid "Message sent successfully"
+msgstr "Сообщение успешно отправлено"
+
+msgid "Message wasn't sent"
+msgstr "Сообщение не отправлено"
+
+msgid "Invalid Request !"
+msgstr "Неверный запрос !"
+
+msgid "using agent contact form at"
+msgstr "используя контактную форму агента в"
+
+msgid "Failed to updated cookie !"
+msgstr "Не удалось обновить куки!"
+
+msgid "wp-currencies plugin is missing !"
+msgstr "wp-currencies плагин отсутствует!"
+
+#: framework/functions/edit-profile-handler.php:146
+msgid "The Email you entered is not valid. Please try again."
+msgstr "Электронную почту, которую вы ввели не действительна. Пожалуйста, попробуйте еще раз."
+
+#: framework/functions/edit-profile-handler.php:151
+msgid "This Email is already used by another user. Please try a different one."
+msgstr "Этот адрес Электронной почты уже используется другим пользователем. Пожалуйста, попробуйте другой."
+
+#: framework/functions/edit-profile-handler.php:239
+msgid "The passwords you entered do not match.  Your password was not updated."
+msgstr "Введенные пароли не совпадают. Ваш пароль не был обновлен."
+
+#: framework/functions/edit-profile-handler.php:251
+msgid "Profile information is updated successfully!"
+msgstr "Информация о профиле обновлена успешно!"
+
+#: framework/functions/edit-profile-handler.php:258
+msgid "Security check failed!"
+msgstr "Проверку безопасности не удалось выполнить!"
+
+#: framework/functions/favorites.php:19 framework/functions/favorites.php:34
+msgid "Added to Favorites"
+msgstr "Добавлено в Избранное"
+
+#: framework/functions/favorites.php:21 framework/functions/favorites.php:36
+msgid "Failed!"
+msgstr "Ошибка!"
+
+#: framework/functions/favorites.php:41 framework/functions/favorites.php:146
+msgid "Invalid Parameters!"
+msgstr "Неверные параметры!"
+
+#: framework/functions/favorites.php:106 framework/functions/favorites.php:127
+msgid "Removed Successfully!"
+msgstr "Успешно удален!"
+
+#: framework/functions/favorites.php:113 framework/functions/favorites.php:134
+msgid "Failed to remove!"
+msgstr "Не удалось удалить!"
+
+#: framework/functions/member.php:118
+msgid "Wrong username or password."
+msgstr "Неправильное имя пользователя или пароль."
+
+#: framework/functions/member.php:124
+msgid "successful. Redirecting..."
+msgstr "успешно. Перенаправление ..."
+
+#: framework/functions/member.php:163
+msgid "This username already exists."
+msgstr "Такое имя пользователя уже существует."
+
+#: framework/functions/member.php:168
+msgid "This email is already registered."
+msgstr "Эта электронная почта уже зарегистрирована"
+
+#: framework/functions/member.php:184
+msgid "Registration is complete. Check your email for details!"
+msgstr "Регистрация завершена. Проверьте свою электронную почту!"
+
+#: framework/functions/member.php:212
+msgid "Provide a valid username or email address!"
+msgstr "Укажите действительные имя пользователя или адрес электронной почты!"
+
+#: framework/functions/member.php:218
+msgid "No user found for given email!"
+msgstr "Для данной электронной почты пользователь не найден!"
+
+#: framework/functions/member.php:224
+msgid "No user found for given username!"
+msgstr "Для данного имени пользователя пользователь не найден!"
+
+#: framework/functions/member.php:227
+msgid "Invalid username or email!"
+msgstr "Неверное имя пользователя или адрес электронной почты!"
+
+#: framework/functions/member.php:255
+#, php-format
+msgid "Your New Password For %s"
+msgstr "Ваш Новый Пароль Для %s"
+
+#: framework/functions/member.php:256
+#, php-format
+msgid "Your new password is: %s"
+msgstr "Ваш новый пароль: %s"
+
+#: framework/functions/member.php:268
+msgid "Check your email for new password"
+msgstr "Проверьте свою электронную почту для нового пароля"
+
+#: framework/functions/member.php:270
+msgid "Failed to send you new password email!"
+msgstr "Не удалось отправить новый пароль по электронной почте!"
+
+#: framework/functions/member.php:274
+msgid "Oops! Something went wrong while resetting your password!"
+msgstr "К сожалению! Что-то пошло не так при смене пароля!"
+
+#: framework/functions/member.php:320
+#, php-format
+msgid "New user registration on your site %s:"
+msgstr "Регистрация нового пользователя на сайте %s:"
+
+#: framework/functions/member.php:321
+#, php-format
+msgid "Username: %s"
+msgstr "Имя пользователя: %s"
+
+#: framework/functions/member.php:322
+#, php-format
+msgid "Email: %s"
+msgstr "Эл. адрес: %s"
+
+#: framework/functions/member.php:324
+#, php-format
+msgid "[%s] New User Registration"
+msgstr "[%s] Регистрация нового пользователя"
+
+#: framework/functions/member.php:329 framework/functions/member.php:335
+#, php-format
+msgid "Welcome to %s"
+msgstr "Добро пожаловать в %s"
+
+#: framework/functions/member.php:330
+#, php-format
+msgid "Your username is: %s"
+msgstr "Ваше имя пользователя: %s"
+
+#: framework/functions/member.php:331
+#, php-format
+msgid "Your password is: %s"
+msgstr "Ваш пароль: %s"
+
+#: framework/functions/member.php:332
+msgid "It is highly recommended to change your password after login."
+msgstr "Настоятельно рекомендуется сменить пароль после входа в систему."
+
+#: framework/functions/member.php:333
+msgid "For more details visit:"
+msgstr "Для получения более подробной информации посетите:"
+
+#: framework/functions/pagination.php:40 framework/functions/pagination.php:92
+#: framework/functions/pagination.php:149
+msgid "First"
+msgstr "Первый"
+
+#: framework/functions/pagination.php:41 framework/functions/pagination.php:96
+#: framework/functions/pagination.php:150
+msgid "Previous"
+msgstr "Предыдущий"
+
+#: framework/functions/pagination.php:49 framework/functions/pagination.php:111
+#: framework/functions/pagination.php:158
+msgid "Next"
+msgstr "Следующий"
+
+#: framework/functions/pagination.php:50 framework/functions/pagination.php:115
+#: framework/functions/pagination.php:159
+msgid "Last"
+msgstr "Последний"
+
+#: framework/functions/price.php:18
+msgid "$"
+msgstr "$"
+
+#: framework/functions/property-submit-handler.php:154
+#, php-format
+msgid "A new property is submitted by %s at %s"
+msgstr "Новая недвижимость добавлена %s %s"
+
+#: framework/functions/property-submit-handler.php:163
+msgid "You can preview it here : "
+msgstr "Вы можете просмотреть её здесь:"
+
+#: framework/functions/property-submit-handler.php:172
+#, php-format
+msgid "Message to the Reviewer : %s"
+msgstr "Сообщение для Проверяющего : %s"
+
+#: framework/functions/property-submit-handler.php:177
+#, php-format
+msgid "You can contact the submitter \"%s\" via email %s"
+msgstr "Вы можете связаться с отправителем \"%s\" по электронной почте %s"
+
+#: framework/functions/real-estate-search.php:631
+msgid "Main Location"
+msgstr "Базовое Местоположение"
+
+#: framework/functions/real-estate-search.php:632
+msgid "Child Location"
+msgstr "Местоположение 2 Ууровня"
+
+#: framework/functions/real-estate-search.php:633
+msgid "Grand Child Location"
+msgstr "Местоположение 3 Ууровня"
+
+#: framework/functions/real-estate-search.php:634
+msgid "Great Grand Child Location"
+msgstr "Местоположение 4 Ууровня"
+
+#: framework/functions/real-estate.php:60
+#: framework/functions/real-estate.php:61
+msgid "Property Payments"
+msgstr "Платежи Недвижимости"
+
+#: framework/functions/real-estate.php:80 framework/PostProperty.php:440
+msgid "Transaction ID"
+msgstr "ID Транзакции"
+
+#: framework/functions/real-estate.php:81 framework/PostProperty.php:444
+msgid "Payment Date"
+msgstr "Дата платежа"
+
+#: framework/functions/real-estate.php:82 framework/PostProperty.php:448
+msgid "First Name"
+msgstr "Имя"
+
+#: framework/functions/real-estate.php:83 framework/PostProperty.php:452
+msgid "Last Name"
+msgstr "Фамилия"
+
+#: framework/functions/real-estate.php:84 framework/PostProperty.php:456
+msgid "Payer Email"
+msgstr "Электронная почта Плательщика"
+
+#: framework/functions/real-estate.php:85 framework/PostProperty.php:460
+msgid "Payment Status"
+msgstr "Статус платежа"
+
+#: framework/functions/real-estate.php:86
+msgid "Amount"
+msgstr "Количество"
+
+#: framework/functions/real-estate.php:87
+msgid "Currency"
+msgstr "Валюта"
+
+#: framework/functions/real-estate.php:90
+msgid "Action"
+msgstr "Действие"
+
+#: framework/functions/real-estate.php:117 framework/PostProperty.php:426
+msgid "Not Available"
+msgstr "Недоступен"
+
+#: framework/functions/real-estate.php:140 framework/PostProperty.php:11
+msgid "Edit Property"
+msgstr "Редактировать Недвижимость"
+
+#: framework/functions/real-estate.php:169
+msgid "No Completed Payment Found!"
+msgstr "Не найдена завершенная оплата!"
+
+#: framework/functions/theme-comment.php:17
+msgid "Pingback:"
+msgstr "Обратная связь:"
+
+#: framework/functions/theme-comment.php:17
+msgid "(Edit)"
+msgstr "(Изменить)"
+
+#: framework/functions/theme-comment.php:40
+msgid "on"
+msgstr "в"
+
+#: framework/functions/theme-comment.php:43
+#, php-format
+msgid "%1$s at %2$s"
+msgstr "%1$s в %2$s"
+
+#: framework/functions/theme-comment.php:46
+msgid "said"
+msgstr "сказал"
+
+msgid "Value"
+msgstr "Стоимость"
+
+#: tp/contact-agents.php:5 framework/include/agent-post-type.php:8
+msgid "Agencies"
+msgstr "Агентства"
+
+msgid "Agents"
+msgstr "Агенты"
+
+msgid "Our Agents"
+msgstr "Наши Агенты"
+
+#: framework/include/agent-post-type.php:10
+#: framework/include/partners-post-type.php:9 framework/PostProperty.php:9
+#: framework/include/slide-post-type.php:9
+msgid "Add New"
+msgstr "Добавить"
+
+#: framework/include/agent-post-type.php:11
+msgid "Add New Agent"
+msgstr "Добавить нового Агента"
+
+#: framework/include/agent-post-type.php:11
+msgid "Add New Agency"
+msgstr "Добавить Агентство"
+
+#: framework/include/agent-post-type.php:12
+msgid "Edit Agent"
+msgstr "Редактировать Агента"
+
+#: framework/include/agent-post-type.php:12
+msgid "Edit Agency"
+msgstr "Редактировать Агентство"
+
+#: framework/include/agent-post-type.php:13
+msgid "New Agent"
+msgstr "Новый Агент"
+
+#: framework/include/agent-post-type.php:13
+msgid "New Agency"
+msgstr "Новое Агентство"
+
+#: framework/include/agent-post-type.php:14
+msgid "View Agent"
+msgstr "Посмотреть Агента"
+
+#: framework/include/agent-post-type.php:14
+msgid "View Agency"
+msgstr "Посмотреть Агентство"
+
+#: framework/include/agent-post-type.php:15
+msgid "Search Agent"
+msgstr "Поиск Агента"
+
+#: framework/include/agent-post-type.php:15
+msgid "Search Agency"
+msgstr "Поиск Агентства"
+
+#: framework/include/agent-post-type.php:16
+msgid "No Agent found"
+msgstr "Нет найденых Агентов"
+
+#: framework/include/agent-post-type.php:16
+msgid "No Agencies found"
+msgstr "Нет найденых Агентств"
+
+#: framework/include/agent-post-type.php:17
+msgid "No Agent found in Trash"
+msgstr "Нет найденых Агентов в корзине"
+
+#: framework/include/agent-post-type.php:17
+msgid "No Agency found in Trash"
+msgstr "Нет найденых Агентств в корзине"
+
+#: framework/include/partners-post-type.php:8
+#: framework/include/partners-post-type.php:46
+msgid "Partner"
+msgstr "Партнер"
+
+#: framework/include/partners-post-type.php:10
+msgid "Add New Partner"
+msgstr "Добавить нового Партнера"
+
+#: framework/include/partners-post-type.php:11
+msgid "Edit Partner"
+msgstr "Редактировать Партнера"
+
+#: framework/include/partners-post-type.php:12
+msgid "New Partner"
+msgstr "Новый Партнер"
+
+#: framework/include/partners-post-type.php:13
+msgid "View Partner"
+msgstr "Просмотр Партнеров"
+
+#: framework/include/partners-post-type.php:14
+msgid "Search Partner"
+msgstr "Поиск Партнёра"
+
+#: framework/include/partners-post-type.php:15
+msgid "No Partner found"
+msgstr "Нет найденных Партнеров"
+
+#: framework/include/partners-post-type.php:16
+msgid "No Partner found in Trash"
+msgstr "Нет найденных Партнеров в корзине"
+
+#: framework/include/partners-post-type.php:32
+msgid "partners"
+msgstr "партнеры"
+
+#: framework/include/partners-post-type.php:47
+msgid "Logo"
+msgstr "Логотип"
+
+#: framework/include/partners-post-type.php:48 framework/PostProperty.php:291
+msgid "Publish Time"
+msgstr "Время публикации"
+
+#: framework/include/partners-post-type.php:65
+msgid "No logo provided"
+msgstr "Логотип не введённ"
+
+#: framework/PostProperty.php:7
+msgid "Properties"
+msgstr "Недвижимости"
+
+#: framework/PostProperty.php:8 framework/meta-box/config-meta-boxes.php:64
+msgid "Property"
+msgstr "Недвижимость"
+
+#: framework/PostProperty.php:10
+msgid "Add New Property"
+msgstr "Добавить Новую Недвижимость"
+
+#: framework/PostProperty.php:10
+msgid "Add Property"
+msgstr "Добавить Недвижимость"
+
+#: framework/PostProperty.php:12
+msgid "New Property"
+msgstr "Новая Недвижимость"
+
+#: framework/PostProperty.php:13
+msgid "View Property"
+msgstr "Просмотр Недвижимости"
+
+#: framework/PostProperty.php:14
+msgid "Search Property"
+msgstr "Поиск Недвижимости"
+
+#: framework/PostProperty.php:15
+msgid "No Property found"
+msgstr "Недвижимость не найдено!"
+
+#: framework/PostProperty.php:16
+msgid "No Property found in Trash"
+msgstr "Недвижимость не найдена в Корзине"
+
+#: framework/PostProperty.php:68
+msgid "Search Property Features"
+msgstr "Поиск Характеристик Недвижимости"
+
+#: framework/PostProperty.php:69
+msgid "Popular Property Features"
+msgstr "Популярные Характеристики Недвижимости"
+
+#: framework/PostProperty.php:71
+msgid "Parent Property Feature"
+msgstr "Характеристика Родительской Недвижимости"
+
+#: framework/PostProperty.php:72
+msgid "Parent Property Feature:"
+msgstr "Характеристика Родительской Недвижимости:"
+
+#: framework/PostProperty.php:73
+msgid "Edit Property Feature"
+msgstr "Редактировать Характеристику Недвижимости"
+
+#: framework/PostProperty.php:74
+msgid "Update Property Feature"
+msgstr "Обновить Характеристику Недвижимости"
+
+#: framework/PostProperty.php:75
+msgid "Add New Feature"
+msgstr "Добавить Новую Характеристику"
+
+#: framework/PostProperty.php:76
+msgid "New Property Feature Name"
+msgstr "Название Новой Характеристики Недвижимости"
+
+#: framework/PostProperty.php:77
+msgid "Separate Property Features with commas"
+msgstr "Разделите запятыми Характеристики Недвижимости"
+
+#: framework/PostProperty.php:78
+msgid "Add or remove Property Features"
+msgstr "Добавить или Удалить Характеристику Недвижимости"
+
+#: framework/PostProperty.php:79
+msgid "Choose from the most used Property Features"
+msgstr "Выберите из наиболее часто используемых Характеристик Недвижимости"
+
+#: framework/PostProperty.php:99
+msgid "Search Property Types"
+msgstr "Поиск Типов Недвижимости"
+
+#: framework/PostProperty.php:100
+msgid "Popular Property Types"
+msgstr "Популярные Типы Недвижимости"
+
+#: framework/PostProperty.php:102
+msgid "Parent Property Type"
+msgstr "Родительские Типы Недвижимости"
+
+#: framework/PostProperty.php:103
+msgid "Parent Property Type:"
+msgstr "Родительские Типы Недвижимости:"
+
+#: framework/PostProperty.php:104
+msgid "Edit Property Type"
+msgstr "Редактировать Типы Недвижимости"
+
+#: framework/PostProperty.php:105
+msgid "Update Property Type"
+msgstr "Обновить Типы Недвижимости"
+
+#: framework/PostProperty.php:106
+msgid "Add New Type"
+msgstr "Добавить Новый Тип"
+
+#: framework/PostProperty.php:107
+msgid "New Property Type Name"
+msgstr "Имя Нового Типа Недвижимости"
+
+#: framework/PostProperty.php:108
+msgid "Separate Property Types with commas"
+msgstr "Разделить запятыми Типы Недвижимости"
+
+#: framework/PostProperty.php:109
+msgid "Add or remove Property Types"
+msgstr "Добавить или Удалить Типы Недвижимости"
+
+#: framework/PostProperty.php:110
+msgid "Choose from the most used Property Types"
+msgstr "Выберите из наиболее часто используемых Типов Недвижимости"
+
+#: framework/PostProperty.php:111 widgets/property-types-widget.php:35
+#: widgets/property-types-widget.php:7
+msgid "Property Types"
+msgstr "Типы Недвижимости"
+
+#: framework/PostProperty.php:129
+msgid "Search Property Locations"
+msgstr "Поиск Местонахождения Недвижимости"
+
+#: framework/PostProperty.php:130
+msgid "Popular Property Locations"
+msgstr "Популярные Местонахождения Недвижимости"
+
+#: framework/PostProperty.php:132
+msgid "Parent Property Location"
+msgstr "Родительские Местонахождения Недвижимости"
+
+#: framework/PostProperty.php:133
+msgid "Parent Property Location:"
+msgstr "Родительские Местонахождения Недвижимости:"
+
+#: framework/PostProperty.php:134
+msgid "Edit Property Location"
+msgstr "Редактировать Местонахождение Недвижимости"
+
+#: framework/PostProperty.php:135
+msgid "Update Property Location"
+msgstr "Обновить Местонахождение Недвижимости"
+
+#: framework/PostProperty.php:136
+msgid "Add New Location"
+msgstr "Добавить Новое Местонахождение"
+
+#: framework/PostProperty.php:137
+msgid "New Property Location Name"
+msgstr "Имя Нового Местонахождения Недвижимости"
+
+#: framework/PostProperty.php:138
+msgid "Separate Property Locations with commas"
+msgstr "Разделить запятыми Местонахождения Недвижимости"
+
+#: framework/PostProperty.php:139
+msgid "Add or remove Property Locations"
+msgstr "Добавить или Удалить Города Недвижимости"
+
+#: framework/PostProperty.php:140
+msgid "Choose from the most used Property Locations"
+msgstr "Выберите из наиболее часто используемых Городов Недвижимости"
+
+#: framework/PostProperty.php:141
+msgid "Property Locations"
+msgstr "Местонахождения Недвижимости"
+
+#: framework/PostProperty.php:160
+msgid "Search Property Status"
+msgstr "Поиск Статуса Недвижимости"
+
+#: framework/PostProperty.php:161
+msgid "Popular Property Status"
+msgstr "Популярные Статусы Недвижимости"
+
+#: framework/PostProperty.php:22
+msgid "All Statuses"
+msgstr "Все Статусы"
+
+#: framework/PostProperty.php:45
+msgid "All Types"
+msgstr "Все Типы"
+
+#: framework/PostProperty.php:68
+msgid "All Locations"
+msgstr "Все Местонахождения"
+
+#: framework/PostProperty.php:91
+msgid "All Features"
+msgstr "Все Характеристики"
+
+#: framework/PostProperty.php:163
+msgid "Parent Property Status"
+msgstr "Родительский Статус Недвижимости"
+
+#: framework/PostProperty.php:164
+msgid "Parent Property Status:"
+msgstr "Родительский Статус Недвижимости:"
+
+#: framework/PostProperty.php:165
+msgid "Edit Property Status"
+msgstr "Редактировать Статус Недвижимости"
+
+#: framework/PostProperty.php:166
+msgid "Update Property Status"
+msgstr "Обновить Статус Недвижимости"
+
+#: framework/PostProperty.php:167
+msgid "Add New Status"
+msgstr "Добавить Новый Статус"
+
+#: framework/PostProperty.php:168
+msgid "New Property Status Name"
+msgstr "Имя Нового Статуса Недвижимости"
+
+#: framework/PostProperty.php:169
+msgid "Separate Property Status with commas"
+msgstr "Разделить запятыми Статусы Недвижимости"
+
+#: framework/PostProperty.php:170
+msgid "Add or remove Property Status"
+msgstr "Добавить или Удалить Статус Недвижимости"
+
+#: framework/PostProperty.php:171
+msgid "Choose from the most used Property Status"
+msgstr "Выберите из наиболее часто используемых Статусов Недвижимости"
+
+#: framework/PostProperty.php:284
+msgid "Property Title"
+msgstr "Заголовок Недвижимости"
+
+#: framework/PostProperty.php:286
+msgid "City"
+msgstr "Город"
+
+#: framework/PostProperty.php:287
+msgid "Type"
+msgstr "Тип"
+
+#: framework/PostProperty.php:288
+msgid "Status"
+msgstr "Статус"
+
+#: framework/PostProperty.php:289
+msgid "Price"
+msgstr "Цена"
+
+#: framework/PostProperty.php:330
+msgid "No Thumbnail"
+msgstr "Нет Уменьшенного Изображения"
+
+#: framework/PostProperty.php:339 framework/PostProperty.php:351
+#: framework/PostProperty.php:381 framework/PostProperty.php:390
+#: framework/PostProperty.php:399 framework/include/slide-post-type.php:73
+msgid "NA"
+msgstr "Недоступен"
+
+#: framework/PostProperty.php:363
+msgid "No Address Provided!"
+msgstr "Не указан Адрес"
+
+#: framework/PostProperty.php:418
+msgid "Payment Information"
+msgstr "Информация о Платеже"
+
+#: framework/PostProperty.php:464
+msgid "Payment Amount"
+msgstr "Сумма платежа"
+
+#: framework/PostProperty.php:468
+msgid "Payment Currency"
+msgstr "Валюта платежа"
+
+#: framework/include/shortcodes/elements.php:265
+msgid "Result:"
+msgstr "Результат:"
+
+msgid "List of Properties"
+msgstr "Список Недвижимостей"
+
+msgid "Theme"
+msgstr "Тема"
+
+msgid "Layout"
+msgstr "Раскладка"
+
+#: framework/PostProperty.php:162 framework/PostProperty.php:101
+#: framework/PostProperty.php:70
+msgid "All"
+msgstr "Все"
+
+msgid "Order By"
+msgstr "Сортировать по"
+
+#: framework/include/slide-post-type.php:48
+msgid "Date"
+msgstr "Дате"
+
+msgid "Order"
+msgstr "Порядку"
+
+msgid "Descending"
+msgstr "По Убыванию"
+
+msgid "Ascending"
+msgstr "По Возрастанию"
+
+#: framework/meta-box/config-meta-boxes.php:617
+msgid "Locations"
+msgstr "Места"
+
+#: framework/meta-box/config-meta-boxes.php:624
+msgid "Statuses"
+msgstr "Статусы"
+
+#: framework/meta-box/config-meta-boxes.php:631
+msgid "Types"
+msgstr "Типы"
+
+msgid "Minimum Bedrooms"
+msgstr "Минимум Спален"
+
+msgid "Maximum Bedrooms"
+msgstr "Максимум Спален"
+
+msgid "Minimum Bathrooms"
+msgstr "Минимум Ванных"
+
+msgid "Maximum Bathrooms"
+msgstr "Максимум Ванных"
+
+#: framework/meta-box/config-meta-boxes.php:661
+#: framework/customizer/search.php:491
+msgid "Minimum Price"
+msgstr "Минимальная Цена"
+
+msgid "Only provide digits"
+msgstr "Используйте только цифры!"
+
+#: framework/meta-box/config-meta-boxes.php:669
+#: framework/customizer/search.php:504
+msgid "Maximum Price"
+msgstr "Максимальная Цена"
+
+msgid "Minimum Area"
+msgstr "Минимум Площади"
+
+msgid "Maximum Area"
+msgstr "Максимум Площади"
+
+msgid "Display Only Featured Properties"
+msgstr "Показать Только Рекомендуемые Недвижимость"
+
+#: framework/include/slide-post-type.php:7
+msgid "Slides"
+msgstr "Слайды"
+
+#: framework/include/slide-post-type.php:8
+msgid "Slide"
+msgstr "Слайд"
+
+#: framework/include/slide-post-type.php:10
+msgid "Add New Slide"
+msgstr "Добавить Новый Слайд"
+
+#: framework/include/slide-post-type.php:11
+msgid "Edit Slide"
+msgstr "Редактировать Слайд"
+
+#: framework/include/slide-post-type.php:12
+msgid "New Slide"
+msgstr "Новый Слайд"
+
+#: framework/include/slide-post-type.php:13
+msgid "View Slide"
+msgstr "Просмотр Слайда"
+
+#: framework/include/slide-post-type.php:14
+msgid "Search Slide"
+msgstr "Поиск Слайда"
+
+#: framework/include/slide-post-type.php:15
+msgid "No Slide found"
+msgstr "Слайд не найден"
+
+#: framework/include/slide-post-type.php:16
+msgid "No Slide found in Trash"
+msgstr "Слайд не найден в Корзине"
+
+#: framework/include/slide-post-type.php:45
+msgid "Slide Title"
+msgstr "Заголовок Слайда"
+
+#: framework/include/slide-post-type.php:47
+msgid "Slide Sub Text"
+msgstr "Подтекст Слайда"
+
+#: framework/include/slide-post-type.php:65
+msgid "No Slider Image"
+msgstr "Нет Изображения Слайдера"
+
+#: framework/include/slide-post-type.php:88
+msgid "Slide Information"
+msgstr "Информация Слайда"
+
+#: framework/include/slide-post-type.php:105
+msgid "Sub Text"
+msgstr "Подтекст"
+
+#: framework/include/slide-post-type.php:109
+msgid "This text will appear below Title on slide."
+msgstr "Этот текст будет отображаться ниже заголовка на Слайде."
+
+#: framework/include/slide-post-type.php:114
+msgid "Target URL"
+msgstr "Конечный URL"
+
+#: framework/include/slide-post-type.php:118
+msgid "This URL will be applied on Slide Image."
+msgstr "Этот URL будет применен на изображене Слайда."
+
+#: framework/meta-box/config-meta-boxes.php:16
+#: framework/meta-box/config-meta-boxes.php:22
+msgid "Video Embed Code"
+msgstr "Код для вставки видео"
+
+#: framework/meta-box/config-meta-boxes.php:23
+msgid "If you are not using self hosted videos then please provide the video embed code and remove the width and height attributes."
+msgstr "Если вы не используете видео с вашего хостинг-сервера, токда пожалуйста, предоставьте код для вставки видео  удалив атрибуты ширины и высоты."
+
+#: framework/meta-box/config-meta-boxes.php:36
+#: framework/meta-box/config-meta-boxes.php:72
+msgid "Gallery Images"
+msgstr "Галерея изображений"
+
+#, php-format
+msgid "Images should have minimum width of %spx and minimum height of %spx."
+msgstr "Изображения должны иметь минимальную ширину %spx и минимальную высоту %spx."
+
+#: framework/meta-box/config-meta-boxes.php:68
+msgid "Basic Information"
+msgstr "Основная Информация"
+
+#: framework/meta-box/config-meta-boxes.php:76
+msgid "Floor Plans"
+msgstr "План этажей"
+
+#: framework/meta-box/config-meta-boxes.php:92
+msgid "Homepage Slider"
+msgstr "Слайдер Главной Страницы"
+
+#: framework/meta-box/config-meta-boxes.php:96
+msgid "Top Banner"
+msgstr "Верхний Баннер"
+
+#: framework/meta-box/config-meta-boxes.php:106
+msgid "Sale or Rent Price"
+msgstr "Продажа или Аренда Цена"
+
+#: framework/meta-box/config-meta-boxes.php:106
+msgid "Promotional Price"
+msgstr "Промо-Цена"
+
+#: framework/meta-box/config-meta-boxes.php:107
+msgid "Example Value: 435000"
+msgstr "Пример значения: 435000"
+
+#: framework/meta-box/config-meta-boxes.php:115
+#: framework/meta-box/config-meta-boxes.php:260
+msgid "Price Postfix"
+msgstr "Цена Постфикс"
+
+msgid "Price Prefix"
+msgstr "Префикс цены"
+
+#: framework/meta-box/config-meta-boxes.php:116
+msgid "Example Value: Per Month"
+msgstr "Пример Значения: В Месяц"
+
+#: framework/meta-box/config-meta-boxes.php:124
+msgid "Area Size"
+msgstr "Размер Площади"
+
+#: framework/meta-box/config-meta-boxes.php:125
+msgid "Example Value: 2500"
+msgstr "Пример значения: 2500"
+
+#: framework/meta-box/config-meta-boxes.php:133
+msgid "Kitchen Area Size"
+msgstr "Кухня Размер Площади"
+
+#: framework/meta-box/config-meta-boxes.php:133
+#: framework/meta-box/config-meta-boxes.php:274
+msgid "Size Postfix"
+msgstr "Размер Постфикс"
+
+#: framework/meta-box/config-meta-boxes.php:134
+msgid "Example Value: Sq Ft"
+msgstr "Пример значения: кв.м."
+
+#: framework/meta-box/config-meta-boxes.php:142
+#: framework/meta-box/config-meta-boxes.php:281
+msgid "Bedrooms"
+msgstr "Спальни"
+
+#: framework/meta-box/config-meta-boxes.php:143
+msgid "Example Value: 4"
+msgstr "Пример значения: 4"
+
+#: framework/meta-box/config-meta-boxes.php:151
+#: framework/meta-box/config-meta-boxes.php:288
+msgid "Bathrooms"
+msgstr "Ванные"
+
+#: framework/meta-box/config-meta-boxes.php:152
+msgid "Example Value: 2"
+msgstr "Пример значения: 2"
+
+#: framework/meta-box/config-meta-boxes.php:160
+msgid "Garages"
+msgstr "Гаража"
+
+msgid "Garage"
+msgstr "Гараж"
+
+#: framework/meta-box/config-meta-boxes.php:161
+msgid "Example Value: 1"
+msgstr "Пример значения: 1"
+
+#: framework/meta-box/config-meta-boxes.php:161
+msgid "Example Value: 260cm"
+msgstr "Пример значения: 260cm"
+
+#: framework/meta-box/config-meta-boxes.php:170
+msgid "It will help you search a property directly."
+msgstr "Это поможет вам найти Недвижимость напрямую."
+
+#: framework/meta-box/config-meta-boxes.php:186
+msgid "Hide Google map on property detail page ?"
+msgstr "Скрыть карту Google на Странице Недвижимости ?"
+
+#: framework/meta-box/config-meta-boxes.php:196
+msgid "Property Address"
+msgstr "Адрес Недвижимости"
+
+#: framework/meta-box/config-meta-boxes.php:197
+msgid "Leaving it empty will hide the google map on property detail page."
+msgstr "Оставляя поле пустым будет скрыта карта Google на странице Сведения о Недвижимости."
+
+#: framework/meta-box/config-meta-boxes.php:205
+msgid "Property Location at Google Map*"
+msgstr "Местонахождение Недвижимости на Карте Google*"
+
+#: framework/meta-box/config-meta-boxes.php:206
+msgid "Drag the google map marker to point your property location. You can also use the address field above to search for your property."
+msgstr "Перетащите маркер карты Google, чтобы указать местоположение Своей Недвижимости. Вы можете также использовать поле адреса выше, для поиска вашей Недвижимости."
+
+#: framework/meta-box/config-meta-boxes.php:217
+msgid "Gallery Type You Want to Use"
+msgstr "Тип Галереи которую вы хотите использовать"
+
+#: framework/meta-box/config-meta-boxes.php:223
+msgid "Gallery with thumbnails on bottom"
+msgstr "Галерея с эскизами внизу"
+
+#: framework/meta-box/config-meta-boxes.php:229
+msgid "Property Gallery Images"
+msgstr "Галерея изображений Недвижимости"
+
+#: framework/meta-box/config-meta-boxes.php:231
+msgid "Images should have minimum size of 770px by 386px for thumbnails on right and 830px by 460px for thumbnails on bottom. Bigger size images will be cropped automatically."
+msgstr "Изображения должны иметь минимальный размер 770px на 386px для миниатюр нпо правой стороне и 830px на 460px для миниатюр в низу. Большие изображения будут обрезается автоматически"
+
+#: framework/meta-box/config-meta-boxes.php:247
+msgid "Floor Name"
+msgstr "Имя Этажа"
+
+#: framework/meta-box/config-meta-boxes.php:249
+msgid "Example: Ground Floor"
+msgstr "Пример: Первый Этаж"
+
+#: framework/meta-box/config-meta-boxes.php:253
+msgid "Floor Price ( Only digits )"
+msgstr "Цена Этажа ( Только цифрами )"
+
+#: framework/meta-box/config-meta-boxes.php:255
+msgid "Example: 4000"
+msgstr "Пример: 4000"
+
+#: framework/meta-box/config-meta-boxes.php:262
+msgid "Example: Per Month"
+msgstr "Пример: В Месяц"
+
+#: framework/meta-box/config-meta-boxes.php:267
+msgid "Floor Size ( Only digits )"
+msgstr "Размер Этажа ( Только цифрами )"
+
+#: framework/meta-box/config-meta-boxes.php:269
+msgid "Example: 2500"
+msgstr "Пример: 2500"
+
+#: framework/meta-box/config-meta-boxes.php:276
+msgid "Example: Sq Ft"
+msgstr "Пример: кв.м"
+
+#: framework/meta-box/config-meta-boxes.php:283
+msgid "Example: 4"
+msgstr "Пример: 4"
+
+#: framework/meta-box/config-meta-boxes.php:290
+msgid "Example: 2"
+msgstr "Пример: 2"
+
+#: framework/meta-box/config-meta-boxes.php:295
+msgid "Description"
+msgstr "Описание"
+
+#: framework/meta-box/config-meta-boxes.php:300
+msgid "Floor Plan Image"
+msgstr "План Этажа Изображения"
+
+#: framework/meta-box/config-meta-boxes.php:302
+msgid "The recommended minimum width is 770px and height is flexible."
+msgstr "Рекомендуемая минимальная ширина составляет 770px а высота гибкая."
+
+#: framework/meta-box/config-meta-boxes.php:314
+msgid "Provide virtual tour video URL. YouTube, Vimeo, SWF File and MOV File are supported"
+msgstr "Предоставьте URL Виртуального Видео-Тура. Youtube, Vimeo, SWF и MOV файлы поддерживаются"
+
+#: framework/meta-box/config-meta-boxes.php:320
+msgid "Virtual Tour Video Image"
+msgstr "Изображения Виртуального Видео-Тура"
+
+#: framework/meta-box/config-meta-boxes.php:322
+msgid "Provide an image that will be displayed as a place holder and when user will click over it the video will be opened in a lightbox. You must provide this image otherwise the video will not be displayed. Image should have minimum width of 818px and minimum height 417px. Bigger size images will be cropped automatically."
+msgstr "Предоставьте изображение, которое будет отображаться в качестве держателя места и когда пользователь нажмет на него видео будет открыт в lightbox-е. Вы должны предоставить это изображение в противном случае видео не отобразиться. Изображения должно иметь минимальную ширину 818px и минимальную высоту 417px. Большие изображения размера обрезаны автоматически."
+
+#: framework/meta-box/config-meta-boxes.php:331
+msgid "What to display in agent information box ?"
+msgstr "Что отображать в Информационном окне Агента?"
+
+#: framework/meta-box/config-meta-boxes.php:336
+msgid "Author information."
+msgstr "Информация об авторе."
+
+#: framework/meta-box/config-meta-boxes.php:337
+msgid "Agent Information. ( Select the agent below )"
+msgstr "Информация об агенте. (Выберите агента ниже)"
+
+#: framework/meta-box/config-meta-boxes.php:338
+msgid "None. ( Hide information box )"
+msgstr "Нет. (Скрыть информационное окно)"
+
+#: framework/meta-box/config-meta-boxes.php:355
+msgid "Mark this property as featured ?"
+msgstr "Отметить эту Недвижимость как рекомендуемую ?"
+
+#: framework/meta-box/config-meta-boxes.php:366
+msgid "You can attach PDF files, Map images OR other documents to provide further details related to property."
+msgstr "Вы можете прикрепить файлы PDF,изображения Карты или другие документы,чтобы представить дополнительную информацию, связанную с недвижимостью"
+
+#: framework/meta-box/config-meta-boxes.php:374
+msgid "Private Note"
+msgstr "Приватная Заметка"
+
+#: framework/meta-box/config-meta-boxes.php:375
+msgid "In this textarea, You can write your private note about this property. This field will not be displayed anywhere else."
+msgstr "В этом текстовое поле, Вы можете написать личное примечание об этой недвижимости.Это поле не будет отображаться в другом месте."
+
+#: framework/meta-box/config-meta-boxes.php:383
+msgid "Message to Reviewer"
+msgstr "Сообщение для Проверяющего"
+
+#: framework/meta-box/config-meta-boxes.php:391
+msgid "Do you want to add this property in Homepage Slider ?"
+msgstr "Вы хотите, добавить эту недвижимость в Слайдер на Главную Страницу ?"
+
+#: framework/meta-box/config-meta-boxes.php:392
+msgid "If Yes, Then you need to provide a slider image below."
+msgstr "Если да, То вам необходимо предоставить изображение для слайдера ниже."
+
+#: framework/meta-box/config-meta-boxes.php:397
+msgid "Yes "
+msgstr "Да"
+
+#: framework/meta-box/config-meta-boxes.php:404
+msgid "Slider Image"
+msgstr "Изображение Слайдера"
+
+#: framework/meta-box/config-meta-boxes.php:406
+msgid "The recommended image size is 2000px by 700px. You can use bigger or smaller image but try to keep the same height to width ratio and use the exactly same size images for all properties that will be added in slider."
+msgstr "Рекомендуемый размер изображения 2000px на 700px. Вы можете использовать изображения больше или меньше но старайтесь сохранить такое же отношение высоты и ширины, и используйте изображения точно такого же размера для всех недвижимостей, которые будут добавлены в слайд"
+
+#: framework/meta-box/config-meta-boxes.php:415
+msgid "Top Banner Image"
+msgstr "Верхний Баннер Изображения"
+
+#: framework/meta-box/config-meta-boxes.php:417
+msgid "Upload the banner image, If you want to change it for this property. Otherwise default banner image uploaded from theme options will be displayed. Image should have minimum width of 2000px and minimum height of 230px."
+msgstr "Загрузите изображение баннера, Если вы хотите изменить её для этой Недвижимости.В противном случае будет отображаться изображение баннера по умолчанию из темы.Изображения должно иметь минимальную ширину 2000px и минимальную высоту 230px."
+
+#: framework/meta-box/config-meta-boxes.php:431
+msgid "Partner Information"
+msgstr "Информация о Партнере"
+
+#: framework/meta-box/config-meta-boxes.php:437
+msgid "Website"
+msgstr "Веб-Сайт"
+
+#: framework/meta-box/config-meta-boxes.php:439
+msgid "Provide Website URL"
+msgstr "Предоставьте URL веб-сайта"
+
+#: framework/meta-box/config-meta-boxes.php:449
+msgid "Provide Related Information"
+msgstr "Обеспечить соответствующую информацию"
+
+#: framework/meta-box/config-meta-boxes.php:457
+msgid "Provide Email Address. Messages from contact form on property details page, will be sent on this email address."
+msgstr "Предоставьте Адрес Электронной Почты. Сообщения из контактной формы на Странице Детальной ИнформациЙ о Недвижимости, будут отправлены на этот адрес электронной почты."
+
+#: framework/meta-box/config-meta-boxes.php:463
+msgid "Provide mobile number"
+msgstr "Предоставьте номер мобильного телефона"
+
+#: framework/meta-box/config-meta-boxes.php:469
+msgid "Provide office number"
+msgstr "Предоставьте Номер офиса"
+
+#: framework/meta-box/config-meta-boxes.php:475
+msgid "Provide fax number"
+msgstr "Предоставьте Номер факса"
+
+#: framework/meta-box/config-meta-boxes.php:481
+msgid "Provide Facebook URL"
+msgstr "Предоставьте Facebook URL"
+
+#: framework/meta-box/config-meta-boxes.php:487
+msgid "Provide Twitter URL"
+msgstr "Предоставьте Twitter URL"
+
+#: framework/meta-box/config-meta-boxes.php:493
+msgid "Provide Google Plus URL"
+msgstr "Предоставьте Google Plus URL"
+
+#: framework/meta-box/config-meta-boxes.php:499
+msgid "Provide LinkedIn URL"
+msgstr "Предоставьте LinkedIn URL"
+
+#: framework/meta-box/config-meta-boxes.php:509
+msgid "Top Banner Area Settings"
+msgstr "Настройки Площади Верхнего Баннера"
+
+#: framework/meta-box/config-meta-boxes.php:517
+msgid "Please provide the Banner Title, Otherwise the Page Title will be displayed in its place."
+msgstr "Просьба предоставить Заголовок Баннера, В противном случае Заголовок страницы будет отображаться на его месте."
+
+#: framework/meta-box/config-meta-boxes.php:523
+msgid "Please provide the Banner Sub Title."
+msgstr "Пожалуйста, предоставьте Под Заголовок Баннера"
+
+#: framework/meta-box/config-meta-boxes.php:529
+msgid "Banner Image"
+msgstr "Изображение Баннера"
+
+#: framework/meta-box/config-meta-boxes.php:531
+msgid "Please upload the Banner Image. Otherwise the default banner image from theme options will be displayed."
+msgstr "Пожалуйста, загрузите изображение баннера. В противном случае изображение баннера по умолчанию из темы будет отображаться."
+
+#: framework/meta-box/config-meta-boxes.php:538
+msgid "If you want to replace banner with revolution slider then provide its alias here."
+msgstr "Если вы хотите заменить баннер Revolution Slider-ом тогда предоставьте его ссылку здесь."
+
+#: framework/meta-box/config-meta-boxes.php:547
+msgid "Page Title"
+msgstr "Заголовок Страницы"
+
+#: framework/meta-box/config-meta-boxes.php:582
+msgid "Properties Filter Settings"
+msgstr "Настройки Фильтра Недвижимости"
+
+#: framework/meta-box/config-meta-boxes.php:596
+msgid "Number of Properties Per Page"
+msgstr "Количество Недвижимостей на Странице"
+
+#: framework/meta-box/config-meta-boxes.php:604
+msgid "Order Properties By"
+msgstr "Сортировать Недвижимость По"
+
+#: framework/meta-box/config-meta-boxes.php:607
+msgid "Date New to Old"
+msgstr "Дате от Новой к Cтарой"
+
+#: framework/meta-box/config-meta-boxes.php:608
+msgid "Date Old to New"
+msgstr "Дате от Cтарой к Новой"
+
+#: framework/meta-box/config-meta-boxes.php:609
+msgid "Price Low to High"
+msgstr "Цене от Низкой к Высокой"
+
+#: framework/meta-box/config-meta-boxes.php:610
+msgid "Price High to Low"
+msgstr "Цене от Высокой к Низкой"
+
+#: framework/meta-box/config-meta-boxes.php:645
+msgid "Minimum Beds"
+msgstr "Минимум Cпален"
+
+#: framework/meta-box/config-meta-boxes.php:653
+msgid "Minimum Baths"
+msgstr "Минимум Ванн"
+
+#: framework/meta-box/inspiry-meta-box.php:21
+msgid "Meta Box plugin has been deactivated!"
+msgstr "Мета Box плагин был деактивирован!"
+
+#: framework/meta-box/inspiry-meta-box.php:21
+#: framework/meta-box/inspiry-meta-box.php:34
+#: framework/meta-box/inspiry-meta-box.php:50
+#: framework/meta-box/inspiry-meta-box.php:66
+#: framework/meta-box/inspiry-meta-box.php:82
+msgid "As now its functionality is embedded with in theme."
+msgstr "Поскольку в настоящее время его функциональность встроена в тему."
+
+#: framework/meta-box/inspiry-meta-box.php:23
+#: framework/meta-box/inspiry-meta-box.php:39
+#: framework/meta-box/inspiry-meta-box.php:55
+#: framework/meta-box/inspiry-meta-box.php:71
+#: framework/meta-box/inspiry-meta-box.php:87
+msgid "So, You should completely remove it from your plugins."
+msgstr "Таким образом, Вы должны полностью удалить его из ваших плагинов."
+
+#: framework/meta-box/inspiry-meta-box.php:36
+msgid "Meta Box Columns plugin has been deactivated!"
+msgstr "Meta Box Columns плагин был деактивирован!"
+
+#: framework/meta-box/inspiry-meta-box.php:52
+msgid "Meta Box Tabs plugin has been deactivated!"
+msgstr "Мета Box Tabs плагин был деактивирован!"
+
+#: framework/meta-box/inspiry-meta-box.php:68
+msgid "Meta Box Show Hide plugin has been deactivated!"
+msgstr "Мета Box Show Hide плагин был деактивирован!"
+
+#: framework/meta-box/inspiry-meta-box.php:84
+msgid "Meta Box Group plugin has been deactivated!"
+msgstr "Meta Box Group плагин был деактивирован!"
+
+#: functions.php:57
+msgid "Main Menu"
+msgstr "Главное Меню"
+
+#: functions.php:154
+msgid "Default Sidebar"
+msgstr "Боковая Панели По умолчанию"
+
+#: functions.php:156
+msgid "Widget area for default sidebar on news and post pages."
+msgstr "Область виджета для Боковой Панели По умолчанию на новостной странице и странице сообщений"
+
+#: functions.php:165
+msgid "Pages Sidebar"
+msgstr "Страницы Боковой Панели"
+
+#: functions.php:167
+msgid "Widget area for default page template sidebar."
+msgstr "Область виджета для боковой панели Шаблон Страницы по умолчанию"
+
+#: functions.php:176
+msgid "Contact Sidebar"
+msgstr "Боковая Панели Cтраницы Контакта"
+
+#: functions.php:178
+msgid "Widget area for contact page sidebar."
+msgstr "Область виджета для боковой панели Cтраницы Контакта."
+
+#: functions.php:187
+msgid "Property Sidebar"
+msgstr "Боковая Панели Hедвижимость"
+
+#: functions.php:189
+msgid "Widget area for property detail page sidebar."
+msgstr "Область виджета для боковой панели Cтраницы Сведения о Недвижимости."
+
+#: functions.php:198
+msgid "Property Listing Sidebar"
+msgstr "Боковая Панели Список Hедвижимости"
+
+#: functions.php:200
+msgid "Widget area for property listing template sidebar."
+msgstr "Область виджета для боковой панели Шаблона Списка Hедвижимости."
+
+#: functions.php:220
+msgid "Footer First Column"
+msgstr "Нижний колонтитул Первая колонка"
+
+#: functions.php:222
+msgid "Widget area for first column in footer."
+msgstr "Область виджета для первой колонки нижнего колонтитула."
+
+#: functions.php:231
+msgid "Footer Second Column"
+msgstr "Нижний колонтитул Вторая колонка"
+
+#: functions.php:233
+msgid "Widget area for second column in footer."
+msgstr "Область виджета для второй колонки нижнего колонтитула."
+
+#: functions.php:242
+msgid "Footer Third Column"
+msgstr "Нижний колонтитул Третья колонка"
+
+#: functions.php:244
+msgid "Widget area for third column in footer."
+msgstr "Область виджета для третьей колонки нижнего колонтитула."
+
+#: functions.php:253
+msgid "Footer Fourth Column"
+msgstr "Нижний колонтитул Четвертая колонка"
+
+#: functions.php:255
+msgid "Widget area for fourth column in footer."
+msgstr "Область виджета для четвертой колонки нижнего колонтитула."
+
+#: functions.php:265
+msgid "Agent Sidebar"
+msgstr "Боковая панель Агента"
+
+#: functions.php:267
+msgid "Sidebar widget area for agent detail page."
+msgstr "Боковая панель виджета область для подробной информации о агенте."
+
+#: functions.php:276
+msgid "Home Search Area"
+msgstr "Главная страница Область Поиска"
+
+#: functions.php:287
+msgid "Property Search Sidebar"
+msgstr "Поиск недвижимости Боковая панель"
+
+#: functions.php:289
+msgid "Widget area for property search template with sidebar."
+msgstr "Область виджета для поиска недвижимости, шаблон с боковой панелью"
+
+#: functions.php:301
+#, php-format
+msgid "Additional Sidebar %d"
+msgstr "Дополнительная боковая панель %d"
+
+#: functions.php:302
+msgid "An extra sidebar to use with Visual Composer if needed."
+msgstr "Дополнительная боковая панель для использования с Visual Composer-ом, если это необходимо."
+
+#: functions.php:686 functions.php:714
+msgid "Valid file formats"
+msgstr "Допустимые форматы файлов"
+
+#: functions.php:756
+msgid "Go to..."
+msgstr "Перейти к..."
+
+#: header.php:57
+msgid "Email us at"
+msgstr "Пишите нам на"
+
+#: template-home.php:77
+msgid "No Posts Found!"
+msgstr "Сообщений не найдено!"
+
+msgid "Add to Favorites"
+msgstr "Добавить в Избранные"
+
+#: template-home.php:59
+msgid "Know More"
+msgstr "Узнать больше"
+
+#: template-contact.php:147
+msgid "Send"
+msgstr "Отправить"
+
+#: tp/property-detail/property-contacts-for-sidebar.php:84
+#: template-contact.php:120
+msgid "Name"
+msgstr "Имя"
+
+#: template-contact.php:121
+msgid "Your Name"
+msgstr "Ваше Имя"
+
+msgid "Your Email"
+msgstr "Ваш E-mail"
+
+msgid "Please provide:"
+msgstr "Пожалуйста укажите:"
+
+#: tp/property-detail/property-contacts-for-sidebar.php:85
+#: template-contact.php:77 template-contact.php:125
+msgid "Email"
+msgstr "Эл. почта"
+
+msgid "* Please provide valid email address"
+msgstr "* Введите действительный адрес электронной почты"
+
+#: tp/property-detail/property-contacts-for-sidebar.php:86
+#: template-contact.php:135
+msgid "Message"
+msgstr "Сообщение"
+
+# Ș template-contact.php:136
+msgid "Your message"
+msgstr "Ваше сообщение"
+
+msgid "Contact"
+msgstr "Контакт"
+
+msgid "Submitted by"
+msgstr "Добавлено"
+
+#: template-favorites.php:94
+msgid "More Details "
+msgstr "Подробнее"
+
+msgid "Print"
+msgstr "Распечатать"
+
+msgid "Bedroom"
+msgstr "Спальня"
+
+msgid "Bathroom"
+msgstr "Ванная"
+
+msgid "Share this"
+msgstr "Поделись этим"
+
+#: search.php:10
+msgid "Search Results"
+msgstr "Результаты поиска"
+
+#: single.php:29
+msgid "Posted on"
+msgstr "Опубликован"
+
+#: single.php:29
+msgid "by"
+msgstr "от"
+
+#: single.php:31
+msgid "in"
+msgstr "в"
+
+#: template-users-listing.php:138
+msgid "More Details"
+msgstr "Подробнее"
+
+msgid "Sorry No Results Found"
+msgstr "К сожалению Ничего не найдено"
+
+#: template-contact.php:62
+msgid "Phone"
+msgstr "Телефон"
+
+#: template-contact.php:81
+msgid "Address"
+msgstr "Адрес"
+
+#: template-contact.php:126
+msgid "* Please provide a valid email address"
+msgstr "* Введите действительный адрес электронной почты"
+
+msgid "Change"
+msgstr "Изменить"
+
+msgid "Remove"
+msgstr "Удалить"
+
+msgid "Profile image should have minimum width of 210px and minimum height of 210px."
+msgstr "Изображение Профиля должно иметь минимальную ширину 210px и минимальную высоту 210px."
+
+msgid "Make sure to save changes after changing the image."
+msgstr "Убедитесь в том, что сохранили изменения после изменения изображения"
+
+msgid "Display Name"
+msgstr "Отображаемое имя"
+
+msgid "Password"
+msgstr "Пароль"
+
+msgid "Fill it only if you want to change your password"
+msgstr "Заполните это поле, только если вы хотите изменить свой пароль"
+
+msgid "Confirm Password"
+msgstr "Подтвердите Пароль"
+
+msgid "Biographical Information"
+msgstr "Обо мне"
+
+msgid "Save Changes"
+msgstr "Сохранить изменения"
+
+msgid "Login Required:"
+msgstr "Необходим вход в систему:"
+
+msgid "Please login to edit your profile information!"
+msgstr "Пожалуйста войдите чтобы изменить информацию о профиле!"
+
+#: template-favorites.php:87
+msgid "Remove from favorites"
+msgstr "Удалить из избранного"
+
+#: template-favorites.php:110
+msgid "No property found!"
+msgstr "Не найдена недвижимость!"
+
+#: template-favorites.php:118
+msgid "You have no property in favorites!"
+msgstr "У вас нет Недвижимости в Избранных!"
+
+msgid "Already a Member? Log in here."
+msgstr "Уже пользователь? Вход здесь."
+
+msgid "Username"
+msgstr "Имя пользователя"
+
+msgid "* Provide username!"
+msgstr "* Укажите имя пользователя!"
+
+msgid "* Provide password!"
+msgstr "* Укажите пароль!"
+
+msgid "Log in"
+msgstr "Войти"
+
+msgid "Forgot password!"
+msgstr "Забыли пароль!"
+
+msgid "Username or Email"
+msgstr "Имя пользователя или адрес электронной почты"
+
+msgid "* Provide username or email!"
+msgstr "* Укажите имя пользователя или адрес электронной почты!"
+
+msgid "Reset Password"
+msgstr "Сброс Пароля"
+
+msgid "Do not have an account? Register here"
+msgstr "Нет аккаунта? Зарегистрируйся здесь"
+
+msgid "* Provide valid email address!"
+msgstr "* Укажите действительный адрес электронной почты!"
+
+msgid "You are already logged in!"
+msgstr "Вы уже вошли в систему!"
+
+msgid "Success:"
+msgstr "Ууспешно:"
+
+#: template-my-properties.php:19
+msgid "Property removed."
+msgstr "Недвижимость Удалена"
+
+#: template-my-properties.php:21
+msgid "Property Submitted."
+msgstr "Недвижимость Добавлена."
+
+#: template-my-properties.php:23
+msgid "Property Updated."
+msgstr "Недвижимость Обновлена"
+
+#: template-my-properties.php:89
+msgid "Posted on :"
+msgstr "Опубликовано :"
+
+#: template-my-properties.php:130
+msgid "Payment Completed"
+msgstr "Оплата Завершена"
+
+#: template-my-properties.php:171
+msgid "Note:"
+msgstr "Заметка:"
+
+#: template-my-properties.php:177
+msgid "Please, Login to view your properties!"
+msgstr "Пожалуйста войдите чтобы посмотреть свой Недвижимости!"
+
+msgid "Read more"
+msgstr "Читать далее"
+
+msgid "No Results Found"
+msgstr "Нет результатов"
+
+#, php-format
+msgid "View all Properties having %s status"
+msgstr "Просмотреть все Недвижимости, имеющие %s статус"
+
+#, php-format
+msgid "View all posts by %s"
+msgstr "Просмотреть все сообщения от %s"
+
+msgid "View all"
+msgstr "Просмотреть все"
+
+#: template-home.php:66
+msgid "On"
+msgstr "От"
+
+#: tp/home-news-posts.php:70
+msgid "Read More "
+msgstr "Читать далее "
+
+msgid "You need to log in to use member only features."
+msgstr "Вам нужно войти, чтобы использовать функции зарегистрированного пользователя."
+
+msgid "User Name"
+msgstr "Имя пользователя"
+
+msgid "* Provide user name!"
+msgstr "* Введите имя пользователя!"
+
+msgid "Register Here"
+msgstr "Зарегистрируйся здесь"
+
+msgid "Forgot Password"
+msgstr "Забыли пароль"
+
+msgid "Login Here"
+msgstr "Войти здесь"
+
+msgid "* Please provide property title!"
+msgstr "* Введите название недвижимости!"
+
+msgid "Property Description"
+msgstr "Описание недвижимости"
+
+msgid "* Please provide the value in only digits!"
+msgstr "* Введите значение только цифрами!"
+
+msgid "Sale OR Rent Price"
+msgstr "Цена Продажи или Аренды"
+
+msgid "Price Postfix Text"
+msgstr "Цена - Постфикс Текст"
+
+#: framework/customizer/search.php:539
+msgid "Area"
+msgstr "Площадь"
+
+msgid "Area Postfix Text"
+msgstr "Площадь - Постфикс Текст"
+
+msgid "Drag and drop images here"
+msgstr "Перетащите изображения сюда"
+
+msgid "or"
+msgstr "или"
+
+msgid "Select Images"
+msgstr "Выбор Изображений"
+
+msgid "* An image should have minimum width of 770px and minimum height of 386px."
+msgstr "* Изображение должно иметь минимальную ширину 770px и минимальную высоту 386px."
+
+msgid "* You can mark an image as featured by clicking the star icon, Otherwise first image will be considered featured image."
+msgstr "* Вы можете пометить изображение как рекомендуемое, нажав на значок звездочки, в противном случае первое изображение будет считаться рекомендуемым."
+
+msgid "* Please provide a property address!"
+msgstr "* Пожалуйста, введите адрес недвижимость!"
+
+msgid "Find Address"
+msgstr "Найти Адрес"
+
+msgid "Mark this Property as Featured"
+msgstr "Отметить эту недвижимость как рекомендуемую"
+
+msgid "( Agent information box will not be displayed )"
+msgstr "( Информационное окно Агента не будет отображаться )"
+
+msgid "My profile information"
+msgstr "Обо мне"
+
+msgid "( Edit Profile Information )"
+msgstr "( Изменить информацию профиля )"
+
+msgid "Display an agent's information"
+msgstr "Отображение информации о агенте"
+
+msgid "Update Property"
+msgstr "Обновление недвижимости"
+
+msgid "Requested property does not belong to logged in user !"
+msgstr "Запрошенная недвижимость не принадлежит зарегистрированному пользователю!"
+
+msgid "Requested post is not a valid property post !"
+msgstr "Запрошенный пост не является допустимым для недвижимости"
+
+msgid "Sq Ft"
+msgstr "кв. м."
+
+msgid "Mark this property as featured property"
+msgstr "Отметить эту недвижимость как рекомендуемую"
+
+msgid "Message to the Reviewer"
+msgstr "Сообщение для Проверяющего"
+
+msgid "Only provide digits!"
+msgstr "Используйте только цифры!"
+
+#, php-format
+msgid "%s Result"
+msgid_plural "%s Results"
+msgstr[0] "%s Результат"
+msgstr[1] "%s Результата"
+msgstr[2] "%s Результатов"
+
+msgid "Found %s property"
+msgid_plural "Found %s properties"
+msgstr[0] "Найден %s объект"
+msgstr[1] "Найдено %s объекта"
+msgstr[2] "Найдено %s объектов"
+
+msgid "%s property"
+msgid_plural "%s properties"
+msgstr[0] "%s объект"
+msgstr[1] "%s объекта"
+msgstr[2] "%s объектов"
+
+msgid "Sort By"
+msgstr "Сортировать по"
+
+msgid "Default Order"
+msgstr "По умолчанию"
+
+msgid "Submit"
+msgstr "Добавить"
+
+msgid "Profile"
+msgstr "Профиль"
+
+msgid "Logout"
+msgstr "Выйти"
+
+msgid "No Property Found!"
+msgstr "Недвижимость не найдено!"
+
+msgid "Error:"
+msgstr "Ошибка:"
+
+msgid "Property updated successfully!"
+msgstr "Данные о недвижимость обновленны успешно!"
+
+msgid "Please login to submit property!"
+msgstr "Пожалуйста, войдите в свой аккаунт, чтобы добавить недвижимость!"
+
+#: widgets/advance-search-widget.php:7
+msgid "This widget displays advance search form."
+msgstr "Этот виджет отображает форму расширенного поиска."
+
+#: widgets/advance-search-widget.php:39
+#: widgets/agent-featured-properties-widget.php:131
+#: widgets/agent-properties-widget.php:132
+#: widgets/featured-properties-widget.php:115
+#: widgets/property-types-widget.php:39
+msgid "Widget Title"
+msgstr "Название виджета"
+
+#: widgets/agent-featured-properties-widget.php:6
+msgid "Important: This widget is only for the Agent Sidebar."
+msgstr "Важно: Этот виджет предназначен только для Панели Агента."
+
+#: widgets/agent-featured-properties-widget.php:7
+msgid "Agent Featured Properties"
+msgstr "Рекомендуемые недвижимость агента"
+
+#: widgets/agent-featured-properties-widget.php:89
+#: widgets/agent-properties-widget.php:85
+#: widgets/featured-properties-widget.php:75
+msgid "Read More"
+msgstr "Читать далее"
+
+#: widgets/agent-featured-properties-widget.php:108
+msgid "No Featured Property Found For This Agent"
+msgstr "У этого агента не найдены Рекомендуемые недвижимость"
+
+#: widgets/agent-featured-properties-widget.php:135
+#: widgets/agent-properties-widget.php:142
+#: widgets/featured-properties-widget.php:123
+msgid "Sort By:"
+msgstr "Сортировать по:"
+
+#: widgets/agent-featured-properties-widget.php:137
+#: widgets/agent-properties-widget.php:144
+#: widgets/featured-properties-widget.php:125
+msgid "Most Recent"
+msgstr "Самые последние"
+
+#: widgets/agent-featured-properties-widget.php:138
+#: widgets/agent-properties-widget.php:145
+#: widgets/featured-properties-widget.php:126
+msgid "Random"
+msgstr "Случайная"
+
+#: widgets/agent-properties-widget.php:6
+msgid "Displays random, recent or featured properties based on selected agent."
+msgstr "Отображает случайные, недавние или рекомендуемые недвижимости на основе выбранного агента."
+
+#: widgets/agent-properties-widget.php:7
+msgid "Agent Related Properties"
+msgstr "Недвижимости Агента"
+
+#: widgets/agent-properties-widget.php:105
+msgid "No Property Found Under Selected Agent!"
+msgstr "Не найдено недвижимость у выбранного агента!"
+
+#: widgets/agent-properties-widget.php:136
+msgid "Select an Agent:"
+msgstr "Выберите Агента:"
+
+#: widgets/featured-properties-widget.php:94
+msgid "No Featured Property Found!"
+msgstr "Не Найдена Рекомендованная недвижимость!"
+
+#: widgets/property-types-widget.php:6
+msgid "This widget displays a list of Property Types."
+msgstr "Этот виджет отображает список Типов Недвижимости."
+
+#: template-home.php:36
+msgid "Hot Deals"
+msgstr "Горячие Предложения"
+
+msgid "Latest Offers"
+msgstr "Последние Предложения"
+
+msgid "My Offers"
+msgstr "Мои предложения"
+
+msgid "Chosen Deals"
+msgstr "Избранные Предложения"
+
+msgid "Price Not Specified"
+msgstr "Цена Не Указана"
+
+msgid "Floor"
+msgstr "Этаж"
+
+msgid "Floors"
+msgstr "Этажности"
+
+msgid "%s Floor"
+msgstr "%s Этаж"
+
+msgid "%s Floor from %s"
+msgstr "%s Этаж из %s"
+
+msgid "Old Site"
+msgstr "Старый сайт"
+
+#: framework/customizer/misc.php:13
+msgid "Google Services"
+msgstr "Сервисы Google"
+
+#: framework/meta-box/config-meta-boxes.php:157
+msgid "Rooms Height"
+msgstr "Высота Комнат"
+
+msgid "Lavatories"
+msgstr "Санузела"
+
+msgid "Lavatory"
+msgstr "Санузел"
+
+msgid "%s Lavatory"
+msgid_plural "%s Lavatories"
+msgstr[0] "%s Санузел"
+msgstr[1] "%s Санузела"
+msgstr[2] "%s Санузлов"
+
+msgid "Rooms"
+msgstr "Комнаты"
+
+msgid "Room"
+msgstr "Комната"
+
+msgid "%s room"
+msgid_plural "%s rooms"
+msgstr[0] "%s комната"
+msgstr[1] "%s комнаты"
+msgstr[2] "%s комнат"
+
+msgid "%s floor"
+msgid_plural "%s floors"
+msgstr[0] "%s этаж"
+msgstr[1] "%s этажа"
+msgstr[2] "%s этажей"
+
+msgid "Balconies/Loggias"
+msgstr "Балконов/Лоджий"
+
+msgid "%s Balcony/Loggia"
+msgid_plural "%s Balconies/Loggias"
+msgstr[0] "%s Балкон/Лоджия"
+msgstr[1] "%s Балкона/Лоджий"
+msgstr[2] "%s Балконов/Лоджий"
+
+msgid "%s Balcony"
+msgid_plural "%s Balconies"
+msgstr[0] "%s Балкон"
+msgstr[1] "%s Балкона"
+msgstr[2] "%s Балконов"
+
+msgid "Balcony"
+msgstr "Балкон"
+
+msgid "Testimonials"
+msgstr "Отзывы"
+
+#: framework/PostProperty.php:7
+msgid "% property"
+msgid_plural "%s properties"
+msgstr[0] "%s недвижимость"
+msgstr[1] "%s недвижимости"
+msgstr[2] "%s недвижимостей"
+
+msgid "Copyright © %d %s"
+msgstr "Copyright © %d %s"
+
+msgid "Favorite Properties"
+msgstr "Избранные Недвижимости"
+
+msgid "Help through Email"
+msgstr "Помощь по Эл. почте"
+
+msgid "We call You"
+msgstr "Мы позвоним Вам"
+
+msgid "Online Assistant"
+msgstr "Помощник на Сайте"
+
+msgid "%s hectare"
+msgid_plural "%s hectare"
+msgstr[0] "%s гектар"
+msgstr[1] "%s гектара"
+msgstr[2] "%s гектаров"
+
+msgid "ha."
+msgstr "га."
+
+msgid "%s acre"
+msgid_plural "%s acres"
+msgstr[0] "%s акр"
+msgstr[1] "%s акра"
+msgstr[2] "%s акров"
+
+msgid "%s are"
+msgid_plural "%s ares"
+msgstr[0] "%s сотка"
+msgstr[1] "%s сотки"
+msgstr[2] "%s соток"
+
+msgid "%s m²"
+msgid_plural "%s m²"
+msgstr[0] "%s м²"
+msgstr[1] "%s м²"
+msgstr[2] "%s м²"
+
+msgid "sq.m."
+msgstr "кв.м."
+
+msgid "m²"
+msgstr "м²"
+
+msgid "per m²"
+msgstr "за кв.м."
+
+msgid "per day"
+msgstr "посуточно"
+
+msgid "per week"
+msgstr "в неделю"
+
+msgid "per month"
+msgstr "в месяц"
+
+msgid "per year"
+msgstr "в год"
+
+msgid "Price in installments"
+msgstr "Цена в рассрочку"
+
+msgid "Value Example: %s"
+msgstr "Пример значения: %s"
+
+msgid "Rooms height unit of measure"
+msgstr "Единица измерения высоты комнат"
+
+msgid "m"
+msgstr "м"
+
+msgid "km"
+msgstr "км"
+
+msgid "cm"
+msgstr "см"
+
+msgid "mm"
+msgstr "мм"
+
+msgid "Rental Price"
+msgstr "Стоимость аренды"
+
+msgid "Rental Price Postfix"
+msgstr "Стоимость аренды Постфикс"
+
+msgid "Projects"
+msgstr "Проекты"
+
+msgid "Financing"
+msgstr "Финансирование"
+
+msgid "Total Value"
+msgstr "Общая стоимость"
+
+msgid "Rent"
+msgstr "Аренда"
+
+msgid "Add an Ad"
+msgstr "Подать Объявление"
+
+msgid "Request a call"
+msgstr "Заказать звонок"
+
+msgid "Property Information"
+msgstr "Информация о недвижимости"
+
+msgid "Write a letter"
+msgstr "Написать письмо"
+
+msgid "Your User Account was sent to the site administrator for approval"
+msgstr "Ваша учетная запись пользователя была отправлена на утверждение администратору сайта"
+
+msgid "Luxury Properties"
+msgstr "Элитная Недвижимость"
+
+msgid "First rate"
+msgstr "Первый взнос"
+
+msgid "Monthly payment"
+msgstr "Ежемесячная плата"
+
+msgid "On request"
+msgstr "По запросу"
+
+msgid "Property area size"
+msgstr "Размер площадь недвижимости"
+
+msgid "Plot of land size"
+msgstr "Размер участка"
+
+msgid "Unit of measure"
+msgstr "Единица измерения"
+
+msgid "The land unit of measure"
+msgstr "Единица измерения земли"
+
+msgid "The land"
+msgstr "Участок"
+
+msgid "The property unit of measure"
+msgstr "Единица измерения недвижимости"
+
+msgid "Rental price criteria"
+msgstr "Критерии цены на аренду"
+
+msgid "Images of %s"
+msgstr "Изображения %s"
+
+msgid "Video of %s"
+msgstr "Видео %s"
+
+msgid "Apartments"
+msgstr "Квартиры"
+
+msgid "Houses"
+msgstr "Дома"
+
+msgid "New Buildings"
+msgstr "Новостройки"
+
+msgid "Plots of Land"
+msgstr "Земельные участки"
+
+msgid "Apartments for Sale"
+msgstr "Квартиры на Продажу"
+
+msgid "Houses for Sale"
+msgstr "Дома на Продажу"
+
+msgid "For Rents"
+msgstr "Сдаются в Аренду"
+
+msgid "Plots of Land for Sale"
+msgstr "Земельные участки на Продажу"
+
+msgid "Commercial Sale / Rent"
+msgstr "Коммерция Продажа / Аренда"
+
+msgid "For sale"
+msgid_plural "For sales"
+msgstr[0] "Продается"
+msgstr[1] "Продаются"
+msgstr[2] "Продаются"
+
+msgid "For rent"
+msgid_plural "For rents"
+msgstr[0] "Сдаётся в аренду"
+msgstr[1] "Сдаются в аренду"
+msgstr[2] "Сдаются в аренду"
+
+msgid "room"
+msgid_plural "rooms"
+msgstr[0] "комната"
+msgstr[1] "комнаты"
+msgstr[2] "комнат"
+
+msgid "floor"
+msgid_plural "floors"
+msgstr[0] "этаж"
+msgstr[1] "этажа"
+msgstr[2] "этажей"
+
+msgid "Show first the"
+msgstr "Показать первыми"
+
+msgid "Expensive"
+msgstr "Дорогие"
+
+msgid "Cheap"
+msgstr "Дешевые"
+
+msgid "Recent"
+msgstr "Недавние"
+
+msgid "The financing company"
+msgstr "Финансирующая компания"
+
+#, php-format
+msgid "%s view"
+msgid_plural "%s views"
+msgstr[0] "%s просмотр"
+msgstr[1] "%s просмотра"
+msgstr[2] "%s просмотров"
+
+msgid "Name plural"
+msgstr "Имя множественного числа"
+
+msgid "Show on property page?"
+msgstr "Показать на странице объекта?"
+
+msgid "My Page"
+msgstr "Моя страница"
+
+#, php-format
+msgid "Choose %s"
+msgstr "Выберите %s"
+
+msgid "Most viewed"
+msgstr "Популярные"
+
+msgid "%s measure unit"
+msgstr "%s, единица измерения"
+
+msgid "from"
+msgstr "от"
+
+msgid "to"
+msgstr "до"
+
+msgid "min."
+msgstr "мин."
+
+msgid "max."
+msgstr "макс."
+
+msgid "To the sea"
+msgstr "До моря"
+
+msgid "Distance to the sea"
+msgstr "Расстояние до моря"
+
+msgid "Distance"
+msgstr "Расстояние"
+
+msgid "To publish the Property please complete the required fields: Status, Type, Location and Price"
+msgstr "Чтобы опубликовать Недвижимость, заполните необходимые поля: Статус, Тип, Местонахождение и Цена"
+
+msgid "Offer is finalized?"
+msgstr "Предложение завершено?"
+
+msgid "Sold"
+msgstr "Продано"
+
+msgid "Rented"
+msgstr "Сдано"
+
+msgid "You have been subscribed to %s newsletter. This means you will receive emails with new posts that are added on site. If you believe this is an mistake, click 'Unsubscribe' below."
+msgstr "Вы подписались на рассылку %s. Это означает, что вы вы будете получать электронные письма с новыми публикациями, которые добавляются на сайт. Если вы считаете, что это ошибка, нажмите «Отменить подписку» ниже."
+
+msgid "Subscribe"
+msgstr "Подписаться"
+
+msgid "Newsletter"
+msgstr "Новостная рассылка"
+
+msgid "Welcome to %s Newsletter"
+msgstr "Добро пожаловать в Новостную рассылку %s"
+
+msgid "Share on Social Networks"
+msgstr "Поделиться в социальных сетях"
+
+msgid "Where to find us"
+msgstr "Где нас найти"
+
+msgid "Unable to subscribe"
+msgstr "Не удалось подписаться"
+
+msgid "You are subscribed"
+msgstr "Вы подписаны"
+
+msgid "Service unavailable, try again later"
+msgstr "Служба недоступна, повторите попытку позже"
+
+msgid "Provide a valid email address!"
+msgstr "Предоставьте действующий адрес электронной почты!"
+
+msgid "Nothing was found"
+msgstr "Ничего не найдено"

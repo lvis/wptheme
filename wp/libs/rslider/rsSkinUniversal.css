@@ -1,0 +1,461 @@
+/******************************
+*	RS Skin: Universal
+*	1. Arrows
+*	2. Bullets
+*	3. Thumbnails
+*	4. Tabs
+*	5. FullScreen button
+*	6. Play/close video button
+*	7. PreLoader
+*	8. Caption
+*	Sprite: 'rsSkinUniversal.png'
+******************************/
+
+/* Background */
+.rsUniversal,
+.rsUniversal .rsOverflow,
+.rsUniversal .rsSlide,
+.rsUniversal .rsVideoFrameHolder,
+.rsUniversal .rsThumbs {
+    background: #222;
+    color: #FFF;
+}
+/***************
+*
+*  1. Arrows
+*
+****************/
+
+.rsUniversal .rsArrow {
+    height: 100%;
+    width: 60px;
+    position: absolute;
+    display: block;
+    cursor: pointer;
+    z-index: 21;
+}
+.rsUniversal.rsVer .rsArrow {
+    width: 100%;
+    height: 60px;
+
+}
+.rsUniversal.rsVer .rsArrowLeft {
+    top: 0;
+    left: 0;
+}
+.rsUniversal.rsVer .rsArrowRight {
+    bottom: 0;
+    left: 0;
+}
+.rsUniversal.rsHor .rsArrowLeft {
+    left: 0;
+    top: 0;
+}
+.rsUniversal.rsHor .rsArrowRight {
+    right: 0;
+    top: 0;
+}
+.rsUniversal .rsArrowIcn {
+    width: 32px;
+    height: 32px;
+    top: 50%;
+    left: 50%;
+    margin-top: -16px;
+    margin-left: -16px;
+
+    position: absolute;
+    cursor: pointer;
+    background: url('rsSkinUniversal.png');
+    opacity: 0.5;
+    border-radius: 2px;
+}
+.rsUniversal .rsArrow:hover .rsArrowIcn {
+    opacity: 1;
+}
+.rsUniversal.rsHor .rsArrowLeft .rsArrowIcn {
+    background-position: -64px -32px;
+}
+.rsUniversal.rsHor .rsArrowRight .rsArrowIcn {
+    background-position: -64px -64px;
+}
+.rsUniversal.rsVer .rsArrowLeft .rsArrowIcn {
+    background-position: -96px -32px;
+}
+.rsUniversal.rsVer .rsArrowRight .rsArrowIcn {
+    background-position: -96px -64px;
+}
+.rsUniversal .rsArrowDisabled .rsArrowIcn {
+    opacity: .1 !important;
+    filter: alpha(opacity=20);
+    *display: none;
+}
+/***************
+*
+*  2. Bullets
+*
+****************/
+
+.rsUniversal .rsBullets {
+    position: relative;
+    z-index: 35;
+    padding-top: 4px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+
+    text-align: center;
+    line-height: 5px;
+    overflow: hidden;
+}
+.rsUniversal .rsBullets * {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+.rsUniversal .rsBullet {
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    padding: 5px;
+}
+.rsUniversal .rsBullet span {
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #BBB;
+}
+.rsUniversal .rsBullet.rsNavSelected span {
+    background-color: #383838;
+}
+/***************
+*
+*  3. Thumbnails
+*
+****************/
+
+.rsUniversal .rsThumbsHor {
+    width: 100%;
+    height: 72px;
+}
+.rsUniversal .rsThumbsVer {
+    width: 96px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.rsUniversal.rsWithThumbsHor .rsThumbsContainer {
+    position: relative;
+    height: 100%;
+}
+.rsUniversal.rsWithThumbsVer .rsThumbsContainer {
+    position: relative;
+    width: 100%;
+}
+.rsUniversal .rsThumb {
+    float: left;
+    overflow: hidden;
+    width: 96px;
+    height: 72px;
+}
+.rsUniversal .rsThumb img {
+    width: 100%;
+    height: 100%;
+}
+.rsUniversal .rsThumb.rsNavSelected {
+    background: #333;
+}
+.rsUniversal .rsThumb.rsNavSelected img {
+    opacity: 0.7;
+    filter: alpha(opacity=30);
+}
+.rsUniversal .rsThumb.rsNavSelected .thumbIco {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border: 2px solid rgba(255, 255, 255, 0.9);
+    -webkit-backface-visibility: hidden;
+}
+.rsUniversal .rsTmb {
+    display: block;
+}
+/* Thumbnails with text */
+.rsUniversal .rsTmb h5 {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    line-height: 20px;
+    color: #FFF;
+}
+.rsUniversal .rsTmb span {
+    color: #DDD;
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    line-height: 18px;
+}
+/* Thumbnails arrow icons */
+.rsUniversal .rsThumbsArrow {
+    height: 100%;
+    width: 20px;
+    position: absolute;
+    display: block;
+    cursor: pointer;
+    z-index: 21;
+}
+.rsUniversal .rsThumbsArrow:hover {
+
+}
+.rsUniversal.rsWithThumbsVer .rsThumbsArrow {
+    width: 100%;
+    height: 20px;
+}
+.rsUniversal.rsWithThumbsVer .rsThumbsArrowLeft {
+    top: 0;
+    left: 0;
+}
+.rsUniversal.rsWithThumbsVer .rsThumbsArrowRight {
+    bottom: 0;
+    left: 0;
+}
+.rsUniversal.rsWithThumbsHor .rsThumbsArrowLeft {
+    left: 0;
+    top: 0;
+}
+.rsUniversal.rsWithThumbsHor .rsThumbsArrowRight {
+    right: 0;
+    top: 0;
+}
+.rsUniversal .rsThumbsArrowIcn {
+    width: 16px;
+    height: 16px;
+    top: 50%;
+    left: 50%;
+    margin-top: -8px;
+    margin-left: -8px;
+    position: absolute;
+    cursor: pointer;
+    background: url('rsSkinUniversal.png') transparent;
+}
+.rsUniversal.rsWithThumbsHor .rsThumbsArrowLeft .rsThumbsArrowIcn {
+    background-position: -128px -32px;
+}
+.rsUniversal.rsWithThumbsHor .rsThumbsArrowRight .rsThumbsArrowIcn {
+    background-position: -128px -48px;
+}
+.rsUniversal.rsWithThumbsVer .rsThumbsArrowLeft .rsThumbsArrowIcn {
+    background-position: -144px -32px;
+}
+.rsUniversal.rsWithThumbsVer .rsThumbsArrowRight .rsThumbsArrowIcn {
+    background-position: -144px -48px;
+}
+.rsUniversal .rsThumbsArrowDisabled {
+    display: none !important;
+}
+/* Thumbnails resizing on smaller screens */
+@media screen and (min-width: 0px) and (max-width: 800px) {
+    .rsUniversal .rsThumb {
+        width: 59px;
+        height: 44px;
+    }
+    .rsUniversal .rsThumbsHor {
+        height: 44px;
+    }
+    .rsUniversal .rsThumbsVer {
+        width: 59px;
+    }
+}
+/***************
+*
+*  4. Tabs
+*
+****************/
+
+.rsUniversal .rsTabs {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
+    padding-top: 12px;
+    position: relative;
+}
+.rsUniversal .rsTab {
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    height: auto;
+    width: auto;
+    color: #333;
+    padding: 5px 13px 6px;
+    min-width: 72px;
+    border: 1px solid #D9D9DD;
+    text-decoration: none;
+
+    background: #FFF;
+    border-right: none;
+    *display: inline;
+    *zoom: 1;
+    *border-right: 1px solid #d9d9d9;
+
+}
+.rsUniversal .rsTab:first-child {
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+}
+.rsUniversal .rsTab:last-child {
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+    border-right: 1px solid #D9D9DD;
+}
+.rsUniversal .rsTab:active {
+    background-color: #f4f4f4;
+}
+.rsUniversal .rsTab.rsNavSelected {
+    color: #FFF;
+    background: #383838;
+    border-color: #383838;
+}
+/***************
+*
+*  5. Fullscreen button
+*
+****************/
+
+.rsUniversal .rsFullscreenBtn {
+    right: 0;
+    top: 0;
+    width: 44px;
+    height: 44px;
+    z-index: 22;
+    display: block;
+    position: absolute;
+    cursor: pointer;
+
+}
+.rsUniversal .rsFullscreenIcn {
+    display: block;
+    margin: 6px;
+    width: 32px;
+    height: 32px;
+
+    background: url('rsSkinUniversal.png') 0 0 transparent;
+    opacity: 0.7;
+    border-radius: 2px;
+
+}
+.rsUniversal .rsFullscreenBtn:hover .rsFullscreenIcn {
+    opacity: 1;
+}
+.rsUniversal.rsFullscreen .rsFullscreenIcn {
+    background-position: -32px 0;
+}
+/***************
+*
+*  6. Play/close video button
+*
+****************/
+
+.rsUniversal .rsPlayBtn {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3);
+    width: 64px;
+    height: 64px;
+    margin-left: -32px;
+    margin-top: -32px;
+    cursor: pointer;
+}
+.rsUniversal .rsPlayBtnIcon {
+    width: 64px;
+    display: block;
+    height: 64px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    transition: .3s;
+
+    background: url(rsSkinUniversal.png) no-repeat 0 -32px;
+    background-color: #383838;
+    background-color: rgba(0, 0, 0, 0.75);
+    *background-color: #383838;
+}
+.rsUniversal .rsPlayBtn:hover .rsPlayBtnIcon {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+.rsUniversal .rsBtnCentered {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 20px;
+    height: 20px;
+}
+.rsUniversal .rsCloseVideoBtn {
+    right: 0;
+    top: 0;
+    width: 44px;
+    height: 44px;
+    z-index: 500;
+    position: absolute;
+    cursor: pointer;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+
+}
+.rsUniversal .rsCloseVideoBtn.rsiOSBtn {
+    top: -38px;
+    right: -6px;
+}
+.rsUniversal .rsCloseVideoIcn {
+    margin: 6px;
+    width: 32px;
+    height: 32px;
+    background: url('rsSkinUniversal.png') -64px 0;
+    background-color: #383838;
+    background-color: rgba(0, 0, 0, 0.75);
+    *background-color: #383838;
+}
+.rsUniversal .rsCloseVideoIcn:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+/***************
+*
+*  7. Preloader
+*
+****************/
+
+.rsUniversal .rsPreloader {
+    width: 20px;
+    height: 20px;
+    background-image: url(Preloader.gif);
+
+    left: 50%;
+    top: 50%;
+    margin-left: -10px;
+    margin-top: -10px;
+}
+/***************
+*
+*  8. Global caption
+*
+****************/
+.rsUniversal .rsGCaption {
+    position: absolute;
+    float: none;
+    bottom: 6px;
+    left: 6px;
+    text-align: left;
+
+    background: #222;
+
+    color: #FFF;
+    padding: 2px 8px;
+    width: auto;
+    font-size: 12px;
+    border-radius: 2px;
+}

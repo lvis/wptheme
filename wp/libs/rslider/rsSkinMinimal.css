@@ -1,0 +1,441 @@
+/******************************
+*	RS Skin: Minimal
+*	1. Arrows
+*	2. Bullets
+*	3. Thumbnails
+*	4. Tabs
+*	5. FullScreen button
+*	6. Play/close video button
+*	7. PreLoader
+*	8. Caption
+*	Sprite: 'rsSkinMinimal.png'
+******************************/
+
+/* Background */
+.rsMinimal,
+.rsMinimal .rsOverflow,
+.rsMinimal .rsSlide,
+.rsMinimal .rsVideoFrameHolder,
+.rsMinimal .rsThumbs {
+    background: #000;
+    color: #FFF;
+}
+/***************
+*
+*  1. Arrows
+*
+****************/
+
+.rsMinimal .rsArrow {
+    height: 32px;
+    width: 32px;
+    position: absolute;
+    display: block;
+    cursor: pointer;
+    z-index: 21;
+}
+.rsMinimal .rsArrowLeft {
+    right: 37px;
+    bottom: 7px;
+}
+.rsMinimal .rsArrowRight {
+    right: 7px;
+    bottom: 7px;
+}
+.rsMinimal .rsArrowIcn {
+    width: 24px;
+    height: 24px;
+    margin-top: 3px;
+    margin-left: 3px;
+    position: absolute;
+    cursor: pointer;
+    background: url('rsSkinMinimal.png') transparent;
+
+    border-radius: 2px;
+}
+.rsMinimal .rsArrowIcn:hover {
+
+}
+.rsMinimal.rsHor .rsArrowLeft .rsArrowIcn {
+    background-position: -68px -36px;
+}
+.rsMinimal.rsHor .rsArrowRight .rsArrowIcn {
+    background-position: -68px -68px;
+}
+.rsMinimal.rsVer .rsArrowLeft .rsArrowIcn {
+    background-position: -100px -36px;
+}
+.rsMinimal.rsVer .rsArrowRight .rsArrowIcn {
+    background-position: -100px -68px;
+}
+.rsMinimal .rsArrowDisabled .rsArrowIcn {
+    opacity: .3 !important;
+    filter: alpha(opacity=30);
+    *display: none;
+}
+/***************
+*
+*  2. Bullets
+*
+****************/
+
+.rsMinimal .rsBullets {
+    position: absolute;
+    bottom: 15px;
+    right: 73px;
+    z-index: 35;
+    padding-top: 4px;
+    height: auto;
+
+    text-align: center;
+    line-height: 6px;
+    overflow: hidden;
+}
+.rsMinimal .rsBullets * {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+.rsMinimal .rsBullet {
+    width: 6px;
+    height: 6px;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    padding: 6px 5px 6px 4px;
+}
+.rsMinimal .rsBullet span {
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #CCC;
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+.rsMinimal .rsBullet.rsNavSelected span {
+    background: #FFF;
+}
+/***************
+*
+*  3. Thumbnails
+*
+****************/
+
+.rsMinimal .rsThumbsHor {
+    width: 100%;
+    height: 72px;
+}
+.rsMinimal .rsThumbsVer {
+    width: 96px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.rsMinimal.rsWithThumbsHor .rsThumbsContainer {
+    position: relative;
+    height: 100%;
+}
+.rsMinimal.rsWithThumbsVer .rsThumbsContainer {
+    position: relative;
+    width: 100%;
+}
+.rsMinimal .rsThumb {
+    float: left;
+    overflow: hidden;
+    width: 96px;
+    height: 72px;
+}
+.rsMinimal .rsThumb img {
+    width: 100%;
+    height: 100%;
+}
+.rsMinimal .rsThumb.rsNavSelected {
+    background: #333;
+}
+.rsMinimal .rsThumb.rsNavSelected img {
+    filter: alpha(opacity=40);
+    opacity: 0.7;
+}
+.rsMinimal .rsThumb.rsNavSelected span.thumbIco {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border: 2px solid rgba(255, 255, 255, 0.9);
+    -webkit-backface-visibility: hidden;
+}
+.rsMinimal .rsTmb {
+    display: block;
+}
+/* Thumbnails arrow icons */
+.rsMinimal .rsThumbsArrow {
+    height: 100%;
+    width: 20px;
+    position: absolute;
+    display: block;
+    cursor: pointer;
+    z-index: 21;
+}
+.rsMinimal.rsWithThumbsVer .rsThumbsArrow {
+    width: 100%;
+    height: 20px;
+}
+.rsMinimal.rsWithThumbsVer .rsThumbsArrowLeft {
+    top: 0;
+    left: 0;
+}
+.rsMinimal.rsWithThumbsVer .rsThumbsArrowRight {
+    bottom: 0;
+    left: 0;
+}
+.rsMinimal.rsWithThumbsHor .rsThumbsArrowLeft {
+    left: 0;
+    top: 0;
+}
+.rsMinimal.rsWithThumbsHor .rsThumbsArrowRight {
+    right: 0;
+    top: 0;
+}
+.rsMinimal .rsThumbsArrowIcn {
+    width: 16px;
+    height: 16px;
+    top: 50%;
+    left: 50%;
+    margin-top: -8px;
+    margin-left: -8px;
+    position: absolute;
+    cursor: pointer;
+    background: url('rsSkinMinimal.png');
+}
+.rsMinimal.rsWithThumbsHor .rsThumbsArrowLeft .rsThumbsArrowIcn {
+    background-position: -128px -32px;
+}
+.rsMinimal.rsWithThumbsHor .rsThumbsArrowRight .rsThumbsArrowIcn {
+    background-position: -128px -48px;
+}
+.rsMinimal.rsWithThumbsVer .rsThumbsArrowLeft .rsThumbsArrowIcn {
+    background-position: -144px -32px;
+}
+.rsMinimal.rsWithThumbsVer .rsThumbsArrowRight .rsThumbsArrowIcn {
+    background-position: -144px -48px;
+}
+.rsMinimal .rsThumbsArrowDisabled {
+    display: none !important;
+}
+/* Thumbnails resizing on smaller screens */
+@media screen and (min-width: 0px) and (max-width: 800px) {
+    .rsMinimal .rsThumb {
+        width: 59px;
+        height: 44px;
+    }
+    .rsMinimal .rsThumbsHor {
+        height: 44px;
+    }
+    .rsMinimal .rsThumbsVer {
+        width: 59px;
+    }
+}
+/***************
+*
+*  4. Tabs
+*
+****************/
+
+.rsMinimal .rsTabs {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
+    padding-top: 12px;
+    position: relative;
+}
+.rsMinimal .rsTab {
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    height: auto;
+    width: auto;
+    color: #333;
+    padding: 5px 13px 6px;
+    min-width: 72px;
+    border: 1px solid #D9D9DD;
+    border-right: 1px solid #f5f5f5;
+    text-decoration: none;
+
+    background-color: #000;
+    background-image: -webkit-linear-gradient(top, #fefefe, #f4f4f4);
+    background-image: -moz-linear-gradient(top, #fefefe, #f4f4f4);
+    background-image: linear-gradient(to bottom, #fefefe, #f4f4f4);
+
+    *display: inline;
+    *zoom: 1;
+}
+.rsMinimal .rsTab:first-child {
+    -webkit-border-top-left-radius: 4px;
+    border-top-left-radius: 4px;
+    -webkit-border-bottom-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+.rsMinimal .rsTab:last-child {
+    -webkit-border-top-right-radius: 4px;
+    border-top-right-radius: 4px;
+    -webkit-border-bottom-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+
+    border-right: 1px solid #cfcfcf;
+}
+.rsMinimal .rsTab:active {
+    border: 1px solid #D9D9DD;
+    background-color: #f4f4f4;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2) inset;
+}
+.rsMinimal .rsTab.rsNavSelected {
+    color: #000;
+    border: 1px solid #999;
+    text-shadow: 1px 1px #838383;
+    box-shadow: 0 1px 9px rgba(102, 102, 102, 0.65) inset;
+    background: #ACACAC;
+    background-image: -webkit-linear-gradient(top, #ACACAC, #BBB);
+    background-image: -moz-linear-gradient(top, #ACACAC, #BBB);
+    background-image: linear-gradient(to bottom, #ACACAC, #BBB);
+}
+/***************
+*
+*  5. Fullscreen button
+*
+****************/
+
+.rsMinimal .rsFullscreenBtn {
+    right: 0;
+    top: 0;
+    width: 44px;
+    height: 44px;
+    z-index: 22;
+    display: block;
+    position: absolute;
+    cursor: pointer;
+
+}
+.rsMinimal .rsFullscreenIcn {
+    display: block;
+    margin: 6px;
+    width: 32px;
+    height: 32px;
+
+    background: url('rsSkinMinimal.png') 0 0 transparent;
+}
+.rsMinimal .rsFullscreenIcn:hover {
+    opacity: 0.8;
+}
+.rsMinimal.rsFullscreen .rsFullscreenIcn {
+    background-position: -32px 0;
+}
+/***************
+*
+*  6. Play/close video button
+*
+****************/
+
+.rsMinimal .rsPlayBtn {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3);
+    width: 64px;
+    height: 64px;
+    margin-left: -32px;
+    margin-top: -32px;
+    cursor: pointer;
+}
+.rsMinimal .rsPlayBtnIcon {
+    width: 64px;
+    display: block;
+    height: 64px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    transition: .3s;
+
+    background: url(rsSkinMinimal.png) no-repeat 0 -32px;
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.75);
+    *background-color: #000;
+}
+.rsMinimal .rsPlayBtn:hover .rsPlayBtnIcon {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+.rsMinimal .rsBtnCentered {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 20px;
+    height: 20px;
+}
+.rsMinimal .rsCloseVideoBtn {
+    right: 0;
+    top: 0;
+    width: 44px;
+    height: 44px;
+    z-index: 500;
+    position: absolute;
+    cursor: pointer;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+
+}
+.rsMinimal .rsCloseVideoBtn.rsiOSBtn {
+    top: -38px;
+    right: -6px;
+}
+.rsMinimal .rsCloseVideoIcn {
+    margin: 6px;
+    width: 32px;
+    height: 32px;
+    background: url('rsSkinMinimal.png') -64px 0;
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.75);
+    *background-color: #000;
+}
+.rsMinimal .rsCloseVideoIcn:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+/***************
+*
+*  7. Preloader
+*
+****************/
+
+.rsMinimal .rsPreloader {
+    width: 20px;
+    height: 20px;
+    background-image: url(Preloader.gif);
+
+    left: 50%;
+    top: 50%;
+    margin-left: -10px;
+    margin-top: -10px;
+}
+/***************
+*
+*  8. Global caption
+*
+****************/
+.rsMinimal .rsGCaption {
+    position: absolute;
+    float: none;
+    bottom: 6px;
+    left: 6px;
+    text-align: left;
+
+    background: #000;
+    background: rgba(0, 0, 0, 0.75);
+
+    color: #FFF;
+    padding: 2px 8px;
+    width: auto;
+    font-size: 12px;
+    border-radius: 2px;
+}

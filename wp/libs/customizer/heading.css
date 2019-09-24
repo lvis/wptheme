@@ -1,0 +1,11 @@
+.customize-control-heading {
+    margin-top: 0;
+}
+.customize-control-heading h2 {
+    display: block;
+    text-align: center;
+    margin-bottom: 0;
+}
+.customize-control-heading .description {
+    margin-top: 10px;
+}

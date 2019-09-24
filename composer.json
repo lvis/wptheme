@@ -1,7 +1,7 @@
 {
   "name": "lvis/wptheme",
   "type": "project",
-  "description": "Wordpress: Skeleton for Theme",
+  "description": "WP: Skeleton for Theme",
   "keywords": [
     "wordpress",
     "theme"
@@ -18,22 +18,13 @@
   "repositories": [
     {
       "type": "git",
-      "url": "https://github.com/lvis/wplib"
-    },
-    {
-      "type": "git",
-      "url": "https://github.com/lvis/wpwidgets"
-    },
-    {
-      "type": "git",
       "url": "https://github.com/wpmetabox/meta-box"
     }
   ],
   "minimum-stability": "dev",
   "require": {
     "php": ">=7",
-    "lvis/wpwidgets": "dev-master",
-    "wpmetabox/meta-box": "4.18.3"
+    "wpmetabox/meta-box": "dev-master"
   },
   "autoload": {
     "psr-4": {

@@ -1,20 +1,20 @@
 <?php defined('ABSPATH') || exit;
 
 use wp\WidgetArea;
-use wp\WPUtils;
+use wp\UtilsWp;
 
 $content = '';
-$content .= WPUtils::getSidebarContent(WidgetArea::FOOTER_TOP);
-$content .= WPUtils::getSidebarContent(WidgetArea::FOOTER_BOTTOM);
+$content .= UtilsWp::getSidebarContent(WidgetArea::FOOTER_TOP);
+$content .= UtilsWp::getSidebarContent(WidgetArea::FOOTER_BOTTOM);
 $siteName = get_bloginfo('name');
 $currentYear = date('Y');
-$contentAfterFooter = WPUtils::doAction('wp_footer');
+$contentAfterFooter = UtilsWp::doAction('wp_footer');
 $textCopyright = __('Copyright');
 echo "</main><footer>{$content}
 <div class='text-xs-center'>{$textCopyright} © {$currentYear} {$siteName}</div></footer>{$contentAfterFooter}</body></html>";
 //TODO Add this Code as default in Customizer and make optional
 /*
-$currentLanguage = WPUtils::getLanguageShortCode();
+$currentLanguage = UtilsWp::getLanguageShortCode();
 switch ($currentLanguage) {
     case 'en':
         $currentLanguageCode = "599a97f71b1bed47ceb05bc4";

@@ -5,7 +5,7 @@
  * @see 	    https://docs.woocommerce.com/document/template-structure/
  * @author 		WooThemes
  * @package 	WooCommerce/Templates
- * @version     3.5.0
+ * @version     3.6.0
  */
 defined( 'ABSPATH' ) || exit;
 
@@ -13,10 +13,12 @@ global $product;
 $htmlReviewsPage = '';
 if ( comments_open() ) {
     $textCurrentReviews = __('Reviews', 'woocommerce');
-    if (get_option('woocommerce_enable_review_rating') === 'yes' && ($count = $product->get_review_count())) {
+    $count = $product->get_review_count();
+    if ($count && wc_review_ratings_enabled()) {
         /* translators: 1: reviews count 2: product name */
-        $textCurrentReviews = _n('%1$s review for %2$s', '%1$s reviews for %2$s', $count, 'woocommerce');
-        $textCurrentReviews = sprintf($textCurrentReviews, $count, get_the_title());
+        $textCurrentReviews = esc_html(_n('%1$s review for %2$s', '%1$s reviews for %2$s', $count, 'woocommerce'));
+        $textCurrentReviews = sprintf($textCurrentReviews, esc_html($count), get_the_title());
+        $textCurrentReviews = apply_filters('woocommerce_reviews_title', $textCurrentReviews, $count, $product);
     }
     $textNoReviewsYet = __('There are no reviews yet.', 'woocommerce');
     $htmlComments = "<p class='woocommerce-noreviews text-xs-center'>{$textNoReviewsYet}</p>";
@@ -52,13 +54,13 @@ if ( comments_open() ) {
         $textName = __('Name', 'woocommerce');
         $reviewAuthorId = esc_attr($commenter['comment_author']);
         $htmlReviewAuthor = "<fieldset class='comment-form-author'>
-        <label for='author' class='title required'><i class='far fa-user'></i> <span>{$textName}</span></label>
+        <label for='author' class='title required'><i class='fas fa-user'></i> <span>{$textName}</span></label>
         <input id='author' name='author' type='text' value='{$reviewAuthorId}' size='30' required>
         </fieldset>";
         $textEmail = __('Email', 'woocommerce');
         $reviewAuthorEmail = esc_attr($commenter['comment_author_email']);
         $htmlReviewAuthorEmail = "<fieldset class='comment-form-email'>
-        <label for='email' class='title required'><i class='far fa-envelope'></i> <span>{$textEmail}</span></label> 
+        <label for='email' class='title required'><i class='fas fa-envelope'></i> <span>{$textEmail}</span></label> 
         <input id='email' name='email' type='email' value='{$reviewAuthorEmail}' size='30' required>
         </fieldset>";
         $textSubmit = __('Submit', 'woocommerce');
@@ -89,7 +91,7 @@ if ( comments_open() ) {
             $textNotThatBad = __('Not that bad', 'woocommerce');
             $textVeryPoor = __('Very poor', 'woocommerce');
             $argsReviewForm['comment_field'] = "<fieldset class='comment-form-rating'>
-            <label for='rating' class='title required'><i class='far fa-comment-exclamation'></i> <span>{$textYourRating}</span></label>
+            <label for='rating' class='title required'><i class='fas fa-comment-exclamation'></i> <span>{$textYourRating}</span></label>
             <select name='rating' id='rating' required>
                 <option value=''>{$textRate}</option>
                 <option value='5'>{$textPerfect}</option>
@@ -102,7 +104,7 @@ if ( comments_open() ) {
 
         $textYourReview = __('Your review', 'woocommerce');
         $argsReviewForm['comment_field'] .= "<fieldset class='comment-form-comment'>
-            <label for='comment' class='title required'><i class='far fa-comment-edit'></i> <span>{$textYourReview}</span></label>
+            <label for='comment' class='title required'><i class='fas fa-comment-edit'></i> <span>{$textYourReview}</span></label>
             <textarea id='comment' name='comment' cols='45' rows='8' required></textarea></fieldset>";
         $argsReviewForm = apply_filters('woocommerce_product_review_comment_form_args', $argsReviewForm);
         ob_start();
@@ -113,7 +115,7 @@ if ( comments_open() ) {
     }
     $htmlReviewsPage = "<div id='reviews' class='woocommerce-Reviews col-md-10 offset-md-1'>
     <div id='comments'>
-        <h4 class='title text-xs-center'><i class='fa fa-comments'></i> {$textCurrentReviews}</h4>
+        <h4 class='title text-xs-center'><i class='fas fa-comments'></i> {$textCurrentReviews}</h4>
         {$htmlComments}
         {$htmlCommentsPagination}
     </div>

@@ -1,0 +1,52 @@
+{
+  "vendor": {
+    "themes/wptheme": "2.0.0"
+  },
+  "admin-config": {
+    "post": {
+      "pages": {
+        "post.php": "",
+        "post-new.php": ""
+      },
+      "anchors": {
+        "post-body-content": {
+          "where": "first"
+        }
+      },
+      "forms": {
+        "post": {
+          "fields": {
+            "detail-titles": {
+              "jquery": "input[id*='propertyAdditionalDetailTitle']"
+            },
+            "detail-values": {
+              "jquery": "input[id*='propertyAdditionalDetailValue']"
+            },
+            "agencyAddress": {},
+            "propertyDescription": {},
+            "propertyAddress": {}
+          }
+        }
+      }
+    },
+    "edit-tag":{
+      "pages":{"term.php":"","edit-tags.php": "","edit-tags.php":"action=edit"},
+      "forms":{
+        "edittag":{
+          "fields":{
+            "name":{},
+            "description":{},
+            "propertyMetaTaxTypeNamePlural": {},
+            "parent":{ "encode":"display" }
+          }
+        }
+      },
+      "js-exec":{"edit-tag-exec":{"src":"./admin/js/edit-tag-exec.min.js"}}
+    },
+    "js-exec": {
+      "post-exec": {
+        "src": "./admin/js/post-exec.min.js"
+      }
+    }
+  }
+}

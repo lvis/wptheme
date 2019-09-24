@@ -1,0 +1,19 @@
+.rsContentSlider h3 {
+    font-size: 24px;
+    line-height: 31px;
+    margin: 12px 0 8px;
+    font-weight: bold;
+}
+.rsContentSlider h3,
+.rsContentSlider p {
+    width: 90%;
+    margin-left: 5%;
+}
+.rsContentSlider img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.rs.rsContentSlider {
+    background: none;
+}

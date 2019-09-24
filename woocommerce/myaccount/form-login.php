@@ -4,11 +4,11 @@
  * This template can be overridden by copying it to yourtheme/woocommerce/myaccount/form-login.php.
  * @see     https://docs.woocommerce.com/document/template-structure/
  * @package WooCommerce/Templates
- * @version 3.5.0
+ * @version 3.6.0
  */
 defined('ABSPATH') || exit;
 
-use wp\WPUtils;
+use wp\UtilsWp;
 
 $content = '';
 $textEmailAddress = __('Email address', 'woocommerce');
@@ -24,14 +24,14 @@ if (get_option('woocommerce_enable_myaccount_registration') === 'yes') {
             $valueUserName = esc_attr(wp_unslash($_POST['username']));
         }
         $contentUserName = "<fieldset>
-            <label for='reg_username' class='required'><i class='far fa-user'></i> {$textUserName}</label>
+            <label for='reg_username' class='required'><i class='fas fa-user'></i> {$textUserName}</label>
             <input id='reg_username' name='username' type='text' autocomplete='username' value='{$valueUserName}'>
         </fieldset>";
     }
-    $contentPassword = '';
-    if ('no' === get_option('woocommerce_registration_generate_password')) {
+    $contentPassword = esc_html( 'A password will be sent to your email address.', 'woocommerce' );
+    if (get_option('woocommerce_registration_generate_password') === 'no') {
         $contentPassword = "<fieldset>
-            <label for='reg_password' class='required'><i class='far fa-key'></i> {$textPassword}</label>
+            <label for='reg_password' class='required'><i class='fas fa-key'></i> {$textPassword}</label>
             <input id='reg_password' name='password' type='password' autocomplete='new-password'>
         </fieldset>";
     }
@@ -42,24 +42,24 @@ if (get_option('woocommerce_enable_myaccount_registration') === 'yes') {
     $textRegister = __('Register', 'woocommerce');
     $nonceRegister = wp_nonce_field('woocommerce-register', 'woocommerce-register-nonce', true,
         false);
-    $actionRegisterFormTag = WPUtils::doAction( 'woocommerce_register_form_tag' );
-    $actionRegisterFormStart = WPUtils::doAction('woocommerce_register_form_start');
-    $actionRegisterForm = WPUtils::doAction('woocommerce_register_form');
-    $actionRegisterFormEnd = WPUtils::doAction('woocommerce_register_form_end');
+    $actionRegisterFormTag = UtilsWp::doAction('woocommerce_register_form_tag' );
+    $actionRegisterFormStart = UtilsWp::doAction('woocommerce_register_form_start');
+    $actionRegisterForm = UtilsWp::doAction('woocommerce_register_form');
+    $actionRegisterFormEnd = UtilsWp::doAction('woocommerce_register_form_end');
     $contentFormRegister = "<div class='col-xs-12 col-md-6'>
     <form method='post' class='woocommerce-form-register register' {$actionRegisterFormTag}>
     {$actionRegisterFormStart}
-    <h2 class='text-xs-center card-title-raised'><i class='fal fa-user-edit'></i> {$textRegister}</h2>
+    <h2 class='text-xs-center card-title-raised'><i class='fas fa-user-edit'></i> {$textRegister}</h2>
     {$contentUserName}
     <fieldset>
-        <label for='reg_email' class='required'><i class='far fa-envelope'></i> {$textEmailAddress}</label>
+        <label for='reg_email' class='required'><i class='fas fa-envelope'></i> {$textEmailAddress}</label>
         <input id='reg_email' name='email' type='email' autocomplete='email' value='{$valueEmail}'>
     </fieldset>
     {$contentPassword} 
     {$actionRegisterForm}
     <fieldset>
         <button type='submit' class='button float-xs-right' name='register' value='{$textRegister}'>
-            <i class='far fa-user-plus'></i> 
+            <i class='fas fa-user-plus'></i> 
             {$textRegister}
         </button>
     </fieldset>
@@ -71,8 +71,8 @@ if (get_option('woocommerce_enable_myaccount_registration') === 'yes') {
 ob_start();
 woocommerce_login_form();
 $contentFormLogin = ob_get_clean();
-$actionBeforeCustomerLoginForm = WPUtils::doAction('woocommerce_before_customer_login_form');
-$actionAfterCustomerLoginForm = WPUtils::doAction('woocommerce_after_customer_login_form');
+$actionBeforeCustomerLoginForm = UtilsWp::doAction('woocommerce_before_customer_login_form');
+$actionAfterCustomerLoginForm = UtilsWp::doAction('woocommerce_after_customer_login_form');
 echo "{$actionBeforeCustomerLoginForm}
 <div id='customer_login' class='row text-xs-center'>
 {$contentFormLogin}

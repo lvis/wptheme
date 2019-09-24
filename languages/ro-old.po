@@ -1,0 +1,3876 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Real Estate Theme\n"
+"POT-Creation-Date: 2016-03-16 16:24+0500\n"
+"PO-Revision-Date: 2017-08-25 22:48+0300\n"
+"Last-Translator: Vitali Lupu <vitaliix@gmail.com>\n"
+"Language-Team: Vitali Lupu <vitaliix@gmail.com>\n"
+"Language: ro\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.7\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?2:1));\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: framework/meta-box\n"
+"X-Poedit-SearchPathExcluded-1: images\n"
+"X-Poedit-SearchPathExcluded-2: libs\n"
+"X-Poedit-SearchPathExcluded-3: languages\n"
+"X-Poedit-SearchPathExcluded-4: node_modules\n"
+
+#: archive-property.php:69
+msgid "No Property Found"
+msgstr "Nici un Imobil nu a fost găsit"
+
+msgid "Archives"
+msgstr "Arhive"
+
+msgid "All Posts in Category"
+msgstr "Totate Articolele în Categoria"
+
+msgid "All Posts in Tag"
+msgstr "Toate Articolele Etichetate"
+
+msgid "All Posts By"
+msgstr "Toate Articolele după"
+
+#: author.php:8
+msgid "All Properties"
+msgstr "Toate Imobilurile"
+
+#: framework/customizer/contact.php:90 author.php:82 single-agent.php:63
+msgid "Contact Details"
+msgstr "Informație de Contanct"
+
+#: single-agent.php:67 template-users-listing.php:119
+msgid "Office"
+msgstr "Oficiu"
+
+#: author.php:90 tp/property-detail/property-contacts-for-sidebar.php:50
+#: single-agent.php:70 template-contact.php:69 template-users-listing.php:122
+msgid "Mobile"
+msgstr "Mobil"
+
+#: single-agent.php:73 template-users-listing.php:125
+msgid "Fax"
+msgstr "Fax"
+
+#: author.php:174 framework/include/shortcodes/elements.php:265
+msgid "No Properties Found!"
+msgstr "Nici un imobil nu a fost găsit!"
+
+#: framework/customizer/news.php:31
+msgid "News"
+msgstr "Noutăți"
+
+#: comments.php:4
+msgid "This post is password protected. Enter the password to view comments."
+msgstr "Această înregistrare este protejată de praolă. Introduceți parola, pentru a vedea comentariile."
+
+#: comments.php:11
+msgid "No Comment"
+msgstr "Nu sunt Comentarii"
+
+#: comments.php:11
+msgid "One Comment"
+msgstr "Un Comentariu"
+
+#: comments.php:11
+msgid "(%) Comments"
+msgstr "(%) Comentarii"
+
+#: comments.php:30
+msgid "Comments are closed."
+msgstr "Comentariile sunt interzise."
+
+#: framework/customizer/agents.php:15
+msgid "Agents Pages"
+msgstr "Paginile Agenților"
+
+#: framework/customizer/agents.php:26
+msgid "Number of Agents"
+msgstr "Numărul Agenților"
+
+#: framework/customizer/agents.php:27
+msgid "Select the maximum number of agents to display on an agents list page."
+msgstr "Aelegeți numărul maximal al agenților pentru afișarea pe pagina cu lista agenților"
+
+#: framework/customizer/agents.php:60
+msgid "Number of Properties on Agent Detail Page"
+msgstr "Numărul Imobilului afișat pe pagina Detalii Agent"
+
+#: framework/customizer/agents.php:61
+msgid "Select the number of properties to display on Agent detail page."
+msgstr "Selectați nuărul afișat de Imobil pe ppagina Detalii Agent"
+
+#: framework/customizer/contact.php:15
+msgid "Contact Page"
+msgstr "Pagina de Contact"
+
+#: framework/customizer/contact.php:25
+msgid "Google Map on Contact Page"
+msgstr "Google Map pe Pagina de Contact"
+
+#: framework/customizer/contact.php:29 framework/customizer/contact.php:94
+#: framework/customizer/footer.php:37 framework/customizer/header.php:54
+#: framework/customizer/header.php:177 framework/customizer/home.php:147
+#: framework/customizer/home.php:204 framework/customizer/home.php:363
+#: framework/customizer/home.php:425 framework/customizer/members.php:340
+#: framework/customizer/property.php:39 framework/customizer/property.php:120
+#: framework/customizer/property.php:174 framework/customizer/property.php:223
+#: framework/customizer/property.php:260 framework/customizer/property.php:298
+#: framework/customizer/property.php:335 framework/customizer/property.php:390
+#: framework/meta-box/config-meta-boxes.php:558
+msgid "Show"
+msgstr "Afișează"
+
+#: framework/customizer/contact.php:30 framework/customizer/contact.php:95
+#: framework/customizer/footer.php:38 framework/customizer/header.php:55
+#: framework/customizer/header.php:178 framework/customizer/home.php:148
+#: framework/customizer/home.php:205 framework/customizer/home.php:364
+#: framework/customizer/home.php:426 framework/customizer/members.php:341
+#: framework/customizer/property.php:40 framework/customizer/property.php:121
+#: framework/customizer/property.php:175 framework/customizer/property.php:224
+#: framework/customizer/property.php:261 framework/customizer/property.php:299
+#: framework/customizer/property.php:336 framework/customizer/property.php:391
+#: framework/meta-box/config-meta-boxes.php:559
+msgid "Hide"
+msgstr "Ascunde"
+
+#: framework/customizer/contact.php:41
+msgid "Google Map Latitude"
+msgstr "Google Map Latitudine"
+
+#: framework/customizer/contact.php:54
+msgid "Google Map Longitude"
+msgstr "Google Map Logitudine"
+
+#: framework/customizer/contact.php:66
+msgid "Google Map Zoom Level"
+msgstr "Google Map Nivelul de Mărire"
+
+#: framework/customizer/contact.php:67
+msgid "Provide Google Map Zoom Level."
+msgstr "Indicați Nivelul de Mărire a Google Map-ului"
+
+#: framework/customizer/contact.php:105
+msgid "Contact Details Title"
+msgstr "Informația de Contact Titlu"
+
+#: framework/customizer/contact.php:116
+msgid "Contact Address"
+msgstr "Adresa de Contact"
+
+#: framework/customizer/contact.php:127
+msgid "Cell Number"
+msgstr "Numarul Mobilului"
+
+#: framework/customizer/contact.php:138 framework/customizer/header.php:208
+#: template-contact.php:130
+msgid "Phone Number"
+msgstr "Număr de Telefon"
+
+msgid "Phone Numbers"
+msgstr "Numere de Telefon"
+
+msgid "Your Phone Number"
+msgstr "Numarul dvs. de telefon"
+
+#: framework/customizer/contact.php:149 framework/functions/basic.php:307
+#: framework/meta-box/config-meta-boxes.php:473
+msgid "Fax Number"
+msgstr "Număr de Fax"
+
+#: framework/customizer/contact.php:160
+msgid "Display Email"
+msgstr "Afișează Email-ul"
+
+#: framework/customizer/contact.php:161
+msgid "Provide Email that will be displayed in contact details section."
+msgstr "Oferiți Email-ul ce va fi afișat în pagina informației de contact"
+
+#: framework/customizer/contact.php:184
+msgid "Contact Form Heading"
+msgstr "Formular de Contact Titlu"
+
+#: framework/customizer/contact.php:196
+msgid "Contact Form Email"
+msgstr "Formular de Contact Email"
+
+#: framework/customizer/contact.php:197
+msgid "Provide email address that will get messages from contact form."
+msgstr "Oferiți adresa de e-mail, care va primi mesajele de la formularul de contact."
+
+#: framework/customizer/contact.php:208
+msgid "Contact Form Shortcode ( To Replace Default Form )"
+msgstr "Formular de Contact Cod Scurt ( Pentru a înlocui formularul implicit )"
+
+#: framework/customizer/contact.php:209
+msgid "If you want to replace default contact form with a plugin based form then provide its shortcode here."
+msgstr "Dacă doriți să înlocuiți Fomularul de Contact implicit cu unul bazat pe un modul atunci oferiți codul scurt aici."
+
+# Currency-switcher
+msgid "Currency Switcher"
+msgstr "Convertor de Valută"
+
+msgid "Base Currency"
+msgstr "Valuta de Bază"
+
+msgid "Currencies You Want to Support"
+msgstr "Valutele pe care doriți să le susțineți"
+
+msgid "Only provide comma separated list of currency codes in capital letters. Do not add dashes, spaces or currency signs."
+msgstr "Indicați separînd prin virgulă lista codurilor de valută în majusculă. Nu adăugați cratime, spații sau simboluri de valută."
+
+msgid "Expiry Period for Switched Currency"
+msgstr "Perioadă de Expirare pentru Valuta Convertită"
+
+msgid "One Hour"
+msgstr "O Oră"
+
+msgid "One Day"
+msgstr "O Zi"
+
+msgid "One Week"
+msgstr "O Săptămână"
+
+msgid "One Month"
+msgstr "O Lună"
+
+msgid "Failed to updated cookie !"
+msgstr "Nu a putut actualiza cookie-urile!"
+
+msgid "wp-currencies plugin is missing !"
+msgstr "modulul wp-currencies lipsește!"
+
+#: framework/customizer/customizer.php:43
+#: framework/functions/property-submit-handler.php:251
+#: framework/functions/property-submit-handler.php:253
+#: framework/functions/property-submit-handler.php:298
+#: framework/functions/property-submit-handler.php:300
+#: framework/functions/real-estate-search.php:260
+#: framework/meta-box/config-meta-boxes.php:53
+msgid "None"
+msgstr "Nici una"
+
+#: framework/customizer/footer.php:14
+msgid "Footer"
+msgstr "Subsol"
+
+#: framework/customizer/footer.php:23
+#: framework/include/partners-post-type.php:7
+msgid "Partners"
+msgstr "Parteneri"
+
+#: framework/customizer/footer.php:33
+msgid "Partners Carousel Above Footer"
+msgstr "Caruselul Partenerilor mai sus de Subsol"
+
+#: framework/customizer/footer.php:48
+msgid "Partners Title"
+msgstr "Parteneri Titlu"
+
+#: framework/customizer/footer.php:58
+msgid "Text"
+msgstr "Text"
+
+#: framework/customizer/footer.php:68
+msgid "Copyright Text"
+msgstr "Depturile de Autor Text"
+
+#: framework/customizer/footer.php:80
+msgid "Designed by Text"
+msgstr "Create De Text"
+
+#: framework/customizer/footer.php:90 framework/customizer/header.php:375
+#: framework/customizer/colors.php:16
+msgid "Styles"
+msgstr "Stiluri"
+
+#: framework/customizer/footer.php:104
+msgid "Footer Widget Title Color"
+msgstr "Piesa din Subsol Culoare Titlu"
+
+#: framework/customizer/footer.php:120
+msgid "Footer Text Color"
+msgstr "Subsol Culoare Text"
+
+#: framework/customizer/footer.php:136
+msgid "Footer Link Color"
+msgstr "Subsol Culoare Legătură"
+
+#: framework/customizer/footer.php:152
+msgid "Footer Link Hover Color"
+msgstr "Subsol Culoare Legătură când treci peste"
+
+#: framework/customizer/footer.php:168
+msgid "Footer Border Color"
+msgstr "Subsol Culoare Hotar"
+
+#: framework/customizer/colors.php:414
+msgid "Disable footer background image?"
+msgstr "Dezactivează imaginea de fundal din subsol?"
+
+#: framework/customizer/footer.php:183 framework/customizer/header.php:248
+#: framework/customizer/header.php:354 framework/customizer/misc.php:58
+#: framework/customizer/misc.php:108 framework/customizer/payments.php:30
+#: framework/customizer/payments.php:71 framework/customizer/payments.php:115
+#: framework/customizer/property.php:351 framework/customizer/search.php:420
+#: framework/customizer/search.php:435 framework/customizer/colors.php:40
+#: framework/meta-box/config-meta-boxes.php:190
+#: framework/meta-box/config-meta-boxes.php:359
+msgid "Yes"
+msgstr "Da"
+
+#: framework/customizer/footer.php:184 framework/customizer/header.php:249
+#: framework/customizer/header.php:355 framework/customizer/misc.php:59
+#: framework/customizer/misc.php:109 framework/customizer/payments.php:31
+#: framework/customizer/payments.php:72 framework/customizer/payments.php:116
+#: framework/customizer/property.php:352 framework/customizer/search.php:421
+#: framework/customizer/search.php:436 framework/customizer/colors.php:41
+#: framework/meta-box/config-meta-boxes.php:398
+msgid "No"
+msgstr "Nu"
+
+#: framework/customizer/footer.php:197
+msgid "Footer Background Image"
+msgstr "Subsol Imagine de Fundal"
+
+#: framework/customizer/footer.php:198
+msgid "Note: Default background image is 235px in height and 1770px in width."
+msgstr "Notă: Imaginea de Fundal implicită are 235px în înălțime si 1770px în lățime."
+
+#: framework/customizer/gallery.php:26 framework/customizer/news.php:35
+#: framework/meta-box/config-meta-boxes.php:515
+msgid "Banner Title"
+msgstr "Titlu Banner"
+
+#: framework/customizer/news.php:47
+#: framework/meta-box/config-meta-boxes.php:521
+msgid "Banner Sub Title"
+msgstr "Subtitlu Banner"
+
+#: framework/customizer/header.php:30
+msgid "Header"
+msgstr "Antet"
+
+#: framework/customizer/header.php:40
+msgid "Social Icons"
+msgstr "Iconițe a Rețeleor de Socializare"
+
+#: framework/customizer/header.php:50
+msgid "Show or Hide Social Icons"
+msgstr "Arată sau Ascunde Iconițele Rețelelor de Socializare"
+
+#: framework/customizer/header.php:130
+msgid "Skype Username"
+msgstr "Numele Utilizatorului Skype"
+
+#: framework/customizer/header.php:163
+msgid "Login Form"
+msgstr "Formular de Autentificare"
+
+#: framework/customizer/header.php:173
+msgid "Header Navigation for User Login and Register"
+msgstr "Navigare Antet pentru Autentificare Utilizator și Înregistrare"
+
+#: framework/customizer/header.php:187
+msgid "Contact Information"
+msgstr "Informație de Contact"
+
+#: framework/customizer/header.php:197
+#: framework/meta-box/config-meta-boxes.php:455
+msgid "Email Address"
+msgstr "Adresă E-mail"
+
+#: framework/customizer/header.php:324
+msgid "Others"
+msgstr "Altele"
+
+#: framework/customizer/header.php:334
+msgid "Sticky Header"
+msgstr "Antet Fixat"
+
+#: framework/customizer/header.php:349
+msgid "Display WPML Language Switcher in Top Header"
+msgstr "Afișează WPML Language Switcher in Antet"
+
+#: framework/customizer/header.php:350
+msgid "Only works if WPML is installed."
+msgstr "Funcționează doar dacă modulul WPML este instalat."
+
+#: framework/customizer/header.php:364
+msgid "Google Analytics"
+msgstr "Google Analytics"
+
+#: framework/customizer/header.php:390
+msgid "Header Background Color"
+msgstr "Antet Culoade de Fundal"
+
+#: framework/customizer/header.php:407
+msgid "Logo Text Color"
+msgstr "Logo Culoare Text"
+
+#: framework/customizer/header.php:424
+msgid "Logo Text Hover Color"
+msgstr "Logo Culoare Text când treci peste"
+
+#: framework/customizer/header.php:441
+msgid "Tagline Text Color"
+msgstr "Slogan Culoare Text"
+
+#: framework/customizer/header.php:458
+msgid "Tagline Background Color"
+msgstr "Slogan Culoare de Fundal"
+
+#: framework/customizer/header.php:475
+msgid "Header Text Color"
+msgstr "Antet Culoare Text"
+
+#: framework/customizer/header.php:492
+msgid "Header Links Hover Color"
+msgstr "Antet Culoare Legătură când treci peste"
+
+#: framework/customizer/header.php:509
+msgid "Header Borders Color"
+msgstr "Antet Culoarea Hotarelor"
+
+#: framework/customizer/header.php:526
+msgid "Main Menu Text Color"
+msgstr "Meniul Principal Culoare Text"
+
+#: framework/customizer/header.php:543
+msgid "Drop Down Menu Background Color"
+msgstr "Meniu Derulant Culoare de Fundal"
+
+#: framework/customizer/header.php:560
+msgid "Drop Down Menu Text Color"
+msgstr "Meniu Derulant Culoare Text"
+
+#: framework/customizer/header.php:577
+msgid "Drop Down Menu Background Color on Mouse Over"
+msgstr "Meniu Derulant Culoare de Fundal când treci peste"
+
+#: framework/customizer/home.php:37
+msgid "Home Page"
+msgstr "Pagina Principală"
+
+#: framework/customizer/home.php:46
+msgid "Slider Area"
+msgstr "Zona Glisorului"
+
+#: framework/customizer/home.php:56
+msgid "What to Display Below Header?"
+msgstr "Ce să afișăm mai jos de Antet?"
+
+#: framework/customizer/home.php:60
+msgid "Slider Based on Properties"
+msgstr "Glisor bazat pe Imobile?"
+
+#: framework/customizer/home.php:61
+msgid "Slider Based on Slides"
+msgstr "Glisor bazat pe Slider-uri"
+
+#: framework/customizer/home.php:62
+msgid "Google Map with Properties Markers"
+msgstr "Harta Google cu Marcaje ale Imobilelor"
+
+#: framework/customizer/home.php:120
+#: framework/meta-box/config-meta-boxes.php:536
+msgid "Revolution Slider Alias"
+msgstr "Referință către Revolution Slider"
+
+#: framework/customizer/home.php:121
+msgid "If you want to display Revolution Slider then provide its alias here."
+msgstr "Dacă doriți să afișați Revolution Slider, atunci indicați referința către el aici."
+
+#: framework/customizer/home.php:132
+msgid "Search Form"
+msgstr "Formular de Căutare"
+
+#: framework/customizer/home.php:142
+msgid "Properties Search Form on Homepage"
+msgstr "Forumular de Căutare pe Pagina Principală"
+
+#: framework/customizer/home.php:143
+msgid "You can configure properties search form using related section."
+msgstr "Puteți configura Forumarul de Căutare a Imobilului utilizând această secție."
+
+#: framework/customizer/home.php:158
+msgid "Slogan"
+msgstr "Slogan"
+
+#: framework/customizer/home.php:168
+msgid "Slogan Title"
+msgstr "Titlu Slogan"
+
+#: framework/customizer/home.php:179
+msgid "Description Text Below Slogan"
+msgstr "Textul Descriere mai jos de Slogan"
+
+#: framework/customizer/home.php:190
+msgid "Home Properties"
+msgstr "Imobile pe Pagina Principală"
+
+#: framework/customizer/home.php:200
+msgid "Show Properties on Homepage ?"
+msgstr "Arată Imobile pe Pagina Principală ?"
+
+#: framework/customizer/home.php:215
+msgid "What Kind of Properties You Want to Display on Homepage ?"
+msgstr "Ce tip de Imobil doriți să Afișați pe Pagina Principală ?"
+
+#: framework/customizer/home.php:219
+msgid "Recent Properties"
+msgstr "Imobile Recente"
+
+#: framework/customizer/home.php:220 framework/customizer/home.php:349
+#: widgets/WidgetFeaturedProperties.php:9
+msgid "Featured Properties"
+msgstr "Imobile Recomandate"
+
+#: framework/customizer/home.php:221
+msgid "Properties Based on Selected Locations, Statuses and Types from Below"
+msgstr "Imobile Bazate pe Locațiile Selectate, Stările și Tipurile de mai jos"
+
+#: framework/customizer/home.php:237
+msgid "Select Property Locations"
+msgstr "Alegeți Locația Imobilului"
+
+#: framework/customizer/home.php:255
+msgid "Select Property Statuses"
+msgstr "Selectați Stările Imobilului"
+
+#: framework/customizer/home.php:273
+msgid "Select Property Types"
+msgstr "Alegeți Tipuri Imobil"
+
+#: framework/customizer/home.php:285
+msgid "Sort Properties By"
+msgstr "Sortați Imobilile După"
+
+#: framework/customizer/home.php:289
+msgid "Time - Recent First"
+msgstr "Timp - Cele mai Recente"
+
+#: framework/customizer/home.php:290
+#: framework/customizer/list-and-taxonomy.php:97
+msgid "Price - Low to High"
+msgstr "Preț - de la Mic la Mare"
+
+#: framework/customizer/home.php:291
+#: framework/customizer/list-and-taxonomy.php:98
+msgid "Price - High to Low"
+msgstr "Preț - de la Mare la Mic"
+
+#: framework/customizer/home.php:301
+msgid "Number of Properties on Each Page"
+msgstr "Numărul Imobilelor pe fiecare pagină"
+
+#: framework/customizer/home.php:359
+msgid "Featured Properties on Homepage"
+msgstr "Imobilele Recomandate pe Pagina Principală"
+
+#: framework/customizer/home.php:374 framework/customizer/home.php:436
+msgid "Title"
+msgstr "Titlu"
+
+#: framework/customizer/home.php:385 framework/customizer/home.php:447
+msgid "Description Text"
+msgstr "Text Descriere"
+
+#: framework/customizer/home.php:396
+msgid "Exclude or Include Featured Properties from Recent Properties on Homepage"
+msgstr "Exclude ori Include Imobilele Recomandate din Imobilele Recente pe Pagina Principală"
+
+#: framework/customizer/home.php:411
+msgid "News or Blog Posts"
+msgstr "Noutăți sau Aricole în Blog"
+
+#: framework/customizer/home.php:421
+msgid "News Posts on Homepage"
+msgstr "Noutăți Publicate pe Pagina Principală"
+
+#: framework/customizer/taxonomy.php:29
+msgid "Taxonomies"
+msgstr "Taxonomii"
+
+#: framework/customizer/list-and-taxonomy.php:26
+msgid "Module Below Header"
+msgstr "Module mai jos de Antet"
+
+#: framework/customizer/list-and-taxonomy.php:27
+msgid "What to display in area below header on Properties List Templates and Taxonomy Archive pages ?"
+msgstr "Ce să afișăm în zona mai jos de antet pe Șablonul Listei Imobilelor și Paginilor din Taxonomia Arhivelor ?"
+
+#: framework/customizer/list-and-taxonomy.php:31
+msgid "Google Map With Properties Markers"
+msgstr "Harta Google cu Marcaje ale Imobilelor"
+
+#: framework/customizer/list-and-taxonomy.php:32
+#: framework/customizer/search.php:63
+msgid "Image Banner"
+msgstr "Banner Imagine"
+
+#: framework/customizer/list-and-taxonomy.php:42
+msgid "Default Layout"
+msgstr "Раскладка По умолчанию"
+
+#: framework/customizer/list-and-taxonomy.php:43
+msgid "Select the default layout for Properties List Templates and Taxonomy Archive pages."
+msgstr "Выберите раскладку по умолчанию для Шаблона Список Недвижимости и Страницы Архив Таксономий."
+
+#: framework/customizer/list-and-taxonomy.php:47
+msgid "List Layout"
+msgstr "Amplasare Listă"
+
+#: framework/customizer/list-and-taxonomy.php:48
+msgid "Grid Layout"
+msgstr "Amplasare Tabelară"
+
+#: framework/customizer/list-and-taxonomy.php:58
+#: widgets/agent-featured-properties-widget.php:142
+#: widgets/agent-properties-widget.php:149
+#: widgets/featured-properties-widget.php:119
+msgid "Number of Properties"
+msgstr "Numărul Imobilelor"
+
+#: framework/customizer/list-and-taxonomy.php:59
+msgid "Select the maximum number of properties to display on a page."
+msgstr "Selectați numărul maximal de Imobile afișate pe pagină."
+
+#: framework/customizer/list-and-taxonomy.php:92
+msgid "Default Sort Order"
+msgstr "Sortare Implicită"
+
+#: framework/customizer/list-and-taxonomy.php:93
+msgid "Select the default sort order for Search Results, List Templates and Taxonomy Archive pages."
+msgstr "Alegeți ordinea de sortare a Rezultatelor Căutării, Listei Șabloanelor și Paginilor din Taxonomia Arhivelor."
+
+#: framework/customizer/list-and-taxonomy.php:99
+msgid "Date - Old to New"
+msgstr "Dată - Vechi la Nou"
+
+#: framework/customizer/list-and-taxonomy.php:100
+msgid "Date - New to Old"
+msgstr "Dată - Nou la Vechi"
+
+#: framework/customizer/members.php:15
+msgid "Members"
+msgstr "Participanții"
+
+#: framework/customizer/members.php:24 framework/customizer/colors.php:25
+msgid "Basic"
+msgstr "De Bază"
+
+#: framework/customizer/members.php:35
+msgid "Restrict Admin Side Access"
+msgstr "Restricționează Accesul către Panoul de Administrare"
+
+#: framework/customizer/members.php:36
+msgid "Restrict admin side access to any user level equal to or below the selected user level."
+msgstr "Restricționează Accesul către Panoul de Administrare la orice nivel de utilizator până la sau după nivelul de utilizator selectat."
+
+#: framework/customizer/members.php:40
+msgid "Subscriber ( Level 0 )"
+msgstr "Abonat ( Nivelul 0)"
+
+#: framework/customizer/members.php:41
+msgid "Contributor ( Level 1 )"
+msgstr "Contribuitor ( Nivelul 1)"
+
+#: framework/customizer/members.php:42
+msgid "Author ( Level 2 )"
+msgstr "Autor ( Nivelul 2 )"
+
+#: framework/customizer/members.php:53
+msgid "Login / Register"
+msgstr "Autentificare / Înregistrare"
+
+msgid "Login"
+msgstr "Autentificare"
+
+msgid "Register"
+msgstr "Înregistrare"
+
+msgid "Sign In"
+msgstr "Intră"
+
+msgid "Sign Up"
+msgstr "Înregistrează-te"
+
+#: framework/customizer/members.php:68 framework/customizer/property.php:148
+msgid "Activează"
+msgstr "Включить"
+
+#: framework/customizer/members.php:69 framework/customizer/property.php:149
+msgid "Disable"
+msgstr "Dezactivează"
+
+#: framework/customizer/members.php:79
+msgid "Select Login and Register Page (Optional)"
+msgstr "Alegeți Pagina de Autentificare și Înregistrare (Opțional)"
+
+#: framework/customizer/members.php:80
+msgid "Selected page should have Login & Register Template assigned to it. By default the login modal box will appear and you do not need to configure this option."
+msgstr "Pagina aleasă trebuie să aibă Șablonul de Autentificare și Înregistrare atribuit ei. Implicit caseta de Intrare va apărea automat și nu e necesară configurarea acestei opțiuni."
+
+#: framework/customizer/members.php:105
+msgid "Login & Register Page URL (Optional)"
+msgstr "URL-ul Paginei de Autentificare și Înregistrare (Opțional)"
+
+#: framework/customizer/members.php:117
+msgid "Edit Profile"
+msgstr "Editează Profilul"
+
+#: framework/customizer/members.php:126
+msgid "Select Edit Profile Page"
+msgstr "Alege Pagina de Editare a Profilului"
+
+#: framework/customizer/members.php:127
+msgid "Selected page should have Edit Profile Template assigned to it."
+msgstr "Pagina aleasă trebuie să aibă Șablonul Editează Profilul asociat ei."
+
+#: framework/customizer/members.php:152
+msgid "Edit Profile Page URL"
+msgstr "URL al Paginei Editeză Profilul"
+
+#: framework/customizer/members.php:164
+msgid "Submit Property"
+msgstr "Adaugă Imobilul"
+
+#: framework/customizer/members.php:173
+msgid "Select Submit Property Page"
+msgstr "Alegeți Pagina de Adăugare a Imobilului"
+
+#: framework/customizer/members.php:174
+msgid "Selected page should have Submit Property Template assigned to it."
+msgstr "Pagina aleasă trebuie să aibă Șablonul Adaugă Imobilul asociat ei."
+
+#: framework/customizer/members.php:187
+msgid "Submitted Property Status"
+msgstr "Starea Imobilului Adăugat"
+
+#: framework/customizer/members.php:188
+msgid "Select the default status for submitted property."
+msgstr "Alegeți Starea implicită pentru Imobilul adăugat"
+
+#: framework/customizer/members.php:192
+msgid "Pending ( Recommended )"
+msgstr "În așteptare ( Recomandat )"
+
+#: framework/customizer/members.php:193
+msgid "Publish"
+msgstr "Publicat"
+
+#: framework/customizer/members.php:204
+msgid "Default Address in Submit Form"
+msgstr "Adresa Implicită în Formularul de Adăugare"
+
+#: framework/customizer/members.php:216
+msgid "Default Map Location in Submit Form (Latitude,Longitude)"
+msgstr "Locația Implicită pe Hartă în Formularul de Adăugare (Latitudine,Longitudine)"
+
+#: framework/customizer/members.php:225
+msgid "Thanks for Submitting Property!"
+msgstr "Mulțumesc pentru Adăugarea Imobilului"
+
+#: framework/customizer/members.php:230
+msgid "Message After Successful Submit"
+msgstr "Mesajul După Adăugarea cu Succes"
+
+#: framework/customizer/members.php:243
+msgid "Submit Notice Email"
+msgstr "Adaugă Înștiințare prin Email"
+
+#: framework/customizer/members.php:267
+msgid "Submit Property Page URL"
+msgstr "Adaugă URL-ul Paginei Imobilului"
+
+#: framework/customizer/members.php:279
+msgid "My Properties"
+msgstr "Imobilele Mele"
+
+#: framework/customizer/members.php:288
+msgid "Select My Properties Page"
+msgstr "Alegeți Pagina Imobilelor Mele"
+
+#: framework/customizer/members.php:289
+msgid "Selected page should have My Properties Template assigned to it."
+msgstr "Pagina aleasă trebuie să aibă Șablonul Imobilele Mele asociată ei."
+
+#: framework/customizer/members.php:314
+msgid "My Properties Page URL"
+msgstr "Imobilele Mele URL-ul Paginei"
+
+#: framework/customizer/members.php:326
+msgid "Favorites"
+msgstr "Favorite"
+
+#: framework/customizer/members.php:336
+msgid "Add to Favorites Button on Property Detail Page"
+msgstr "Buttonul adaugă la Favorite pe Pagina Detalii Imobil"
+
+#: framework/customizer/members.php:350
+msgid "Select Favorite Properties Page"
+msgstr "Alege Pagina Imobilelor Favorite"
+
+#: framework/customizer/members.php:351
+msgid "Selected page should have Favorite Properties Template assigned to it."
+msgstr "Pagina aleasă trebuie să aibă Șablonul Imobile Favorite asociat ei."
+
+#: framework/customizer/members.php:376
+msgid "Favorite Properties Page URL"
+msgstr "URL-ul Paginei Imobilelor Favorite"
+
+#: framework/customizer/misc.php:15 framework/meta-box/config-meta-boxes.php:88
+msgid "Misc"
+msgstr "Diverse"
+
+#: framework/customizer/misc.php:25
+msgid "Lightbox Plugin"
+msgstr "Modulul Lightbox"
+
+#: framework/customizer/misc.php:26
+msgid "Select the lightbox plugin that you want to use"
+msgstr "Alegeți modulul lightbox pe care doriți să-l utilizați"
+
+#: framework/customizer/misc.php:30
+msgid "Swipebox Plugin"
+msgstr "Modulul Swipebox"
+
+#: framework/customizer/misc.php:31
+msgid "Pretty Photo Plugin"
+msgstr "Modulul Pretty Photo "
+
+#: framework/customizer/misc.php:53
+msgid "Google reCAPTCHA for Spam Protection"
+msgstr "Google reCAPTCHA protecția contra spam-ului"
+
+#: framework/customizer/misc.php:54
+msgid "Do you want to enable Google reCAPTCHA on contact forms ?"
+msgstr "Doriți să activați Google reCAPTCHA în formularele de contact ?"
+
+#: framework/customizer/misc.php:69
+msgid "Google reCAPTCHA Public Key"
+msgstr "Google reCAPTCHA Cheia Publică"
+
+#: framework/customizer/misc.php:70
+msgid "Get reCAPTCHA public and private keys for your website by <a href=\"https://www.google.com/recaptcha/admin#whyrecaptcha\" target=\"_blank\">signing up here</a> "
+msgstr "Primiți cheia publică și privată reCAPTCHA pentru site-ul dumnevoastră de la <a href=\"https://www.google.com/recaptcha/admin#whyrecaptcha\" target=\"_blank\">Inscrie-te aici</a> "
+
+#: framework/customizer/misc.php:81
+msgid "Google reCAPTCHA Private Key"
+msgstr "Google reCAPTCHA Cheia Privată"
+
+#: framework/customizer/misc.php:104
+msgid "Localize Google Map"
+msgstr "Localizați Harta Google"
+
+#: framework/customizer/news.php:15
+msgid "Various Pages"
+msgstr "Diverse Pagini"
+
+#: framework/customizer/news.php:24
+msgid "News/Blog Page"
+msgstr "Pagina Noutăților/Blogului"
+
+#: framework/customizer/payments.php:14
+msgid "Payments"
+msgstr "Plăţi"
+
+#: framework/customizer/payments.php:26
+msgid "Enable PayPal Payments for Submitted Property"
+msgstr "Activați Plățile PayPal pentru Imobilul Adăugat"
+
+#: framework/customizer/payments.php:42
+msgid "PayPal IPN URL"
+msgstr "PayPal IPN URL"
+
+#: framework/customizer/payments.php:55
+msgid "PayPal merchant account ID or Email"
+msgstr "PayPal ID-ul sau Email-ul contului vânzătorului"
+
+#: framework/customizer/payments.php:67
+msgid "Enable PayPal Sandbox for Testing"
+msgstr "Activați pentru Testare PayPal Sandbox-ul"
+
+#: framework/customizer/payments.php:84
+msgid "Payment Amount Per Property"
+msgstr "Suma Plății Per Imobil"
+
+#: framework/customizer/payments.php:85
+msgid "Provide the amount that you want to charge for one property. Example: 20.00"
+msgstr "Indicați suma pe care doriți s-o încasați pentru un imobil. Exemplu: 20.00"
+
+#: framework/customizer/payments.php:98
+msgid "Currency Code"
+msgstr "Codul Valutei"
+
+#: framework/customizer/payments.php:99
+msgid "Provide currency code that you want to use. Example: USD"
+msgstr "Indicați codul valutei pe care doriți s-o folosiți. Exemplu: USD"
+
+#: framework/customizer/payments.php:111
+msgid "Automatically Publish Submitted Property after Payment"
+msgstr "Automat publicați Imobilul Adăugat după achitare"
+
+#: framework/customizer/price.php:15
+msgid "Price Format"
+msgstr "Format Preț"
+
+#: framework/customizer/price.php:26
+msgid "Currency Sign"
+msgstr "Simbol Valută"
+
+#: framework/customizer/price.php:27
+msgid "Provide currency sign. For Example: $"
+msgstr "Indicați simbolul valutei. De Exemplu: $"
+
+#: framework/customizer/price.php:38
+msgid "Position of Currency Sign"
+msgstr "Poziția Simbolului Valutei"
+
+#: framework/customizer/price.php:42
+msgid "Before the numbers"
+msgstr "Înainte de numere"
+
+#: framework/customizer/price.php:43
+msgid "After the numbers"
+msgstr "După numere"
+
+#: framework/customizer/price.php:53
+msgid "Number of Decimals Points"
+msgstr "Numărul Punctelor Zecimale"
+
+#: framework/customizer/price.php:78
+msgid "Decimal Point Separator"
+msgstr "Separator Zecimi"
+
+#: framework/customizer/price.php:90
+msgid "Thousands Separator"
+msgstr "Separator Mii"
+
+#: framework/customizer/price.php:101
+msgid "Empty Price Text"
+msgstr "Text la Preț Lipsă"
+
+#: framework/customizer/price.php:102
+msgid "Text to display when no price is provided."
+msgstr "Textul afișat atunci când prețul nu este indicat."
+
+#: framework/customizer/property.php:16
+msgid "Property Detail Page"
+msgstr "Pagina Delaii Imobil"
+
+msgid "Property Location"
+msgstr "Amplasare Imobil"
+
+msgid "Property Type"
+msgstr "Tip Imobil"
+
+#: framework/customizer/property.php:54 framework/customizer/search.php:139
+#: framework/customizer/search.php:238 framework/functions/real-estate.php:86
+#: framework/PostProperty.php:158 framework/PostProperty.php:159
+#: framework/PostProperty.php:172
+msgid "Property Status"
+msgstr "Stare Imobil"
+
+msgid "Property Statuses"
+msgstr "Stări Imobiliare"
+
+msgid "Type of offer"
+msgstr "Tipul ofertei"
+
+#: framework/customizer/property.php:66
+msgid "Basics"
+msgstr "Baza"
+
+#: framework/customizer/property.php:76
+msgid "Property Detail Page Layout Variation ?"
+msgstr "Pagina Detalii Imobil Variante de Aranjament ?"
+
+#: framework/customizer/property.php:80
+msgid "Agent info below Google Map"
+msgstr "Informație Agent mai jos de Google Map"
+
+#: framework/customizer/property.php:81
+msgid "Agent info in Sidebar"
+msgstr "Informație Agent în Bara Laterală"
+
+#: framework/customizer/property.php:88
+msgid "Additional Details"
+msgstr "Detalii Suplimentare"
+
+#: framework/customizer/property.php:92
+msgid "Additional Details Title"
+msgstr "Detalii Adiționale Titlu"
+
+#: framework/customizer/property.php:93
+msgid "This will only display if a property has additional details."
+msgstr "Aceasta va fi afișat doar în caz că imobilul are detalii adiționale."
+
+#: framework/customizer/property.php:101
+#: framework/meta-box/config-meta-boxes.php:638
+msgid "Features"
+msgstr "Caracteristici"
+
+#: framework/customizer/property.php:105
+msgid "Features Title"
+msgstr "Caracteristici Titlu"
+
+#: framework/customizer/property.php:116
+msgid "Social Share Icons"
+msgstr "Iconițile Rețelelor Sociale"
+
+#: framework/customizer/property.php:128
+msgid "Sub Properties"
+msgstr "Sub Imobile"
+
+#: framework/customizer/property.php:132
+msgid "Child Properties Title"
+msgstr "Imobil Descendent Titlu"
+
+#: framework/customizer/property.php:133
+msgid "This will only display if a property has child properties."
+msgstr "Aceasta va fi afișat doar în caz că imobilul are imobile descendente."
+
+#: framework/customizer/property.php:144
+msgid "Open Graph Meta Tags"
+msgstr "Meta Tag-uri Open Graph"
+
+#: framework/customizer/property.php:160 framework/customizer/property.php:170
+#: framework/customizer/property.php:197
+msgid "Common Note"
+msgstr "Notă Comună"
+
+#: framework/customizer/property.php:182
+msgid "Note"
+msgstr "Notă"
+
+#: framework/customizer/property.php:186
+msgid "Common Note Title"
+msgstr "Notă Comună Titlu"
+
+#: framework/customizer/property.php:198
+msgid "Provide common note text. It will be displayed on all properties detail pages."
+msgstr "Oferiți textul pentru Remarca Comună. Aceasta va fi afișată în Detaliile Imobilelor"
+
+#: framework/customizer/property.php:209
+msgid "Video"
+msgstr "Video"
+
+#: framework/customizer/property.php:219 framework/customizer/property.php:231
+#: framework/meta-box/config-meta-boxes.php:80
+msgid "Property Video"
+msgstr "Video Imobil"
+
+#: framework/customizer/property.php:235
+msgid "Property Video Title"
+msgstr "Video Imobil Titlu"
+
+#: framework/customizer/property.php:246
+msgid "Map"
+msgstr "Harta"
+
+#: framework/customizer/property.php:256
+msgid "Google Map"
+msgstr "Harta Google"
+
+#: framework/customizer/property.php:268
+msgid "Property on Map"
+msgstr "Imobilul pe Hartă"
+
+#: framework/customizer/property.php:272
+msgid "Property Map Title"
+msgstr "Harta Imobilului Titlu"
+
+#: framework/customizer/property.php:283
+#: framework/meta-box/config-meta-boxes.php:365
+msgid "Attachments"
+msgstr "Atașamente"
+
+#: framework/customizer/property.php:293 framework/customizer/property.php:306
+msgid "Property Attachments"
+msgstr "Atașamente la Imobil"
+
+#: framework/customizer/property.php:294
+msgid "Attachments will only appear if there are any."
+msgstr "Atașamentele for apărea doar atunci când vor fi careva."
+
+#: framework/customizer/property.php:310
+msgid "Property Attachments Title"
+msgstr "Atașamentele Imobilului Titlu"
+
+#: framework/include/agent-post-type.php:9
+msgid "Agency"
+msgstr "Agenție"
+
+#: framework/customizer/property.php:321
+#: framework/include/agent-post-type.php:9
+#: framework/meta-box/config-meta-boxes.php:344
+msgid "Agent"
+msgstr "Agent"
+
+#: framework/customizer/property.php:331
+#: framework/meta-box/config-meta-boxes.php:84
+msgid "Agent Information"
+msgstr "Informație Agent"
+
+#: framework/customizer/property.php:347
+msgid "Get Copy of Message Sent to Agent"
+msgstr "Primește copia Mesajului Trimis Agentului"
+
+#: framework/customizer/property.php:363
+msgid "Email Address to Get Copy of Message"
+msgstr "Adresa de Email pentru a primi Copia Mesjaului"
+
+#: framework/customizer/property.php:364
+msgid "Given email address will get a copy of message sent to agent."
+msgstr "Adresa de Email indicată va primi copia mesajului trimis agentului."
+
+#: framework/customizer/property.php:376 framework/customizer/property.php:386
+#: framework/customizer/property.php:398
+msgid "Similar Properties"
+msgstr "Imobile Asemănătoare"
+
+#: framework/customizer/property.php:402
+msgid "Similar Properties Title"
+msgstr "Imobile Asemănătoare Titlu"
+
+#: framework/customizer/search.php:25
+msgid "Properties Search"
+msgstr "Caăutare Imobile"
+
+#: framework/customizer/search.php:35
+msgid "Properties Search Page"
+msgstr "Pagina de Căutare Imobile"
+
+#: framework/customizer/search.php:44
+msgid "Select Search Page"
+msgstr "Alegeți Pagina de Căutare"
+
+#: framework/customizer/search.php:45
+msgid "Selected page should have Property Search Template assigned to it. Also, Make sure to Configure Pretty Permalinks."
+msgstr "Pagina aleasă trebuie să aibă Șablonul Căutare Imobil asociat ei. Pe lângă asta, asigurațivă în Configurare a Pretty Permalinks."
+
+#: framework/customizer/search.php:57
+msgid "Search Results Page Header"
+msgstr "Antetul Paginii cu Rezultatele Căutării"
+
+#: framework/customizer/search.php:58
+msgid "What you want to display in area below header on properties search results page ?"
+msgstr "Ce doriți să afișați în zona mai jos de antet în Pagina cu Rezultatele Căutării Imobilelor ?"
+
+#: framework/customizer/search.php:62
+msgid "Google Map with Property Markers"
+msgstr "Harta Google cu Marcajele Imobilului"
+
+#: framework/customizer/search.php:73
+msgid "Properties Per Page"
+msgstr "Imobile Per Pagină"
+
+#: framework/customizer/search.php:74
+msgid "Number of properties to display on search results page"
+msgstr "Numărul Imobilelor afișate pe Pagina Cu Rezultatele Căutării"
+
+#: framework/customizer/search.php:119
+msgid "Search Page URL"
+msgstr "URL-ul Paginii de Căutare"
+
+#: framework/customizer/search.php:132
+msgid "Search Form Basics"
+msgstr "Formularul De Căutare Bazele"
+
+#: framework/customizer/search.php:140
+msgid "Find Your Home"
+msgstr "Găsește Casa Ta"
+
+#: framework/customizer/search.php:143
+msgid "Search Form Title"
+msgstr "Formularul de Căutare Titlu"
+
+#: framework/customizer/search.php:160
+msgid "Search Criteria"
+msgstr "Criterii de Căutare"
+
+#: framework/customizer/search.php:162
+msgid "Keyword Search"
+msgstr "Cuvinte Cheie Căutare"
+
+#: framework/customizer/search.php:163 framework/customizer/search.php:228
+#: framework/functions/real-estate.php:88 framework/PostProperty.php:290
+#: framework/meta-box/config-meta-boxes.php:169
+msgid "Property Code"
+msgstr "Cod Imobil"
+
+#: framework/customizer/search.php:167 framework/customizer/search.php:453
+msgid "Min Beds"
+msgstr "Minimum Dormitoare"
+
+#: framework/customizer/search.php:168 framework/customizer/search.php:478
+msgid "Min Baths"
+msgstr "Minimum Băi"
+
+#: framework/customizer/search.php:169
+msgid "Min and Max Price"
+msgstr "Min și Max Preț"
+
+#: framework/customizer/search.php:170
+msgid "Min and Max Area"
+msgstr "Min și Max Suprafața"
+
+#: framework/customizer/search.php:171 framework/PostProperty.php:66
+#: framework/PostProperty.php:67 framework/PostProperty.php:80
+msgid "Property Features"
+msgstr "Caracteristici Imobiliare"
+
+#: framework/customizer/search.php:192
+msgid "Keyword"
+msgstr "Cuvânt Cheie"
+
+#: framework/customizer/search.php:196
+msgid "Label for Keyword Search"
+msgstr "Eticheta pentru Cautare după Cuvânt Cheie"
+
+#: framework/customizer/search.php:204 framework/customizer/search.php:240
+#: framework/customizer/search.php:312 framework/customizer/search.php:624
+#: framework/customizer/search.php:648
+#: framework/functions/real-estate-search.php:98
+msgid "Any"
+msgstr "Orice"
+
+#: framework/customizer/search.php:208
+msgid "Placeholder Text for Keyword Search"
+msgstr "Text Substituent pentru Căutare după Cuvânt Cheie"
+
+#: framework/customizer/search.php:232
+msgid "Label for Property ID"
+msgstr "Eticheta pentru ID Imobil"
+
+#: framework/customizer/search.php:244
+msgid "Placeholder Text for Property ID"
+msgstr "Text Substituent pentru ID Imobil"
+
+#: framework/customizer/search.php:268
+msgid "Label for Property Status"
+msgstr "Eticheta pentru Stare Imobil"
+
+#: framework/customizer/search.php:280
+msgid "Label for Property Type"
+msgstr "Eticheta pentru Tip Imobil"
+
+#: framework/customizer/search.php:288
+msgid "Search"
+msgstr "Căutare"
+
+#: framework/customizer/search.php:292
+msgid "Search Button Text"
+msgstr "Textul Buttonului de Căutare"
+
+#: framework/customizer/search.php:316
+msgid "Any Text"
+msgstr "Orice Text"
+
+#: framework/customizer/search.php:324
+msgid "Looking for certain features"
+msgstr "Căutați anumite caracteristici"
+
+#: framework/customizer/search.php:328
+msgid "Title for Features Toggle"
+msgstr "Titlu pentru Comutator Caracteristici"
+
+#: framework/customizer/search.php:339
+msgid "Search Form Locations"
+msgstr "Formular de Cautare a Locațiilor"
+
+#: framework/customizer/search.php:349
+msgid "Number of Location Select Boxes"
+msgstr "Numărul de Locații Casete de Selectare"
+
+#: framework/customizer/search.php:350
+msgid "In case of 1 location box, all locations will be listed in that select box. In case of 2 or more, Each select box will list parent locations of a level that matches its number and all the remaining children locations will be listed in last select box."
+msgstr "În cazul a unei casete de locație, toate locațiile vor fi enumerate în acest câmp de selecție.În cazul a două sau mai multe, fiecare câmp de selecție va afișa locația părinte a nivelului ce corespunde cu numărul lui, iar toate locațiile descendente vor fi enumerate în câmpul de selecție finală."
+
+#: framework/customizer/search.php:367
+msgid "Title for 1st Location Select Box"
+msgstr "Numele primului Câmp de Selecție a Locației"
+
+#: framework/customizer/search.php:368
+msgid "Example: Country"
+msgstr "Exemplu: Țara"
+
+#: framework/customizer/search.php:379
+msgid "Title for 2nd Location Select Box"
+msgstr "Numele celui de-al doilea Câmp de Selecție a Locației"
+
+#: framework/customizer/search.php:380
+msgid "Example: State"
+msgstr "Exemplu: Stat"
+
+#: framework/customizer/search.php:391
+msgid "Title for 3rd Location Select Box"
+msgstr "Numele celui de-al treilea Câmp de Selecție a Locației"
+
+#: framework/customizer/search.php:392
+msgid "Example: City"
+msgstr "Exemplu: Oraș"
+
+#: framework/customizer/search.php:403
+msgid "Title for 4th Location Select Box"
+msgstr "Numele celui de-al patrulea Câmp de Selecție a Locației"
+
+#: framework/customizer/search.php:404
+msgid "Example: Area"
+msgstr "Exemplu: Regiune"
+
+#: framework/customizer/search.php:415
+msgid "Hide Empty Locations ?"
+msgstr "Ascunde Locațiile Neocupate ?"
+
+#: framework/customizer/search.php:416
+msgid "Optimize Locations by hiding the ones with zero property."
+msgstr "Optimizează Locațiile ascunzând cele cu zero Imobile."
+
+#: framework/customizer/search.php:431
+msgid "Sort Locations Alphabetically ?"
+msgstr "Sortează Locațiile în ordine Alfabetică ?"
+
+#: framework/customizer/search.php:446
+msgid "Search Form Beds & Baths"
+msgstr "Forumlar de Căutare Dormitoare & Băi"
+
+#: framework/customizer/search.php:457
+msgid "Label for Min Beds Field"
+msgstr "Eticheta pentru câmpul Min Dormitoare"
+
+#: framework/customizer/search.php:469
+msgid "Minimum Beds Values"
+msgstr "Minimum Dormitoare Valori"
+
+#: framework/customizer/search.php:470 framework/customizer/search.php:495
+msgid "Only provide comma separated numbers."
+msgstr "Introduceți numai numere separate prin virgulă."
+
+#: framework/customizer/search.php:482
+msgid "Label for Min Baths Field"
+msgstr "Eticheta pentru Câmpul Min Băi"
+
+#: framework/customizer/search.php:494
+msgid "Minimum Baths Values"
+msgstr "Minimum Băi Valori"
+
+#: framework/customizer/search.php:480
+msgid "Prices"
+msgstr "Prețuri"
+
+#: framework/customizer/search.php:513
+msgid "Min Price"
+msgstr "Min Preț"
+
+#: framework/customizer/search.php:517
+msgid "Label for Min Price Field"
+msgstr "Eticheta pentru Câmpul Min Preț"
+
+#: framework/customizer/search.php:492 framework/customizer/search.php:505
+#: framework/customizer/search.php:531 framework/customizer/search.php:544
+msgid "Indicate only number. Do not add decimal points, dashes, spaces and currency signs."
+msgstr "Introduceți doar cifra. Nu adăugați puncte zecimale, linii, spații și simboluri valutare."
+
+#: framework/customizer/search.php:538
+msgid "Max Price"
+msgstr "Max Preț"
+
+#: framework/customizer/search.php:542
+msgid "Label for Max Price Field"
+msgstr "Eticheta pentru Câmpul Max Preț"
+
+#: framework/customizer/search.php:566
+msgid "Status That Represents Rent"
+msgstr "Starea ce Reprezintă Chiria"
+
+#: framework/customizer/search.php:567
+msgid "Visitor expects smaller values for rent prices. So provide the list of minimum and maximum rent prices below. The rent prices will be displayed based on rent status selected here."
+msgstr "Vizitatorul se așteaptă la valori mai mici a ratelor de închiriere. Deci, oferiți mai jos lista de prețuri minime și maxime pentru chirie. Prețurile de închiriere vor fi afișate  în funcție de Starea de Închiriere a selectată aici."
+
+msgid "Price for Rent"
+msgstr "Preț de închiriere"
+
+#: framework/customizer/search.php:528
+msgid "Minimum Price for Rent Only."
+msgstr "Minimum Preț pentru Chirie."
+
+#: framework/customizer/search.php:541
+msgid "Maximum Price for Rent Only."
+msgstr "Maximum Preț pentru Chirie."
+
+#: framework/customizer/search.php:612
+msgid "Min Area"
+msgstr "Min Suprafață"
+
+#: framework/customizer/search.php:616
+msgid "Label for Min Area Field"
+msgstr "Eticheta pentru Câmpul Min Suprafață"
+
+#: framework/customizer/search.php:628
+msgid "Placeholder Text for Min Area"
+msgstr "Text Substituent pentru Min Suprafață"
+
+#: framework/customizer/search.php:636
+msgid "Max Area"
+msgstr "Suprafață Maximă"
+
+#: framework/customizer/search.php:640
+msgid "Label for Max Area Field"
+msgstr "Eticheta pentru Câmpul Max Suprafață"
+
+#: framework/customizer/search.php:652
+msgid "Placeholder Text for Max Area"
+msgstr "Text Substituent pentru Max Suprafață"
+
+#: framework/customizer/search.php:558
+msgid "sq m"
+msgstr "m.p."
+
+#: framework/customizer/search.php:562
+msgid "Area Measurement Unit."
+msgstr "Unitatea de Măsură a Suprafaței."
+
+#: framework/customizer/search.php:665
+msgid "Example: sq ft"
+msgstr "Exemplu: m.p."
+
+#: framework/customizer/colors.php:51
+msgid "Quick CSS"
+msgstr "CSS Rapid"
+
+#: framework/customizer/colors.php:52
+msgid "Enter small CSS changes here. If you need to change major portions of the theme then use child-custom.css file in child theme."
+msgstr "Introduceți o schimbare mică în CSS aici. Dacă doriți să modificați părțile esențiale ale temei atunci utilizați fișierul child-custom.css în tema descendentă."
+
+# --------------------------------------Customizer Slider
+#: framework/customizer/colors.php:79
+msgid "Slider Colors"
+msgstr "Culori Glisor"
+
+#: framework/customizer/colors.php:89 framework/customizer/colors.php:188
+#: framework/customizer/colors.php:307
+msgid "Title Text Color"
+msgstr "Titlu Culoare Text"
+
+#: framework/customizer/colors.php:99 framework/customizer/colors.php:198
+#: framework/customizer/colors.php:317
+msgid "Title Text Color on Hover"
+msgstr "Titlu Culoare Text când treci peste"
+
+#: framework/customizer/colors.php:109 framework/customizer/colors.php:248
+msgid "Description Text Color"
+msgstr "Descrierea Culoare Text"
+
+#: framework/customizer/colors.php:119 framework/customizer/colors.php:208
+msgid "Price Text Color"
+msgstr "Prețul Culoare Text"
+
+#: framework/customizer/colors.php:129 framework/customizer/colors.php:278
+msgid "More Details Text Color"
+msgstr "Mai Multe Detalii Culoare Text"
+
+#: framework/customizer/colors.php:268
+msgid "More Details Text Hover Color"
+msgstr "Mai Multe Detalii Culoare Text când treci peste"
+
+#: framework/customizer/colors.php:139
+msgid "More Details Button Background Color"
+msgstr "Fundalul Butonului Mai Multe Detalii"
+
+#: framework/customizer/colors.php:149
+msgid "More Details Button Background Color on Hover"
+msgstr "Fundalul când treci peste Butonul Mai Multe Detalii"
+
+# --------------------------------------Customizer Real Estate Card
+#: framework/customizer/colors.php:158
+msgid "Real Estate Card"
+msgstr "Card Imobil"
+
+#: framework/customizer/colors.php:168
+msgid "Card Background Color"
+msgstr "Card Culoare Fundal"
+
+#: framework/customizer/colors.php:178
+msgid "Card Border Color"
+msgstr "Card Culoare Hotar"
+
+#: framework/customizer/colors.php:228
+msgid "Status Text Color"
+msgstr "Stare Culoare Text"
+
+#: framework/customizer/colors.php:238
+msgid "Status Background Color"
+msgstr "Stare Culoare Fundal"
+
+#: framework/customizer/colors.php:278
+msgid "Metadata Text Color"
+msgstr "Metadate Culoare Text"
+
+#: framework/customizer/colors.php:288
+msgid "Metadata Background Color"
+msgstr "Metadate Culoare Fundal"
+
+# --------------------------------------Customizer Buttons
+#: framework/customizer/colors.php:297
+msgid "Buttons"
+msgstr "Butoane"
+
+#: framework/customizer/colors.php:327
+msgid "Button Background Color"
+msgstr "Buton Culoare Fundal"
+
+#: framework/customizer/colors.php:337
+msgid "Button Background Color on Hover"
+msgstr "Buton Culoare Fundal când treci peste"
+
+# --------------------------------------Customizer Slugs
+#: framework/customizer/url-slugs.php:14
+msgid "URL Slugs"
+msgstr "URL Descriptor"
+
+#: framework/customizer/url-slugs.php:27
+msgid "Important Note for URL Slugs"
+msgstr "O Importantă Notă pentru un URL Descriptor"
+
+#: framework/customizer/url-slugs.php:28
+msgid "Make sure to re-save permalinks settings after every change in URL slugs to avoid 404 errors. You can do this from Settings > Permalinks"
+msgstr "Asigurați-vă în salvarea repetată a configurațiilor permalinks-urilor după fiecare modificare a URL descriptorilor pentru a evita erorile 404. Puteți face acest lucru din Setări> Permalinks"
+
+#: framework/customizer/url-slugs.php:42 framework/PostProperty.php:33
+msgid "property"
+msgstr "imobil"
+
+#: framework/customizer/url-slugs.php:46
+msgid "Property Slug"
+msgstr "Descriptor Imobil"
+
+#: framework/customizer/url-slugs.php:57
+#: framework/include/agent-post-type.php:34
+msgid "agency"
+msgstr "agenţie"
+
+#: framework/customizer/url-slugs.php:61
+msgid "Agent Slug"
+msgstr "Descriptor Agent"
+
+#: framework/customizer/url-slugs.php:76
+msgid "Property City Slug"
+msgstr "Descriptor Orașul Imobilului"
+
+#: framework/customizer/url-slugs.php:87 framework/PostProperty.php:183
+msgid "property-status"
+msgstr "imobil-stare"
+
+#: framework/customizer/url-slugs.php:91
+msgid "Property Status Slug"
+msgstr "Descriptor Stare Imobil"
+
+#: framework/customizer/url-slugs.php:102 framework/PostProperty.php:122
+msgid "property-type"
+msgstr "imobil-tip"
+
+#: framework/customizer/url-slugs.php:106
+msgid "Property Type Slug"
+msgstr "Descriptor Tip Imobil"
+
+#: framework/customizer/url-slugs.php:117 framework/PostProperty.php:91
+msgid "property-feature"
+msgstr "imobil-caracteristică"
+
+#: framework/customizer/url-slugs.php:121
+msgid "Property Feature Slug"
+msgstr "Descriptor Caracteristică Imobil"
+
+#: framework/functions/basic.php:305
+#: framework/meta-box/config-meta-boxes.php:461
+msgid "Mobile Number"
+msgstr "Număr de Mobil"
+
+#: framework/functions/basic.php:306
+#: framework/meta-box/config-meta-boxes.php:467
+msgid "Office Number"
+msgstr "Număr Birou"
+
+msgid "Home"
+msgstr "Pagina Principală"
+
+msgid "Unverified Nonce!"
+msgstr "Nonce Neverificat!"
+
+msgid "Provided Email address is invalid!"
+msgstr "Adresa de e-mail introdusă nu este validă!"
+
+msgid "New message sent by"
+msgstr "Mesaj nou trimis de "
+
+msgid "message from"
+msgstr "mesaj de la"
+
+msgid "Message sent successfully"
+msgstr "Mesajul a fost trimis"
+
+msgid "Message wasn't sent"
+msgstr "Mesajul nu a fost trimis"
+
+msgid "Invalid Request !"
+msgstr "Cerere Invalidă !"
+
+msgid "using agent contact form at"
+msgstr "folosind formularul de contact al agentului la"
+
+#: framework/functions/edit-profile-handler.php:146
+msgid "The Email you entered is not valid. Please try again."
+msgstr "E-mailu introdus nu este valid. Vă rugăm să încercați din nou"
+
+#: framework/functions/edit-profile-handler.php:151
+msgid "This Email is already used by another user. Please try a different one."
+msgstr "Acest adresă de e-mail este deja utilizată de către un alt utilizator. Încercați una diferită."
+
+#: framework/functions/edit-profile-handler.php:239
+msgid "The passwords you entered do not match.  Your password was not updated."
+msgstr "Parolele introduse nu se potrivesc. Parola dvs. nu a fost actualizată."
+
+#: framework/functions/edit-profile-handler.php:251
+msgid "Profile information is updated successfully!"
+msgstr "Informațiile de profil sunt actualizate cu succes!"
+
+#: framework/functions/edit-profile-handler.php:258
+msgid "Security check failed!"
+msgstr "Verificare securității nu a reușit!"
+
+#: framework/functions/favorites.php:19 framework/functions/favorites.php:34
+msgid "Added to Favorites"
+msgstr "Adăugată la Favorite"
+
+#: framework/functions/favorites.php:21 framework/functions/favorites.php:36
+msgid "Failed!"
+msgstr "A eșuat!"
+
+#: framework/functions/favorites.php:41 framework/functions/favorites.php:146
+msgid "Invalid Parameters!"
+msgstr "Parametri incorecți!"
+
+#: framework/functions/favorites.php:106 framework/functions/favorites.php:127
+msgid "Removed Successfully!"
+msgstr "Eliminat cu succes!"
+
+#: framework/functions/favorites.php:113 framework/functions/favorites.php:134
+msgid "Failed to remove!"
+msgstr "Eliminarea a eșuat!"
+
+#: framework/functions/member.php:118
+msgid "Wrong username or password."
+msgstr "Nume utilizator sau parolă greșită."
+
+#: framework/functions/member.php:124
+msgid "successful. Redirecting..."
+msgstr "cu succes. Redirecționează ..."
+
+#: framework/functions/member.php:163
+msgid "This username already exists."
+msgstr "Există deja acest nume de utilizator."
+
+#: framework/functions/member.php:168
+msgid "This email is already registered."
+msgstr "Acest e-mail este deja înregistrat."
+
+#: framework/functions/member.php:184
+msgid "Registration is complete. Check your email for details!"
+msgstr "Înregistrare este completă. Verifică-ți emailul pentru detalii!"
+
+#: framework/functions/member.php:212
+msgid "Provide a valid username or email address!"
+msgstr "Furnizați un nume de utilizator sau adresa de e-mail validă!"
+
+#: framework/functions/member.php:218
+msgid "No user found for given email!"
+msgstr "Pentru e-mailu indicat utilizator n-a fost găsit!"
+
+#: framework/functions/member.php:224
+msgid "No user found for given username!"
+msgstr "Pentru numele indicat utilizator n-a fost găsit!"
+
+#: framework/functions/member.php:227
+msgid "Invalid username or email!"
+msgstr "Nume de utilizator sau e-mail incorect!"
+
+#: framework/functions/member.php:255
+#, php-format
+msgid "Your New Password For %s"
+msgstr "Parola dvs. nouă pentru %s"
+
+#, php-format
+msgid "for %s"
+msgstr "pentru %s"
+
+#: framework/functions/member.php:256
+#, php-format
+msgid "Your new password is: %s"
+msgstr "Parola dvs. nouă pentru: %s"
+
+#: framework/functions/member.php:268
+msgid "Check your email for new password"
+msgstr "Verifică-ți emailul pentru parolă nouă"
+
+#: framework/functions/member.php:270
+msgid "Failed to send you new password email!"
+msgstr "Nu a reușit să trimită o nouă parolă prin e-mail!"
+
+#: framework/functions/member.php:274
+msgid "Oops! Something went wrong while resetting your password!"
+msgstr "Oops! Ceva a mers prost în timp ce resetai parola!"
+
+#: framework/functions/member.php:320
+#, php-format
+msgid "New user registration on your site %s:"
+msgstr "Înregistrare utilizator nou pe site-ul dvs. %s:"
+
+#: framework/functions/member.php:321
+#, php-format
+msgid "Username: %s"
+msgstr "Nume de utilizator: %s"
+
+#: framework/functions/member.php:322
+#, php-format
+msgid "Email: %s"
+msgstr "Email: %s"
+
+#: framework/functions/member.php:324
+#, php-format
+msgid "[%s] New User Registration"
+msgstr "[%s] Înregistrare utilizator nou"
+
+#: framework/functions/member.php:329 framework/functions/member.php:335
+#, php-format
+msgid "Welcome to %s"
+msgstr "Bun venit la %s"
+
+#: framework/functions/member.php:330
+#, php-format
+msgid "Your username is: %s"
+msgstr "Numele dvs. de utilizator este: %s"
+
+#: framework/functions/member.php:331
+#, php-format
+msgid "Your password is: %s"
+msgstr "Parola dvs. este: %s"
+
+#: framework/functions/member.php:332
+msgid "It is highly recommended to change your password after login."
+msgstr "Este foarte recomandat să schimbați parola după autentificare."
+
+#: framework/functions/member.php:333
+msgid "For more details visit:"
+msgstr "Pentru mai multe detalii accesați:"
+
+#: framework/functions/pagination.php:40 framework/functions/pagination.php:92
+#: framework/functions/pagination.php:149
+msgid "First"
+msgstr "Primul"
+
+#: framework/functions/pagination.php:41 framework/functions/pagination.php:96
+#: framework/functions/pagination.php:150
+msgid "Previous"
+msgstr "Precedentul"
+
+#: framework/functions/pagination.php:49 framework/functions/pagination.php:111
+#: framework/functions/pagination.php:158
+msgid "Next"
+msgstr "Următorul"
+
+#: framework/functions/pagination.php:50 framework/functions/pagination.php:115
+#: framework/functions/pagination.php:159
+msgid "Last"
+msgstr "Ultimul"
+
+#: framework/functions/price.php:18
+msgid "$"
+msgstr "$"
+
+#: framework/functions/property-submit-handler.php:154
+#, php-format
+msgid "A new property is submitted by %s at %s"
+msgstr "Un nou imobil este adăugat de %s la %s"
+
+#: framework/functions/property-submit-handler.php:163
+msgid "You can preview it here : "
+msgstr "Puteți să-l vedeți aici:"
+
+#: framework/functions/property-submit-handler.php:172
+#, php-format
+msgid "Message to the Reviewer : %s"
+msgstr "Mesaj pentru examinator : %s"
+
+#: framework/functions/property-submit-handler.php:177
+#, php-format
+msgid "You can contact the submitter \"%s\" via email %s"
+msgstr "Puteți contacta expeditorul \"%s\" prin email %s"
+
+#: framework/functions/real-estate-search.php:631
+msgid "Main Location"
+msgstr "Locație de Bază"
+
+#: framework/functions/real-estate-search.php:632
+msgid "Child Location"
+msgstr "Locație de Nivel 2"
+
+#: framework/functions/real-estate-search.php:633
+msgid "Grand Child Location"
+msgstr "Locație de Nivel 3"
+
+#: framework/functions/real-estate-search.php:634
+msgid "Great Grand Child Location"
+msgstr "Locație de Nivel 4"
+
+#: framework/functions/real-estate.php:60
+#: framework/functions/real-estate.php:61
+msgid "Property Payments"
+msgstr "Plățile Imobilului"
+
+#: framework/functions/real-estate.php:80 framework/PostProperty.php:440
+msgid "Transaction ID"
+msgstr "ID-ul Tranzacției"
+
+#: framework/functions/real-estate.php:81 framework/PostProperty.php:444
+msgid "Payment Date"
+msgstr "Data Plății"
+
+#: framework/functions/real-estate.php:82 framework/PostProperty.php:448
+msgid "First Name"
+msgstr "Prenume"
+
+#: framework/functions/real-estate.php:83 framework/PostProperty.php:452
+msgid "Last Name"
+msgstr "Nume"
+
+#: framework/functions/real-estate.php:84 framework/PostProperty.php:456
+msgid "Payer Email"
+msgstr "Emailul Plătitorului"
+
+#: framework/functions/real-estate.php:85 framework/PostProperty.php:460
+msgid "Payment Status"
+msgstr "Starea Plății"
+
+#: framework/functions/real-estate.php:86
+msgid "Amount"
+msgstr "Cantitate"
+
+#: framework/functions/real-estate.php:87
+msgid "Currency"
+msgstr "Valuta"
+
+#: framework/functions/real-estate.php:90
+msgid "Action"
+msgstr "Acțiune"
+
+#: framework/functions/real-estate.php:117 framework/PostProperty.php:426
+msgid "Not Available"
+msgstr "Indisponibil"
+
+#: framework/functions/real-estate.php:140 framework/PostProperty.php:11
+msgid "Edit Property"
+msgstr "Modificați date Imobil"
+
+#: framework/functions/real-estate.php:169
+msgid "No Completed Payment Found!"
+msgstr "Nici o plată completă nu a fost găsită!"
+
+#: framework/functions/theme-comment.php:17
+msgid "Pingback:"
+msgstr "Pingback-ul:"
+
+#: framework/functions/theme-comment.php:17
+msgid "(Edit)"
+msgstr "(Editează)"
+
+#: framework/functions/theme-comment.php:36
+#, php-format
+msgid "%s"
+msgstr "%s"
+
+#: framework/functions/theme-comment.php:40
+msgid "on"
+msgstr "pe"
+
+#: framework/functions/theme-comment.php:43
+#, php-format
+msgid "%1$s at %2$s"
+msgstr "%1$s la %2$s"
+
+#: framework/functions/theme-comment.php:46
+msgid "said"
+msgstr "a spus"
+
+msgid "Value"
+msgstr "Valoare"
+
+#: tp/contact-agents.php:5 framework/include/agent-post-type.php:8
+msgid "Agencies"
+msgstr "Agenții"
+
+msgid "Our Agents"
+msgstr "Agenți Noștri"
+
+msgid "Agents"
+msgstr "Agenți"
+
+#: framework/include/agent-post-type.php:10
+#: framework/include/partners-post-type.php:9 framework/PostProperty.php:9
+#: framework/include/slide-post-type.php:9
+msgid "Add New"
+msgstr "Adaugă"
+
+#: framework/include/agent-post-type.php:11
+msgid "Add New Agent"
+msgstr "Adaugă un Agent Nou"
+
+#: framework/include/agent-post-type.php:11
+msgid "Add New Agency"
+msgstr "Adaugă o nouă Agenție"
+
+#: framework/include/agent-post-type.php:12
+msgid "Edit Agent"
+msgstr "Editare Agent"
+
+#: framework/include/agent-post-type.php:12
+msgid "Edit Agency"
+msgstr "Editare Agenție"
+
+#: framework/include/agent-post-type.php:13
+msgid "New Agent"
+msgstr "Agent Nou"
+
+#: framework/include/agent-post-type.php:13
+msgid "New Agency"
+msgstr "Agenție Nouă"
+
+#: framework/include/agent-post-type.php:14
+msgid "View Agent"
+msgstr "Vezi Agent"
+
+#: framework/include/agent-post-type.php:14
+msgid "View Agency"
+msgstr "Vezi Agenție"
+
+#: framework/include/agent-post-type.php:15
+msgid "Search Agent"
+msgstr "Caută Agent"
+
+#: framework/include/agent-post-type.php:15
+msgid "Search Agency"
+msgstr "Caută Agenție"
+
+#: framework/include/agent-post-type.php:16
+msgid "No Agent found"
+msgstr "Nici un Agent nu a fost găsit"
+
+#: framework/include/agent-post-type.php:16
+msgid "No Agencies found"
+msgstr "Nici o Agenție nu a fost găsită"
+
+#: framework/include/agent-post-type.php:17
+msgid "No Agent found in Trash"
+msgstr "Nici un Agent nu a fost găsit în coșul pentru gunoi"
+
+#: framework/include/agent-post-type.php:17
+msgid "No Agency found in Trash"
+msgstr "Nici o Agenție nu a fost găsită în coșul pentru gunoi"
+
+#: framework/include/partners-post-type.php:8
+#: framework/include/partners-post-type.php:46
+msgid "Partner"
+msgstr "Partener"
+
+#: framework/include/partners-post-type.php:10
+msgid "Add New Partner"
+msgstr "Adaugă un Partner Nou"
+
+#: framework/include/partners-post-type.php:11
+msgid "Edit Partner"
+msgstr "Editare Partener"
+
+#: framework/include/partners-post-type.php:12
+msgid "New Partner"
+msgstr "Partener Nou"
+
+#: framework/include/partners-post-type.php:13
+msgid "View Partner"
+msgstr "Vizualizare Partener"
+
+#: framework/include/partners-post-type.php:14
+msgid "Search Partner"
+msgstr "Caută Partener"
+
+#: framework/include/partners-post-type.php:15
+msgid "No Partner found"
+msgstr "Nici un Partener nu a fost găsit"
+
+#: framework/include/partners-post-type.php:16
+msgid "No Partner found in Trash"
+msgstr "Nici un Partener nu a fost găsit în coșul pentru gunoi"
+
+#: framework/include/partners-post-type.php:32
+msgid "partners"
+msgstr "parteneri"
+
+#: framework/include/partners-post-type.php:47
+msgid "Logo"
+msgstr "Logo"
+
+#: framework/include/partners-post-type.php:48 framework/PostProperty.php:291
+msgid "Publish Time"
+msgstr "Momentul Publicării"
+
+#: framework/include/partners-post-type.php:65
+msgid "No logo provided"
+msgstr "Nici un logo oferit"
+
+#: framework/PostProperty.php:7
+msgid "Properties"
+msgstr "Imobile"
+
+#: framework/PostProperty.php:8 framework/meta-box/config-meta-boxes.php:64
+msgid "Property"
+msgstr "Imobil"
+
+#: framework/PostProperty.php:10
+msgid "Add New Property"
+msgstr "Adaugă un Imobil Nou"
+
+#: framework/PostProperty.php:10
+msgid "Add Property"
+msgstr "Adaugă Imobil"
+
+#: framework/PostProperty.php:12
+msgid "New Property"
+msgstr "Imobil Nou"
+
+#: framework/PostProperty.php:13
+msgid "View Property"
+msgstr "Vizualizează Imobilul"
+
+#: framework/PostProperty.php:14
+msgid "Search Property"
+msgstr "Caută Imobilul"
+
+#: framework/PostProperty.php:15
+msgid "No Property found"
+msgstr "Nici un Imobil nu a fost găsit!"
+
+#: framework/PostProperty.php:16
+msgid "No Property found in Trash"
+msgstr "Nici un Imobil nu a fost găsit în coșul pentru gunoi"
+
+#: framework/PostProperty.php:68
+msgid "Search Property Features"
+msgstr "Caută Caracteristicile Imobiliare"
+
+#: framework/PostProperty.php:69
+msgid "Popular Property Features"
+msgstr "Caracteristici Imobiliare Populare"
+
+#: framework/PostProperty.php:71
+msgid "Parent Property Feature"
+msgstr "Parenta Caracteristicii Imobiliare"
+
+#: framework/PostProperty.php:72
+msgid "Parent Property Feature:"
+msgstr "Parenta Caracteristicii Imobiliare:"
+
+#: framework/PostProperty.php:73
+msgid "Edit Property Feature"
+msgstr "Editează Caracteristica Imobiliară"
+
+#: framework/PostProperty.php:74
+msgid "Update Property Feature"
+msgstr "Actualizează Caracteristica Imobiliară"
+
+#: framework/PostProperty.php:75
+msgid "Add New Feature"
+msgstr "Adaugă o Caracteristică Nouă"
+
+#: framework/PostProperty.php:76
+msgid "New Property Feature Name"
+msgstr "Numele Noii Caracteristici Imobiliare"
+
+#: framework/PostProperty.php:77
+msgid "Separate Property Features with commas"
+msgstr "Separă prin virgule Caracteristicile Imobiliare"
+
+#: framework/PostProperty.php:78
+msgid "Add or remove Property Features"
+msgstr "Adaugă sau Elimină Caracteristica Imobiliară"
+
+#: framework/PostProperty.php:79
+msgid "Choose from the most used Property Features"
+msgstr "Alege din cele mai des utilizate Caracteristici Imobiliare"
+
+#: framework/PostProperty.php:99
+msgid "Search Property Types"
+msgstr "Caută Tipurile Imobiliare"
+
+#: framework/PostProperty.php:100
+msgid "Popular Property Types"
+msgstr "Tipuri Imobiliare Populare"
+
+#: framework/PostProperty.php:102
+msgid "Parent Property Type"
+msgstr "Parenta Tipului Imobiliar"
+
+#: framework/PostProperty.php:103
+msgid "Parent Property Type:"
+msgstr "Parenta Tipului Imobiliar:"
+
+#: framework/PostProperty.php:104
+msgid "Edit Property Type"
+msgstr "Editează Tipul Imobilului"
+
+#: framework/PostProperty.php:105
+msgid "Update Property Type"
+msgstr "Actualizează Tipul Imobilului"
+
+#: framework/PostProperty.php:106
+msgid "Add New Type"
+msgstr "Adaugă un Tip Nou"
+
+#: framework/PostProperty.php:107
+msgid "New Property Type Name"
+msgstr "Numele Noului Tip Imobiliar"
+
+#: framework/PostProperty.php:108
+msgid "Separate Property Types with commas"
+msgstr "Separă prin vrigule Tipurile Imobiliare"
+
+#: framework/PostProperty.php:109
+msgid "Add or remove Property Types"
+msgstr "Adaugă sau Elimină Tipuri Imobiliare"
+
+#: framework/PostProperty.php:110
+msgid "Choose from the most used Property Types"
+msgstr "Aelge din cele mai folosite Tipuri Imobiliare"
+
+#: framework/PostProperty.php:111 widgets/property-types-widget.php:35
+#: widgets/property-types-widget.php:7
+msgid "Property Types"
+msgstr "Tipuri Imobiliare"
+
+#: framework/PostProperty.php:129
+msgid "Search Property Locations"
+msgstr "Caută Locații Imobiliare"
+
+#: framework/PostProperty.php:130
+msgid "Popular Property Locations"
+msgstr "Locații Imobiliare Populare"
+
+#: framework/PostProperty.php:132
+msgid "Parent Property Location"
+msgstr "Parenta Locațiilor Imobiliare"
+
+#: framework/PostProperty.php:133
+msgid "Parent Property Location:"
+msgstr "Parenta Locațiilor Imobiliare:"
+
+#: framework/PostProperty.php:134
+msgid "Edit Property Location"
+msgstr "Editează Locațiile Imobiliare"
+
+#: framework/PostProperty.php:135
+msgid "Update Property Location"
+msgstr "Actualizează  Locația Imobiliară"
+
+#: framework/PostProperty.php:136
+msgid "Add New Location"
+msgstr "Adaugă o Locație Nouă"
+
+#: framework/PostProperty.php:137
+msgid "New Property Location Name"
+msgstr "Numele Noii Locații Imobiliare"
+
+#: framework/PostProperty.php:138
+msgid "Separate Property Locations with commas"
+msgstr "Separă prin virgule Locațiile Imobiliare"
+
+#: framework/PostProperty.php:139
+msgid "Add or remove Property Locations"
+msgstr "Adaugă sau Elimină o Locație Imobiliară"
+
+#: framework/PostProperty.php:140
+msgid "Choose from the most used Property Locations"
+msgstr "Alege din cele mai utilizate Locații Imobiliare"
+
+#: framework/PostProperty.php:141
+msgid "Property Locations"
+msgstr "Locații Imobiliare"
+
+#: framework/PostProperty.php:160
+msgid "Search Property Status"
+msgstr "Căută Stare Imobil"
+
+#: framework/PostProperty.php:161
+msgid "Popular Property Status"
+msgstr "Stări Imobiliare Populare"
+
+#: framework/PostProperty.php:22
+msgid "All Statuses"
+msgstr "Toate Stările"
+
+#: framework/PostProperty.php:45
+msgid "All Types"
+msgstr "Toate Tipurile"
+
+#: framework/PostProperty.php:68
+msgid "All Locations"
+msgstr "Toate Locațiile"
+
+#: framework/PostProperty.php:91
+msgid "All Features"
+msgstr "Toate Caracteristicile"
+
+#: framework/PostProperty.php:163
+msgid "Parent Property Status"
+msgstr "Parenta Stării Imobiliare"
+
+#: framework/PostProperty.php:164
+msgid "Parent Property Status:"
+msgstr "Parenta Stării Imobiliare:"
+
+#: framework/PostProperty.php:165
+msgid "Edit Property Status"
+msgstr "Editează Starea Imobiliară"
+
+#: framework/PostProperty.php:166
+msgid "Update Property Status"
+msgstr "Actualizează Starea Imobiliară"
+
+#: framework/PostProperty.php:167
+msgid "Add New Status"
+msgstr "Adaugă o Stare Nouă"
+
+#: framework/PostProperty.php:168
+msgid "New Property Status Name"
+msgstr "Numele Noii Stări Imobiliare"
+
+#: framework/PostProperty.php:169
+msgid "Separate Property Status with commas"
+msgstr "Separă prin virgule Stările Imobiliare"
+
+#: framework/PostProperty.php:170
+msgid "Add or remove Property Status"
+msgstr "Adaugă sau Elimină o Stare Imobiliară"
+
+#: framework/PostProperty.php:171
+msgid "Choose from the most used Property Status"
+msgstr "Alege din cele mai de folosite Stări Imobiliare"
+
+#: framework/PostProperty.php:284
+msgid "Property Title"
+msgstr "Titlu Imobil"
+
+#: framework/PostProperty.php:286
+msgid "City"
+msgstr "Oraș"
+
+#: framework/PostProperty.php:287
+msgid "Type"
+msgstr "Tip"
+
+#: framework/PostProperty.php:288
+msgid "Status"
+msgstr "Stare"
+
+#: framework/PostProperty.php:289
+msgid "Price"
+msgstr "Preț"
+
+#: framework/PostProperty.php:330
+msgid "No Thumbnail"
+msgstr "Pictograma Lipsește"
+
+#: framework/PostProperty.php:339 framework/PostProperty.php:351
+#: framework/PostProperty.php:381 framework/PostProperty.php:390
+#: framework/PostProperty.php:399 framework/include/slide-post-type.php:73
+msgid "NA"
+msgstr "Nu e disponibil"
+
+#: framework/PostProperty.php:363
+msgid "No Address Provided!"
+msgstr "Adresa nu este indicată!"
+
+#: framework/PostProperty.php:418
+msgid "Payment Information"
+msgstr "Informații de Plată"
+
+#: framework/PostProperty.php:464
+msgid "Payment Amount"
+msgstr "Suma de Plată"
+
+#: framework/PostProperty.php:468
+msgid "Payment Currency"
+msgstr "Valuta de Plată"
+
+#: framework/include/shortcodes/elements.php:265
+msgid "Result:"
+msgstr "Rezultat:"
+
+msgid "List of Properties"
+msgstr "Lista Imobilelor"
+
+msgid "Theme"
+msgstr "Tema"
+
+msgid "Layout"
+msgstr "Aranjament"
+
+#: framework/PostProperty.php:131 framework/PostProperty.php:162
+#: framework/PostProperty.php:101 framework/PostProperty.php:70
+msgid "All"
+msgstr "Toate"
+
+msgid "Order By"
+msgstr "Sortează după"
+
+#: framework/include/slide-post-type.php:48
+msgid "Date"
+msgstr "Dată"
+
+msgid "Order"
+msgstr "Ordine"
+
+msgid "Descending"
+msgstr "Descreștere"
+
+msgid "Ascending"
+msgstr "Creștere"
+
+#: framework/meta-box/config-meta-boxes.php:617
+msgid "Location"
+msgstr "Locație"
+
+msgid "Locations"
+msgstr "Locații"
+
+#: framework/meta-box/config-meta-boxes.php:624
+msgid "Statuses"
+msgstr "Stări"
+
+#: framework/meta-box/config-meta-boxes.php:631
+msgid "Types"
+msgstr "Tipuri"
+
+msgid "Minimum Bedrooms"
+msgstr "Minimum Dormitoare"
+
+msgid "Maximum Bedrooms"
+msgstr "Maximum Dormitoare"
+
+msgid "Minimum Bathrooms"
+msgstr "Minimum Băi"
+
+msgid "Maximum Bathrooms"
+msgstr "Maximum Băi"
+
+#: framework/meta-box/config-meta-boxes.php:661
+#: framework/customizer/search.php:491
+msgid "Minimum Price"
+msgstr "Preț Minimal"
+
+msgid "Only provide digits"
+msgstr "Folosiți doar cifre"
+
+#: framework/meta-box/config-meta-boxes.php:669
+#: framework/customizer/search.php:504
+msgid "Maximum Price"
+msgstr "Preț Maximal"
+
+msgid "Minimum Area"
+msgstr "Suprafață Minimală"
+
+msgid "Maximum Area"
+msgstr "Suprafață Maximală"
+
+msgid "Display Only Featured Properties"
+msgstr "Afișează Doar Imobilele Recomandate"
+
+#: framework/include/slide-post-type.php:7
+msgid "Slides"
+msgstr "Diapozitivuri"
+
+#: framework/include/slide-post-type.php:8
+msgid "Slide"
+msgstr "Diapozitiv"
+
+#: framework/include/slide-post-type.php:10
+msgid "Add New Slide"
+msgstr "Adaugă un Nou Diapozitiv"
+
+#: framework/include/slide-post-type.php:11
+msgid "Edit Slide"
+msgstr "Editează Diapozitivul"
+
+#: framework/include/slide-post-type.php:12
+msgid "New Slide"
+msgstr "Diapozitiv Nou"
+
+#: framework/include/slide-post-type.php:13
+msgid "View Slide"
+msgstr "Vizualizează Diapozitivul"
+
+#: framework/include/slide-post-type.php:14
+msgid "Search Slide"
+msgstr "Caută Diapozitivul"
+
+#: framework/include/slide-post-type.php:15
+msgid "No Slide found"
+msgstr "Diapozitivul nu a fost găsit"
+
+#: framework/include/slide-post-type.php:16
+msgid "No Slide found in Trash"
+msgstr "Diapozitivul nu a fost găsit în coșul pentru gunoi"
+
+#: framework/include/slide-post-type.php:45
+msgid "Slide Title"
+msgstr "Titlu Diapozitiv"
+
+#: framework/include/slide-post-type.php:47
+msgid "Slide Sub Text"
+msgstr "Subtext Diapozitiv"
+
+#: framework/include/slide-post-type.php:65
+msgid "No Slider Image"
+msgstr "Nici un Diapozitiv"
+
+#: framework/include/slide-post-type.php:88
+msgid "Slide Information"
+msgstr "Informație Diapozitiv"
+
+#: framework/include/slide-post-type.php:105
+msgid "Sub Text"
+msgstr "Subtext"
+
+#: framework/include/slide-post-type.php:109
+msgid "This text will appear below Title on slide."
+msgstr "Acest text va fi afișat mai jost de Titlu pe Glisor."
+
+#: framework/include/slide-post-type.php:114
+msgid "Target URL"
+msgstr "Adresă URL Finală"
+
+#: framework/include/slide-post-type.php:118
+msgid "This URL will be applied on Slide Image."
+msgstr "Acest URL va fi aplicat pentru Imaginii din Diapozitiv."
+
+#: framework/meta-box/config-meta-boxes.php:16
+#: framework/meta-box/config-meta-boxes.php:22
+msgid "Video Embed Code"
+msgstr "Codul ce Incorporează Video"
+
+#: framework/meta-box/config-meta-boxes.php:23
+msgid "If you are not using self hosted videos then please provide the video embed code and remove the width and height attributes."
+msgstr "Dacă nu utilizați videoclipuri găzduite, atunci vă rugăm să furnizați codul ce incorporează video eliminând atributele lățime și înălțime."
+
+#: framework/meta-box/config-meta-boxes.php:36
+#: framework/meta-box/config-meta-boxes.php:72
+msgid "Gallery Images"
+msgstr "Galerie de Imagini"
+
+#, php-format
+msgid "Images should have minimum width of %spx and minimum height of %spx."
+msgstr "Imaginile trebuie să aibă o lățime minimă de %spx și o înălțime minimă de %spx."
+
+#: framework/meta-box/config-meta-boxes.php:68
+msgid "Basic Information"
+msgstr "Informație de Bază"
+
+#: framework/meta-box/config-meta-boxes.php:76
+msgid "Floor Plans"
+msgstr "Plan Etaje"
+
+#: framework/meta-box/config-meta-boxes.php:92
+msgid "Homepage Slider"
+msgstr "Glisorul Paginei Principale"
+
+#: framework/meta-box/config-meta-boxes.php:96
+msgid "Top Banner"
+msgstr "Bannerul din Antet"
+
+#: framework/meta-box/config-meta-boxes.php:106
+msgid "Sale or Rent Price"
+msgstr "Vânzare sau Închiriere Preț"
+
+#: framework/meta-box/config-meta-boxes.php:106
+msgid "Promotional Price"
+msgstr "Preț Promoțional"
+
+#: framework/meta-box/config-meta-boxes.php:107
+msgid "Example Value: 435000"
+msgstr "Exemplu de Valoare: 435000"
+
+#: framework/meta-box/config-meta-boxes.php:115
+#: framework/meta-box/config-meta-boxes.php:260
+msgid "Price Postfix"
+msgstr "Postfix la Preț"
+
+msgid "Price Prefix"
+msgstr "Prefixul Prețului"
+
+#: framework/meta-box/config-meta-boxes.php:116
+msgid "Example Value: Per Month"
+msgstr "Exemplu de Valoare: În lună"
+
+#: framework/meta-box/config-meta-boxes.php:124
+msgid "Area Size"
+msgstr "Suprafața Imobilului"
+
+#: framework/meta-box/config-meta-boxes.php:125
+msgid "Example Value: 2500"
+msgstr "Exemplu de Valoare: 2500"
+
+#: framework/meta-box/config-meta-boxes.php:133
+msgid "Kitchen Area Size"
+msgstr "Suprafața bucătării"
+
+#: framework/meta-box/config-meta-boxes.php:133
+#: framework/meta-box/config-meta-boxes.php:274
+msgid "Size Postfix"
+msgstr "Marime Postfix"
+
+#: framework/meta-box/config-meta-boxes.php:134
+msgid "Example Value: Sq Ft"
+msgstr "Exemplu de Valoare: m.p."
+
+#: framework/meta-box/config-meta-boxes.php:142
+#: framework/meta-box/config-meta-boxes.php:281
+msgid "Bedrooms"
+msgstr "Dormitoare"
+
+#: framework/meta-box/config-meta-boxes.php:143
+msgid "Example Value: 4"
+msgstr "Exemplu de Valoare: 4"
+
+#: framework/meta-box/config-meta-boxes.php:151
+#: framework/meta-box/config-meta-boxes.php:288
+msgid "Bathrooms"
+msgstr "Băi"
+
+#: framework/meta-box/config-meta-boxes.php:152
+msgid "Example Value: 2"
+msgstr "Exemplu de Valoare: 2"
+
+#: framework/meta-box/config-meta-boxes.php:160
+msgid "Garages"
+msgstr "Garaje"
+
+msgid "Garage"
+msgstr "Garaj"
+
+#: framework/meta-box/config-meta-boxes.php:161
+msgid "Example Value: 1"
+msgstr "Exemplu de Valoare: 1"
+
+#: framework/meta-box/config-meta-boxes.php:161
+msgid "Example Value: 260cm"
+msgstr "Exemplu de Valoare: 260cm"
+
+#: framework/meta-box/config-meta-boxes.php:170
+msgid "It will help you search a property directly."
+msgstr "Aceasta vă va ajuta să găsiți Imobilul în mod direct."
+
+#: framework/meta-box/config-meta-boxes.php:186
+msgid "Hide Google map on property detail page ?"
+msgstr "Ascunde harta Google pe Pagina Imobilului ?"
+
+#: framework/meta-box/config-meta-boxes.php:196
+msgid "Property Address"
+msgstr "Adresa Imobilului"
+
+#: framework/meta-box/config-meta-boxes.php:197
+msgid "Leaving it empty will hide the google map on property detail page."
+msgstr "Necompletarea câmpului va ascunde harta Google pe pagina Detalii Imobil."
+
+#: framework/meta-box/config-meta-boxes.php:205
+msgid "Property Location at Google Map*"
+msgstr "Locația Imobilului pe Harta Google*"
+
+#: framework/meta-box/config-meta-boxes.php:206
+msgid "Drag the google map marker to point your property location. You can also use the address field above to search for your property."
+msgstr "Trageți marcatorul pe Harta Google pentru a indica locația Imobilului. De asemenea, puteți utiliza câmpul de adrese de mai sus pentru a căuta Imobilul dumneavoastră. "
+
+#: framework/meta-box/config-meta-boxes.php:217
+msgid "Gallery Type You Want to Use"
+msgstr "Galerie Tipul care doriţi să-l utilizaţi"
+
+#: framework/meta-box/config-meta-boxes.php:223
+msgid "Gallery with thumbnails on bottom"
+msgstr "Galeria cu miniaturi în partea de jos"
+
+#: framework/meta-box/config-meta-boxes.php:229
+msgid "Property Gallery Images"
+msgstr "Galerie Imagini cu Imobile"
+
+#: framework/meta-box/config-meta-boxes.php:231
+msgid "Images should have minimum size of 770px by 386px for thumbnails on right and 830px by 460px for thumbnails on bottom. Bigger size images will be cropped automatically."
+msgstr "Imaginile trebuie să aibă o dimensiune minimă de 770px la 386px pentru miniaturile din dreapta  și 830px la 460px pentru miniaturile din partea de jos. Imaginile de dimensiuni mai mari vor fi trunchiate automat."
+
+#: framework/meta-box/config-meta-boxes.php:247
+msgid "Floor Name"
+msgstr "Nume Etaj"
+
+#: framework/meta-box/config-meta-boxes.php:249
+msgid "Example: Ground Floor"
+msgstr "Exemplu: Parter"
+
+#: framework/meta-box/config-meta-boxes.php:253
+msgid "Floor Price ( Only digits )"
+msgstr "Preț Etaj ( Doar cifre )"
+
+#: framework/meta-box/config-meta-boxes.php:255
+msgid "Example: 4000"
+msgstr "Exemplu: 4000"
+
+#: framework/meta-box/config-meta-boxes.php:262
+msgid "Example: Per Month"
+msgstr "Exemplu: Lunar"
+
+#: framework/meta-box/config-meta-boxes.php:267
+msgid "Floor Size ( Only digits )"
+msgstr "Mărime Etaj ( Doar cifre )"
+
+#: framework/meta-box/config-meta-boxes.php:269
+msgid "Example: 2500"
+msgstr "Exemplu: 2500"
+
+#: framework/meta-box/config-meta-boxes.php:276
+msgid "Example: Sq Ft"
+msgstr "Exemplu: m.p."
+
+#: framework/meta-box/config-meta-boxes.php:283
+msgid "Example: 4"
+msgstr "Exemplu: 4"
+
+#: framework/meta-box/config-meta-boxes.php:290
+msgid "Example: 2"
+msgstr "Exemplu: 2"
+
+#: framework/meta-box/config-meta-boxes.php:295
+msgid "Description"
+msgstr "Descriere"
+
+#: framework/meta-box/config-meta-boxes.php:300
+msgid "Floor Plan Image"
+msgstr "Plan Etaj Imagine"
+
+#: framework/meta-box/config-meta-boxes.php:302
+msgid "The recommended minimum width is 770px and height is flexible."
+msgstr "Lățimea minimă recomandată este de 770px și înălțimea este flexibilă."
+
+#: framework/meta-box/config-meta-boxes.php:314
+msgid "Provide virtual tour video URL. YouTube, Vimeo, SWF File and MOV File are supported"
+msgstr "Indicați URL-ul turului Virtual Video. Youtube, Vimeo, SWF și MOV fișierele sunt acceptate"
+
+#: framework/meta-box/config-meta-boxes.php:320
+msgid "Virtual Tour Video Image"
+msgstr "Imaginea Turului Virtual Video"
+
+#: framework/meta-box/config-meta-boxes.php:322
+msgid "Provide an image that will be displayed as a place holder and when user will click over it the video will be opened in a lightbox. You must provide this image otherwise the video will not be displayed. Image should have minimum width of 818px and minimum height 417px. Bigger size images will be cropped automatically."
+msgstr "Oferiți o imagine care va fi afișată ca un substituent și atunci când utilizatorul  va face clic pe ea videoclipul va fi deschis într-un lightbox. Trebuie să oferiți această imagine în caz contrar conținutul video nu va fi afișat. Imaginea trebuie să aibă lățime minimă de 818px și înălțime minimă de 417px. Imaginile de dimensiuni mai mari vor fi trunchiate automat."
+
+#: framework/meta-box/config-meta-boxes.php:331
+msgid "What to display in agent information box ?"
+msgstr "Ce să se afișeze în caseta de informații agent ?"
+
+#: framework/meta-box/config-meta-boxes.php:336
+msgid "Author information."
+msgstr "Informații Autor."
+
+#: framework/meta-box/config-meta-boxes.php:337
+msgid "Agent Information. ( Select the agent below )"
+msgstr "Informații Agent. ( Alegeți agentul mai jos )"
+
+#: framework/meta-box/config-meta-boxes.php:338
+msgid "None. ( Hide information box )"
+msgstr "Nici unul. (Ascunde caseta de informații)"
+
+#: framework/meta-box/config-meta-boxes.php:355
+msgid "Mark this property as featured ?"
+msgstr "Marchează acest Imobil ca recomandat ?"
+
+#: framework/meta-box/config-meta-boxes.php:366
+msgid "You can attach PDF files, Map images OR other documents to provide further details related to property."
+msgstr "AAveți posibilitatea să atașați fișiere PDF, imagini ale hărții sau alte documente pentru a oferi detalii suplimentare legate de proprietate."
+
+#: framework/meta-box/config-meta-boxes.php:374
+msgid "Private Note"
+msgstr "Notă Privată"
+
+#: framework/meta-box/config-meta-boxes.php:375
+msgid "In this textarea, You can write your private note about this property. This field will not be displayed anywhere else."
+msgstr "În această casetă de text, puteți scrie o notă privată despre acest Imobil. Acest câmp nu va fi afișat altundeva."
+
+#: framework/meta-box/config-meta-boxes.php:383
+msgid "Message to Reviewer"
+msgstr "Mesaj pentru Examinator"
+
+#: framework/meta-box/config-meta-boxes.php:391
+msgid "Do you want to add this property in Homepage Slider ?"
+msgstr "Doriți să adăugați acest Imobil în glisor pe Pagina Principală ?"
+
+#: framework/meta-box/config-meta-boxes.php:392
+msgid "If Yes, Then you need to provide a slider image below."
+msgstr "Dacă da, atunci trebuie să furnizați o imagine pentru glisor mai jos."
+
+#: framework/meta-box/config-meta-boxes.php:397
+msgid "Yes "
+msgstr "Da"
+
+#: framework/meta-box/config-meta-boxes.php:404
+msgid "Slider Image"
+msgstr "Imaginea Glisorului"
+
+#: framework/meta-box/config-meta-boxes.php:406
+msgid "The recommended image size is 2000px by 700px. You can use bigger or smaller image but try to keep the same height to width ratio and use the exactly same size images for all properties that will be added in slider."
+msgstr "Dimensiunea imaginii recomandată este de 2000px pe 700px. Puteți utiliza imagini mai mari sau mai mici, dar încercați sa mențineți același raport înălțime la lățime și utilizați exact imagini cu aceeași dimensiune pentru toate Imobilile ce vor fi adăugate în glisor."
+
+#: framework/meta-box/config-meta-boxes.php:415
+msgid "Top Banner Image"
+msgstr "Imaginea Bannerului de Sus"
+
+#: framework/meta-box/config-meta-boxes.php:417
+msgid "Upload the banner image, If you want to change it for this property. Otherwise default banner image uploaded from theme options will be displayed. Image should have minimum width of 2000px and minimum height of 230px."
+msgstr "Încărcați imaginea bannerului, dacă doriți s-o modificați pentru aceast Imobil.În caz contrar, imaginea bannerului implicită încărcată din oțiunile temei va fi afișată. Imaginea trebuie să aibă lățimea minimă de 2000px și înălțimea minimă de 230px."
+
+#: framework/meta-box/config-meta-boxes.php:431
+msgid "Partner Information"
+msgstr "Informație Partener"
+
+#: framework/meta-box/config-meta-boxes.php:437
+msgid "Website URL"
+msgstr "Site-ul"
+
+#: framework/meta-box/config-meta-boxes.php:439
+msgid "Provide Website URL"
+msgstr "Furnizați URL-ul site-ului"
+
+#: framework/meta-box/config-meta-boxes.php:449
+msgid "Provide Related Information"
+msgstr "Furnizați informații Relevante"
+
+#: framework/meta-box/config-meta-boxes.php:457
+msgid "Provide Email Address. Messages from contact form on property details page, will be sent on this email address."
+msgstr "Furnizați Adresa de E-mail. Mesajele din formularul de contact al Paginii Detalii Imobil, vor fi transmise la acest email."
+
+#: framework/meta-box/config-meta-boxes.php:463
+msgid "Provide mobile number"
+msgstr "Furnizați Numărul de telefon mobil"
+
+#: framework/meta-box/config-meta-boxes.php:469
+msgid "Provide office number"
+msgstr "Furnizați Numărul de oficiu"
+
+#: framework/meta-box/config-meta-boxes.php:475
+msgid "Provide fax number"
+msgstr "Furnizați Numărul de fax"
+
+#: framework/meta-box/config-meta-boxes.php:481
+msgid "Provide Facebook URL"
+msgstr "Furnizați URL-ul Facebook"
+
+#: framework/meta-box/config-meta-boxes.php:487
+msgid "Provide Twitter URL"
+msgstr "Furnizați URL-ul Twitter"
+
+#: framework/meta-box/config-meta-boxes.php:493
+msgid "Provide Google Plus URL"
+msgstr "Furnizați URL-ul Google Plus"
+
+#: framework/meta-box/config-meta-boxes.php:499
+msgid "Provide LinkedIn URL"
+msgstr "Furnizați URL-ul LinkedIn"
+
+#: framework/meta-box/config-meta-boxes.php:509
+msgid "Top Banner Area Settings"
+msgstr "Zona Bannerului de Sus Setări"
+
+#: framework/meta-box/config-meta-boxes.php:517
+msgid "Please provide the Banner Title, Otherwise the Page Title will be displayed in its place."
+msgstr "Vă rog oferiți un Titlu pentru Banner, în caz contrar Titlul Paginei va fi afișat în loc."
+
+#: framework/meta-box/config-meta-boxes.php:523
+msgid "Please provide the Banner Sub Title."
+msgstr "Vă rog oferiți Subtitlu Banner"
+
+#: framework/meta-box/config-meta-boxes.php:529
+msgid "Banner Image"
+msgstr "Imagine Banner"
+
+#: framework/meta-box/config-meta-boxes.php:531
+msgid "Please upload the Banner Image. Otherwise the default banner image from theme options will be displayed."
+msgstr "Vă rog, încărcați imaginea bannerului. În caz contrar, imaginea implicită a banner-ului din opțiunile temei va fi afișată."
+
+#: framework/meta-box/config-meta-boxes.php:538
+msgid "If you want to replace banner with revolution slider then provide its alias here."
+msgstr "Dacă doriți să înlocuiți bannerul cu modulul Revolution Slider atunci indicați referința la elaici."
+
+#: framework/meta-box/config-meta-boxes.php:547
+msgid "Page Title"
+msgstr "Titlul Paginii"
+
+#: framework/meta-box/config-meta-boxes.php:582
+msgid "Properties Filter Settings"
+msgstr "Setările Filtrului Imobiliar"
+
+#: framework/meta-box/config-meta-boxes.php:596
+msgid "Number of Properties Per Page"
+msgstr "Numărul de Imobile Per Pagină"
+
+#: framework/meta-box/config-meta-boxes.php:604
+msgid "Order Properties By"
+msgstr "Sortează Imobilul După"
+
+#: framework/meta-box/config-meta-boxes.php:607
+msgid "Date New to Old"
+msgstr "Dată Nou la Vechi"
+
+#: framework/meta-box/config-meta-boxes.php:608
+msgid "Date Old to New"
+msgstr "Dată Vechi la Nou"
+
+#: framework/meta-box/config-meta-boxes.php:609
+msgid "Price Low to High"
+msgstr "Preț Mic la Mare"
+
+#: framework/meta-box/config-meta-boxes.php:610
+msgid "Price High to Low"
+msgstr "Preț Mare la Mic"
+
+#: framework/meta-box/config-meta-boxes.php:645
+msgid "Minimum Beds"
+msgstr "Minimum Dormitoare"
+
+#: framework/meta-box/config-meta-boxes.php:653
+msgid "Minimum Baths"
+msgstr "Minimum Băi"
+
+#: framework/meta-box/inspiry-meta-box.php:21
+msgid "Meta Box plugin has been deactivated!"
+msgstr "Modulul Мета Box a fost dezactivat!"
+
+#: framework/meta-box/inspiry-meta-box.php:21
+#: framework/meta-box/inspiry-meta-box.php:34
+#: framework/meta-box/inspiry-meta-box.php:50
+#: framework/meta-box/inspiry-meta-box.php:66
+#: framework/meta-box/inspiry-meta-box.php:82
+msgid "As now its functionality is embedded with in theme."
+msgstr "Deocamdată funcționalitatea lui este incorporată in Temă."
+
+#: framework/meta-box/inspiry-meta-box.php:23
+#: framework/meta-box/inspiry-meta-box.php:39
+#: framework/meta-box/inspiry-meta-box.php:55
+#: framework/meta-box/inspiry-meta-box.php:71
+#: framework/meta-box/inspiry-meta-box.php:87
+msgid "So, You should completely remove it from your plugins."
+msgstr "Deci, Ar trebui să-l eliminați complet din modulele dvs."
+
+#: framework/meta-box/inspiry-meta-box.php:36
+msgid "Meta Box Columns plugin has been deactivated!"
+msgstr "Modulul Meta Box Columns a fost dezactivat!"
+
+#: framework/meta-box/inspiry-meta-box.php:52
+msgid "Meta Box Tabs plugin has been deactivated!"
+msgstr "Modulul Мета Box Tabs a fost dezactivat!"
+
+#: framework/meta-box/inspiry-meta-box.php:68
+msgid "Meta Box Show Hide plugin has been deactivated!"
+msgstr "Modulul Мета Box Show Hide a fost dezactivat!"
+
+#: framework/meta-box/inspiry-meta-box.php:84
+msgid "Meta Box Group plugin has been deactivated!"
+msgstr "Modulul Meta Box Group a fost dezactivat!"
+
+#: functions.php:57
+msgid "Main Menu"
+msgstr "Meniul de bază"
+
+#: functions.php:154
+msgid "Default Sidebar"
+msgstr "Panou Lateral Implicit"
+
+#: functions.php:156
+msgid "Widget area for default sidebar on news and post pages."
+msgstr "Suprafață asamblabilă pentru panoul lateral implicit pe paginile noutăților și articolelor"
+
+#: functions.php:165
+msgid "Pages Sidebar"
+msgstr "Panou lateral a Paginilor"
+
+#: functions.php:167
+msgid "Widget area for default page template sidebar."
+msgstr "Suprafață asamblabilă pentru șablonul panoului lateral a paginii implicite"
+
+#: functions.php:176
+msgid "Contact Sidebar"
+msgstr "Panoul Lateral de Contact"
+
+#: functions.php:178
+msgid "Widget area for contact page sidebar."
+msgstr "Suprafață asamblabilă pentru Panoul Lateral de Contact."
+
+#: functions.php:187
+msgid "Property Sidebar"
+msgstr "Panoul Lateral a Imobilului"
+
+#: functions.php:189
+msgid "Widget area for property detail page sidebar."
+msgstr "Suprafață asamblabilă pentru Panoul Lateral a Paginei Detalii Imobil."
+
+#: functions.php:198
+msgid "Property Listing Sidebar"
+msgstr "Panoul Lateral Lista Imobilului"
+
+#: functions.php:200
+msgid "Widget area for property listing template sidebar."
+msgstr "Suprafață asamblabilă pentru șablounul panoului lateral Lista Imobilului."
+
+#: functions.php:220
+msgid "Footer First Column"
+msgstr "Prima Coloană din Subsol"
+
+#: functions.php:222
+msgid "Widget area for first column in footer."
+msgstr "Suprafață asamblabilă pentru a prima coloană din subsol."
+
+#: functions.php:231
+msgid "Footer Second Column"
+msgstr "A Doua Coloană din Subsol"
+
+#: functions.php:233
+msgid "Widget area for second column in footer."
+msgstr "Suprafață asamblabilă pentru a doua coloană din subsol."
+
+#: functions.php:242
+msgid "Footer Third Column"
+msgstr "A Treia Coloană din Subsol"
+
+#: functions.php:244
+msgid "Widget area for third column in footer."
+msgstr "Suprafață asamblabilă pentru a treia coloană din subsol."
+
+#: functions.php:253
+msgid "Footer Fourth Column"
+msgstr "A Patra Coloană din Subsol"
+
+#: functions.php:255
+msgid "Widget area for fourth column in footer."
+msgstr "Suprafață asamblabilă pentru a patra coloană din subsol."
+
+#: functions.php:265
+msgid "Agent Sidebar"
+msgstr "Panoul Lateral al Agentului"
+
+#: functions.php:267
+msgid "Sidebar widget area for agent detail page."
+msgstr "Panoul Lateral al Piesei pentru Pagina Detalii de Agent."
+
+#: functions.php:276
+msgid "Home Search Area"
+msgstr "Suprafața de Căutare pe Pagina Principală"
+
+#: functions.php:287
+msgid "Property Search Sidebar"
+msgstr "Căută Imobil Panou lateral"
+
+#: functions.php:289
+msgid "Widget area for property search template with sidebar."
+msgstr "Suprafață asamblabilă pentru șablonul căută imobil cu panou lateral"
+
+#: functions.php:301
+#, php-format
+msgid "Additional Sidebar %d"
+msgstr "Panou lateral suplimentar %d"
+
+#: functions.php:302
+msgid "An extra sidebar to use with Visual Composer if needed."
+msgstr "Panou lateral suplimentar pentru a fi utilizat cu Visual Compozitor-ul, dacă este necesar."
+
+#: functions.php:686 functions.php:714
+msgid "Valid file formats"
+msgstr "Tipuri de fișiere acceptate"
+
+#: functions.php:756
+msgid "Go to..."
+msgstr "Treci la..."
+
+#: header.php:57
+msgid "Email us at"
+msgstr "Scrie-ne la"
+
+#: template-home.php:77
+msgid "No Posts Found!"
+msgstr "Nici un articol găsit!"
+
+msgid "Add to Favorites"
+msgstr "Adăugă la Favorite"
+
+#: template-home.php:59
+msgid "Know More"
+msgstr "Află mai multe"
+
+#: template-contact.php:147
+msgid "Send"
+msgstr "Trimite"
+
+#: tp/property-detail/property-contacts-for-sidebar.php:84
+#: template-contact.php:120
+msgid "Name"
+msgstr "Nume"
+
+#: template-contact.php:121
+msgid "Your Name"
+msgstr "Numele dvs."
+
+msgid "Please provide:"
+msgstr "Vă rugăm introduceți:"
+
+#: tp/property-detail/property-contacts-for-sidebar.php:85
+#: template-contact.php:77 template-contact.php:125
+msgid "Email"
+msgstr "E-mail"
+
+msgid "Your Email"
+msgstr "Email-ul dvs."
+
+msgid "* Please provide valid email address"
+msgstr "* Vă rugăm să introduceți o adresă de e-mail validă"
+
+#: tp/property-detail/property-contacts-for-sidebar.php:86
+#: template-contact.php:135
+msgid "Message"
+msgstr "Mesaj"
+
+#: template-contact.php:136
+msgid "Your message"
+msgstr "Mesajul dvs."
+
+msgid "Contact"
+msgstr "Contactează"
+
+msgid "Submitted by"
+msgstr "Adăugat de"
+
+#: template-favorites.php:94
+msgid "More Details "
+msgstr "Mai multe detalii "
+
+msgid "Print"
+msgstr "Tipărește"
+
+msgid "Bedroom"
+msgstr "Dormitor"
+
+msgid "Bathroom"
+msgstr "Baie"
+
+msgid "Share this"
+msgstr "Distribuie aceasta"
+
+#: search.php:10
+msgid "Search Results"
+msgstr "Rezultatul căutării"
+
+#: single.php:23
+msgid "Posted on"
+msgstr "Publicat pe"
+
+#: single.php:29
+msgid "by"
+msgstr "de"
+
+#: single.php:31
+msgid "in"
+msgstr "în"
+
+#: template-users-listing.php:138
+msgid "More Details"
+msgstr "Подробнее"
+
+msgid "Sorry No Results Found"
+msgstr "К сожалению Ничего не найдено"
+
+#: template-contact.php:62
+msgid "Phone"
+msgstr "Telefon"
+
+#: template-contact.php:81
+msgid "Address"
+msgstr "Adresă"
+
+#: template-contact.php:126
+msgid "* Please provide a valid email address"
+msgstr "* Vă rugăm introduceți o adresă de e-mail validă"
+
+msgid "Change"
+msgstr "Schimbă"
+
+msgid "Remove"
+msgstr "Șterge"
+
+msgid "Profile image should have minimum width of 210px and minimum height of 210px."
+msgstr "Imagine Profilului trebuie să aibă lățimea minimă de 210px și înălțimea minimă de 210px."
+
+msgid "Make sure to save changes after changing the image."
+msgstr "Asigurați-vă că ați salvat modificările după schimbarea imaginii."
+
+msgid "Display Name"
+msgstr "Numele afișat"
+
+msgid "Password"
+msgstr "Parolă"
+
+msgid "Fill it only if you want to change your password"
+msgstr "Completați acest câmp numai dacă doriți să schimbați parola"
+
+msgid "Confirm Password"
+msgstr "Confirmă Parola"
+
+msgid "Biographical Information"
+msgstr "Informație Biografică"
+
+msgid "Save Changes"
+msgstr "Salvează Schimbările"
+
+msgid "Login Required:"
+msgstr "Autentificare Necesară:"
+
+msgid "Please login to edit your profile information!"
+msgstr "Te rog autentificăte pentru a schimba informații de profil!"
+
+#: template-favorites.php:87
+msgid "Remove from favorites"
+msgstr "Elimină din Favorite"
+
+#: template-favorites.php:110
+msgid "No property found!"
+msgstr "Nici un Imobil nu a fost găsit !"
+
+#: template-favorites.php:118
+msgid "You have no property in favorites!"
+msgstr "Nu ai Imobile în Favorite!"
+
+msgid "Already a Member? Log in here."
+msgstr "Ești deja un utilizator? Autentificăte aici."
+
+msgid "Username"
+msgstr "Nume Utilizator"
+
+msgid "* Provide username!"
+msgstr "* Introduceți Numele de Utilizator!"
+
+msgid "* Provide password!"
+msgstr "* Introduceți parola !"
+
+msgid "Log in"
+msgstr "Autentifică-te"
+
+msgid "Forgot password!"
+msgstr "Ați uitat parola!"
+
+msgid "Username or Email"
+msgstr "Nume de utilizator sau E-mail"
+
+msgid "* Provide username or email!"
+msgstr "* Introdu numele de utilizator sau E-mailul!"
+
+msgid "Reset Password"
+msgstr "Reseteaza Parola"
+
+msgid "Do not have an account? Register here"
+msgstr "Nu ai un cont? Inregistreaza-te aici"
+
+msgid "* Provide valid email address!"
+msgstr "* Furnizați o adresă de e-mail validă!"
+
+msgid "You are already logged in!"
+msgstr "Sunteți deja autentificat!"
+
+msgid "Success:"
+msgstr "Success:"
+
+msgid "Property removed."
+msgstr "Imobilul a fost Eliminat."
+
+msgid "Property Submitted."
+msgstr "Imobilul a fost Adăugat."
+
+msgid "Property Updated."
+msgstr "Imobilul a fost Actualizat"
+
+msgid "Posted on :"
+msgstr "Publicat pe :"
+
+msgid "Payment Completed"
+msgstr "Plată Finalizată"
+
+msgid "Note:"
+msgstr "Notă:"
+
+msgid "Please, Login to view your properties!"
+msgstr "Te rog, Autentifică-te pentru a vizualiza Imobilele!"
+
+msgid "Read more"
+msgstr "Citește mai mult"
+
+msgid "No Results Found"
+msgstr "Niciun Rezultat Găsit."
+
+#, php-format
+msgid "View all Properties having %s status"
+msgstr "Vizualizați toate Imobilele care au statutul de %s"
+
+#, php-format
+msgid "View all posts by %s"
+msgstr "Vezi toate articolele publicate de %s"
+
+msgid "View all"
+msgstr "Vezi toate"
+
+#: template-home.php:66
+msgid "On"
+msgstr "Pe"
+
+#: tp/home-news-posts.php:70
+msgid "Read More "
+msgstr "Citește mai mult "
+
+msgid "User Name"
+msgstr "Nume de utilizator"
+
+msgid "* Provide user name!"
+msgstr "* Introduceți numele de utilizator!"
+
+msgid "Register Here"
+msgstr "Inregistreaza-te aici"
+
+msgid "Forgot Password"
+msgstr "Ați uitat Parola"
+
+msgid "Login Here"
+msgstr "Intră Aici"
+
+msgid "* Please provide property title!"
+msgstr "* Introduceți un titlu pentru Imobil!"
+
+msgid "Property Description"
+msgstr "Descriere Imobil"
+
+msgid "* Please provide the value in only digits!"
+msgstr "* Vă rugăm să introduceți valoarea doar cu cifre!"
+
+msgid "Sale OR Rent Price"
+msgstr "Vânzare SAU Închiriere Preț"
+
+msgid "Price Postfix Text"
+msgstr "Preț Sufix Text"
+
+#: framework/customizer/search.php:552
+msgid "Area"
+msgstr "Suprafață"
+
+msgid "Area Postfix Text"
+msgstr "Suprafață Sufix Text"
+
+msgid "Drag and drop images here"
+msgstr "Trageți imaginile aici"
+
+msgid "or"
+msgstr "sau"
+
+msgid "Select Images"
+msgstr "Alege Imaginile"
+
+msgid "* An image should have minimum width of 770px and minimum height of 386px."
+msgstr "* Imaginea trebuie să aibă lățimea minimă de 770px și o înălțime minimă de 386px."
+
+msgid "* You can mark an image as featured by clicking the star icon, Otherwise first image will be considered featured image."
+msgstr "* Puteți marca o imagine ca recomandată făcând click pe iconița în formă de stea, în caz contrar prima imagine va fi considerată ca recomandată."
+
+msgid "* Please provide a property address!"
+msgstr "* Vă rugăm să introduceți adresa imobilului!"
+
+msgid "Find Address"
+msgstr "Găsește Adresa"
+
+msgid "Mark this Property as Featured"
+msgstr "Marcați acest Imobil ca Recomandat"
+
+msgid "( Agent information box will not be displayed )"
+msgstr "( Fereastra Informații despre Agent nu va fi afișată )"
+
+msgid "My profile information"
+msgstr "Informația Profilului Meu"
+
+msgid "( Edit Profile Information )"
+msgstr "( Editați Informația de Profil )"
+
+msgid "Display an agent's information"
+msgstr "Afișează Informația unui Agent"
+
+msgid "Update Property"
+msgstr "Actualizare Imobil"
+
+msgid "Requested property does not belong to logged in user !"
+msgstr "Imobilul solicitat nu aparține utilizatorului conectat !"
+
+msgid "Requested post is not a valid property post !"
+msgstr "Articolul solicitat nu este un articol imobiliar valid"
+
+msgid "Sq Ft"
+msgstr "m.p."
+
+msgid "Mark this property as featured property"
+msgstr "Marcați acest Imobil ca Imobil Recomandat"
+
+msgid "Message to the Reviewer"
+msgstr "Mesaj pentru Examinator"
+
+msgid "Only provide digits!"
+msgstr "Folosiți doar cifre!"
+
+#, php-format
+msgid "%s Result"
+msgid_plural "%s Results"
+msgstr[0] "%s Rezultat"
+msgstr[1] "%s Rezultate"
+msgstr[2] "%s Rezultate"
+
+msgid "Found %s property"
+msgid_plural "Found %s properties"
+msgstr[0] "A fost găsit %s imobil"
+msgstr[1] "Au fost găsite %s imobile"
+msgstr[2] "Au fost găsite %s imobile"
+
+msgid "%s property"
+msgid_plural "%s properties"
+msgstr[0] "%s imobil"
+msgstr[1] "%s imobile"
+msgstr[2] "%s imobile"
+
+msgid "Sort By"
+msgstr "Sortează după"
+
+msgid "Default Order"
+msgstr "Ordine Implicită"
+
+msgid "Submit"
+msgstr "Adaugă"
+
+msgid "Profile"
+msgstr "Profil"
+
+msgid "Logout"
+msgstr "Ieșire"
+
+msgid "No Property Found!"
+msgstr "Nici un Imobil nu a fost găsit!"
+
+msgid "Error:"
+msgstr "Eroare:"
+
+msgid "Property updated successfully!"
+msgstr "Datele Imobilului au fost reînoite cu succes!"
+
+msgid "Please login to submit property!"
+msgstr "Vă rugăm conectați-vă la contul dvs. pentru a adăuga un Imobil!"
+
+#: widgets/advance-search-widget.php:7
+msgid "This widget displays advance search form."
+msgstr "Această piesă afișează Formularul Căutării Avansate."
+
+#: widgets/advance-search-widget.php:39
+#: widgets/agent-featured-properties-widget.php:131
+#: widgets/agent-properties-widget.php:132
+#: widgets/featured-properties-widget.php:115
+#: widgets/property-types-widget.php:39
+msgid "Widget Title"
+msgstr "Piesă Titlu"
+
+#: widgets/agent-featured-properties-widget.php:6
+msgid "Important: This widget is only for the Agent Sidebar."
+msgstr "Important: Această piesă este doar pentru panelul lateral al Agentului."
+
+#: widgets/agent-featured-properties-widget.php:7
+msgid "Agent Featured Properties"
+msgstr "Imobile Recomandate de Agent"
+
+#: widgets/agent-featured-properties-widget.php:89
+#: widgets/agent-properties-widget.php:85
+#: widgets/featured-properties-widget.php:75
+msgid "Read More"
+msgstr "Citește Mai Mult"
+
+#: widgets/agent-featured-properties-widget.php:108
+msgid "No Featured Property Found For This Agent"
+msgstr "Nici un Imobil Recomandat nu a fost găsit pentru acest Agent"
+
+#: widgets/agent-featured-properties-widget.php:135
+#: widgets/agent-properties-widget.php:142
+#: widgets/featured-properties-widget.php:123
+msgid "Sort By:"
+msgstr "Sortează după:"
+
+#: widgets/agent-featured-properties-widget.php:137
+#: widgets/agent-properties-widget.php:144
+#: widgets/featured-properties-widget.php:125
+msgid "Most Recent"
+msgstr "Cele mai Recente"
+
+#: widgets/agent-featured-properties-widget.php:138
+#: widgets/agent-properties-widget.php:145
+#: widgets/featured-properties-widget.php:126
+msgid "Random"
+msgstr "Aleatoare"
+
+#: widgets/agent-properties-widget.php:6
+msgid "Displays random, recent or featured properties based on selected agent."
+msgstr "Afișează imobile aleatoare, recente sau recomandate în baza agentului ales."
+
+#: widgets/agent-properties-widget.php:7
+msgid "Agent Related Properties"
+msgstr "Imobilele Agentului"
+
+#: widgets/agent-properties-widget.php:105
+msgid "No Property Found Under Selected Agent!"
+msgstr "Nu a fost găsit nici un Imobil la Agentul ales!"
+
+#: widgets/agent-properties-widget.php:136
+msgid "Select an Agent:"
+msgstr "Alegeți un Agent:"
+
+#: widgets/agent-properties-widget.php:154
+msgid "Show only Featured Properties."
+msgstr "Arată doar Imobilele Recomandate"
+
+#: widgets/featured-properties-widget.php:94
+msgid "No Featured Property Found!"
+msgstr "Nici un Imobil Recomandat n-a fost găsit!"
+
+#: widgets/property-types-widget.php:6
+msgid "This widget displays a list of Property Types."
+msgstr "Această Piesă afișează lista Tipurilor de Imobil."
+
+#: template-home.php:36
+msgid "Hot Deals"
+msgstr "Oferte Fierbinți"
+
+msgid "Latest Offers"
+msgstr "Ultimele Oferte"
+
+msgid "My Offers"
+msgstr "Ofertele mele"
+
+msgid "Chosen Deals"
+msgstr "Oferte Alese"
+
+#: framework/functions/price.php:75
+msgid "Price Not Specified"
+msgstr "Prețul Lipsește"
+
+msgid "Floor"
+msgstr "Etaj"
+
+msgid "Floors"
+msgstr "Etaje"
+
+msgid "%s Floor"
+msgstr "%s Etaj"
+
+msgid "%s Floor from %s"
+msgstr "%s Etaj din %s"
+
+msgid "Old Site"
+msgstr "Vechiul site"
+
+#: framework/customizer/misc.php:13
+msgid "Google Services"
+msgstr "Servicii Google"
+
+#: framework/meta-box/config-meta-boxes.php:157
+msgid "Rooms Height"
+msgstr "Înălțimea Camerelor"
+
+msgid "Lavatories"
+msgstr "Grupuri sanitare"
+
+msgid "Lavatory"
+msgstr "Grup sanitar"
+
+msgid "%s Lavatory"
+msgid_plural "%s Lavatories"
+msgstr[0] "%s Grup sanitar"
+msgstr[1] "%s Grupuri sanitare"
+msgstr[2] "%s Grupuri sanitare"
+
+msgid "Rooms"
+msgstr "Camere"
+
+msgid "Room"
+msgstr "Cameră"
+
+msgid "%s room"
+msgid_plural "%s rooms"
+msgstr[0] "%s cameră"
+msgstr[1] "%s camere"
+msgstr[2] "%s camere"
+
+#, php-format
+msgid "%s floor"
+msgid_plural "%s floors"
+msgstr[0] "%s etaj"
+msgstr[1] "%s etaje"
+msgstr[2] "%s etaje"
+
+msgid "Balconies/Loggias"
+msgstr "Balcoane/Logii"
+
+msgid "%s Balcony/Loggia"
+msgid_plural "%s Balconies/Loggias"
+msgstr[0] "%s Balcon/Logie"
+msgstr[1] "%s Balcoane/Logii"
+msgstr[2] "%s Balcoane/Logii"
+
+msgid "Balcony"
+msgstr "Balcon"
+
+msgid "%s Balcony"
+msgid_plural "%s Balconies"
+msgstr[0] "%s Balcon"
+msgstr[1] "%s Balcoane"
+msgstr[2] "%s Balcoane"
+
+msgid "Testimonials"
+msgstr "Recomandări"
+
+#: framework/PostProperty.php:7
+msgid "% property"
+msgid_plural "%s properties"
+msgstr[0] "%s imobil"
+msgstr[1] "%s imobile"
+msgstr[2] "%s imobile"
+
+msgid "Copyright © %d %s"
+msgstr "Copyright © %d %s"
+
+msgid "Favorite Properties"
+msgstr "Imobile Preferate"
+
+msgid "Help through Email"
+msgstr "Ajutor prin E-mail"
+
+msgid "We call You"
+msgstr "Noi te sunăm"
+
+msgid "Online Assistant"
+msgstr "Asistent Online"
+
+msgid "%s hectare"
+msgid_plural "%s hectare"
+msgstr[0] "%s hectar"
+msgstr[1] "%s hectare"
+msgstr[2] "%s hectare"
+
+msgid "ha."
+msgstr "ha."
+
+msgid "%s acre"
+msgid_plural "%s acres"
+msgstr[0] "%s acru"
+msgstr[1] "%s acri"
+msgstr[2] "%s acri"
+
+msgid "%s are"
+msgid_plural "%s ares"
+msgstr[0] "%s ar"
+msgstr[1] "%s ari"
+msgstr[2] "%s ari"
+
+msgid "%s m²"
+msgid_plural "%s m²"
+msgstr[0] "%s m²"
+msgstr[1] "%s m²"
+msgstr[2] "%s m²"
+
+msgid "sq.m."
+msgstr "m.p."
+
+msgid "m²"
+msgstr "m²"
+
+msgid "per m²"
+msgstr "per m²"
+
+msgid "per day"
+msgstr "zilnic"
+
+msgid "per week"
+msgstr "săptămânal"
+
+msgid "per month"
+msgstr "lunar"
+
+msgid "per year"
+msgstr "anual"
+
+msgid "Price in installments"
+msgstr "Preț în rate"
+
+msgid "Value Example: %s"
+msgstr "Exemplu de valoare: %s"
+
+msgid "Rooms height unit of measure"
+msgstr "Unitatea de măsură a înălțimii camerei"
+
+msgid "m"
+msgstr "m"
+
+msgid "km"
+msgstr "km"
+
+msgid "cm"
+msgstr "cm"
+
+msgid "mm"
+msgstr "mm"
+
+msgid "Rental Price"
+msgstr "Prețul de închiriere"
+
+msgid "Rental Price Postfix"
+msgstr "Postfix la Prețul de închiriere"
+
+msgid "Projects"
+msgstr "Proiecte"
+
+msgid "Financing"
+msgstr "Finanțare"
+
+msgid "Total Value"
+msgstr "Valoarea Totală"
+
+msgid "Rent"
+msgstr "Chiria"
+
+msgid "Add an Ad"
+msgstr "Adaugă un Anunț"
+
+msgid "Request a call"
+msgstr "Comandă un sunet"
+
+msgid "Property Information"
+msgstr "Informații despre Imobil"
+
+msgid "Write a letter"
+msgstr "Scrie o scrisoare"
+
+msgid "Your User Account was sent to the site administrator for approval"
+msgstr "Contul dvs. de utilizator a fost trimis spre aprobare administratorului site-ului"
+
+msgid "Luxury Properties"
+msgstr "Imobil de Lux"
+
+msgid "First rate"
+msgstr "Prima rată"
+
+msgid "Monthly payment"
+msgstr "Plată lunară"
+
+msgid "On request"
+msgstr "La cerere"
+
+msgid "Property area size"
+msgstr "Mărimea suprafeței imobilului"
+
+msgid "Plot of land size"
+msgstr "Mărimea lotului de teren"
+
+msgid "Unit of measure"
+msgstr "Unitatea de măsură"
+
+msgid "The land unit of measure"
+msgstr "Unitatea de măsură a terenului"
+
+msgid "The land"
+msgstr "Teren"
+
+msgid "The property unit of measure"
+msgstr "Unitatea de măsură a imobilului"
+
+msgid "Rental price criteria"
+msgstr "Criteriul prețului de închiriere"
+
+msgid "Images of %s"
+msgstr "Imagini %s"
+
+msgid "Video of %s"
+msgstr "Video %s"
+
+msgid "Apartments"
+msgstr "Apartamente"
+
+msgid "Houses"
+msgstr "Case"
+
+msgid "Plots of Land"
+msgstr "Loturi de teren"
+
+msgid "Apartments for Sale"
+msgstr "Apartamente de Vânzare"
+
+msgid "Houses for Sale"
+msgstr "Case Vânzare de Vânzare"
+
+msgid "For Rents"
+msgstr "Se dau în Chirie"
+
+msgid "Plots of Land for Sale"
+msgstr "Loturi de teren de Vânzare"
+
+msgid "Commercial Sale / Rent"
+msgstr "Comerciale Vânzare / Chirie"
+
+msgid "For sale"
+msgid_plural "For sales"
+msgstr[0] "Se vinde"
+msgstr[1] "Se vând"
+msgstr[2] "Se vând"
+
+msgid "For rent"
+msgid_plural "For rents"
+msgstr[0] "Se dă în Chirie"
+msgstr[1] "Se dau în Chirie"
+msgstr[2] "Se dau în Chirie"
+
+msgid "room"
+msgid_plural "rooms"
+msgstr[0] "cameră"
+msgstr[1] "camere"
+msgstr[2] "camere"
+
+#, php-format
+msgid "floor"
+msgid_plural "floors"
+msgstr[0] "etaj"
+msgstr[1] "etaje"
+msgstr[2] "etaje"
+
+msgid "Show first the"
+msgstr "Arata primele cele"
+
+msgid "Expensive"
+msgstr "Scumpe"
+
+msgid "Cheap"
+msgstr "Ieftine"
+
+msgid "Recent"
+msgstr "Recente"
+
+msgid "The financing company"
+msgstr "Compania ce finanțează"
+
+#, php-format
+msgid "%s view"
+msgid_plural "%s views"
+msgstr[0] "%s vizulalizare"
+msgstr[1] "%s vizualizări"
+msgstr[2] "%s vizualizări"
+
+msgid "Name plural"
+msgstr "Nume plural"
+
+msgid "Show on property page?"
+msgstr "Arata pe pagina imobilului?"
+
+msgid "My Page"
+msgstr "Pagina Mea"
+
+#, php-format
+msgid "Choose %s"
+msgstr "Alegeți %s"
+
+msgid "Most viewed"
+msgstr "Des vizualizate"
+
+#, php-format
+msgid "%s measure unit"
+msgstr "%s, unitatea de măsură"
+
+msgid "from"
+msgstr "de la"
+
+msgid "to"
+msgstr "pînă la"
+
+msgid "min."
+msgstr "min."
+
+msgid "max."
+msgstr "max."
+
+msgid "To the sea"
+msgstr "Până la mare"
+
+msgid "Distance to the sea"
+msgstr "Distanța până la mare"
+
+msgid "Distance"
+msgstr "Distanța"
+
+msgid "To publish the Property please complete the required fields: Status, Type, Location and Price"
+msgstr "Pentru a publica Imobilul vă rugăm să completați câmpurile obligatorii: Stare, Tip, Amplasare și Preț"
+
+msgid "Offer is finalized?"
+msgstr "Oferta este finalizată?"
+
+msgid "Sold"
+msgstr "Vândut"
+
+msgid "Rented"
+msgstr "Închiriat"
+
+msgid "You have been subscribed to %s newsletter. This means you will receive emails with new posts that are added on site. If you believe this is an mistake, click 'Unsubscribe' below."
+msgstr "Ați fost abonat la newsletterul Reverie. Aceasta înseamnă că veți primi scrisori cu noile publicații adaugate pe site. Dacă credeți că este o greșeală, faceți clic pe 'Dezabonează' de mai jos."
+
+msgid "Subscribe"
+msgstr "Abonare"
+
+msgid "Newsletter"
+msgstr "Buletin informativ"
+
+msgid "Welcome to %s Newsletter"
+msgstr "Bine ați venit în Buletinul informativ %s"
+
+msgid "Share on Social Networks"
+msgstr "Publicati pe rețelele sociale"
+
+msgid "Unable to subscribe"
+msgstr "Abonarea a eșuat"
+
+msgid "You are subscribed"
+msgstr "Sunteți abonat"
+
+msgid "Service unavailable, try again later"
+msgstr "Serviciul nu este disponibil, încercați din nou mai târziu"
+
+msgid "Provide a valid email address!"
+msgstr "Furnizați o adresă de e-mail validă!"
+
+msgid "Nothing was found"
+msgstr "Nimic nu a fost găsit"

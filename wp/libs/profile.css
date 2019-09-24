@@ -1,0 +1,120 @@
+#profile-page .avatar{
+    height: auto !important;
+}
+.color-option {
+    width: 20%;
+}
+#profile-page .form-table th,
+#profile-page .form-table td {
+    padding: 5px;
+}
+#profile-page th:before,
+#profile-page label:before,
+#createuser th:before,
+#createuser label:before,
+h1#add-new-user:before {
+    font-family: FontAwesome, serif;
+    padding-right: 4px;
+    font-weight: normal;
+}
+#createuser select,
+#profile-page select {
+    width: 350px;
+}
+#profile-page .form-table textarea {
+    width: 100%;
+}
+.user-profile-picture,
+.user-nickname-wrap,
+.user-display-name-wrap,
+.user-admin-color-wrap,
+.user-admin-bar-front-wrap,
+.user-rich-editing-wrap,
+.user-syntax-highlighting-wrap,
+.user-comment-shortcuts-wrap,
+.form-table input.tog,
+form#your-profile > h2 {
+    display: none;
+}
+h1#add-new-user:before {
+    content: "\f234";
+}
+label[for=avatar]:before {
+    font-family: 'FontAwesome', serif;
+    content: "\f2bd";
+}
+label[for=phone]:before {
+    font-family: 'FontAwesome', serif;
+    content: "\f67d";
+}
+.user-profile-picture th:before {
+    content: "\f2bd";
+}
+.user-login-wrap th:before {
+    content: "\f502";
+}
+.user-first-name-wrap th:before,
+.user-last-name-wrap th:before,
+#createuser label[for=first_name]:before,
+#createuser label[for=last_name]:before {
+    content: "\f4ff";
+}
+#createuser tr.pw-weak + tr th:before{
+    content: "\f1d8";
+}
+#createuser label[for=user_login]:before,
+.user-user-login-wrap th:before {
+    content: "\f502";
+}
+.user-nickname-wrap th:before {
+    content: "\f507";
+}
+.user-display-name-wrap th:before {
+    content: "\f06e";
+}
+.user-email-wrap th:before,
+#createuser label[for=email]:before {
+    content: "\f0e0";
+}
+.user-url-wrap th:before,
+#createuser label[for=url]:before {
+    content: "\f0ac";
+}
+.user-description-wrap th:before {
+    content: "\f02d";
+}
+.user-profile-picture th:before {
+    content: "\f2bd";
+}
+.user-language-wrap th:before {
+    content: "\f1ab";
+}
+.user-role-wrap th:before,
+#createuser label[for=role]:before {
+    content: "\f4fe";
+}
+.user-admin-color-wrap th:before {
+    content: "\f1fc";
+}
+.user-comment-shortcuts-wrap th:before {
+    content: "\f11c";
+}
+.user-rich-editing-wrap th:before {
+    content: "\f044";
+}
+.user-syntax-highlighting-wrap th:before {
+    content: "\f121";
+}
+.user-admin-bar-front-wrap th:before {
+    content: "\f2d0";
+}
+.user-sessions-wrap th:before {
+    content: "\f0c0";
+}
+.user-pass1-wrap th:before {
+    content: "\f084";
+}
+#btnSetImage {
+    height: auto !important;
+    padding: 4px;
+}

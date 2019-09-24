@@ -1,0 +1,58 @@
+/*-------------------------------------------------------- Semantic UI Dropdown Visual Fixes*/
+.ui.label {
+    background-color: #EEE;
+    color: #666;
+    font-size: 13px !important;
+}
+.ui.label .icon:before {
+    content: "\f158";
+    font-family: dashicons, sans-serif;
+    font-style: normal;
+    font-size: 12px;
+    padding-left: 5px;
+    position: relative;
+    top: 1px;
+}
+.ui.label .icon:hover:before {
+    color: #F00;
+}
+.ui.dropdown {
+    min-height: inherit !important;
+    margin-bottom: 1em;
+}
+.ui.dropdown.selection {
+    min-width: 85% !important;
+}
+.ui.multiple.dropdown,
+.ui.selection.multiple.dropdown {
+    min-width: 88% !important;
+    padding: .22619048em 2.1em .22619048em .35714286em !important;
+}
+.ui.dropdown > .dropdown.icon:before {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 0;
+    vertical-align: middle;
+    border-top: 4px dashed;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+}
+.dropdown.icon,
+.dropdown.icon:before {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.ui.dropdown .menu > .header {
+    font-size: 16px !important;
+}
+.ui.dropdown .menu > .item {
+    font-size: 13px !important;
+}
+.ui.selection.dropdown .menu {
+    min-width: 100% !important;
+    width: 100% !important;
+}

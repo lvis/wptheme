@@ -38,9 +38,21 @@ div.yoast.yoast-settings {
     display: none !important;
 }
 /* ------------------------------------------------- Change Icons*/
+#wp-admin-bar-network-admin > .ab-item:before{
+    font: normal 16px/1 dashicons !important;
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #eee;
+    content: "\f325";
+}
+#wpadminbar .quicklinks li .blavatar:before{
+    content: "\f102";
+}
 #adminmenu #toplevel_page_woocommerce .menu-icon-generic div.wp-menu-image::before {
-    font-family: dashicons, sans-serif !important;
-    content: "\f513";
+    /*font-family: dashicons, sans-serif !important;
+    content: "\f513";*/
+    content: "\e900" !important;
 }
 #wpadminbar #wp-admin-bar-customize > .ab-item:before {
     /*content: "\f540";*/
@@ -73,6 +85,9 @@ body.plugins-php .plugins .plugin-title .row-actions img {
     width: 100% !important;
 }
 /* ------------------------------------------------- MetaBox*/
+#meta-box-notification{
+    display: none !important;
+}
 .rwmb-input input, .rwmb-input select {
     max-width: 99% !important;
     width: 100% !important;

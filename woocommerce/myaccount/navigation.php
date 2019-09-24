@@ -40,7 +40,7 @@ foreach ($items as $endpoint => $label) {
     if ($current) {
         $contentActiveItem = " class='active'";
     }
-    $content .= "<li{$contentActiveItem}><a href='{$anchorLink}'><i class='fa fa-{$menuItemIcon}'></i> {$anchorLabel}</a></li>";
+    $content .= "<li{$contentActiveItem}><a href='{$anchorLink}'><i class='fas fa-{$menuItemIcon}'></i> {$anchorLabel}</a></li>";
 }
 echo "<div class='navigation'><ul>$content</ul></div>";
 do_action('woocommerce_after_account_navigation');

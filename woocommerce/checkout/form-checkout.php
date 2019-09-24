@@ -8,7 +8,7 @@
  */
 defined('ABSPATH') || exit;
 
-use wp\WPUtils;
+use wp\UtilsWp;
 
 /** @global WC_Checkout $checkout */
 if (WC()->cart->is_empty()) {
@@ -43,10 +43,10 @@ if (WC()->cart->is_empty()) {
         $contentCheckoutFormFields = '';
         if ($checkout->get_checkout_fields()) {
             $cssOrderReview .= ' col-lg-6';
-            $actionCheckoutCustomerDetailsBefore = WPUtils::doAction('woocommerce_checkout_before_customer_details');
-            $actionCheckoutCustomerDetailsAfter = WPUtils::doAction('woocommerce_checkout_after_customer_details');
-            $actionCheckoutBilling = WPUtils::doAction('woocommerce_checkout_billing');
-            $actionCheckoutShipping = WPUtils::doAction('woocommerce_checkout_shipping');
+            $actionCheckoutCustomerDetailsBefore = UtilsWp::doAction('woocommerce_checkout_before_customer_details');
+            $actionCheckoutCustomerDetailsAfter = UtilsWp::doAction('woocommerce_checkout_after_customer_details');
+            $actionCheckoutBilling = UtilsWp::doAction('woocommerce_checkout_billing');
+            $actionCheckoutShipping = UtilsWp::doAction('woocommerce_checkout_shipping');
             $textBillingAndShipping = __('Billing &amp; Shipping', 'woocommerce');
             $contentCheckoutFormFields = "{$actionCheckoutCustomerDetailsBefore}
             <div id='customer_details' class='{$cssOrderReview}'>
@@ -63,11 +63,11 @@ if (WC()->cart->is_empty()) {
          */
         remove_action('woocommerce_before_checkout_form', 'woocommerce_checkout_login_form', 10);
         remove_action('woocommerce_before_checkout_form', 'woocommerce_checkout_coupon_form', 10);
-        $actionCheckoutFormBefore = WPUtils::doAction('woocommerce_before_checkout_form', $checkout);
-        $actionCheckoutOrderReviewBefore = WPUtils::doAction('woocommerce_checkout_before_order_review');
-        $actionCheckoutOrderReview = WPUtils::doAction('woocommerce_checkout_order_review');
-        $actionCheckoutOrderReviewAfter = WPUtils::doAction('woocommerce_checkout_after_order_review');
-        $actionCheckoutFormAfter = WPUtils::doAction('woocommerce_after_checkout_form', $checkout);
+        $actionCheckoutFormBefore = UtilsWp::doAction('woocommerce_before_checkout_form', $checkout);
+        $actionCheckoutOrderReviewBefore = UtilsWp::doAction('woocommerce_checkout_before_order_review');
+        $actionCheckoutOrderReview = UtilsWp::doAction('woocommerce_checkout_order_review');
+        $actionCheckoutOrderReviewAfter = UtilsWp::doAction('woocommerce_checkout_after_order_review');
+        $actionCheckoutFormAfter = UtilsWp::doAction('woocommerce_after_checkout_form', $checkout);
         ob_start();
         WC_Shortcode_Cart::output([]);
         $contentCart = ob_get_clean();

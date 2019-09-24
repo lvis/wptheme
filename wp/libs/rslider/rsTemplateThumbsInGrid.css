@@ -1,0 +1,42 @@
+.rsThumbsInGrid .rsThumb {
+    float: left;
+    overflow: hidden;
+    margin: 0 0 1px 1px;
+}
+.rsThumbsInGrid .rsThumbs {
+    width: 228px !important;
+    position: absolute;
+    top: 0;
+    padding: 0 0 0 1px;
+    right: 0;
+    height: auto;
+    min-height: 100%;
+}
+.rsThumbsInGrid .rsThumbsContainer {
+    height: auto !important;
+}
+.rsThumbsInGrid .rsGCaption {
+    right: 285px;
+    line-height: 12px;
+    padding: 1px 7px;
+    font-size: 11px;
+    background: #EEE;
+    position: absolute;
+    width: auto;
+    bottom: 0;
+    float: none;
+    text-align: left;
+}
+@media screen and (min-width: 0px) and (max-width: 760px) {
+    .rsThumbsInGrid .rsThumbs {
+        left: 0;
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding: 1px 0 0 0;
+        min-height: auto;
+    }
+    .rsThumbsInGrid .rsThumbsContainer {
+        height: auto !important;
+    }
+}

@@ -1,0 +1,45 @@
+.rsThumbsWithText .rsTmb {
+    padding: 16px;
+}
+.rsThumbsWithText .rsThumbs .rsThumb {
+    border-bottom: 1px solid #2e2e2e;
+}
+.rsThumbsWithText .rsThumbs {
+    padding: 0;
+}
+.rsThumbsWithText .rsThumbs h5 {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    line-height: 20px;
+}
+.rsThumbsWithText .rsThumbs span {
+    opacity: 0.6;
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    line-height: 18px;
+}
+@media screen and (min-width: 0px) and (max-width: 500px) {
+    .rsThumbsWithText .rsTmb {
+        padding: 6px 8px;
+    }
+    .rsThumbsWithText .rsTmb h5 {
+        font-size: 12px;
+        line-height: 17px;
+    }
+    .rsThumbsWithText .rsThumbs.rsThumbsVer {
+        width: 100px;
+        padding: 0;
+    }
+    .rsThumbsWithText .rsThumbs .rsThumb {
+        width: 100px;
+        height: 47px;
+    }
+    .rsThumbsWithText .rsTmb span {
+        display: none;
+    }
+    .rs.rsThumbsWithText {
+        height: 300px;
+    }
+}

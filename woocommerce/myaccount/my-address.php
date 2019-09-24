@@ -8,7 +8,7 @@
  */
 defined('ABSPATH') || exit;
 
-use wp\WPUtils;
+use wp\UtilsWp;
 use wp\UtilsWooCommerce;
 
 $customerId = get_current_user_id();
@@ -73,16 +73,16 @@ foreach ($customerAddresses as $name => $title) {
             }
             $contentAddress .= UtilsWooCommerce::getFormField($key, $field, wc_get_post_data_by_key($key, $field['value']));
         }
-        $actionEditAddressFormBefore = WPUtils::doAction("woocommerce_before_edit_address_form_{$load_address}");
-        $actionEditAddressFormAfter = WPUtils::doAction("woocommerce_after_edit_address_form_{$load_address}");
-        $actionEditAccountAddressFormBefore = WPUtils::doAction('woocommerce_before_edit_account_address_form');
-        $actionEditAccountAddressFormAfter = WPUtils::doAction('woocommerce_after_edit_account_address_form');
+        $actionEditAddressFormBefore = UtilsWp::doAction("woocommerce_before_edit_address_form_{$load_address}");
+        $actionEditAddressFormAfter = UtilsWp::doAction("woocommerce_after_edit_address_form_{$load_address}");
+        $actionEditAccountAddressFormBefore = UtilsWp::doAction('woocommerce_before_edit_account_address_form');
+        $actionEditAccountAddressFormAfter = UtilsWp::doAction('woocommerce_after_edit_account_address_form');
         $nonceEditAddress = wp_nonce_field('woocommerce-edit_address', 'woocommerce-edit-address-nonce',
             true, false);
         $textSaveAddress = __('Save address', 'woocommerce');
         $contentAddress = "{$actionEditAccountAddressFormBefore}
         <form method='post'>
-        <h3 class='text-xs-center'><i class='fa fa-{$iconAddress}'></i> {$pageTitle}</h3>
+        <h3 class='text-xs-center'><i class='fas fa-{$iconAddress}'></i> {$pageTitle}</h3>
         <div class='woocommerce-address-fields'>
             {$actionEditAddressFormBefore}
             <div class='woocommerce-address-fields__field-wrapper'>
@@ -90,7 +90,7 @@ foreach ($customerAddresses as $name => $title) {
             </div>
             {$actionEditAddressFormAfter}
             <p class='text-xs-center'>
-                <button name='save_address' type='submit'><i class='fa fa-edit'></i> {$textSaveAddress}</button>
+                <button name='save_address' type='submit'><i class='fas fa-edit'></i> {$textSaveAddress}</button>
                 {$nonceEditAddress}
                 <input type='hidden' name='action' value='edit_address_{$load_address}'>
             </p>

@@ -1,8 +1,8 @@
 <?php
 
-use wp\WPUtils;
+use wp\UtilsWp;
 use wp\WidgetArea;
 
 get_header();
-echo WPUtils::getSidebar(WidgetArea::CONTENT_MAIN, WPUtils::getNotFoundMessage());
+echo UtilsWp::getSidebar(WidgetArea::CONTENT_MAIN, UtilsWp::getNotFoundMessage());
 get_footer();
