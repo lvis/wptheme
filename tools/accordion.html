@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Accordion only with CSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../libs/generic.css">
+    <link rel="stylesheet" type="text/css" href="../libs/grid.css">
+    <link rel="stylesheet" type="text/css" href="../libs/utils.css">
+    <link rel="stylesheet" type="text/css" href="../libs/button.css">
+    <link rel="stylesheet" type="text/css" href="../libs/tab.css">
+    <link rel="stylesheet" type="text/css" href="../libs/radio.css">
+    <!--https://codepen.io/raubaca/pen/PZzpVe
+    https://codepen.io/anzjoy/pen/bahAv
+    https://code-boxx.com/simple-responsive-accordion-pure-css/-->
+</head>
+<body>
+<!--<style>
+    * {
+        box-sizing: border-box;
+    }
+    .tabs{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .tabs label{
+        cursor: pointer;
+        width: auto;
+        padding: 20px;
+    }
+    .tabs input[type=radio]{
+        display: none;
+    }
+    .tabs input[type=radio]:checked + label {
+        background: #fff;
+        color: #000;
+    }
+    .tabs input[type=radio]:checked + .tab-content,
+    .tabs input[type=radio]:checked + label + .tab-content {
+        display: block;
+    }
+    .tabs .tab-content {
+        display: none;
+        order: 99;
+        padding: 20px;
+    }
+    .tabs{
+        background: #efefef;
+        box-shadow: 0 48px 80px -32px rgba(0,0,0,0.3);
+    }
+    .tabs label{
+        background: #e5e5e5;
+        color: #7f7f7f;
+        font-size: 18px;
+        font-weight: bold;
+        width: 100%;
+    }
+    .tabs label:hover {
+        background: #d8d8d8;
+    }
+    .tabs label:active {
+        background: #ccc;
+    }
+    .tabs input[type=radio]:checked + label {
+        background: #fff;
+        color: #000;
+    }
+    .tabs .tab-content {
+        background: #fff;
+        order: initial;
+    }
+    /*@media (min-width: 600px) {
+        .tabs label {
+            width: auto;
+        }
+        .tabs .tab-content {
+            order: 99;
+        }
+    }*/
+</style>-->
+<!--<div class="tabs">
+    <input name="fruits" type="radio" id="tab1" checked="checked">
+    <label for="tab1">Orange</label>
+    <form class="tab-content">
+        <h1>Orange</h1>
+        <p>The orange (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the
+            family Rutaceae</p>
+        <p>The fruit of the Citrus × sinensis is considered a sweet orange, whereas the fruit of the Citrus × aurantium
+            is considered a bitter orange. The sweet orange reproduces asexually (apomixis through nucellar embryony);
+            varieties of sweet orange arise through mutations.</p>
+    </form>
+
+    <input name="fruits" type="radio" id="tab2">
+    <label for="tab2">Tangerine</label>
+    <form class="tab-content">
+        <h1>Tangerine</h1>
+        <p>The tangerine (Citrus tangerina) is an orange-colored citrus fruit that is closely related to, or possibly a
+            type of, mandarin orange (Citrus reticulata).</p>
+        <p>The name was first used for fruit coming from Tangier, Morocco, described as a mandarin variety. Under the
+            Tanaka classification system, Citrus tangerina is considered a separate species.</p>
+    </form>
+
+    <input name="fruits" type="radio" id="tab3">
+    <label for="tab3">Clemantine</label>
+    <form class="tab-content">
+        <h1>Clemantine</h1>
+        <p>A clementine (Citrus ×clementina) is a hybrid between a mandarin orange and a sweet orange, so named in 1902.
+            The exterior is a deep orange colour with a smooth, glossy appearance. Clementines can be separated into 7
+            to 14 segments. Similarly to tangerines, they tend to be easy to peel.</p>
+    </form>
+</div>-->
+<div class="tabs">
+    <input id="tab1" name="tab" type="radio" checked="checked">
+    <label for="tab1">Orange</label>
+    <form class="tab-content">
+        <h1>Orange</h1>
+        <p>The orange (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the
+            family Rutaceae <label for="some"><input id="some" name="tabs" type="radio">Some</label></p>
+        <p>The fruit of the Citrus × sinensis is considered a sweet orange, whereas the fruit of the Citrus × aurantium
+            is considered a bitter orange. The sweet orange reproduces asexually (apomixis through nucellar embryony);
+            varieties of sweet orange arise through mutations.</p>
+    </form>
+
+    <input id="tab2" name="tab" type="radio">
+    <label for="tab2">Tangerine</label>
+    <form class="tab-content">
+        <h1>Tangerine</h1>
+        <p>The tangerine (Citrus tangerina) is an orange-colored citrus fruit that is closely related to, or possibly a
+            type of, mandarin orange (Citrus reticulata).</p>
+        <p>The name was first used for fruit coming from Tangier, Morocco, described as a mandarin variety. Under the
+            Tanaka classification system, Citrus tangerina is considered a separate species.</p>
+    </form>
+
+    <input id="tab3" name="tab" type="radio">
+    <label for="tab3">Clemantine</label>
+    <form class="tab-content">
+        <h1>Clemantine</h1>
+        <p>A clementine (Citrus ×clementina) is a hybrid between a mandarin orange and a sweet orange, so named in 1902.
+            The exterior is a deep orange colour with a smooth, glossy appearance. Clementines can be separated into 7
+            to 14 segments. Similarly to tangerines, they tend to be easy to peel.</p>
+    </form>
+</div>
+<!--Crossbrowser Solution including IE 6-->
+<!--<style>
+    * {
+        box-sizing: border-box;
+    }
+    .tabs{
+        position: relative;
+        clear: both;
+    }
+    .tabs .tab{
+        display: inline-block;
+    }
+    .tabs label{
+        cursor: pointer;
+        width: auto;
+        padding: 20px;
+    }
+    .tabs input[type=radio]{
+        display: none;
+    }
+    .tabs input[type=radio]:checked + label {
+        background: #fff;
+        color: #000;
+    }
+    .tabs input[type=radio]:checked + .tab-content,
+    .tabs input[type=radio]:checked + label + .tab-content {
+        display: block;
+    }
+    .tabs .tab-content {
+        display: none;
+        position: absolute;
+        padding: 20px;
+        top: 64px;
+        left: 0;
+        width: 100%;
+    }
+</style>
+<div class="tabs">
+    <div class="tab">
+        <input name="fruits" type="radio" id="tab1" checked="checked"/>
+        <label for="tab1">Orange</label>
+        <form class="tab-content">
+            <h1>Orange</h1>
+            <p>The orange (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the
+                family Rutaceae</p>
+            <p>The fruit of the Citrus × sinensis is considered a sweet orange, whereas the fruit of the Citrus ×
+                aurantium
+                is considered a bitter orange. The sweet orange reproduces asexually (apomixis through nucellar
+                embryony);
+                varieties of sweet orange arise through mutations.</p>
+        </form>
+    </div>
+    <div class="tab">
+        <input name="fruits" type="radio" id="tab2"/>
+        <label for="tab2">Tangerine</label>
+        <form class="tab-content">
+            <h1>Tangerine</h1>
+            <p>The tangerine (Citrus tangerina) is an orange-colored citrus fruit that is closely related to, or
+                possibly a type of, mandarin orange (Citrus reticulata).</p>
+            <p>The name was first used for fruit coming from Tangier, Morocco, described as a mandarin variety. Under
+                the Tanaka classification system, Citrus tangerina is considered a separate species.</p>
+        </form>
+    </div>
+    <div class="tab">
+        <input name="fruits" type="radio" id="tab3"/>
+        <label for="tab3">Clemantine</label>
+        <form class="tab-content">
+            <h1>Clemantine</h1>
+            <p>A clementine (Citrus ×clementina) is a hybrid between a mandarin orange and a sweet orange, so named in
+                1902. The exterior is a deep orange colour with a smooth, glossy appearance. Clementines can be separated
+                into 7 to 14 segments. Similarly to tangerines, they tend to be easy to peel.</p>
+        </form>
+    </div>
+</div>-->
+</body>
+</html>

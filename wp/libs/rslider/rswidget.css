@@ -1,0 +1,19 @@
+.WidgetMediaSlider.raised .rs,
+.WidgetMediaSlider.raised .rs .rsOverflow,
+.WidgetMediaSlider.raised .rs .rsContainer,
+.WidgetMediaSlider.raised .rs .rsSlide,
+.WidgetMediaSlider.raised .rs img {
+    border-radius: 0.3rem;
+}
+.WidgetMediaSlider.raised .rs {
+    margin-top: 18px;
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+.WidgetMediaSlider .rs,
+.WidgetMediaSlider .rs .rsOverflow,
+.WidgetMediaSlider .rs .rsSlide,
+.WidgetMediaSlider .rs .rsVideoFrameHolder,
+.WidgetMediaSlider .rs .rsThumbs {
+    /*background: #EEEEEE !important;*/
+    background: transparent !important;
+}

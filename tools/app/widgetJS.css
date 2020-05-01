@@ -1,0 +1,231 @@
+.yBodyOverflowHidden {
+    overflow: hidden
+}
+.yWidgetBlock {
+    position: fixed !important;
+    top: 0 !important;
+    width: 500px !important;
+    height: 100% !important;
+    background-color: #fff !important;
+    box-sizing: border-box !important
+}
+.yWidgetBlock.right {
+    right: -500px !important
+}
+.yWidgetBlock.left {
+    left: -500px !important
+}
+.yWidgetIFrame {
+    width: 100% !important;
+    height: 100% !important;
+    box-sizing: border-box !important
+}
+.yWidgetCover {
+    width: 100% !important;
+    height: 100% !important;
+    background: #333 !important;
+    opacity: .5 !important;
+    display: none;
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    box-sizing: border-box !important
+}
+.yCloseIcon {
+    position: fixed !important;
+    top: 13px !important;
+    width: 35px !important;
+    height: 35px !important;
+    border-radius: 50% !important;
+    background: url(https://yclients.com/images/icon-close.png) center center/12px 12px no-repeat #fff !important;
+    display: none;
+    box-sizing: border-box !important
+}
+.yCloseIcon.left {
+    left: 513px !important
+}
+.yCloseIcon.right {
+    right: 513px !important
+}
+.yWidgetShow {
+    animation-duration: .4s !important
+}
+.yWidgetShow.right {
+    right: 0 !important;
+    animation-name: slideinRight !important
+}
+.yWidgetShow.left {
+    left: 0 !important;
+    animation-name: slideinLeft !important
+}
+.yWidgetHide {
+    animation-duration: .4s !important
+}
+.yWidgetHide.right {
+    right: -500px !important;
+    animation-name: slideoutRight !important
+}
+.yWidgetHide.left {
+    left: -500px !important;
+    animation-name: slideoutLeft !important
+}
+@keyframes slideinRight {
+    from {
+        right: -500px
+    }
+    to {
+        right: 0
+    }
+}
+@-webkit-keyframes slideinRight {
+    from {
+        right: -500px
+    }
+    to {
+        right: 0
+    }
+}
+@-moz-keyframes slideinRight {
+    from {
+        right: -500px
+    }
+    to {
+        right: 0
+    }
+}
+@-o-keyframes slideinRight {
+    from {
+        right: -500px
+    }
+    to {
+        right: 0
+    }
+}
+@keyframes slideinLeft {
+    from {
+        left: -500px
+    }
+    to {
+        left: 0
+    }
+}
+@-webkit-keyframes slideinLeft {
+    from {
+        left: -500px
+    }
+    to {
+        left: 0
+    }
+}
+@-moz-keyframes slideinLeft {
+    from {
+        left: -500px
+    }
+    to {
+        left: 0
+    }
+}
+@-o-keyframes slideinLeft {
+    from {
+        left: -500px
+    }
+    to {
+        left: 0
+    }
+}
+@keyframes slideoutRight {
+    from {
+        right: 0
+    }
+    to {
+        right: -500px
+    }
+}
+@-webkit-keyframes slideoutRight {
+    from {
+        right: 0
+    }
+    to {
+        right: -500px
+    }
+}
+@-moz-keyframes slideoutRight {
+    from {
+        right: 0
+    }
+    to {
+        right: -500px
+    }
+}
+@-o-keyframes slideoutRight {
+    from {
+        right: 0
+    }
+    to {
+        right: -500px
+    }
+}
+@keyframes slideoutLeft {
+    from {
+        left: 0
+    }
+    to {
+        left: -500px
+    }
+}
+@-webkit-keyframes slideoutLeft {
+    from {
+        left: 0
+    }
+    to {
+        left: -500px
+    }
+}
+@-moz-keyframes slideoutLeft {
+    from {
+        left: 0
+    }
+    to {
+        left: -400px
+    }
+}
+@-o-keyframes slideoutLeft {
+    from {
+        left: 0
+    }
+    to {
+        left: -500px
+    }
+}
+@-webkit-keyframes wave-stroke {
+    100% {
+        width: 200%;
+        height: 200%;
+        border-color: transparent;
+        opacity: 0
+    }
+}
+@-moz-keyframes wave-stroke {
+    100% {
+        width: 200%;
+        height: 200%;
+        border-color: transparent;
+        opacity: 0
+    }
+}
+@-o-keyframes wave-stroke {
+    100% {
+        width: 200%;
+        height: 200%;
+        border-color: transparent;
+        opacity: 0
+    }
+}
+@keyframes wave-stroke {
+    100% {
+        width: 200%;
+        height: 200%;
+        border-color: transparent;
+        opacity: 0
+    }
+}

@@ -13,7 +13,8 @@ use wp\UtilsWp;
 use wp\UtilsWooCommerce;
 
 $contentMiniCart = '';
-if (wc()->cart->is_empty()) {
+$wc = WooCommerce::instance();
+if ($wc->cart->is_empty()) {
     $textNoProductsInTheCart = __('No products in the cart.', 'woocommerce');
     $contentMiniCart = "<p class='woocommerce-mini-cart__empty-message'>{$textNoProductsInTheCart}</p>";
 } else {
@@ -25,7 +26,7 @@ if (wc()->cart->is_empty()) {
 
     $textCheckout = __('Checkout', 'woocommerce');
     $urlCheckout = wc_get_checkout_url();
-    $contentMiniCart = UtilsWooCommerce::getCartContents();
+    $contentMiniCart = UtilsWooCommerce::i()->getContentCartItems($wc);
     $cssMiniCart = esc_attr($args['list_class']);
     $contentMiniCart = "<div class='woocommerce-mini-cart cart_list product_list_widget {$cssMiniCart}'>
         {$actionMiniCartContentsBefore}

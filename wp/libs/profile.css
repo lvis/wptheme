@@ -4,25 +4,20 @@
 .color-option {
     width: 20%;
 }
-#profile-page .form-table th,
-#profile-page .form-table td {
-    padding: 5px;
-}
 #profile-page th:before,
 #profile-page label:before,
 #createuser th:before,
 #createuser label:before,
+#profile-page .rwmb-label label:before,
 h1#add-new-user:before {
     font-family: FontAwesome, serif;
     padding-right: 4px;
     font-weight: normal;
 }
 #createuser select,
-#profile-page select {
+#profile-page select,
+#profile-page .form-table textarea{
     width: 350px;
-}
-#profile-page .form-table textarea {
-    width: 100%;
 }
 .user-profile-picture,
 .user-nickname-wrap,
@@ -114,7 +109,21 @@ label[for=phone]:before {
 .user-pass1-wrap th:before {
     content: "\f084";
 }
+label[for=photos]:before {
+    content: "\f302";
+}
+label[for=videos]:before {
+    content: "\f008";
+}
+
 #btnSetImage {
     height: auto !important;
     padding: 4px;
+}
+@media screen and (max-width: 782px) {
+    #createuser select,
+    #profile-page select,
+    #profile-page .form-table textarea{
+        width: 100%;
+    }
 }

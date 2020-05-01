@@ -219,3 +219,34 @@ msgstr "Размер площадь недвижимости"
 msgid "%s measure unit"
 msgstr ""
 
+#: wp/PostEmployee.php:18
+msgid "Employee"
+msgstr ""
+
+#: wp/PostEmployee.php:19
+msgid "Employees"
+msgstr ""
+
+#: wp/PostEmployee.php:11
+msgid "Job Title"
+msgstr ""
+
+#: wp/PostEmployee.php:12
+msgid "Job Titles"
+msgstr ""
+
+#: wp/PostEmployee.php:80
+msgid "Education"
+msgstr ""
+
+#: wp/PostEmployee.php:85
+msgid "Work Experience"
+msgstr ""
+
+#: wp/PostEmployee.php:90
+msgid "Specialization"
+msgstr ""
+
+#: wp/PostEmployee.php:63
+msgid "Certificates and Documents"
+msgstr ""

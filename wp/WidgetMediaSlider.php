@@ -109,6 +109,7 @@ final class WidgetMediaSlider extends Widget
         $enqueueStyle(self::SKIN_MINIMAL, "{$uriToDirLibs}/rslider/rsSkinMinimal.css", ['rs']);
         $enqueueStyle(self::SKIN_INVERTED, "{$uriToDirLibs}/rslider/rsSkinInverted.css", ['rs']);
         $enqueueStyle(self::SKIN_UNIVERSAL, "{$uriToDirLibs}/rslider/rsSkinUniversal.css", ['rs']);
+        wp_enqueue_style('rswidget', "{$uriToDirLibs}/rslider/rswidget.css");
         wp_enqueue_style('rs', "{$uriToDirLibs}/rslider/rs.css");
         wp_enqueue_script('rs', "{$uriToDirLibs}/rslider/rs.js", ['jquery'], null, true);
         $enqueueScript('rsautohidenav', "{$uriToDirLibs}/rslider/rsAutoHideNav.js", ['rs'], null, true);

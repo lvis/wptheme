@@ -1,5 +1,5 @@
 body {
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     font-weight: 400;
     font-style: normal;
@@ -15,7 +15,7 @@ body {
     color: #2b2b2b;
     padding: 1.55em 1em;
     text-align: center;
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin-top: 0;
     margin-bottom: 1.55em;
     font-size: 1.375em;
@@ -35,7 +35,7 @@ body {
 .sidebar .widget ul li a,
 [class*=elementor-widget-wp-widget] ul li,
 [class*=elementor-widget-wp-widget] ul li a {
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 100%;
     line-height: inherit;
     font-weight: inherit;
@@ -213,14 +213,14 @@ body {
 }
 
 .post_layout_excerpt.sticky {
-    background: url("../images/sticky_post_bg.jpg");
+    background: url('../images/BgPartyMaker.jpg');
     padding: 3.1em 4.1em 4.2em;
     background-size: cover;
     border: 0;
 }
 
 blockquote {
-    background: url("../images/sticky_post_bg.jpg");
+    background: url('../images/BgPartyMaker.jpg');
     background-size: cover;
 }
 
@@ -353,7 +353,7 @@ blockquote {
 
 .menu-phone span {
     display: inline-block;
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 21px;
     font-weight: 600;
     letter-spacing: -0.55px;
@@ -366,7 +366,7 @@ blockquote {
     text-align: center;
     display: inline-block;
     position: relative;
-    content: "\f095";
+    content: '\f095';
     font: normal normal normal 14px/1 FontAwesome;
     font-size: inherit;
     text-rendering: auto;
@@ -489,11 +489,11 @@ blockquote:before {
 
 blockquote:after,
 q:before, q:after {
-    content: "";
+    content: '';
 }
 
 blockquote, q {
-    quotes: "" "";
+    quotes: '' '';
 }
 
 blockquote p {
@@ -540,7 +540,7 @@ dfn, em, i {
 }
 
 pre, code, kbd, tt, var, samp {
-    font-family: "Courier New", Courier, monospace;
+    font-family: 'Courier New', Courier, monospace;
     font-size: 1em;
     letter-spacing: 0;
 }
@@ -703,9 +703,9 @@ button, input, optgroup, select, textarea, textarea.wp-editor-area {
 }
 
 button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"],
+input[type='button'],
+input[type='reset'],
+input[type='submit'],
 .theme_button,
 .post_item .more-link,
 .woocommerce .button, .woocommerce-page .button,
@@ -713,13 +713,13 @@ input[type="submit"],
 .woocommerce button.button,
 .woocommerce input.button,
 .woocommerce #respond input#submit,
-.woocommerce input[type="button"], .woocommerce-page input[type="button"],
-.woocommerce input[type="submit"], .woocommerce-page input[type="submit"],
+.woocommerce input[type='button'], .woocommerce-page input[type='button'],
+.woocommerce input[type='submit'], .woocommerce-page input[type='submit'],
 .woocommerce .woocommerce-message .button,
 .woocommerce ul.products li.product .button,
 .woocommerce div.product form.cart .button,
-.woocommerce #review_form #respond p.form-submit input[type="submit"],
-.woocommerce-page #review_form #respond p.form-submit input[type="submit"],
+.woocommerce #review_form #respond p.form-submit input[type='submit'],
+.woocommerce-page #review_form #respond p.form-submit input[type='submit'],
 .woocommerce table.my_account_orders .order-actions .button,
 .woocommerce table.cart td.actions .button,
 #add_payment_method .wc-proceed-to-checkout a.checkout-button,
@@ -803,27 +803,27 @@ textarea:hover {
 }
 
 /* Radio buttons and checkboxes */
-input[type="radio"],
-input[type="checkbox"] {
+input[type='radio'],
+input[type='checkbox'] {
     display: none;
 }
 
-label > input[type="radio"],
-label > input[type="checkbox"] {
+label > input[type='radio'],
+label > input[type='checkbox'] {
     display: inline-block;
     vertical-align: baseline;
 }
 
-input[type="radio"] + label,
-input[type="checkbox"] + label {
+input[type='radio'] + label,
+input[type='checkbox'] + label {
     position: relative;
     padding-left: 1.4em;
 }
 
-input[type="radio"] + label:before,
-input[type="checkbox"] + label:before {
+input[type='radio'] + label:before,
+input[type='checkbox'] + label:before {
     content: ' ';
-    font-family: "fontello", sans-serif;
+    font-family: 'fontello', sans-serif;
     font-size: 1.5em;
     display: block;
     text-align: center;
@@ -840,17 +840,17 @@ input[type="checkbox"] + label:before {
     transform: translateY(-50%);
 }
 
-input[type="radio"] + label:before {
+input[type='radio'] + label:before {
     -webkit-border-radius: 50%;
     -ms-border-radius: 50%;
     border-radius: 50%;
 }
 
-input[type="checkbox"]:checked + label:before {
+input[type='checkbox']:checked + label:before {
     content: '\e8ab';
 }
 
-input[type="radio"]:checked + label:before {
+input[type='radio']:checked + label:before {
     content: '\e83c';
 }
 
@@ -1085,7 +1085,7 @@ figure.aligncenter {
     vertical-align: top;
 }
 
-.post-password-form input[type="submit"] {
+.post-password-form input[type='submit'] {
     display: inline-block;
     margin-left: 0.2em;
 }
@@ -1182,7 +1182,7 @@ figure.aligncenter {
 
 .post_meta .vc_inline-link:before {
     content: '\e8bb';
-    font-family: "fontello", sans-serif;
+    font-family: 'fontello', sans-serif;
 }
 
 /* Socials share in the post meta */
@@ -1398,7 +1398,7 @@ figure.aligncenter {
 
 .format-video .post_featured.with_thumb .post_video_hover:before {
     content: '\e8e1';
-    font-family: "fontello", sans-serif;
+    font-family: 'fontello', sans-serif;
     margin-left: 3px;
 }
 
@@ -1488,8 +1488,8 @@ figure.aligncenter {
     margin-top: 2em;
 }
 
-[class*="blog_style_classic"] .nav-links-more,
-[class*="blog_style_masonry"] .nav-links-more {
+[class*='blog_style_classic'] .nav-links-more,
+[class*='blog_style_masonry'] .nav-links-more {
     margin-top: 0;
 }
 
@@ -1505,7 +1505,7 @@ figure.aligncenter {
 
 .nav-links-more a:before {
     content: '\e929';
-    font-family: "fontello", sans-serif;
+    font-family: 'fontello', sans-serif;
     font-size: 1.6em;
     font-weight: normal;
     display: block;
@@ -1550,14 +1550,14 @@ figure.aligncenter {
     margin-top: 3em;
 }
 
-body[class*="blog_style_portfolio"] .nav-links-old,
-body[class*="blog_style_classic"] .nav-links-old {
+body[class*='blog_style_portfolio'] .nav-links-old,
+body[class*='blog_style_classic'] .nav-links-old {
     margin-top: 1.3em;
 }
 
 .nav-links-old .nav-prev a:before,
 .nav-links-old .nav-next a:after {
-    font-family: "fontello", sans-serif;
+    font-family: 'fontello', sans-serif;
     font-weight: normal;
     display: inline;
     position: absolute;
@@ -1639,18 +1639,18 @@ body[class*="blog_style_classic"] .nav-links-old {
     border-radius: 30px;
 }
 
-.esg-filters .esg-navigationbutton i[class*="eg-icon-"] {
+.esg-filters .esg-navigationbutton i[class*='eg-icon-'] {
     color: inherit;
 }
 
 .esg-filters .esg-navigationbutton i.eg-icon-left-open:before {
     content: '\e939';
-    font-family: "fontello", sans-serif;
+    font-family: 'fontello', sans-serif;
 }
 
 .esg-filters .esg-navigationbutton i.eg-icon-right-open:before {
     content: '\e93a';
-    font-family: "fontello", sans-serif;
+    font-family: 'fontello', sans-serif;
 }
 
 .woocommerce nav.woocommerce-pagination ul li {
@@ -1684,7 +1684,7 @@ body[class*="blog_style_classic"] .nav-links-old {
 .nav-links .page-numbers.next:before,
 .woocommerce nav.woocommerce-pagination ul li a.prev:before,
 .woocommerce nav.woocommerce-pagination ul li a.next:before {
-    font-family: "fontello", sans-serif;
+    font-family: 'fontello', sans-serif;
     position: absolute;
     z-index: 1;
     top: 0;
@@ -1761,7 +1761,7 @@ body[class*="blog_style_classic"] .nav-links-old {
 
 .nav-links-single .nav-links a .nav-arrow:after {
     content: '\e939';
-    font-family: "fontello", sans-serif;
+    font-family: 'fontello', sans-serif;
     display: inline-block;
     position: relative;
     z-index: 2;
@@ -1896,7 +1896,7 @@ body[class*="blog_style_classic"] .nav-links-old {
 .image-navigation .nav-previous a:after,
 .image-navigation .nav-next a:after {
     content: '\e8ef';
-    font-family: "fontello", sans-serif;
+    font-family: 'fontello', sans-serif;
     position: absolute;
     z-index: 1;
     top: 50%;
@@ -2159,7 +2159,7 @@ body[class*="blog_style_classic"] .nav-links-old {
 
 .comments_list_wrap .comment_reply a:before {
     content: '\e802';
-    font-family: "fontello", sans-serif;
+    font-family: 'fontello', sans-serif;
     margin-right: 0.4em;
     font-size: 18px;
 }
@@ -2224,7 +2224,7 @@ body[class*="blog_style_classic"] .nav-links-old {
 
 .comments_wrap #cancel-comment-reply-link:before {
     content: '\e916';
-    font-family: "fontello", sans-serif;
+    font-family: 'fontello', sans-serif;
     font-size: 18px;
     display: block;
     position: absolute;
@@ -2294,7 +2294,7 @@ body[class*="blog_style_classic"] .nav-links-old {
     display: block;
 }
 
-.comments_wrap .form-submit input[type="submit"] {
+.comments_wrap .form-submit input[type='submit'] {
     display: inline-block;
 }
 

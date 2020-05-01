@@ -36,17 +36,13 @@ if (wc()->cart->needs_shipping_address() === true) {
     $actionCheckoutShippingFormAfter = UtilsWp::doAction('woocommerce_after_checkout_shipping_form', $checkout);
     $checkedShipToDest = apply_filters('woocommerce_ship_to_different_address_checked', $checkedShipToDest);
     $checkedShipToDiffAddress = checked($checkedShipToDest, 1, false);
-    $contentFormShipping = "
-    <label id='ship-to-different-address' for='shipToDifferentAdd'>
-        <h3><i class='fas fa-truck'></i> {$textShipToDiffAddress}
-        <input id='shipToDifferentAdd' name='ship_to_different_address' type='checkbox' {$checkedShipToDiffAddress} value='1'>
-        </h3>
+    $contentFormShipping = "<label id='ship-to-different-address' for='shipToDifferentAdd' class='d-xs-block'>
+    <span class='col-xs-5'><i class='fa fa-truck'></i> {$textShipToDiffAddress}</span>
+    <input id='shipToDifferentAdd' name='ship_to_different_address' type='checkbox' {$checkedShipToDiffAddress} value='1' class='switch'>
     </label>
-    <div class='shipping_address'>
-        {$actionCheckoutShippingFormBefore}
-        <div class='woocommerce-shipping-fields__field-wrapper'>{$contentFormShipping}</div>
-        {$actionCheckoutShippingFormAfter}
-    </div>";
+    <div class='shipping_address'>{$actionCheckoutShippingFormBefore}
+    <div class='woocommerce-shipping-fields__field-wrapper'>{$contentFormShipping}</div>
+    {$actionCheckoutShippingFormAfter}</div>";
 }
 /** ---------------------------------------- Order Notes*/
 $contentNotes = '';
@@ -54,10 +50,6 @@ $enableOrderComments = get_option('woocommerce_enable_order_comments', 'yes');
 $enableOrderComments = ($enableOrderComments === 'yes');
 $enableOrderComments = apply_filters('woocommerce_enable_order_notes_field', $enableOrderComments);
 if ($enableOrderComments) {
-    if (wc()->cart->needs_shipping() === false || wc_ship_to_billing_address_only()) {
-        $textAdditionalInfo = __('Additional information', 'woocommerce');
-        $contentNotes .= "<h4 class='text-xs-center'>{$textAdditionalInfo}</h4>";
-    }
     $fieldsOrder = $checkout->get_checkout_fields('order');
     foreach ($fieldsOrder as $key => $field) {
         $contentNotes .= UtilsWooCommerce::getFormField($key, $field, $checkout->get_value($key));

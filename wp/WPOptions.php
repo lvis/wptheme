@@ -40,7 +40,7 @@ final class WPOptions
     /**
      * @const Default upload location; set in Miscellaneous Options.
      */
-    const SITE_UPLOAT_PATH = 'upload_path';
+    const SITE_UPLOAD_PATH = 'upload_path';
     /**
      * @const Character encoding for your blog; set in Reading Options.
      */

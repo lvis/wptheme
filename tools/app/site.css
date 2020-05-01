@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display+SC:400,700&display=swap&subset=cyrillic');
+@font-face {
+    font-family: 'Ames';
+    font-style: normal;
+    src: url('https://mayfairbeauty.ru/wp-content/themes/wptheme/libs/fonts/ames/Ames.ttf');
+}
+.site-title {
+    font-family: 'Ames', sans-serif;
+}
+body.not-ios .ios-subtitle,
+.y-page-about-layout .master-info__name,
+.y-login-layout .master-info__name {
+    text-align: center;
+    font-family: 'Ames', sans-serif !important;
+    font-weight: normal;
+    font-size: 28px;
+    color: #686f3e !important;
+}
+record-selected-service div.ng-scope:first-child {
+    margin-right: 10px;
+    margin-left: 10px;
+    border: 1px solid;
+    border-radius: 10px;
+}
+.company-info-tabs__description,
+.company-info-tabs__contacts {
+    padding: 10px 16px 0 !important;
+}
+.y-photo-carousel ul[rn-carousel] {
+    cursor: grab;
+    height: 350px !important;
+}
+.y-photo-carousel ul[rn-carousel]:active {
+    cursor: grabbing;
+}
+.y-photo-carousel__controls div.rn-carousel-indicator span {
+    font-size: 24px !important;
+}
+.ios-subtitle {
+    display: none !important;
+}
+.y-top-background {
+    height: 46px !important;
+    background-image: none !important;
+}
+.master-info__name, .company-info__specialization, .master-info__specialization {
+    color: #492d10 !important;
+}
+.container-wrapper {
+    margin-top: 46px !important;
+}
+.container-wrapper.y-login-container-wrapper {
+    margin-top: 0 !important;
+}
+.y-wide-header-layout .tabs-wrapper {
+    background-color: #424242 !important;
+    top: 46px !important;
+}
+.mask.y-header-backdrop.y-toolbar-backdrop {
+    opacity: 1 !important;
+}
+body.not-ios .y-about-master-layout__collapsed-header {
+    background-color: white !important;
+}
+.ios-subtitle + div.h100.y-content-wrapper.y-main-wrapper div.h100.y-content-wrapper.scrollable {
+    margin-top: 0 !important;
+}
+div.y-ios-bottom-tabs__item.main-color {
+    color: #492d10 !important;
+}
+.main-menu__icon {
+    font-size: 32px !important;
+    margin-right: 10px;
+}
+.main-menu__icon .company-info__avatar, .master-info__avatar {
+    background-color: white;
+}
+.y-ios-bottom-tabs__item:nth-child(3) {
+    display: none;
+}
+.y-ios-bottom-tabs__label {
+    font-size: 14px !important;
+    top: 38px !important;
+}

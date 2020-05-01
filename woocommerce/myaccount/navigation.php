@@ -34,7 +34,7 @@ foreach ($items as $endpoint => $label) {
     $contentActiveItem = '';
 
     $current = isset( $wp->query_vars[ $endpoint ] );
-    if ( 'orders' === $endpoint && ( isset( $wp->query_vars['page'] ) || empty( $wp->query_vars ) ) ) {
+    if ( $endpoint === 'orders' && ( isset( $wp->query_vars['page'] ) || empty( $wp->query_vars ) ) ) {
         $current = true; // Dashboard is not an endpoint, so needs a custom check.
     }
     if ($current) {

@@ -1,10 +1,4 @@
-<?php
-/**
- * Author: Vitali Lupu <vitaliix@gmail.com>
- * Date: 3/5/18
- * Time: 6:55 PM
- */
-
+<?php /** Author: Vitali Lupu <vitaliix@gmail.com> */
 namespace wp;
 class WPLabels
 {

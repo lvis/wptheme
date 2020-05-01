@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dilog only with CSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../libs/button.css">
+    <link rel="stylesheet" type="text/css" href="../libs/utils.css">
+    <link rel="stylesheet" type="text/css" href="../libs/grid.css">
+    <link rel="stylesheet" type="text/css" href="../libs/modal.css">
+<!--    <link rel="stylesheet" type="text/css" href="../../libs/modal-check.css">-->
+    <link rel="stylesheet" type="text/css" href="../libs/generic.css">
+</head>
+<body>
+<a class="button" href="#modal1" id="amodal1">Click Me</a>
+<div id="modal1" class="modal">
+    <div class="modal-content modal-backdrop">
+        <h2>Info box <a class="button float-xs-right modal-close" href="#">&times;</a></h2>
+        <p>This is done totally without JavaScript. Just HTML and CSS.</p>
+    </div>
+    <a class="modal-backdrop" href="#"></a>
+</div>
+<a class="button" href="#modal2" id="amodal2">Click Me Too</a>
+<div id="modal2" class="modal">
+    <div class="modal-content modal-backdrop">
+        <h2>What the what?</h2>
+        <p>Click outside the popup to close.<br>Click outside the popup to close.<br>Click outside the popup to close.</p>
+        <p>Click outside the popup to close.<br>Click outside the popup to close.<br>Click outside the popup to close.</p>
+    </div>
+    <a class="modal-backdrop" href="#"></a>
+</div>
+<div class="modal">
+    <input type="checkbox" id="modal-1">
+    <label class="modal-trigger" for="modal-1">Modal Link</label>
+    <div class="modal-content">
+        <p>Lorem ipsum dolor.</p>
+    </div>
+</div>
+</body>
+</html>

@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by IntelliJ IDEA.
- * User: vitalielupu
- * Date: 6/17/17
- * Time: 21:44
- */
 /*if ( is_user_logged_in() && WPUsers::isSiteEditor() ) {
 	$pathToJson = __DIR__ . "/floormeta.json";
 	$jsonData   = json_decode( file_get_contents( $pathToJson ), true );

@@ -11,4 +11,5 @@ defined( 'ABSPATH' ) || exit;
 /** My Account dashboard. */
 do_action('woocommerce_account_dashboard');
 /** Instead of Message Display Acount Details*/
-woocommerce_account_edit_account();
+//woocommerce_account_edit_account();
+woocommerce_account_orders(1);

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS: Input</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../libs/utils.css">
+    <link rel="stylesheet" type="text/css" href="../libs/grid.css">
+    <link rel="stylesheet" type="text/css" href="../libs/grid.css">
+    <link rel="stylesheet" type="text/css" href="../libs/input.css">
+    <link rel="stylesheet" type="text/css" href="../libs/cb.css">
+    <link rel="stylesheet" type="text/css" href="../wp/libs/semantic/transition/transition.css">
+    <link rel="stylesheet" type="text/css" href="../wp/libs/semantic/dropdown/dropdown.css">
+    <link rel="stylesheet" type="text/css" href="../wp/libs/semantic/dropdown/dropdownfix.css">
+    <style>
+        html, body{ height: 100%; }
+    </style>
+</head>
+<body>
+<form  style="position: relative">
+    <fieldset>
+        <label for="checkbox">CheckBox</label>
+        <input type="checkbox" id="checkbox" required>
+    </fieldset>
+    <!--<fieldset>
+        <label for="switch" class="switch">
+            <span>Switch</span>
+            <input type="checkbox" id="switch" class="switch" required>
+            <i></i>
+        </label>
+    </fieldset>-->
+    <fieldset>
+        <label for="switch">Switch</label>
+        <input type="checkbox" id="switch" class="switch" required>
+    </fieldset>
+
+    <fieldset>
+        <input type="text" id="inputUserName" required>
+        <label for="inputUserName">UserName</label>
+    </fieldset>
+    <fieldset style="position: relative">
+        <input type="text" id="inputPassword" required>
+        <label for="inputPassword" class="label-float">Password</label>
+    </fieldset>
+    <fieldset>
+        <input type="email" id="inputEmail" value="" oninput="this.setAttribute('value', this.value);" required>
+        <label for="inputEmail">Email</label>
+    </fieldset>
+    <fieldset>
+        <select name="orderby" id="orderby" class="orderby">
+            <option value="popularity">По популярности</option>
+            <option value="rating">По рейтингу</option>
+            <option value="date" selected="selected">По новизне</option>
+            <option value="price">Цены: по возрастанию</option>
+            <option value="price-desc">Цены: по убыванию</option>
+        </select>
+        <label for="orderby">Order by</label>
+    </fieldset>
+    <fieldset>
+        <select id="widget-widgetposts-3-pagesGeneral" name="widget-widgetposts[3][pagesGeneral][]" size="33"
+                multiple="">
+            <option value="" disabled="" hidden="">All</option>
+            <optgroup label="General">
+                <option value="pageFront" selected="selected">Front Page</option>
+                <option value="pageBlog" selected="selected">Blog</option>
+                <option value="pageSearch">Search</option>
+                <option value="page404">404</option>
+                <option value="pageAuthor">Author</option>
+                <option value="pageSinglePost">Single Post</option>
+                <option value="pageArchives">Archives</option>
+            </optgroup>
+            <optgroup label="Posts">
+                <option value="post" selected="selected">Posts</option>
+                <option value="page">Pages</option>
+                <option value="attachment">Media</option>
+                <option value="product">Products</option>
+                <option value="partner">Partners</option>
+            </optgroup>
+            <optgroup label="Archives">
+                <option value="product">Products</option>
+                <option value="partner">Partners</option>
+            </optgroup>
+            <optgroup label="Taxonomies">
+                <option value="category">Categories</option>
+                <option value="product_type">Tags</option>
+                <option value="product_cat">Product categories</option>
+                <option value="product_tag">Product tags</option>
+            </optgroup>
+            <optgroup label="Categories">
+                <option value="1">News</option>
+            </optgroup>
+            <optgroup label="Static Pages">
+                <option value="17">About</option>
+                <option value="54">Cart</option>
+                <option value="55">Checkout</option>
+                <option value="18">Contact</option>
+                <option value="56">My account</option>
+                <option value="53">Shop</option>
+                <option value="88">Terms and Conditions</option>
+            </optgroup>
+        </select>
+        <!--<a class="ui label transition visible" data-value="pageSearch" style="display: inline-block !important;">Search<i class="delete icon"></i></a>-->
+        <!--<a class="ui label transition visible" data-value="pageAuthor" style="display: inline-block !important;">Author<i class="delete icon"></i></a>-->
+        <script type="text/javascript" src="../../../../wp-includes/js/jquery/jquery.js"></script>
+        <script type="text/javascript" src="../wp/libs/semantic/transition/transition.js"></script>
+        <script type="text/javascript" src="../wp/libs/semantic/dropdown/dropdown.js"></script>
+        <script type="text/javascript" src="../wp/libs/semantic/dropdown/dropdownfix.js"></script>
+        <script>
+            initDropDown('#widget-widgetposts-3-pagesGeneral');
+        </script>
+    </fieldset>
+</form>
+</body>
+</html>

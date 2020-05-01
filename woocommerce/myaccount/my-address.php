@@ -77,12 +77,10 @@ foreach ($customerAddresses as $name => $title) {
         $actionEditAddressFormAfter = UtilsWp::doAction("woocommerce_after_edit_address_form_{$load_address}");
         $actionEditAccountAddressFormBefore = UtilsWp::doAction('woocommerce_before_edit_account_address_form');
         $actionEditAccountAddressFormAfter = UtilsWp::doAction('woocommerce_after_edit_account_address_form');
-        $nonceEditAddress = wp_nonce_field('woocommerce-edit_address', 'woocommerce-edit-address-nonce',
-            true, false);
+        $nonceEditAddress = wp_nonce_field('woocommerce-edit_address', 'woocommerce-edit-address-nonce',true, false);
         $textSaveAddress = __('Save address', 'woocommerce');
-        $contentAddress = "{$actionEditAccountAddressFormBefore}
-        <form method='post'>
-        <h3 class='text-xs-center'><i class='fas fa-{$iconAddress}'></i> {$pageTitle}</h3>
+        $contentAddress = "{$actionEditAccountAddressFormBefore}<form method='post' class='edit-address'><fieldset>
+        <legend><i class='fas fa-{$iconAddress}'></i> {$pageTitle}</legend>
         <div class='woocommerce-address-fields'>
             {$actionEditAddressFormBefore}
             <div class='woocommerce-address-fields__field-wrapper'>
@@ -90,18 +88,19 @@ foreach ($customerAddresses as $name => $title) {
             </div>
             {$actionEditAddressFormAfter}
             <p class='text-xs-center'>
-                <button name='save_address' type='submit'><i class='fas fa-edit'></i> {$textSaveAddress}</button>
+                <button type='submit' name='save_address' class='button'>
+                    <i class='fas fa-edit'></i> {$textSaveAddress}
+                </button>
                 {$nonceEditAddress}
                 <input type='hidden' name='action' value='edit_address_{$load_address}'>
             </p>
         </div>
-        </form>{$actionEditAccountAddressFormAfter}";
+        </fieldset></form>{$actionEditAccountAddressFormAfter}";
     } else {
         $address = __('You have not set up this type of address yet.', 'woocommerce');
     }
     $urlEditAddress = esc_url(wc_get_endpoint_url('edit-address', $name));
     $textEditAddress = __('Edit', 'woocommerce');
-    $content .= "<div class='col-xs-12 col-md-6'><div class='card'>
-    <div class='card-content'>{$contentAddress}</div></div></div>";
+    $content .= "<div class='col-xs-12 col-md-6'>{$contentAddress}</div>";
 }
-echo "<h5 class='text-xs-center'>{$textDescription}</h5><div class='row text-xs-center'>{$content}</div>";
+echo "<h5 class='text-xs-center'>{$textDescription}</h5><div class='row'>{$content}</div>";

@@ -1,9 +1,15 @@
-<?php
+<?php /** Author: Vitali Lupu vitaliix@gmail.com*/
 
 namespace wp;
 
 class EtnikWines extends WpApp
 {
+    public function __construct()
+    {
+
+        parent::__construct();
+    }
+
     public function setupTheme()
     {
         parent::setupTheme();
@@ -28,21 +34,12 @@ class EtnikWines extends WpApp
     function enqueueScriptsTheme()
     {
         parent::enqueueScriptsTheme();
-        wp_enqueue_style('mkit', $this->uriToLibs . 'mkit.css');
-        wp_enqueue_style('tab', $this->uriToLibs . 'tab.css');
-        wp_enqueue_style('input', $this->uriToLibs . 'input.css');
-        wp_enqueue_style('radio', $this->uriToLibs . 'radio.css');
-        wp_enqueue_style('modal', $this->uriToLibs . 'modal.css');
-        wp_enqueue_style('checkbox', $this->uriToLibs . 'checkbox.css');
-        wp_enqueue_style('button', $this->uriToLibs . 'button.css');
-        wp_enqueue_style('button-shop', $this->uriToLibs . 'button-shop.css');
-        wp_enqueue_style('card', $this->uriToLibs . 'card.css');
-        wp_enqueue_style('fixes', $this->uriToLibs . 'fixes.css');
+        //wp_enqueue_style('button', $this->uriToLibs . 'button.css');
     }
 
-    function initSidebarWidgets()
+    function initWidgetsForSidebar()
     {
-        parent::initSidebarWidgets();
+        parent::initWidgetsForSidebar();
         //Unregister not used WP Widgets
         unregister_widget(\WP_Widget_Categories::class);
         unregister_widget(\WP_Widget_Tag_Cloud::class);

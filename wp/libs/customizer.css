@@ -56,8 +56,7 @@
 }
 /*Google Services*/
 #customize-theme-controls li#accordion-section-google_services > h3.accordion-section-title:before {
-    font-family: FontAwesome, sans-serif;
-    content: "\f1a0";
+    content: "\f462";
 }
 /*Payments*/
 #customize-theme-controls li#accordion-section-payments > h3.accordion-section-title:before {

@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../libs/menu.css">
+    <link rel="stylesheet" type="text/css" href="../libs/input.css">
+    <link rel="stylesheet" type="text/css" href="../libs/button.css">
+    <link rel="stylesheet" type="text/css" href="../libs/range.css">
+    <link rel="stylesheet" type="text/css" href="../libs/checkbox.css">
+    <link rel="stylesheet" type="text/css" href="../libs/radio.css">
+    <link rel="stylesheet" type="text/css" href="../libs/modal.css">
+    <link rel="stylesheet" type="text/css" href="../libs/utils.css">
+    <link rel="stylesheet" type="text/css" href="../libs/grid.css">
+    <link rel="stylesheet" type="text/css" href="../libs/generic.css">
+    <link rel="stylesheet" type="text/css" href="../wp/libs/rslider/rs.css">
+    <link rel="stylesheet" type="text/css" href="../wp/libs/rslider/rsSkinMinimal.css">
+    <style>
+        svg, .bg {
+            margin: 10px 0;
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background: #e0e0e0;
+        }
+        #bg2 {
+            background: #e0e0e0 url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2017%2013%22%3E%3Cpath%20fill%3D%22%2359a6ca%22%20d%3D%22M15.57%202.845L14.238%201.51c-.13-.13-.353-.13-.48%200L6.66%208.623l-3.093-3.11c-.13-.13-.352-.13-.482%200L1.75%206.845c-.128.13-.128.352%200%20.48l4.67%204.67c.073.055.147.092.24.092s.167-.037.24-.093l8.67-8.67c.13-.13.13-.35%200-.48z%22%2F%3E%3C%2Fsvg%3E') 50% 50% no-repeat;
+        }
+        #bg4 {
+            background: #e0e0e0 url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2017%2013%22%3E%3Cpath%20fill%3D%22%2359a6ca%22%20d%3D%22M15.57%202.845L14.238%201.51c-.13-.13-.353-.13-.48%200L6.66%208.623l-3.093-3.11c-.13-.13-.352-.13-.482%200L1.75%206.845c-.128.13-.128.352%200%20.48l4.67%204.67c.073.055.147.092.24.092s.167-.037.24-.093l8.67-8.67c.13-.13.13-.35%200-.48z%22%2F%3E%3C%2Fsvg%3E') 50% 50% no-repeat;
+        }
+        .view-row .row > [class^=col-] {
+            padding-top: .75rem;
+            padding-bottom: .75rem;
+            background-color: rgba(86, 61, 124, .15);
+            border: 1px solid rgba(86, 61, 124, .2);
+        }
+        .rs {
+            overflow: hidden;
+        }
+        .rsMinimal,
+        .rsMinimal .rsOverflow,
+        .rsMinimal .rsSlide,
+        .rsMinimal .rsVideoFrameHolder {
+            background-color: transparent;
+        }
+    </style>
+</head>
+<body class="raised">
+<header>
+    <nav id="nav_menu-3" class="widget widget_nav_menu clearfix">
+        <div class="menu-top-menu-container">
+            <ul id="menu-top-menu" class="menu">
+                <li id="menu-item-27"
+                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-27">
+                    <a href="#home" tabindex="1">Home</a>
+                </li>
+                <li id="menu-item-29"
+                    class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-29">
+                    <a href="#blog" tabindex="2">Blog</a>
+                </li>
+                <li id="menu-item-93" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-93">
+                    <a href="#shop" tabindex="3">Shop</a>
+                </li>
+                <li id="menu-item-28" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28">
+                    <a href="#about" tabindex="4">About</a>
+                </li>
+                <li id="menu-item-30" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30">
+                    <a href="#contact" tabindex="5">Contact</a>
+                </li>
+                <li id="menu-item-94"
+                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-94">
+                    <a href="#account" tabindex="6">Account</a>
+                    <ul class="sub-menu">
+                        <li id="sub-menu-item-1"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-96">
+                            <a href="#cart" tabindex="7">Cart</a>
+                        </li>
+                        <li id="sub-menu-item-2"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-95">
+                            <a href="#checkout" tabindex="8">Checkout</a>
+                        </li>
+                        <li id="sub-menu-item-3"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-92">
+                            <a href="#terms" tabindex="9">Terms and Conditions</a>
+                        </li>
+                    </ul>
+                </li>
+                <li id="menu-item-95"
+                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-94">
+                    <a href="#menu" tabindex="10">Menus</a>
+                    <ul class="sub-menu">
+                        <li id="sub-menu-item-4"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-96">
+                            <a href="#cart" tabindex="11">Ceva 1</a>
+                        </li>
+                        <li id="sub-menu-item-5"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-95">
+                            <a href="#checkout" tabindex="12">Ceva 2</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<main>
+    <section class="container-fluid">
+        <h6><u>Typography</u></h6>
+        <h1>The Life of Material Kit </h1>
+        <h2>The Life of Material Kit</h2>
+        <h3>The Life of Material Kit</h3>
+        <h4>The Life of Material Kit</h4>
+        <h5>The Life of Material Kit</h5>
+        <h6>The Life of Material Kit</h6>
+        <h6><u>Paragraph</u></h6>
+        <p>I will be the leader of a company that ends up being worth billions of dollars, because I got the
+            answers. I understand culture. I am the nucleus. I think that’s a responsibility that I have, to
+            push possibilities, to show people, this is the level that things could be at.</p>
+        <h6><u>Quote</u></h6>
+        <blockquote>
+            <p>
+                I will be the leader of a company that ends up being worth billions of dollars, because I got
+                the answers. I understand culture. I am the nucleus. I think that’s a responsibility that I
+                have, to push possibilities, to show people, this is the level that things could be at.
+            </p>
+            <small>
+                Kanye West, Musician
+            </small>
+        </blockquote>
+
+        <h6><u>Muted Text</u></h6>
+        <p class="text-muted">
+            I will be the leader of a company that ends up being worth billions of dollars, because I got the
+            answers...
+        </p>
+        <h6><u>Primary Text</u></h6>
+        <p class="text-primary">
+            I will be the leader of a company that ends up being worth billions of dollars, because I got the
+            answers... </p>
+        <h6><u>Info Text</u></h6>
+        <p class="text-info">
+            I will be the leader of a company that ends up being worth billions of dollars, because I got the
+            answers... </p>
+        <h6><u>Success Text</u></h6>
+        <p class="text-success">
+            I will be the leader of a company that ends up being worth billions of dollars, because I got the
+            answers... </p>
+        <h6><u>Warning Text</u></h6>
+        <p class="text-warning">
+            I will be the leader of a company that ends up being worth billions of dollars, because I got the
+            answers...
+        </p>
+        <h6><u>Danger Text</u></h6>
+        <p class="text-danger">
+            I will be the leader of a company that ends up being worth billions of dollars, because I got the
+            answers... </p>
+        <h6><u>Small Tag</u></h6>
+        <h2>
+            Header with small subtitle <br>
+            <small>Use "small" tag for the headers</small>
+        </h2>
+        <form>
+            <label for="inputText">Text:</label>
+            <input type="text" autocomplete="off" placeholder="Text" id="inputText">
+
+            <label for="inputEmail">Email:</label>
+            <input type="email" autocomplete="off" placeholder="Email" id="inputEmail">
+
+            <label for="inputPass">Password:</label>
+            <input type="password" autocomplete="off" placeholder="Password" id="inputPass">
+
+            <label for="inputUrl">Url:</label>
+            <input type="url" autocomplete="off" placeholder="Url" id="inputUrl">
+
+            <label for="inputTel">Telephone:</label>
+            <input type="tel" autocomplete="off" placeholder="Telephone" id="inputTel">
+
+            <label for="inputNumber">Number:</label>
+            <input type="number" autocomplete="off" placeholder="Number" id="inputNumber">
+
+            <label for="inputTextArea">TextArea:</label>
+            <textarea title="TextArea" rows="2" id="inputTextArea"></textarea>
+            <!--<label for="inputDate">Date:</label>
+            <input type="date" autocomplete="off" placeholder="Date" id="inputDate">
+
+            <label for="inputWeek">Week:</label>
+            <input type="week" autocomplete="off" placeholder="Week" id="inputWeek">
+
+            <label for="inputMonth">Month:</label>
+            <input type="month" autocomplete="off" placeholder="Month" id="inputMonth">
+
+            <label for="inputDateAndTime">DateAndTime:</label>
+            <input type="datetime-local" autocomplete="off" placeholder="Date and Time" id="inputDateAndTime">
+
+            <label for="inputColor">Color:</label>
+            <input type="color" autocomplete="off" id="inputColor">-->
+            <p>
+                <input type="button" value="Button" autocomplete="off">
+                <input type="submit" autocomplete="off">
+                <input type="reset" autocomplete="off">
+                <!--                <input type="file" autocomplete="off">-->
+            </p>
+            <p>
+                <input type="checkbox" id="checkbox">
+                <label for="checkbox">Checkbox</label>
+                <input type="radio" name="radioButtons" id="radioButton1">
+                <label for="radioButton1">Radio Button 1</label>
+                <input type="radio" name="radioButtons" id="radioButton2">
+                <label for="radioButton2">Radio Button 2</label>
+                <input type="range" id="inputRage">
+                <label for="inputRage">Range</label>
+            </p>
+        </form>
+        <div class="woocommerce row">
+            <h2>Авторизация</h2>
+            <form class="woocommerce-form woocommerce-form-login login" method="post">
+                <p class="woocommerce-form-row woocommerce-form-row-wide form-row form-row-wide">
+                    <label for="username">Имя пользователя или email <span class="required">*</span></label>
+                    <input type="text" class="woocommerce-Input woocommerce-Input-text input-text" name="username"
+                           id="username" value="" required>
+                </p>
+                <p class="woocommerce-form-row woocommerce-form-row-wide form-row form-row-wide">
+                    <label for="password">Пароль <span class="required">*</span></label>
+                    <input class="woocommerce-Input woocommerce-Input-text input-text" type="password" name="password"
+                           id="password" placeholder="Password" required>
+                </p>
+                <p class="form-row">
+                    <input type="hidden" id="woocommerce-login-nonce" name="woocommerce-login-nonce"
+                           value="4dcd6d18e6"><input
+                            type="hidden" name="_wp_http_referer" value="/wordpress/my-account/">
+                    <button type="submit" class="woocommerce-Button button" name="login" value="Авторизация">Авторизация
+                    </button>
+                    <label class="woocommerce-form__label woocommerce-form__label-for-checkbox inline">
+                        <input class="woocommerce-form__input woocommerce-form__input-checkbox" name="rememberme"
+                               type="checkbox" id="rememberme" value="forever"> <span>Запомнить меня</span>
+                    </label>
+                </p>
+                <p class="woocommerce-LostPassword lost_password">
+                    <a href="wp/my-account/lost-password/">Забыли свой пароль?</a>
+                </p>
+            </form>
+        </div>
+        <div>
+            <div>
+                <div>encodeURIComponent() + UTF8 SVG with full charset=utf-8</div>
+                <div class="bg" id="bg2"></div>
+            </div>
+            <div>
+                <div>encodeURIComponent() + UTF8 SVG with no media type param</div>
+                <div class="bg" id="bg4"></div>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><circle cx="10" cy="10" r="5" fill="#9c27b0"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 13"><path fill="#9c27b0" d="M15.57 2.845L14.238 1.51c-.13-.13-.353-.13-.48 0L6.66 8.623l-3.093-3.11c-.13-.13-.352-.13-.482 0L1.75 6.845c-.128.13-.128.352 0 .48l4.67 4.67c.073.055.147.092.24.092s.167-.037.24-.093l8.67-8.67c.13-.13.13-.35 0-.48z"/></svg>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <input type="checkbox" id="modal-1">
+                <label class="modal-trigger" for="modal-1">Modal Link</label>
+                <div class="modal-content">
+                    <p>Lorem ipsum dolor.</p>
+                </div>
+            </div>
+        </div>
+        <div class="view-row">
+            <div class="row">
+                <div class="col-xs-12 col-md-8">.col-xs-12 .col-md-8</div>
+                <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+                <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+                <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6">.col-xs-6</div>
+                <div class="col-xs-6">.col-xs-6</div>
+            </div>
+        </div>
+        <div id="header-bottom" class="header-bottom row">
+            <div id="widgetmediaslider-15" class="widget WidgetMediaSlider">
+                <div class="rs heroSlider rsMinimal">
+                    <div class='rsContent'>
+                        <a class='rsImg'
+                           href='wp/wp-content/uploads/2018/04/AficheSeclinAvril2018.jpg'
+                           data-href=''></a></div>
+                    <div class='rsContent'>
+                        <a class='rsImg'
+                           href='wp/wp-content/uploads/2018/04/KursaalDunkerque2018.jpg'
+                           data-href=''></a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer>
+    <h4>Testing Code</h4>
+</footer>
+<script type="text/javascript" src="../libs/menu.js"></script>
+<script type="text/javascript" src="../libs/fastclick.js"></script>
+<script type="text/javascript" src="../../../../wp-includes/js/jquery/jquery.js"></script>
+<script type="text/javascript" src="../wp/libs/rslider/rs.js"></script>
+<script>var widgetmediaslider15 = {
+        "autoScaleSlider": true,
+        "autoScaleSliderWidth": "1920",
+        "autoScaleSliderHeight": "680",
+        "imgWidth": "1920",
+        "imgHeight": "680",
+
+        "imageScaleMode": "none",
+        "controlNavigation": "bullets",
+        "slidesOrientation": "horizontal",
+        "transitionType": "fade",
+        "arrowsNav": true,
+        "arrowsNavAutoHide": false,
+        "arrowsNavHideOnTouch": false,
+        "navigateByClick": true,
+        "sliderTouch": true,
+        "sliderDrag": true,
+        "keyboardNavEnabled": false,
+        "loop": true,
+        "loopRewind": true,
+        "randomizeSlides": true,
+        "usePreloader": true,
+        "globalCaption": false,
+        "startSlideId": 0,
+        "numImagesToPreload": 4,
+        "slidesSpacing": 8,
+        "minSlideOffset": 10,
+        "transitionSpeed": 600,
+        "imageScalePadding": 0
+    };
+    if (typeof jQuery == 'undefined') {
+        window.addEventListener('DOMContentLoaded', function () {
+            jQuery('#widgetmediaslider-15 > .rs').rs(widgetmediaslider15);
+        });
+    } else {
+        if (jQuery.rs) {
+            jQuery('#widgetmediaslider-15 > .rs').rs(widgetmediaslider15);
+        } else {
+            jQuery(document).ready(function () {
+                jQuery('#widgetmediaslider-15 > .rs').rs(widgetmediaslider15);
+            });
+        }
+    }</script>
+<script type="text/javascript" data-bind="{da}">
+    window.addEventListener('DOMContentLoaded', function () {
+        FastClick.attach(document);
+    });
+</script>
+</body>
+</html>

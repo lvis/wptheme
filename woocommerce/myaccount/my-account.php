@@ -7,7 +7,9 @@
  * @version 3.5.0
  */
 defined( 'ABSPATH' ) || exit;
+use wp\UtilsWp;
 /** My Account navigation. */
-do_action('woocommerce_account_navigation');
+$actionAccountNavigation = UtilsWp::doAction('woocommerce_account_navigation');
 /** My Account content. */
-do_action('woocommerce_account_content');
+$actionAccountContent = UtilsWp::doAction('woocommerce_account_content');
+echo "{$actionAccountNavigation}{$actionAccountContent}";

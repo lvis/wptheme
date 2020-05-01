@@ -18,6 +18,11 @@ final class WPActions {
      */
     const ADMIN_INIT = 'admin_init';
     /**
+     * @const Fire the wp_footer action.
+     * @url https://developer.wordpress.org/reference/functions/wp_footer/
+     */
+    const FOOTER = 'wp_footer';
+    /**
      * @const Fires in head section for all admin pages.
      * @url https://developer.wordpress.org/reference/hooks/admin_head/
      */
@@ -151,10 +156,16 @@ final class WPActions {
      */
     const INIT = 'init';
     /**
+     * @const This hook is fired once WP, all plugins, and the theme are fully loaded and instantiated.
+     * @url https://developer.wordpress.org/reference/hooks/wp_loaded/
+     */
+    const LOADED = 'wp_loaded';
+    /**
      * @const Filters text with its translation.
      * @url https://developer.wordpress.org/reference/hooks/gettext/
      */
     const GET_TEXT = 'gettext';
+    const GET_TEXT_WITH_CONTEXT = 'gettext_with_context';
     const LOGOUT = 'wp_logout';
     /**
      * @const Initialise Customizer

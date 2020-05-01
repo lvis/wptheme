@@ -2,13 +2,14 @@
 
 use wp\WidgetArea;
 use wp\UtilsWp;
+use wp\WPActions;
 
 $content = '';
 $content .= UtilsWp::getSidebarContent(WidgetArea::FOOTER_TOP);
 $content .= UtilsWp::getSidebarContent(WidgetArea::FOOTER_BOTTOM);
 $siteName = get_bloginfo('name');
 $currentYear = date('Y');
-$contentAfterFooter = UtilsWp::doAction('wp_footer');
+$contentAfterFooter = UtilsWp::doAction(WPActions::FOOTER);
 $textCopyright = __('Copyright');
 echo "</main><footer>{$content}
 <div class='text-xs-center'>{$textCopyright} © {$currentYear} {$siteName}</div></footer>{$contentAfterFooter}</body></html>";

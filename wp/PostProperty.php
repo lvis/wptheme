@@ -143,7 +143,7 @@ final class PostProperty extends PostBase {
             }
             $siteEditor = WPUsers::isSiteEditor() ? 'true' : 'false';
             $contentJsModel = /**@lang JavaScript */
-                "function AdminViewModel() {
+                "function ViewModelAdmin() {
                 var self = this;
                 self.propertyStatus = ko.observable('{$valuePropertyStatus}');
                 self.propertyType = ko.observable('{$valuePropertyType}');
@@ -178,9 +178,9 @@ final class PostProperty extends PostBase {
                     }
                 }
             }
-            var vmAdminVM = new AdminViewModel();
             var postElement = document.getElementById('poststuff');
-            ko.applyBindings(vmAdminVM, postElement);";
+            var vmAdmin = new ViewModelAdmin();
+            ko.applyBindings(vmAdmin, postElement);";
             wp_add_inline_script('knockout', $contentJsModel);
         }
     }
@@ -296,9 +296,9 @@ final class PostProperty extends PostBase {
 
     public function handlePostColumnsContent($column, $postId) {
         switch ($column) {
-        case PostBase::COLUMN_THUMB:
+        /*case PostBase::COLUMN_THUMB:
             echo UtilsWp::getThumbnail([144, 98], []);
-            break;
+            break;*/
         case PostProperty::SEARCH_PRICE:
             echo self::getPriceFormatted();
             break;

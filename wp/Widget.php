@@ -130,8 +130,7 @@ abstract class Widget extends WP_Widget
     static function getPagesOfPosts()
     {
         if (!self::$pagesOfPosts) {
-            $posts = UtilsWp::getPostTypes(['public' => true,], 'label');
-            //unset( $posts['attachment'] );
+            $posts = UtilsWp::getPostTypes(['public' => true], 'label');
             unset($posts['revision']);
             unset($posts['nav_menu_item']);
             self::$pagesOfPosts = $posts;
@@ -470,9 +469,12 @@ abstract class Widget extends WP_Widget
         $instance = $instanceOld;
         /** @var WidgetField $field */
         foreach ($fields as $field) {
-            $newValue = $instanceNew[$field->name];
-            if (is_string($newValue)) {
-                $newValue = strip_tags($newValue);
+            $newValue = '';
+            if (isset($instanceNew[$field->name])){
+                $newValue = $instanceNew[$field->name];
+                if (is_string($newValue)) {
+                    $newValue = strip_tags($newValue);
+                }
             }
             $instance[$field->name] = $newValue;
         }

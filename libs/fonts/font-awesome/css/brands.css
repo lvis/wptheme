@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'FontAwesomeBrands';
+    font-family: 'Font Awesome 5 Brands';
     font-style: normal;
     font-weight: normal;
     src: url("../webfonts/fa-brands-400.eot");
@@ -10,5 +10,5 @@
     url("../webfonts/fa-brands-400.svg#fontawesome") format("svg");
 }
 .fab {
-    font-family: 'FontAwesomeBrands', sans-serif;
+    font-family: 'Font Awesome 5 Brands', sans-serif;
 }

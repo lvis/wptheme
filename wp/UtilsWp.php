@@ -253,18 +253,18 @@ final class UtilsWp {
                           WPSidebar::CONTAINER_SELECTOR => "#$id"]);
     }
 
-    static function getSidebarContent(string $id, string $tagContent = 'div') {
+    static function getSidebarContent(string $id) {
         $content = "";
         if (is_active_sidebar($id)) {
             ob_start();
             dynamic_sidebar($id);
             $content = ob_get_clean();
-            $content = self::getSidebar($id, $content, $tagContent);
+            $content = self::getSidebar($id, $content);
         }
         return $content;
     }
 
-    static function getSidebar(string $id, string $content = '', string $tagContent = 'div', $classes = []) {
+    static function getSidebar(string $id, string $content = '',array $classes = [], string $tagContent = 'div') {
         $sidebarMetaValue = (array)get_option(Widget::WIDGET_AREA);
         if (isset($sidebarMetaValue[$id]) && isset($sidebarMetaValue[$id][Widget::CSS_CLASSES])) {
             $sidebarBgColourValue = $sidebarMetaValue[$id][Widget::CSS_CLASSES];

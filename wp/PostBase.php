@@ -1,14 +1,13 @@
 <?php namespace wp;
-use WP_Taxonomy;
 
 /** Author: Vitali Lupu <vitaliix@gmail.com> */
-abstract class PostBase {
-    const TYPE = "post";
-    const VIEW_COUNT = "postViewCount";
-    const META_BOX_GALLERY = "metaBoxPostGallery";
-    const META_VIDEO = "postVideo";
-    const META_GALLERY = "postGallery";
-    const COLUMN_THUMB = "columnThumb";
+abstract class PostBase
+{
+    const TYPE = 'post';
+    const META_BOX_MEDIA = 'metaBoxPostGallery';
+    const META_VIDEOS = 'postVideo';
+    const META_GALLERY = 'postGallery';
+    const VIEW_COUNT = 'postViewCount';
     static $counter = 0;
     protected static $instances = [];
 
@@ -27,8 +26,8 @@ abstract class PostBase {
         add_filter("manage_edit-{$this->type}_columns", [$this, "handlePostColumns"]);
         add_filter("manage_edit-{$this->type}_sortable_columns", [$this, "handlePostColumnsSortable"]);
         add_filter(MetaBoxFilter::REGISTER, [$this, 'registerPostMetaBoxes']);
-        add_filter('post_row_actions', [$this, 'handlePostRowActions'], 10, 2);
-        add_filter('page_row_actions', [$this, 'handlePostRowActions'], 10, 2);
+        //add_filter('post_row_actions', [$this, 'handlePostRowActions'], 10, 2);//Hide Quick Edit Link for Posts
+        //add_filter('page_row_actions', [$this, 'handlePostRowActions'], 10, 2);//Hide Quick Edit Link for Pages
         add_filter("bulk_actions-edit-{$this->type}", [$this, 'handlePostBulkActions'], 10, 2);
         add_action('transition_post_status', [$this, 'handlePostStatusChange'], 10, 3);
         if (WPUsers::isSiteEditor() == false) {
@@ -48,11 +47,10 @@ abstract class PostBase {
         $count = 0;
         $countKey = PostBase::VIEW_COUNT;
         $metaCount = get_post_meta($postID, $countKey, true);
-        //		$hasStatisticsPlugin = function_exists( 'wp_statistics_pages' );
-        $hasStatisticsPlugin = function_exists('pvc_get_post_views');//do_shortcode('[post-views]')
+        $getPost = 'pvc_get_post_views';
+        $hasStatisticsPlugin = function_exists($getPost);//do_shortcode('[post-views]')
         if ($hasStatisticsPlugin) {
-            //			$count = wp_statistics_pages( 'total', wp_statistics_get_uri(), get_the_ID() );
-            $count = pvc_get_post_views(get_the_ID());
+            $count = $getPost(get_the_ID());
         }
         if ($metaCount == '') {
             //delete_post_meta($postID, $countKey);
@@ -70,9 +68,10 @@ abstract class PostBase {
             WPTaxonomyLabels::NAME_PLURAL => $namePlural,
             WPTaxonomyLabels::NAME_SINGULAR => $name,
             WPTaxonomyLabels::CHOSE_FROM_MOST_USED => __("Choose from the most used $namePlural"),
-            WPTaxonomyLabels::ITEM_ADD_NEW => __("Add New $name"),
+            WPTaxonomyLabels::ITEM_ADD_NEW => __("Add"),
             WPTaxonomyLabels::ITEM_NEW_NAME => __("New $name Name"),
-            WPTaxonomyLabels::ITEM_EDIT => __("Edit $name"),
+            WPTaxonomyLabels::ITEM_EDIT => sprintf(__("Edit &#8220;%s&#8221;"), $name),
+            WPTaxonomyLabels::ITEM_VIEW => sprintf(__('View &#8220;%s&#8221;'), $name),
             WPTaxonomyLabels::ITEM_UPDATE => __("Update $name"),
             WPTaxonomyLabels::ITEM_PARENT => __("Parent $name"),
             WPTaxonomyLabels::ITEM_PARENT_COLON => __("Parent $name:"),
@@ -84,15 +83,15 @@ abstract class PostBase {
     }
 
     static function getPostLabels($name, $namePlural) {
-        $textAddNewPost = sprintf(__('Add %s', WpApp::TEXT_DOMAIN), $name);
+        $textAdd = sprintf(__('Add'), $name);
         return [WPostLabels::NAME_PLURAL => $namePlural,
             WPostLabels::NAME_SINGULAR => $name,
-            WPostLabels::ADD_NEW => $textAddNewPost,
-            WPostLabels::ITEM_ADD_NEW => $textAddNewPost,
+            WPostLabels::ADD_NEW => $textAdd,
+            WPostLabels::ITEM_ADD_NEW => $textAdd,
             WPostLabels::ITEMS_ALL => sprintf(__('All %s', WpApp::TEXT_DOMAIN), $namePlural),
-            WPostLabels::ITEM_EDIT => __('Edit') . ' ' . $name,
+            WPostLabels::ITEM_EDIT => sprintf(__("Edit &#8220;%s&#8221;"), $name),
             WPostLabels::ITEM_NEW => __("New $name"),
-            WPostLabels::ITEM_VIEW => __("View $name"),
+            WPostLabels::ITEM_VIEW => sprintf(__('View &#8220;%s&#8221;'), $name),
             WPostLabels::ITEMS_SEARCH => __("Search $name"),
             WPostLabels::NOT_FOUND => __("No $name found"),
             WPostLabels::NOT_FOUND_IN_TRASH => __("No $name found in Trash"),
@@ -135,7 +134,6 @@ abstract class PostBase {
      * https://codex.wordpress.org/Plugin_API/Filter_Reference/wp_insert_post_data
      * @param $data
      * @param $postFields
-     *
      * @return mixed
      */
     public function handlePostSaveBefore($data, $postFields) {
@@ -155,11 +153,28 @@ abstract class PostBase {
     }
 
     public function handlePostColumns($columns) {
-        if ($this->hasThumbnail) {
-            $textImage = __('Image');
-            self::arrayInsert($columns, 2, [self::COLUMN_THUMB => $textImage]);
+        /*if ($this->hasThumbnail) {
+            $textImage = self::getIcon('image');
+            self::arrayInsert($columns, 1, [self::COLUMN_THUMB => $textImage]);
+        }*/
+        $handler = [$this, 'handlePostTitle'];
+        if (has_filter('display_post_states', $handler) == false) {
+            add_filter('display_post_states', $handler, 10, 2);
         }
         return $columns;
+    }
+
+    function handlePostTitle($post_states, $post) {
+        $postId = $post->ID;
+        if (has_post_thumbnail($postId)) {
+            $post = get_post($postId);
+            $postThumbnail = get_the_post_thumbnail($post, [48, 48]);
+            $postLink = get_the_permalink();
+            $thumb = "<a href='{$postLink}' target='_blank' class='post-row-thumb'>{$postThumbnail}</a>";
+            echo $thumb;
+            //remove_filter('display_post_states', [$this, 'handlePostTitle']);
+        }
+        return $post_states;
     }
 
     static function arrayInsert(&$array, $position, $insert_array) {
@@ -172,46 +187,50 @@ abstract class PostBase {
     }
 
     public function handlePostColumnsContent($column, $postId) {
-        switch ($column) {
-        case self::COLUMN_THUMB:
-        {
-            $thumb = __('No Thumbnail', WpApp::TEXT_DOMAIN);
-            if (has_post_thumbnail($postId)) {
-                $post = get_post($postId);
-                $postLink = get_the_permalink();
-                $postThumbnail = get_the_post_thumbnail($post, [108, 73]);
-                $thumb = "<a href='{$postLink}' target='_blank'>{$postThumbnail}</a>";
+        /*switch ($column) {
+            case self::COLUMN_THUMB:
+            {
+                $thumb = __('No Thumbnail', WpApp::TEXT_DOMAIN);
+                if (has_post_thumbnail($postId)) {
+                    $post = get_post($postId);
+                    $postLink = get_the_permalink();
+                    $postThumbnail = get_the_post_thumbnail($post, [108, 73]);
+                    $thumb = "<a href='{$postLink}' target='_blank'>{$postThumbnail}</a>";
+                }
+                echo $thumb;
+                break;
             }
-            echo $thumb;
-            break;
-        }
-        }
+        }*/
     }
 
     public function registerPostMetaBoxes($meta_boxes) {
-        $textMedia = __('Media');
-        $textMedia = PostBase::getIcon("fa-images") . $textMedia;
-        $textImages = __('Images');
-        $textVideo = __('Video');
-        $textVideo = PostBase::getIcon("fa-video-plus") . $textVideo;
-        $meta_boxes[] = [MetaBox::ID => PostBase::META_BOX_GALLERY,
+        $textMedia = self::getIcon("photo-video") . __('Media');
+        $textImages = self::getIcon("images") . __('Images');
+        $textVideo = self::getIcon("video-plus") . __('Video');
+        $meta_boxes[] = [MetaBox::ID => PostBase::META_BOX_MEDIA,
             MetaBox::POST_TYPES => [$this->type],
             MetaBox::TITLE => $textMedia,
             MetaBox::CONTEXT => MetaBoxContext::NORMAL,
             MetaBox::PRIORITY => MetaBoxPriority::HIGH,
-            MetaBox::FIELDS => [[MetaBoxFieldImage::TYPE => MetaBoxFieldType::IMAGE_ADVANCED,
-                MetaBoxFieldImage::COLUMNS => 12,
-                MetaBoxFieldImage::MAX_UPLOADS => 50,
-                MetaBoxFieldImage::MAX_STATUS => true,
-                //MetaBoxFieldImage::FORCE_DELETE => true, // Cause Removing of image when rearrange
-                MetaBoxFieldImage::ID => PostBase::META_GALLERY,
-                MetaBoxFieldImage::NAME => $textImages],
-                [MetaBoxFieldFileAdvanced::ID => PostBase::META_VIDEO,
+            MetaBox::FIELDS => [
+                [
+                    MetaBoxFieldImage::TYPE => MetaBoxFieldType::IMAGE_ADVANCED,
+                    MetaBoxFieldImage::ID => PostBase::META_GALLERY,
+                    MetaBoxFieldImage::NAME => $textImages,
+                    MetaBoxFieldImage::COLUMNS => 12,
+                    MetaBoxFieldImage::MAX_UPLOADS => 50,
+                    MetaBoxFieldImage::MAX_STATUS => true,
+                ],
+                [
                     MetaBoxFieldFileAdvanced::TYPE => MetaBoxFieldType::VIDEO,
+                    MetaBoxFieldFileAdvanced::ID => PostBase::META_VIDEOS,
+                    MetaBoxFieldFileAdvanced::NAME => $textVideo,
                     MetaBoxFieldFileAdvanced::COLUMNS => 12,
                     MetaBoxFieldFileAdvanced::MAX_UPLOADS => 10,
                     MetaBoxFieldFileAdvanced::MAX_STATUS => true,
-                    MetaBoxFieldFileAdvanced::NAME => $textVideo]]];
+                ]
+            ]
+        ];
         return $meta_boxes;
     }
 
@@ -221,10 +240,8 @@ abstract class PostBase {
 
     /**
      * Comma separated taxonomy terms with admin side links
-     *
      * @param $postId
      * @param $taxonomyName
-     *
      * @return string
      */
     function getTaxonomyLinksOfTerms($postId, $taxonomyName) {
@@ -235,7 +252,7 @@ abstract class PostBase {
             /* Loop through each term, linking to the 'edit posts' page for the specific term. */
             foreach ($terms as $term) {
                 $termLink = add_query_arg([QueryPost::TYPE => $this->type,
-                                              $taxonomyName => $term->slug,], 'edit.php');
+                    $taxonomyName => $term->slug,], 'edit.php');
                 $escTermLink = esc_url($termLink);
                 $termName = sanitize_term_field('name', $term->name, $term->term_id, $taxonomyName, 'display');
                 $escTermName = esc_html($termName);
@@ -250,9 +267,7 @@ abstract class PostBase {
      * Filter the request to just give posts for the given taxonomy, if applicable.
      * @link https://developer.wordpress.org/reference/hooks/restrict_manage_posts/
      * @link https://wp-kama.ru/hook/restrict_manage_posts
-     *
      * @param string $postType The post type slug.
-     *
      * @return array
      */
     function createTaxonomyFilter($postType) {
@@ -290,6 +305,10 @@ abstract class PostBase {
             }
         }
         return $taxonomies;
+    }
+
+    function getType() {
+        return $this->type;
     }
 
     function handleUserScreenLayout() {

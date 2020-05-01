@@ -5,7 +5,6 @@ class SettingsSite {
     const EMAIL = 'site_email';
     const PHONES = 'site_phones';
     const ADDRESS = 'site_address';
-    const LOGO_INSTEADOF_HOME = 'site_logo_insteadof_home';
     const REGISTRATION_ENABLED = 'site_registration_enabled';
     const BACKEND_ACCESS_LEVEL = 'site_access_level';
     const EMAIL_CC_ENABLE = 'site_email_cc_enabled';

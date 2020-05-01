@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grouped CSS Parallax</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../libs/utils.css">
+    <link rel="stylesheet" type="text/css" href="../libs/grid.css">
+    <link rel="stylesheet" type="text/css" href="../libs/generic.css">
+    <link rel="stylesheet" type="text/css" href="../libs/parallax.css">
+    <style>
+        /*--------------------------------------------- Demo*/
+        body, html {
+            overflow: hidden;
+        }
+        body {
+            font: 100% / 1.5 Arial;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .parallax {
+            font-size: 200%;
+        }
+        /* centre the content in the parallax layers */
+        .title {
+            text-align: center;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+        /*--------------------------------------------- Groups*/
+        #group1 {
+            z-index: 5; /* slide over group 2 */
+        }
+        #group1 .parallax-layer-base {
+            background: rgb(102, 204, 102);
+        }
+        #group2 {
+            z-index: 3; /* slide under groups 1 and 3 */
+        }
+        #group2 .parallax-layer-back {
+            background: rgb(123, 210, 102);
+        }
+        #group3 {
+            z-index: 4; /* slide over group 2 and 4 */
+        }
+        #group3 .parallax-layer-base {
+            background: rgb(153, 216, 101);
+        }
+        #group4 {
+            z-index: 2; /* slide under group 3 and 5 */
+        }
+        #group4 .parallax-layer-deep {
+            background: rgb(184, 223, 101);
+        }
+        #group5 {
+            z-index: 3; /* slide over group 4 and 6 */
+        }
+        #group5 .parallax-layer-base {
+            background: rgb(214, 229, 100);
+        }
+        #group6 {
+            z-index: 2; /* slide under group 5 and 7 */
+        }
+        #group6 .parallax-layer-back {
+            background: rgb(245, 235, 100);
+        }
+        #group7 {
+            z-index: 3; /* slide over group 7 */
+        }
+        #group7 .parallax-layer-base {
+            background: rgb(255, 241, 100);
+        }
+    </style>
+</head>
+<body>
+<input type="checkbox" class="debugToggle" id="debugParallax">
+<label class="debugToggle" for="debugParallax">Debug</label>
+<div class="parallax">
+    <div id="group2" class="parallax-group">
+        <div class="parallax-layer parallax-layer-back">
+            <div class="title">Background</div>
+        </div>
+        <div class="parallax-layer parallax-layer-base">
+            <div class="title">Layer 2</div>
+        </div>
+    </div>
+    <div id="group3" class="parallax-group">
+        <div class="parallax-layer parallax-layer-base">
+            <div class="title">Layer 3</div>
+        </div>
+    </div>
+    <!--<div id="group1" class="parallax-group">
+        <div class="parallax-layer parallax-layer-base">
+            <div class="title">Base Layer</div>
+        </div>
+    </div>
+    <div id="group2" class="parallax-group">
+        <div class="parallax-layer parallax-layer-base">
+            <div class="title">Base Layer</div>
+        </div>
+        <div class="parallax-layer parallax-layer-back">
+            <div class="title">Background Layer</div>
+        </div>
+    </div>-->
+    <!--
+    <div id="group3" class="parallax-group">
+        <div class="parallax-layer parallax-layer-front">
+            <div class="title">Foreground Layer</div>
+        </div>
+        <div class="parallax-layer parallax-layer-base">
+            <div class="title">Base Layer</div>
+        </div>
+    </div>
+    <div id="group4" class="parallax-group">
+        <div class="parallax-layer parallax-layer-base">
+            <div class="title">Base Layer</div>
+        </div>
+        <div class="parallax-layer parallax-layer-back">
+            <div class="title">Background Layer</div>
+        </div>
+        <div class="parallax-layer parallax-layer-deep">
+            <div class="title">Deep Background Layer</div>
+        </div>
+    </div>
+    <div id="group5" class="parallax-group">
+        <div class="parallax-layer parallax-layer-front">
+            <div class="title">Foreground Layer</div>
+        </div>
+        <div class="parallax-layer parallax-layer-base">
+            <div class="title">Base Layer</div>
+        </div>
+    </div>
+    <div id="group6" class="parallax-group">
+        <div class="parallax-layer parallax-layer-back">
+            <div class="title">Background Layer</div>
+        </div>
+        <div class="parallax-layer parallax-layer-base">
+            <div class="title">Base Layer</div>
+        </div>
+    </div>
+    <div id="group7" class="parallax-group">
+        <div class="parallax-layer parallax-layer-base">
+            <div class="title">Base Layer</div>
+        </div>
+    </div>-->
+</div>
+</body>
+</html>

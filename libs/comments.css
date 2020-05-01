@@ -1,0 +1,39 @@
+.comment-body {
+    margin-top: 5px;
+}
+.comment-body .vcard {
+    float: left;
+    margin-right: 1.5rem;
+    text-align: center;
+}
+.comment-body .vcard img {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    float: none;
+    height: 4rem;
+    margin: 0.5rem;
+    padding: 0;
+    position: initial;
+    width: auto;
+}
+.comment-body .vcard .fn {
+    display: block;
+}
+.comment-body .vcard .says {
+    display: none;
+}
+.comment-body .reply {
+    text-align: right;
+    margin-right: 3rem;
+}
+.comments-list, .comments-list ul {
+    list-style: none;
+}
+.comments-list .reply {
+    padding-top: 6px;
+}
+.must-log-in, .logged-in-as, .comment-notes {
+    text-align: center;
+}

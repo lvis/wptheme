@@ -1,21 +1,21 @@
-input[type=checkbox],
-.woocommerce form .form-row .input-checkbox{
+input[type=checkbox]:not(.switch) {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     background-color: #ffffff;
     border: 1px solid #989898;
     border-radius: .25rem;
     cursor: pointer;
     display: inline-block;
-    width: 1rem;
-    height: 1rem;
-    margin: 0.1rem;
-    vertical-align: middle;
-    -webkit-appearance: none;
-    -moz-appearance: none;
+    height: 0.9rem;
+    width: 0.9rem;
+    vertical-align: text-bottom;
 }
-input[type=checkbox]:checked,
-.woocommerce form .form-row .input-checkbox:checked{
-    /*background: #ffffff url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2017%2013%22%3E%3Cpath%20fill%3D%22%239c27b0%22%20d%3D%22M15.57%202.845L14.238%201.51c-.13-.13-.353-.13-.48%200L6.66%208.623l-3.093-3.11c-.13-.13-.352-.13-.482%200L1.75%206.845c-.128.13-.128.352%200%20.48l4.67%204.67c.073.055.147.092.24.092s.167-.037.24-.093l8.67-8.67c.13-.13.13-.35%200-.48z%22%2F%3E%3C%2Fsvg%3E') no-repeat 50% 50%;
-    border-color: #af0035;*/
+input[type=checkbox]:not(.switch):checked {
+    /*background: #ffffff url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2017%2013%22%3E%3Cpath%20fill%3D%22%239c27b0%22%20d%3D%22M15.57%202.845L14.238%201.51c-.13-.13-.353-.13-.48%200L6.66%208.623l-3.093-3.11c-.13-.13-.352-.13-.482%200L1.75%206.845c-.128.13-.128.352%200%20.48l4.67%204.67c.073.055.147.092.24.092s.167-.037.24-.093l8.67-8.67c.13-.13.13-.35%200-.48z%22%2F%3E%3C%2Fsvg%3E') no-repeat 50% 50%;*/
     background: #ffffff url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2017%2013%22%3E%3Cpath%20fill%3D%22%23a37542%22%20d%3D%22M15.57%202.845L14.238%201.51c-.13-.13-.353-.13-.48%200L6.66%208.623l-3.093-3.11c-.13-.13-.352-.13-.482%200L1.75%206.845c-.128.13-.128.352%200%20.48l4.67%204.67c.073.055.147.092.24.092s.167-.037.24-.093l8.67-8.67c.13-.13.13-.35%200-.48z%22%2F%3E%3C%2Fsvg%3E') no-repeat 50% 50%;
+    /*border-color: #af0035;*/
     border-color: #a37542;
 }
+
+

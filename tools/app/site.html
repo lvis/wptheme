@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Site</title>
+</head>
+<body>
+<!--[Mobile]-->
+<script type="text/javascript">
+    document.isReady = 'yes';
+    if (typeof appBridge !== 'undefined' && typeof appBridge.isReady === 'function'){
+        appBridge.isReady();
+    }
+</script>
+<!--[Site]-->
+<script>
+    function getCategoryElement(index){
+        var strQuery = 'div[class="service-group-wrapper ng-scope"]:nth-child('+index+') h3';
+        return document.querySelector(strQuery);
+    }
+    function handleFirstLoad(event){
+        if (event.data.action === 'showCategory'){
+            if (event.data.parameters) {
+                console.log('Received Message:', event.data.parameters);
+                if (event.data.parameters > 1){
+                    console.log('Open:', event.data.parameters);
+                    setTimeout(function(){
+                        simulateClick(getCategoryElement(1));
+                        setTimeout(function(){
+                            simulateClick(getCategoryElement(event.data.parameters), true);
+                        }, 900);
+                    }, 500);
+                }
+                window.removeEventListener("message", handleFirstLoad, false);
+            }
+        }
+    }
+    window.addEventListener("message", handleFirstLoad, false);
+    var simulateClick = function (elem, scrollToView) {
+        if (elem){
+            var event = new MouseEvent('click', {bubbles: true, cancelable: true,view: window});
+            var canceled = !elem.dispatchEvent(event);
+            if (scrollToView === true){
+                elem.scrollIntoView();
+            }
+        }
+    };
+    /*
+      console.log('Referrer:',document.referrer);
+    if (document.referrer && document.referrer.indexOf('mayfairbeauty.ru') == -1){
+      window.location.replace("https://mayfairbeauty.ru/booking");
+    }*/
+</script>
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Playfair+Display+SC:400,700&display=swap&subset=cyrillic');
+    @font-face {
+        font-family: 'Ames';
+        font-style: normal;
+        src: url('https://mayfairbeauty.ru/wp-content/themes/wptheme/libs/fonts/ames/Ames.ttf');
+    }
+    .site-title {
+        font-family: 'Ames',sans-serif;
+    }
+    .ios-subtitle {
+        display: none !important;
+    }
+    .company-info__name,
+    .master-info__name {
+        font-family: 'Ames', sans-serif !important;
+        font-weight: normal;
+        font-size: 28px !important;
+        text-align: center !important;
+        color: #686f3e !important;
+    }
+    .company-info__specialization,
+    .master-info__specialization {
+        color: #492d10 !important;
+    }
+    .main-menu__icon {
+        font-size: 32px !important;
+        margin-right: 10px;
+    }
+    .main-menu__icon .company-info__avatar,
+    .master-info__avatar {
+        background-color: white;
+    }
+
+    record-selected-service div.ng-scope:first-child {
+        margin-right: 10px;
+        margin-left: 10px;
+        border: 1px solid;
+        border-radius: 10px;
+    }
+    /*[Containers]*/
+    .y-top-background {
+        height: 46px !important;
+        background-image: none !important;
+    }
+    .mask.y-header-backdrop.y-toolbar-backdrop {
+        opacity: 1 !important;
+    }
+    .ios-subtitle + div.h100.y-content-wrapper.y-main-wrapper div.h100.y-content-wrapper.scrollable {
+        margin-top: 0 !important;
+    }
+    body.h100.ios.desktop.not-ios .y-content-wrapper.y-page-about-layout__content-wrapper.scrollable {
+        padding-top: 10px !important;
+    }
+    body.not-ios .y-page-about-layout .y-top-background,
+    body.not-ios .y-page-about-layout__collapsed-header,
+    body.not-ios .y-page-about-layout__collapsed-header-background,
+    body.not-ios .y-about-master-layout__collapsed-header{
+        background-color: white !important;
+    }
+    .container-wrapper {
+        margin-top: 46px !important;
+    }
+    .container-wrapper.y-login-container-wrapper {
+        margin-top: 0 !important;
+    }
+    .y-main-wrapper.y-dark-layout .container-wrapper.container {
+        background-color: transparent !important;
+    }
+    /*[Carousel]*/
+    .y-photo-carousel ul[rn-carousel] {
+        cursor: grab;
+        height: 350px !important;
+    }
+    .y-photo-carousel ul[rn-carousel]:active {
+        cursor: grabbing;
+    }
+    .y-photo-carousel__controls div.rn-carousel-indicator span {
+        font-size: 24px !important;
+    }
+    /*[Tabs]*/
+    .company-info-tabs__description,
+    .company-info-tabs__contacts {
+        padding: 10px 16px 0 !important;
+    }
+    .y-wide-header-layout .tabs-wrapper {
+        background-color: #424242 !important;
+        top: 46px !important;
+    }
+    div.y-ios-bottom-tabs__item.main-color {
+        color: #492d10 !important;
+    }
+    .y-tabs__list{
+        height: 30px !important;
+        border: 1px solid #795548 !important;
+    }
+    .y-ios-bottom-tabs__label{
+        font-size: 14px !important;
+        top: 38px !important;
+    }
+    .y-tabs__tab{
+        border-right: 1px solid #795548 !important;
+        color: #795548 !important;
+        text-transform: capitalize;
+        opacity: 1 !important;
+    }
+    .master-info-tabs .y-tabs__tab:not(.y-tabs__tab_current){
+        color: #795548 !important;
+        border-color:#795548 !important;
+    }
+    .y-tabs__tab_current{
+        color: #fff !important;
+        background-color: #795548 !important;
+    }
+    /*[Tab About Company]*/
+    .y-ios-bottom-tabs__item:nth-child(3) {
+        /*display: none;*/
+    }
+    /*[Brand]*/
+    y-copyright-link{
+        display:none !important;
+    }
+    .main-animated-circle-loader {
+        display:none !important;
+    }
+    /*[Form]*/
+    .y-form{
+        text-align:center;
+    }
+    .y-login-form__menu-auth,
+    .y-login-form__password-auth,
+    .y-login-form__sms-auth{
+        border-bottom: none !important;
+        text-align: center !important;
+    }
+    .y-form__group{
+        text-align: left !important;
+    }
+    .y-form__notify-block{
+        border:none !important;
+    }
+    /*[Buttons]*/
+    .y-button_block{
+        border:none !important;
+    }
+    .master-info-comments__button-block{
+        text-align:center;
+        -webkit-backdrop-filter: none !important;
+        backdrop-filter: none !important;
+        background-color: white;
+    }
+    .y-menu-list-wrapper__exit{
+        margin-left: 40% !important;
+        line-height: 40px !important;
+    }
+    .y-menu-list-wrapper__exit,
+    .master-info-comments__button-block > button.y-button_transparent-or-white,
+    body.not-ios .y-button_block{
+        width: auto !important;
+        display: inline-block !important;
+        border: 1px solid #795548 !important;
+        margin-bottom: 10px !important;
+        margin-top: 10px !important;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+        border-radius: 25px 25px 25px 25px !important;
+    }
+    .y-menu-list-wrapper__exit:hover,
+    .calendar-wrapper .y-button:hover:enabled,
+    .y-button.time-slot:hover:enabled,
+    .master-time-slot:hover,
+    .master-info-comments__button-block > button.y-button_transparent-or-white:hover:enabled,
+    body.not-ios .y-button_block:hover:enabled{
+        color: white !important;
+        background-color:#795548 !important;
+    }
+    body.not-ios .y-button_block:hover:enabled > *{
+        color: white !important;
+    }
+    /*[Calendar]*/
+    .calendar-wrapper .calendar__day,
+    .calendar-wrapper .day-of-week{
+        padding-bottom:0 !important;
+    }
+</style>
+</body>
+</html>

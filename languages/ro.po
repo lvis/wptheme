@@ -219,3 +219,36 @@ msgstr "Mărimea suprafeței imobilului"
 #: wp/PostProperty.php:512
 msgid "%s measure unit"
 msgstr "%s, unitatea de măsură"
+
+
+#: wp/PostEmployee.php:18
+msgid "Employee"
+msgstr "Angajat"
+
+#: wp/PostEmployee.php:19
+msgid "Employees"
+msgstr "Angajați"
+
+#: wp/PostEmployee.php:15
+msgid "Job Title"
+msgstr "Post de lucru"
+
+#: wp/PostEmployee.php:16
+msgid "Job Titles"
+msgstr "Posturi de lucru"
+
+#: wp/PostEmployee.php:80
+msgid "Education"
+msgstr "Studii"
+
+#: wp/PostEmployee.php:85
+msgid "Work Experience"
+msgstr "Experiențâ de lucru"
+
+#: wp/PostEmployee.php:90
+msgid "Specialization"
+msgstr "Specializare"
+
+#: wp/PostEmployee.php:63
+msgid "Certificates and Documents"
+msgstr "Certificate și Documente"

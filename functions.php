@@ -1,5 +1,4 @@
 <?php /** Author: Vitali Lupu vitaliix@gmail.com*/
-require_once(ABSPATH . 'wp-admin/includes/screen.php');
 if (function_exists('handleMetaBoxPath') == false) {
     function handleMetaBoxPath($url) {
         $path = '/vendor/wpmetabox/meta-box';
@@ -13,27 +12,17 @@ if (function_exists('handleMetaBoxPath') == false) {
 
     add_filter('plugins_url', 'handleMetaBoxPath');
 }
+require_once(ABSPATH . 'wp-admin/includes/screen.php');
 require_once(__DIR__ . '/vendor/autoload.php');
+
 if (defined('PROJECT')) {
     switch (PROJECT) {
-    case 'realestate':
-        wp\RealEstate::i();
-        break;
-    case 'etnikwines':
-        wp\EtnikWines::i();
-        break;
-    case 'luckyagency':
-        wp\PartyMaker::i();
-        break;
-    case 'mayfair':
-        wp\MayFair::i();
-        break;
-    case 'demolition':
-        wp\Demolition::i();
-        break;
-    default:
-        wp\WpApp::i();
-        break;
+    case 'etnikwines': wp\EtnikWines::i(); break;
+    case 'mayfair': wp\MayFair::i(); break;
+    case 'luckyagency': wp\PartyMaker::i(); break;
+    case 'realestate': wp\RealEstate::i(); break;
+    case 'demolition': wp\Demolition::i(); break;
+    default: wp\WpApp::i(); break;
     }
 }
 else {
@@ -41,7 +30,6 @@ else {
 }
 /**
  * Output the Order review table for the checkout.
- *
  * @param bool $deprecated Deprecated param.
  */
 function woocommerce_order_review($deprecated = false) {

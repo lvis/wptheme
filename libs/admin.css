@@ -1,68 +1,14 @@
-/* ------------------------------------------------- Fixes for Widget*/
-label.wide-title {
-    display: block;
-    margin-bottom: 5px;
-}
-input#post_name {
-    width: 100%;
-}
-img.attachment-thumb {
-    max-width: 100%;
-}
-select[multiple] {
-    height: auto !important;
-}
-@media all {
-    .customize-control input[type="tel"],
-    .customize-control input[type="url"],
-    .customize-control input[type="text"],
-    .customize-control input[type="password"],
-    .customize-control input[type="email"],
-    .customize-control input[type="number"],
-    .customize-control input[type="search"] {
-        line-height: 27px;
-        border-radius: 0.28571429rem;
-        height: 35px;
-        padding-left: 0.91666667em;
-        padding-right: 0.91666667em;
-    }
-}
-/* ------------------------------------------------- Hide Settings*/
-.user-googleplus-wrap,
-.user-twitter-wrap,
-.user-facebook-wrap,
-.user-capabilities-wrap,
-form#your-profile h3#wordpress-seo,
-form#your-profile h3#wordpress-seo + table,
-div.yoast.yoast-settings {
-    display: none !important;
-}
-/* ------------------------------------------------- Change Icons*/
-#wp-admin-bar-network-admin > .ab-item:before{
-    font: normal 16px/1 dashicons !important;
-    speak: none;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    color: #eee;
-    content: "\f325";
-}
-#wpadminbar .quicklinks li .blavatar:before{
-    content: "\f102";
-}
-#adminmenu #toplevel_page_woocommerce .menu-icon-generic div.wp-menu-image::before {
-    /*font-family: dashicons, sans-serif !important;
-    content: "\f513";*/
-    content: "\e900" !important;
-}
-#wpadminbar #wp-admin-bar-customize > .ab-item:before {
-    /*content: "\f540";*/
-    content: "\f108" !important;
-}
+
 /* ------------------------------------------------- Editor*/
 .mce-edit-area #content_ifr{
     height: 245px !important;
 }
-/* ------------------------------------------------- Plugins Page Icons*/
+/* ------------------------------------------------- Backend Page: Posts*/
+.post-row-thumb {
+    float: left;
+    margin-right: 5px;
+}
+/* ------------------------------------------------- Backend Page: Plugins Icons*/
 body.plugins-php .plugins .plugin-title .row-actions .dashicons:before {
     font-size: 20px;
     background-color: transparent;
@@ -76,19 +22,27 @@ body.plugins-php .plugins .plugin-title .row-actions img {
     width: 20px;
     height: 20px;
 }
-/* ------------------------------------------------- WooCommerce*/
-.woocommerce table.form-table .select2-container{
-    width: auto !important;
-}
-.woocommerce table.form-table input.regular-input,
-.woocommerce table.form-table textarea {
-    width: 100% !important;
-}
 /* ------------------------------------------------- MetaBox*/
+.toplevel_page_meta-box,
 #meta-box-notification{
     display: none !important;
 }
 .rwmb-input input, .rwmb-input select {
     max-width: 99% !important;
     width: 100% !important;
+}
+/* ------------------------------------------------- Builder*/
+.fixed .column-elementor_library_type,
+.fixed .column-instances {
+    width: auto !important;
+}
+body.admin-bar #elementor-popup-modal-1565 .elementor-widget-container{ padding-top: 32px; }
+body.admin-bar #elementor-popup-modal-1565 .dialog-close-button{top:42px;}
+@media screen and (max-width: 782px) {
+body.admin-bar #elementor-popup-modal-1565 .elementor-location-popup .elementor-widget-container { padding-top: 46px; }
+    body.admin-bar #elementor-popup-modal-1565 .dialog-close-button{top:56px;}
+}
+/* ------------------------------------------------- WooCommerce*/
+svg.woo-icon.components-panel__icon{
+    display: none !important;
 }

@@ -1,9 +1,4 @@
-<?php
-/**
- * Author: Vitali Lupu <vitaliix@gmail.com>
- * Date: 3/5/18
- * Time: 6:32 PM
- */
+<?php /** Author: Vitali Lupu <vitaliix@gmail.com> */
 
 namespace wp;
 final class WidgetUserForms extends WidgetDialogBase
@@ -72,7 +67,7 @@ final class WidgetUserForms extends WidgetDialogBase
             $textUserName = sprintf(__('Your username is: %s', WpApp::TEXT_DOMAIN), "<strong>$user->user_login</strong>");
             $textUserPassword = sprintf(__('Your password is: %s', WpApp::TEXT_DOMAIN), "<strong>$user->user_pass</strong>");
             $textUserInfo = __('Your User Account was sent to the site administrator for approval', WpApp::TEXT_DOMAIN);
-            $message =  "$messageSubject<br> $textUserName<br> $textUserPassword<br> $textUserInfo";
+            $message = "$messageSubject<br> $textUserName<br> $textUserPassword<br> $textUserInfo";
             wp_mail($user->user_email, $messageSubject, $message, self::getHeaderContentTypeHtml());
         }
 

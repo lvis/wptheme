@@ -32,54 +32,89 @@ $actionAfterEditAccountForm = UtilsWp::doAction('woocommerce_after_edit_account_
 $actionEditAccountFormStart = UtilsWp::doAction('woocommerce_edit_account_form_start');
 $actionEditAccountForm = UtilsWp::doAction('woocommerce_edit_account_form');
 $actionEditAccountFormEnd = UtilsWp::doAction('woocommerce_edit_account_form_end');
+$idFormEditAccount = 'edit-account';
+$idFieldFirstName = 'account_first_name';
+$idFieldLastName = 'account_last_name';
+$idFieldDisplayName = 'account_display_name';
+$idFieldEmail = 'account_email';
+$idFieldPassCurrent = 'password_current';
+$idFieldPassNew = 'password_1';
+$idFieldPassConfirm = 'password_2';
+$idFieldSave = 'save_account_details';
 echo "{$actionBeforeEditAccountForm}
-<form class='woocommerce-EditAccountForm edit-account' action='' method='post' {$actionEditAccountFormTag}>
+<form id='{$idFormEditAccount}' class='woocommerce-EditAccountForm edit-account row' action='' method='post' {$actionEditAccountFormTag}>
 {$actionEditAccountFormStart}
-<div class='col-xs-12 col-md-6'>
-    <div class='card'>
-        <div class='card-content'>
-            <h4 class='text-xs-center'><i class='fas fa-user-edit'></i> {$textEditAccount}</h4>
-            <fieldset>
-                <label for='account_first_name' class='required'><i class='fas fa-user'></i> {$textFirstName}</label>
-                <input id='account_first_name' name='account_first_name' type='text' autocomplete='given-name' value='{$valueFirstName}'>
-            </fieldset>
-            <fieldset>
-                <label for='account_last_name' class='required'><i class='fas fa-user'></i> {$textLastName}</label>
-                <input id='account_last_name' name='account_last_name' type='text' autocomplete='family-name' value='{$valueLastName}'>
-            </fieldset>
-            <fieldset>
-                <label for='account_display_name' class='required'><i class='fas fa-eye'></i> {$textDisplayName}</label>
-                <input id='account_display_name' name='account_display_name' type='text' value='{$valueDisplayName}'>
-                <small>{$textDisplayNameInfo}</small>
-            </fieldset>
-            <fieldset>
-                <label for='account_email' class='required'><i class='fas fa-envelope'></i> {$textEmailAddress}</label>
-                <input id='account_email' name='account_email' type='email' autocomplete='email' value='{$valueEmailAddress}'>
-            </fieldset>
-        </div>
-    </div>
-</div>
-<div class='col-xs-12 col-md-6'>
-    <div class='card'>
-        <div class='card-content'>
-            <h4 class='text-xs-center'><i class='fas fa-user-lock'></i> {$textPasswordChange}</h4>
-            <fieldset>
-                <label for='password_current'>{$textPasswordCurrent}</label>
-                <input id='password_current' name='password_current' type='password' autocomplete='off'>
-            </fieldset>
-            <fieldset>
-                <label for='password_1'>{$textPasswordNew}</label>
-                <input id='password_1' name='password_1' type='password' autocomplete='off'>
-            </fieldset>
-            <fieldset>
-                <label for='password_2'>{$textPasswordConfirm}</label>
-                <input id='password_2' name='password_2' type='password' autocomplete='off'>
-            </fieldset>
-        </div>
-    </div>
-</div>{$actionEditAccountForm}
-<p class='text-xs-center'>
-    <button name='save_account_details' type='submit' class='button'>{$textSaveChanges}</button>
-    <input value='save_account_details' type='hidden' name='action'>
-    {$nonceSaveAccountDetails}
-</p>{$actionEditAccountFormEnd}</form>{$actionAfterEditAccountForm}";
+<div class='col-sm-12 col-md-6'>
+<fieldset>
+    <legend><i class='fas fa-user-edit'></i> {$textEditAccount}</legend>
+    <p>
+        <label for='{$idFieldFirstName}' class='required'><i class='fas fa-user'></i> {$textFirstName}</label>
+        <input type='text' id='{$idFieldFirstName}' name='{$idFieldFirstName}' autocomplete='given-name' data-bind='textInput:firstName'>
+    </p>
+    <p>
+        <label for='{$idFieldLastName}' class='required'><i class='fas fa-user'></i> {$textLastName}</label>
+        <input type='text' id='{$idFieldLastName}' name='{$idFieldLastName}' autocomplete='family-name' data-bind='textInput:lastName'>
+    </p>
+    <p class='d-xs-none'>
+        <label for='{$idFieldDisplayName}' class='required'><i class='fas fa-eye'></i> {$textDisplayName}</label>
+        <input type='text' id='{$idFieldDisplayName}' name='{$idFieldDisplayName}'   data-bind='textInput:displayName'>
+        <small>{$textDisplayNameInfo}</small>
+    </p>
+    <p>
+        <label for='{$idFieldEmail}' class='required'><i class='fas fa-envelope'></i> {$textEmailAddress}</label>
+        <input type='email' id='{$idFieldEmail}' name='{$idFieldEmail}'  autocomplete='email'  data-bind='textInput:email'>
+    </p>
+    <p class='text-xs-center'>
+        <button type='submit' name='{$idFieldSave}' class='button' data-bind='enable:isFormCompleted'>
+            <i class='fas fa-user-check'></i> {$textSaveChanges}
+        </button>
+    </p>
+</fieldset>
+</div><div class='col-sm-12 col-md-6'>
+<fieldset>
+    <legend><i class='fas fa-user-lock'></i> {$textPasswordChange}</legend>
+    <p>
+        <label for='{$idFieldPassCurrent}' class='text-truncate'>
+            <i class='fas fa-user-lock'></i> {$textPasswordCurrent}
+        </label>
+        <input type='password' id='{$idFieldPassCurrent}' name='{$idFieldPassCurrent}' autocomplete='off'>
+    </p>
+    <p>
+        <label for='{$idFieldPassNew}' class='text-truncate'>
+            <i class='fas fa-key'></i> {$textPasswordNew}
+        </label>
+        <input type='password' id='{$idFieldPassNew}' name='{$idFieldPassNew}' autocomplete='off'>
+    </p>
+    <p>
+        <label for='{$idFieldPassConfirm}'><i class='fas fa-key'></i> {$textPasswordConfirm}</label>
+        <input type='password' id='{$idFieldPassConfirm}' name='{$idFieldPassConfirm}' autocomplete='off'>
+    </p>
+    <p class='text-xs-center'>
+        <button type='submit' name='{$idFieldSave}' class='button' data-bind='enable:isFormCompleted'>
+            <i class='fas fa-user-check'></i> {$textSaveChanges}
+        </button>
+    </p>
+</fieldset></div>{$actionEditAccountForm}
+{$nonceSaveAccountDetails}
+<input type='hidden' name='action' value='{$idFieldSave}'>
+{$actionEditAccountFormEnd}</form>
+{$actionAfterEditAccountForm}";
+wp_add_inline_script('knockout', /**@lang JavaScript */"function ViewModelAccountEdit(){
+    var self = this;
+    self.firstName = ko.observable('{$valueFirstName}');
+    self.lastName = ko.observable('{$valueLastName}');
+    self.email = ko.observable('{$valueEmailAddress}');
+    self.displayName = ko.pureComputed(function(){
+        return self.firstName() + ' ' + self.lastName();
+    });
+    self.isFormCompleted = ko.pureComputed(function(){
+       //https://www.w3resource.com/javascript/form/javascript-sample-registration-form-validation.php
+       var patternName = /^[A-Za-z]+$/;
+       var isValidFirstName = patternName.test(self.firstName());  
+       var isValidLastName = patternName.test(self.lastName());  
+       var patternEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+       var isValidEmail = patternEmail.test(self.email());  
+       return (isValidFirstName && isValidLastName && isValidEmail);
+    });
+}
+ko.applyBindings(new ViewModelAccountEdit(), document.getElementById('{$idFormEditAccount}'));");

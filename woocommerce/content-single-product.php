@@ -57,30 +57,25 @@ if (post_password_required()) {
     //[RATING]
     $htmlRating = '';
     $htmlReviews = '';
-    if (post_type_supports('product', 'comments') &&
-        'no' !== get_option('woocommerce_enable_review_rating')) {
+    if (post_type_supports('product', 'comments') && 'no' !== get_option('woocommerce_enable_review_rating')) {
         $rating_count = $product->get_rating_count();
         $review_count = $product->get_review_count();
         $average = $product->get_average_rating();
         if ($rating_count > 0) {
             $textRating = __('Rating', 'woocommerce');
             $htmlAverageRating = wc_get_rating_html($average, $rating_count);
-            $htmlRating = "<fieldset class='row'>
-                <div class='{$styleColumnLeft}'>{$textRating}:</div>
-                <div class='{$styleColumnRight}'>{$htmlAverageRating}</div>
-            </fieldset>";
+            $htmlRating = "<p class='row'><div class='{$styleColumnLeft}'>{$textRating}:</div>
+            <div class='{$styleColumnRight}'>{$htmlAverageRating}</div></p>";
             if (comments_open()) {
                 $textReviews = __('Reviews', 'woocommerce');
                 $textCustomerReview = _n('%s customer review', '%s customer reviews',
                     $review_count, 'woocommerce');
                 $htmlReviewCount = "<span class='count'>{$review_count}</span>";
                 $customerReviews = sprintf($textCustomerReview, $htmlReviewCount);
-                $htmlReviews = "<fieldset class='row'>
-                    <div class='{$styleColumnLeft}'>{$textReviews}:</div>
-                    <div class='{$styleColumnRight}'>
-                        <a href='#reviews' class='woocommerce-review-link' rel='nofollow'>{$customerReviews}</a>
-                    </div>
-                </fieldset>";
+                $htmlReviews = "<p class='row'><div class='{$styleColumnLeft}'>{$textReviews}:</div>
+                <div class='{$styleColumnRight}'>
+                    <a href='#reviews' class='woocommerce-review-link' rel='nofollow'>{$customerReviews}</a>
+                </div></p>";
             }
         }
     }
@@ -96,10 +91,8 @@ if (post_password_required()) {
             $sku = __('N/A', 'woocommerce');
         }
         $textSKU = __('SKU:', 'woocommerce');
-        $htmlSKU = "<fieldset class='row'>
-            <div class='{$styleColumnLeft}'>{$textSKU}</div>
-            <div class='{$styleColumnRight}'>{$sku}</div>
-        </fieldset>";
+        $htmlSKU = "<p class='row'>
+        <div class='{$styleColumnLeft}'>{$textSKU}</div><div class='{$styleColumnRight}'>{$sku}</div></p>";
     }
     //[PRODUCT META: CATEGORY]
     $countProductCategories = count($product->get_category_ids());
@@ -134,258 +127,252 @@ if (post_password_required()) {
     $productType = $product->get_type();
     switch ($productType) {
         case 'external':
-            {
-                $htmlBeforeAddToCartForm = UtilsWp::doAction('woocommerce_before_add_to_cart_form');
-                $htmlAfterAddToCartForm = UtilsWp::doAction('woocommerce_after_add_to_cart_form');
-                $htmlBeforeAddToCartButton = UtilsWp::doAction('woocommerce_before_add_to_cart_button');
-                $htmlAfterAddToCartButton = UtilsWp::doAction('woocommerce_after_add_to_cart_button');
-                $urlToProduct = $product->add_to_cart_url();
-                $htmlFormFields = wc_query_string_form_fields($urlToProduct, [], '', true);
-                $urlToProduct = esc_url($urlToProduct);
-                $textAddToCart = esc_html($product->single_add_to_cart_text());
-                $htmlProductAddToCart = "{$htmlBeforeAddToCartForm}<form class='cart' method='get' action='{$urlToProduct}'>
-                    {$htmlBeforeAddToCartButton}
-                    <button type='submit' class='single_add_to_cart_button button alt'>
-                        <i class='fas fa-cart-plus'></i> <span>{$textAddToCart}</span>
-                    </button>
-                    {$htmlFormFields}
-                    {$htmlAfterAddToCartButton}
-                </form>{$htmlAfterAddToCartForm}";
-                break;
-            }
+        {
+            $htmlBeforeAddToCartForm = UtilsWp::doAction('woocommerce_before_add_to_cart_form');
+            $htmlAfterAddToCartForm = UtilsWp::doAction('woocommerce_after_add_to_cart_form');
+            $htmlBeforeAddToCartButton = UtilsWp::doAction('woocommerce_before_add_to_cart_button');
+            $htmlAfterAddToCartButton = UtilsWp::doAction('woocommerce_after_add_to_cart_button');
+            $urlToProduct = $product->add_to_cart_url();
+            $htmlFormFields = wc_query_string_form_fields($urlToProduct, [], '', true);
+            $urlToProduct = esc_url($urlToProduct);
+            $textAddToCart = esc_html($product->single_add_to_cart_text());
+            $htmlProductAddToCart = "{$htmlBeforeAddToCartForm}<form action='{$urlToProduct}' method='get' class='cart'>
+            {$htmlBeforeAddToCartButton}
+            <button type='submit' class='single_add_to_cart_button button alt'>
+                <i class='fas fa-cart-plus'></i> <span>{$textAddToCart}</span>
+            </button>
+            {$htmlFormFields}{$htmlAfterAddToCartButton}</form>{$htmlAfterAddToCartForm}";
+            break;
+        }
         case 'grouped':
-            {
-                $groupedProducts = array_map('wc_get_product', $product->get_children());
-                $groupedProducts = array_filter($groupedProducts, 'wc_products_array_filter_visible_grouped');
-                if ($groupedProducts) {
-                    $contentAddToCartButton = '';
-                    $requiredQts = false;
-                    $groupedProductCols = apply_filters('woocommerce_grouped_product_columns', ['quantity', 'label', 'price'], $product);
-                    $contentGroupedProducts = '';
-                    $postPrev = $post;
-                    foreach ($groupedProducts as $groupedProduct) {
-                        /**@var $groupedProduct WC_Product */
-                        $groupedProductId = $groupedProduct->get_id();
-                        $groupedProductIdEsc = esc_attr($groupedProductId);
-                        $post = get_post($groupedProductId);
-                        setup_postdata($post);
-                        $contentGroupedProduct = '';
-                        foreach ($groupedProductCols as $groupedProductColumn) {
-                            switch ($groupedProductColumn) {
-                                case 'quantity':
-                                    if (!$groupedProduct->is_purchasable() || $groupedProduct->has_options() ||
-                                        !$groupedProduct->is_in_stock()) {
-                                        ob_start();
-                                        woocommerce_template_loop_add_to_cart();
-                                        $contentGroupedProduct .= ob_get_clean();
-                                    } elseif ($groupedProduct->is_sold_individually()) {
-                                        $groupedProductName = esc_attr("quantity[{$groupedProductId}]");
-                                        $contentGroupedProduct .= "<input name='{$groupedProductName}' value='1' type='checkbox'  
-                                        class='wc-grouped-product-add-to-cart-checkbox'>";
-                                    } else {
-                                        $actionAddToCartQuantityBefore = UtilsWp::doAction('woocommerce_before_add_to_cart_quantity');
-                                        $actionAddToCartQuantityAfter = UtilsWp::doAction('woocommerce_after_add_to_cart_quantity');
-                                        $groupedProductName = "quantity[{$groupedProductId}]";
-                                        $inputMin = apply_filters('woocommerce_quantity_input_min', 0, $groupedProduct);
-                                        $inputMax = $groupedProduct->get_max_purchase_quantity();
-                                        $inputMax = apply_filters('woocommerce_quantity_input_max', $inputMax, $groupedProduct);
-                                        $inputValue = 0;
-                                        if (isset($_POST['quantity'][$groupedProductId])) {
-                                            $inputValue = $_POST['quantity'][$groupedProductId];
-                                            $inputValue = wp_unslash($inputValue);
-                                            $inputValue = wc_clean($inputValue);
-                                            $inputValue = wc_stock_amount($inputValue);
-                                        }
-                                        $inputHtml = woocommerce_quantity_input([
-                                            'input_name' => $groupedProductName,
-                                            'min_value' => $inputMin,
-                                            'max_value' => $inputMax,
-                                            'input_value' => $inputValue,
-                                        ], null, false);
-                                        $contentGroupedProduct .= "{$actionAddToCartQuantityBefore}{$inputHtml}{$actionAddToCartQuantityAfter}";
-                                    }
-                                    break;
-                                case 'label':
-                                    $labelTitle = $groupedProduct->get_name();
-                                    if ($groupedProduct->is_visible()) {
-                                        $groupedProductPermalink = $groupedProduct->get_permalink();
-                                        $groupedProductPermalink = apply_filters('woocommerce_grouped_product_list_link',
-                                            $groupedProductPermalink, $groupedProduct->get_id());
-                                        $groupedProductPermalink = esc_url($groupedProductPermalink);
-                                        $groupedProductName = $groupedProduct->get_name();
-                                        $labelTitle = "<a href='{$groupedProductPermalink}'>{$groupedProductName}</a>";
-                                    }
-                                    $contentGroupedProduct .= "<label for='product-{$groupedProductId}'>{$labelTitle}</label>";
-                                    break;
-                                case 'price':
-                                    $contentGroupedProduct = $groupedProduct->get_price_html() . wc_get_stock_html($groupedProduct);
-                                    break;
-                                default:
-                                    $contentGroupedProduct = '';
-                                    break;
-                            }
-                            $actionName = 'woocommerce_grouped_product_list_before_' . $groupedProductColumn;
-                            $actionGroupedProductListBefore = UtilsWp::doAction($actionName, $groupedProduct);
-                            $actionName = 'woocommerce_grouped_product_list_after_' . $groupedProductColumn;
-                            $actionGroupedProductListAfter = UtilsWp::doAction($actionName, $groupedProduct);
-                            $actionName = 'woocommerce_grouped_product_list_column_' . $groupedProductColumn;
-                            $actionGroupedProductListColumn = apply_filters($actionName, $contentGroupedProduct, $groupedProduct);
-                            $groupedProductColumnEsc = esc_attr($groupedProductColumn);
-                            $contentGroupedProduct = "{$actionGroupedProductListBefore}
-                    <td class='woocommerce-grouped-product-list-item__{$groupedProductColumnEsc}'>{$actionGroupedProductListColumn}</td>
-                    {$actionGroupedProductListAfter}";
-                        }
-                        $groupedProductCss = wc_get_product_class('', $groupedProductId);
-                        $groupedProductCss = esc_attr(implode(' ', $groupedProductCss));
-                        $contentGroupedProducts .= "<tr class='woocommerce-grouped-product-list-item {$groupedProductCss}'
-                id='product-{$groupedProductIdEsc}'>{$contentGroupedProduct}</tr>";
-                        $requiredQts = ($groupedProduct->is_purchasable() && !$groupedProduct->has_options());
-                    }
-                    $post = $postPrev;
+        {
+            $groupedProducts = array_map('wc_get_product', $product->get_children());
+            $groupedProducts = array_filter($groupedProducts, 'wc_products_array_filter_visible_grouped');
+            if ($groupedProducts) {
+                $contentAddToCartButton = '';
+                $requiredQts = false;
+                $groupedProductCols = apply_filters('woocommerce_grouped_product_columns', ['quantity', 'label', 'price'], $product);
+                $contentGroupedProducts = '';
+                $postPrev = $post;
+                foreach ($groupedProducts as $groupedProduct) {
+                    /**@var $groupedProduct WC_Product */
+                    $groupedProductId = $groupedProduct->get_id();
+                    $groupedProductIdEsc = esc_attr($groupedProductId);
+                    $post = get_post($groupedProductId);
                     setup_postdata($post);
-                    if ($requiredQts) {
-                        $actionAddToCartButtonBefore = UtilsWp::doAction('woocommerce_before_add_to_cart_button');
-                        $actionAddToCartButtonAfter = UtilsWp::doAction('woocommerce_after_add_to_cart_button');
-                        $textSingleAddToCart = esc_html($product->single_add_to_cart_text());
-                        $contentAddToCartButton = "{$actionAddToCartButtonBefore}
+                    $contentGroupedProduct = '';
+                    foreach ($groupedProductCols as $groupedProductColumn) {
+                        switch ($groupedProductColumn) {
+                            case 'quantity':
+                                if (!$groupedProduct->is_purchasable() || $groupedProduct->has_options() ||
+                                    !$groupedProduct->is_in_stock()) {
+                                    ob_start();
+                                    woocommerce_template_loop_add_to_cart();
+                                    $contentGroupedProduct .= ob_get_clean();
+                                } elseif ($groupedProduct->is_sold_individually()) {
+                                    $groupedProductName = esc_attr("quantity[{$groupedProductId}]");
+                                    $contentGroupedProduct .= "<input name='{$groupedProductName}' value='1' type='checkbox'  
+                                        class='wc-grouped-product-add-to-cart-checkbox'>";
+                                } else {
+                                    $actionAddToCartQuantityBefore = UtilsWp::doAction('woocommerce_before_add_to_cart_quantity');
+                                    $actionAddToCartQuantityAfter = UtilsWp::doAction('woocommerce_after_add_to_cart_quantity');
+                                    $groupedProductName = "quantity[{$groupedProductId}]";
+                                    $inputMin = apply_filters('woocommerce_quantity_input_min', 0, $groupedProduct);
+                                    $inputMax = $groupedProduct->get_max_purchase_quantity();
+                                    $inputMax = apply_filters('woocommerce_quantity_input_max', $inputMax, $groupedProduct);
+                                    $inputValue = 0;
+                                    if (isset($_POST['quantity'][$groupedProductId])) {
+                                        $inputValue = $_POST['quantity'][$groupedProductId];
+                                        $inputValue = wp_unslash($inputValue);
+                                        $inputValue = wc_clean($inputValue);
+                                        $inputValue = wc_stock_amount($inputValue);
+                                    }
+                                    $inputHtml = woocommerce_quantity_input([
+                                        'input_name' => $groupedProductName,
+                                        'min_value' => $inputMin,
+                                        'max_value' => $inputMax,
+                                        'input_value' => $inputValue,
+                                    ], null, false);
+                                    $contentGroupedProduct .= "{$actionAddToCartQuantityBefore}{$inputHtml}{$actionAddToCartQuantityAfter}";
+                                }
+                                break;
+                            case 'label':
+                                $labelTitle = $groupedProduct->get_name();
+                                if ($groupedProduct->is_visible()) {
+                                    $groupedProductPermalink = $groupedProduct->get_permalink();
+                                    $groupedProductPermalink = apply_filters('woocommerce_grouped_product_list_link',
+                                        $groupedProductPermalink, $groupedProduct->get_id());
+                                    $groupedProductPermalink = esc_url($groupedProductPermalink);
+                                    $groupedProductName = $groupedProduct->get_name();
+                                    $labelTitle = "<a href='{$groupedProductPermalink}'>{$groupedProductName}</a>";
+                                }
+                                $contentGroupedProduct .= "<label for='product-{$groupedProductId}'>{$labelTitle}</label>";
+                                break;
+                            case 'price':
+                                $contentGroupedProduct = $groupedProduct->get_price_html() . wc_get_stock_html($groupedProduct);
+                                break;
+                            default:
+                                $contentGroupedProduct = '';
+                                break;
+                        }
+                        $actionName = 'woocommerce_grouped_product_list_before_' . $groupedProductColumn;
+                        $actionGroupedProductListBefore = UtilsWp::doAction($actionName, $groupedProduct);
+                        $actionName = 'woocommerce_grouped_product_list_after_' . $groupedProductColumn;
+                        $actionGroupedProductListAfter = UtilsWp::doAction($actionName, $groupedProduct);
+                        $actionName = 'woocommerce_grouped_product_list_column_' . $groupedProductColumn;
+                        $actionGroupedProductListColumn = apply_filters($actionName, $contentGroupedProduct, $groupedProduct);
+                        $groupedProductColumnEsc = esc_attr($groupedProductColumn);
+                        $contentGroupedProduct = "{$actionGroupedProductListBefore}
+                            <td class='woocommerce-grouped-product-list-item__{$groupedProductColumnEsc}'>
+                            {$actionGroupedProductListColumn}</td>{$actionGroupedProductListAfter}";
+                    }
+                    $groupedProductCss = wc_get_product_class('', $groupedProductId);
+                    $groupedProductCss = esc_attr(implode(' ', $groupedProductCss));
+                    $contentGroupedProducts .= "<tr class='woocommerce-grouped-product-list-item {$groupedProductCss}' id='product-{$groupedProductIdEsc}'>{$contentGroupedProduct}</tr>";
+                    $requiredQts = ($groupedProduct->is_purchasable() && !$groupedProduct->has_options());
+                }
+                $post = $postPrev;
+                setup_postdata($post);
+                if ($requiredQts) {
+                    $actionAddToCartButtonBefore = UtilsWp::doAction('woocommerce_before_add_to_cart_button');
+                    $actionAddToCartButtonAfter = UtilsWp::doAction('woocommerce_after_add_to_cart_button');
+                    $textSingleAddToCart = esc_html($product->single_add_to_cart_text());
+                    $contentAddToCartButton = "{$actionAddToCartButtonBefore}
                         <button type='submit' class='single_add_to_cart_button button alt'>
                         {$textSingleAddToCart}
                         </button>{$actionAddToCartButtonAfter}";
-                    }
-                    $actionAddToCartFormBefore = UtilsWp::doAction('woocommerce_before_add_to_cart_form');
-                    $actionAddToCartFormAfter = UtilsWp::doAction('woocommerce_after_add_to_cart_form');
-                    $productIdEsc = esc_attr($product->get_id());
-                    $urlAddToCartFormAction = esc_url(apply_filters('woocommerce_add_to_cart_form_action', $product->get_permalink()));
-                    $htmlProductAddToCart = "{$actionAddToCartFormBefore}
-                <form class='cart grouped_form' action='{$urlAddToCartFormAction}' method='post' enctype='multipart/form-data'>
-                <table cellspacing='0' class='woocommerce-grouped-product-list group_table'>
-                <tbody>{$contentGroupedProducts}</tbody></table>
-                <input type='hidden' name='add-to-cart' value='{$productIdEsc}'>
-                {$contentAddToCartButton}</form>{$actionAddToCartFormAfter}";
                 }
-                break;
-            }
-        case 'simple':
-            {
-                if ($product->is_purchasable()) {
-                    $htmlStockQuantity = wc_get_stock_html($product);
-                    if ($product->is_in_stock()) {
-                        $addToCartFormBefore = UtilsWp::doAction('woocommerce_before_add_to_cart_form');
-                        $addToCartFormAfter = UtilsWp::doAction('woocommerce_after_add_to_cart_form');
-                        $addToCartButtonBefore = UtilsWp::doAction('woocommerce_before_add_to_cart_button');
-                        $addToCartButtonAfter = UtilsWp::doAction('woocommerce_after_add_to_cart_button');
-                        $addToCartQuantityButtonBefore = UtilsWp::doAction('woocommerce_before_add_to_cart_quantity');
-                        $addToCartQuantityButtonAfter = UtilsWp::doAction('woocommerce_after_add_to_cart_quantity');
-                        $textQuantity = __('Quantity', 'woocommerce');
-                        $purchaseQuantityValue = $product->get_min_purchase_quantity();
-                        if (isset($_POST['quantity'])) {
-                            $purchaseQuantityValue = wc_stock_amount(wp_unslash($_POST['quantity']));
-                        }
-                        $purchaseQuantityMin = apply_filters('woocommerce_quantity_input_min', $product->get_min_purchase_quantity(),
-                            $product);
-                        $purchaseQuantityMax = apply_filters('woocommerce_quantity_input_max', $product->get_max_purchase_quantity(),
-                            $product);
-                        $htmlQuantityInput = woocommerce_quantity_input([
-                            'min_value' => $purchaseQuantityMin,
-                            'max_value' => $purchaseQuantityMax,
-                            'input_value' => $purchaseQuantityValue
-                        ], $product, false);
-                        $productId = esc_attr($product->get_id());
-                        $textAddToCart = esc_html($product->single_add_to_cart_text());
-                        $urlAddToCartForm = esc_url(apply_filters('woocommerce_add_to_cart_form_action', $product->get_permalink()));
-                        $htmlProductAddToCart = "{$addToCartFormBefore}
-                    <form method='post' enctype='multipart/form-data' class='cart' action='{$urlAddToCartForm}'>
-                    {$addToCartButtonBefore}
-                    {$addToCartQuantityButtonBefore}
-                    <fieldset class='row'>
-                        <div class='{$styleColumnLeft}'>{$textQuantity}:</div>
-                        <div class='{$styleColumnRight}'>
-                            {$htmlQuantityInput}
-                            {$addToCartQuantityButtonAfter}
-                            <button name='add-to-cart' value='{$productId}' type='submit' class='single_add_to_cart_button button alt'>
-                                <i class='fas fa-cart-plus'></i> <span>{$textAddToCart}</span>
-                            </button>
-                            {$addToCartButtonAfter}
-                        </div>
-                    </fieldset></form>{$addToCartFormAfter}";
-                    }
-                }
-                break;
-            }
-        case 'variable':
-            {
-                wp_enqueue_script('wc-add-to-cart-variation');
-                $allVariations = count($product->get_children()) <= apply_filters('woocommerce_ajax_variation_threshold', 30, $product);
-                $selected_attributes = $product->get_default_attributes();
-                $attributes = $product->get_variation_attributes();
-                $attribute_keys = array_keys($attributes);
-                $htmlVariations = '';
-                $available_variations = false;
-                if ($allVariations) {
-                    $available_variations = $product->get_available_variations();
-                }
-                if ($available_variations) {
-                    foreach ($attributes as $attrName => $attrValue) {
-                        $labelAttributeVariationDropDown = wc_attribute_label($attrName);
-                        $idAttributeVariationDropDown = esc_attr(sanitize_title($attrName));
-                        ob_start();
-                        wc_dropdown_variation_attribute_options(['options' => $attrValue, 'attribute' => $attrName, 'product' => $product]);
-                        $htmlAttributeVariationDropDown = ob_get_clean();
-                        //TODO Move outside foreach because is added only after last item
-                        $htmlResetVariationLink = '';
-                        if (end($attribute_keys) === $attrName) {
-                            $textClear = __('Clear', 'woocommerce');
-                            $htmlResetVariationLink = "<fieldset class='reset_variations'><div class='col-xs-3 title'></div><div class='col-xs-9'>
-                            <a class='button' href='#'>{$textClear}</a></div></fieldset>";
-                            $htmlResetVariationLink = apply_filters('woocommerce_reset_variations_link', $htmlResetVariationLink);
-                            $htmlResetVariationLink = wp_kses_post($htmlResetVariationLink);
-                        }
-                        $htmlVariations .= "<fieldset class='row'><div class='col-xs-3 title'>
-                        <label for='{$idAttributeVariationDropDown}'>{$labelAttributeVariationDropDown}:</label></div>
-                        <div class='col-xs-9'>{$htmlAttributeVariationDropDown}</div></fieldset>{$htmlResetVariationLink}";
-                    }
-                } else {
-                    $textOutOfStockOrUnavailable = __('This product is currently out of stock and unavailable.', 'woocommerce');
-                    $htmlVariations .= "<p class='stock out-of-stock'>{$textOutOfStockOrUnavailable}</p>";
-                }
-                $productIdAbs = absint($product->get_id());
-                $urlAddToCartFormAction = esc_url(apply_filters('woocommerce_add_to_cart_form_action', $product->get_permalink()));
-                $jsonAvailableVariation = htmlspecialchars(wp_json_encode($available_variations));
                 $actionAddToCartFormBefore = UtilsWp::doAction('woocommerce_before_add_to_cart_form');
                 $actionAddToCartFormAfter = UtilsWp::doAction('woocommerce_after_add_to_cart_form');
-                $actionVariationsFormBefore = UtilsWp::doAction('woocommerce_before_variations_form');
-                $actionVariationsFormAfter = UtilsWp::doAction('woocommerce_after_variations_form');
-                $actionSingleVariationBefore = UtilsWp::doAction('woocommerce_before_single_variation');
-                $actionSingleVariationAfter = UtilsWp::doAction('woocommerce_after_single_variation');
-                /**
-                 * Hook: Used to output the cart button and placeholder for variation data.
-                 * @hooked woocommerce_single_variation - 10 Empty div for variation data.
-                 * @hooked woocommerce_single_variation_add_to_cart_button - 20 Qty and cart button.
-                 */
-                //$actionSingleVariation = UtilsWp::doAction('woocommerce_single_variation');
-                $purchaseQtyValue = $product->get_min_purchase_quantity();
-                if (isset($_POST['quantity'])) {
-                    $purchaseQtyValue = wc_stock_amount(wp_unslash($_POST['quantity']));
-                }
-                $purchaseQtyValue = $product->get_min_purchase_quantity();
-                if (isset($_POST['quantity'])) {
-                    $purchaseQtyValue = wc_stock_amount(wp_unslash($_POST['quantity']));
-                }
-                $purchaseQtyMin = apply_filters('woocommerce_quantity_input_min', $product->get_min_purchase_quantity(), $product);
-                $purchaseQtyMax = apply_filters('woocommerce_quantity_input_max', $product->get_max_purchase_quantity(), $product);
-                $addToCartButtonBefore = UtilsWp::doAction('woocommerce_before_add_to_cart_button');
-                $addToCartButtonAfter = UtilsWp::doAction('woocommerce_after_add_to_cart_button');
-                $addToCartQuantityButtonBefore = UtilsWp::doAction('woocommerce_before_add_to_cart_quantity');
-                $addToCartQuantityButtonAfter = UtilsWp::doAction('woocommerce_after_add_to_cart_quantity');
-                $textQuantity = __('Quantity', 'woocommerce');
-                $productIdAbs = absint($product->get_id());
-                $textAddToCart = esc_html($product->single_add_to_cart_text());
-                $htmlQtyInput = woocommerce_quantity_input([
-                    'min_value' => $purchaseQtyMin,
-                    'max_value' => $purchaseQtyMax,
-                    'input_value' => $purchaseQtyValue
-                ], $product, false);
+                $productIdEsc = esc_attr($product->get_id());
+                $urlAddToCartFormAction = esc_url(apply_filters('woocommerce_add_to_cart_form_action', $product->get_permalink()));
                 $htmlProductAddToCart = "{$actionAddToCartFormBefore}
+                    <form action='{$urlAddToCartFormAction}' method='post' enctype='multipart/form-data' class='cart grouped_form'>
+                    <table cellspacing='0' class='woocommerce-grouped-product-list group_table'>
+                        <tbody>{$contentGroupedProducts}</tbody>
+                    </table>
+                    <input type='hidden' name='add-to-cart' value='{$productIdEsc}'>
+                    {$contentAddToCartButton}</form>{$actionAddToCartFormAfter}";
+            }
+            break;
+        }
+        case 'simple':
+        {
+            if ($product->is_purchasable()) {
+                $htmlStockQuantity = wc_get_stock_html($product);
+                if ($product->is_in_stock()) {
+                    $addToCartFormBefore = UtilsWp::doAction('woocommerce_before_add_to_cart_form');
+                    $addToCartFormAfter = UtilsWp::doAction('woocommerce_after_add_to_cart_form');
+                    $addToCartButtonBefore = UtilsWp::doAction('woocommerce_before_add_to_cart_button');
+                    $addToCartButtonAfter = UtilsWp::doAction('woocommerce_after_add_to_cart_button');
+                    $addToCartQuantityButtonBefore = UtilsWp::doAction('woocommerce_before_add_to_cart_quantity');
+                    $addToCartQuantityButtonAfter = UtilsWp::doAction('woocommerce_after_add_to_cart_quantity');
+                    $textQuantity = __('Quantity', 'woocommerce');
+                    $purchaseQuantityValue = $product->get_min_purchase_quantity();
+                    if (isset($_POST['quantity'])) {
+                        $purchaseQuantityValue = wc_stock_amount(wp_unslash($_POST['quantity']));
+                    }
+                    $purchaseQuantityMin = apply_filters('woocommerce_quantity_input_min', $product->get_min_purchase_quantity(), $product);
+                    $purchaseQuantityMax = apply_filters('woocommerce_quantity_input_max', $product->get_max_purchase_quantity(), $product);
+                    $htmlQuantityInput = woocommerce_quantity_input([
+                        'min_value' => $purchaseQuantityMin,
+                        'max_value' => $purchaseQuantityMax,
+                        'input_value' => $purchaseQuantityValue
+                    ], $product, false);
+                    $productId = esc_attr($product->get_id());
+                    $textAddToCart = esc_html($product->single_add_to_cart_text());
+                    $urlAddToCartForm = esc_url(apply_filters('woocommerce_add_to_cart_form_action', $product->get_permalink()));
+                    $htmlProductAddToCart = "{$addToCartFormBefore}
+                    <form action='{$urlAddToCartForm}' method='post' enctype='multipart/form-data' class='cart'>
+                    {$addToCartButtonBefore}
+                    {$addToCartQuantityButtonBefore}
+                    <div class='{$styleColumnLeft}'>{$textQuantity}:</div>
+                    <div class='{$styleColumnRight}'>
+                        {$htmlQuantityInput}
+                        {$addToCartQuantityButtonAfter}
+                        <button name='add-to-cart' value='{$productId}' type='submit' class='single_add_to_cart_button button alt'>
+                            <i class='fas fa-cart-plus'></i> <span>{$textAddToCart}</span>
+                        </button>
+                        {$addToCartButtonAfter}
+                    </div></form>{$addToCartFormAfter}";
+                }
+            }
+            break;
+        }
+        case 'variable':
+        {
+            wp_enqueue_script('wc-add-to-cart-variation');
+            $allVariations = count($product->get_children()) <= apply_filters('woocommerce_ajax_variation_threshold', 30, $product);
+            $selected_attributes = $product->get_default_attributes();
+            $attributes = $product->get_variation_attributes();
+            $attribute_keys = array_keys($attributes);
+            $htmlVariations = '';
+            $available_variations = false;
+            if ($allVariations) {
+                $available_variations = $product->get_available_variations();
+            }
+            if ($available_variations) {
+                foreach ($attributes as $attrName => $attrValue) {
+                    $labelAttributeVariationDropDown = wc_attribute_label($attrName);
+                    $idAttributeVariationDropDown = esc_attr(sanitize_title($attrName));
+                    ob_start();
+                    wc_dropdown_variation_attribute_options(['options' => $attrValue, 'attribute' => $attrName, 'product' => $product]);
+                    $htmlAttributeVariationDropDown = ob_get_clean();
+                    //TODO Move outside foreach because is added only after last item
+                    $htmlResetVariationLink = '';
+                    if (end($attribute_keys) === $attrName) {
+                        $textClear = __('Clear', 'woocommerce');
+                        $htmlResetVariationLink = "<p class='reset_variations'><div class='col-xs-3 title'></div><div class='col-xs-9'>
+                            <a class='button' href='#'>{$textClear}</a></div></p>";
+                        $htmlResetVariationLink = apply_filters('woocommerce_reset_variations_link', $htmlResetVariationLink);
+                        $htmlResetVariationLink = wp_kses_post($htmlResetVariationLink);
+                    }
+                    $htmlVariations .= "<p class='row'><div class='col-xs-3 title'>
+                        <label for='{$idAttributeVariationDropDown}'>{$labelAttributeVariationDropDown}:</label></div>
+                        <div class='col-xs-9'>{$htmlAttributeVariationDropDown}</div></p>{$htmlResetVariationLink}";
+                }
+            } else {
+                $textOutOfStockOrUnavailable = __('This product is currently out of stock and unavailable.', 'woocommerce');
+                $htmlVariations .= "<p class='stock out-of-stock'>{$textOutOfStockOrUnavailable}</p>";
+            }
+            $productIdAbs = absint($product->get_id());
+            $urlAddToCartFormAction = esc_url(apply_filters('woocommerce_add_to_cart_form_action', $product->get_permalink()));
+            $jsonAvailableVariation = htmlspecialchars(wp_json_encode($available_variations));
+            $actionAddToCartFormBefore = UtilsWp::doAction('woocommerce_before_add_to_cart_form');
+            $actionAddToCartFormAfter = UtilsWp::doAction('woocommerce_after_add_to_cart_form');
+            $actionVariationsFormBefore = UtilsWp::doAction('woocommerce_before_variations_form');
+            $actionVariationsFormAfter = UtilsWp::doAction('woocommerce_after_variations_form');
+            $actionSingleVariationBefore = UtilsWp::doAction('woocommerce_before_single_variation');
+            $actionSingleVariationAfter = UtilsWp::doAction('woocommerce_after_single_variation');
+            /**
+             * Hook: Used to output the cart button and placeholder for variation data.
+             * @hooked woocommerce_single_variation - 10 Empty div for variation data.
+             * @hooked woocommerce_single_variation_add_to_cart_button - 20 Qty and cart button.
+             */
+            //$actionSingleVariation = UtilsWp::doAction('woocommerce_single_variation');
+            $purchaseQtyValue = $product->get_min_purchase_quantity();
+            if (isset($_POST['quantity'])) {
+                $purchaseQtyValue = wc_stock_amount(wp_unslash($_POST['quantity']));
+            }
+            $purchaseQtyValue = $product->get_min_purchase_quantity();
+            if (isset($_POST['quantity'])) {
+                $purchaseQtyValue = wc_stock_amount(wp_unslash($_POST['quantity']));
+            }
+            $purchaseQtyMin = apply_filters('woocommerce_quantity_input_min', $product->get_min_purchase_quantity(), $product);
+            $purchaseQtyMax = apply_filters('woocommerce_quantity_input_max', $product->get_max_purchase_quantity(), $product);
+            $addToCartButtonBefore = UtilsWp::doAction('woocommerce_before_add_to_cart_button');
+            $addToCartButtonAfter = UtilsWp::doAction('woocommerce_after_add_to_cart_button');
+            $addToCartQuantityButtonBefore = UtilsWp::doAction('woocommerce_before_add_to_cart_quantity');
+            $addToCartQuantityButtonAfter = UtilsWp::doAction('woocommerce_after_add_to_cart_quantity');
+            $textQuantity = __('Quantity', 'woocommerce');
+            $productIdAbs = absint($product->get_id());
+            $textAddToCart = esc_html($product->single_add_to_cart_text());
+            $htmlQtyInput = woocommerce_quantity_input([
+                'min_value' => $purchaseQtyMin,
+                'max_value' => $purchaseQtyMax,
+                'input_value' => $purchaseQtyValue
+            ], $product, false);
+            $htmlProductAddToCart = "{$actionAddToCartFormBefore}
                 <form method='post' enctype='multipart/form-data' class='variations_form cart' action='{$urlAddToCartFormAction}' 
                 data-product_id='{$productIdAbs}' data-product_variations='{$jsonAvailableVariation}'>
                     {$actionVariationsFormBefore}
@@ -396,17 +383,17 @@ if (post_password_required()) {
                         <div class='woocommerce-variation-add-to-cart variations_button'>
                             {$addToCartButtonBefore}
                             {$addToCartQuantityButtonBefore}
-                            <fieldset class='row'>
+                            <p class='row'>
                                 <div class='col-xs-3 title'>{$textQuantity}:</div>
                                 <div class='col-xs-9'>{$htmlQtyInput}</div>
-                            </fieldset>
+                            </p>
                             {$addToCartQuantityButtonAfter}
-                            <fieldset class='row'>
+                            <p class='row'>
                                 <div class='col-xs-3 title'></div>
                                 <div class='col-xs-9'>
                                     <button type='submit' class='single_add_to_cart_button button alt'>{$textAddToCart}</button>
                                 </div>
-                            </fieldset>
+                            </p>
                             {$addToCartButtonAfter}
                             <input type='hidden' name='add-to-cart' value='{$productIdAbs}'>
                             <input type='hidden' name='product_id' value='{$productIdAbs}'>
@@ -418,17 +405,17 @@ if (post_password_required()) {
                 </form>{$actionAddToCartFormAfter}
                 <script type='text/template' id='tmpl-variation-template'>
                     <div class='woocommerce-variation-description'>{{{ data.variation.variation_description }}}</div>
-                    <fieldset class='woocommerce-variation-price row'>
+                    <p class='woocommerce-variation-price row'>
                         <div class='col-xs-3 title'>{$textPrice}</div>
                         <div class='col-xs-9'>{{{ data.variation.price_html }}}</div>
-                    </fieldset>
+                    </p>
                     <div class='woocommerce-variation-availability'>{{{ data.variation.availability_html }}}</div>
                 </script>
                 <script type='text/template' id='tmpl-unavailable-variation-template'>
                     <p>{$textProdUnavailable}</p>
                 </script>";
-                break;
-            }
+            break;
+        }
     }
     // [SHARE]
     $htmlProductShare = UtilsWp::doAction('woocommerce_share');
@@ -440,17 +427,17 @@ if (post_password_required()) {
         if ($product->has_weight()) {
             $textWeight = __('Weight', 'woocommerce');
             $productWeight = esc_html(wc_format_weight($product->get_weight()));
-            $htmlProductMeasures .= "<fieldset class='row'>
+            $htmlProductMeasures .= "<p class='row'>
         <div class='{$styleColumnLeft}'>{$textWeight}:</div>
-        <div class='{$styleColumnRight}'>{$productWeight}</div></fieldset>";
+        <div class='{$styleColumnRight}'>{$productWeight}</div></p>";
         }
 
         if ($product->has_dimensions()) {
             $textDimensions = __('Dimensions', 'woocommerce');
             $productDimensions = esc_html(wc_format_dimensions($product->get_dimensions(false)));
-            $htmlProductMeasures .= "<fieldset class='row'>
+            $htmlProductMeasures .= "<p class='row'>
         <div class='{$styleColumnLeft}'>{$textDimensions}:</div>
-        <div class='{$styleColumnRight}'>{$productDimensions}</div></fieldset>";
+        <div class='{$styleColumnRight}'>{$productDimensions}</div></p>";
         }
     }
 
@@ -488,9 +475,9 @@ if (post_password_required()) {
         }
         $productAttributeValues = wptexturize(implode(', ', $values));
         $productAttributeValues = apply_filters('woocommerce_attribute', $productAttributeValues, $attribute, $values);
-        $htmlProductAttributes .= "<fieldset class='row'>
+        $htmlProductAttributes .= "<p class='row'>
         <div class='{$styleColumnLeft}'>{$textAttributeName}:</div>
-        <div class='{$styleColumnRight}'>{$productAttributeValues}</div></fieldset>";
+        <div class='{$styleColumnRight}'>{$productAttributeValues}</div></p>";
     }
     //[REVIEWS]
     ob_start();
@@ -613,38 +600,43 @@ if (post_password_required()) {
     $cssProduct = esc_attr(join(' ', wc_get_product_class('', $productId)));
     echo "{$actionSingleProductBefore}
     <div id='product-{$productId}' class='{$cssProduct}'>
-        <div class='clearfix'>
+        <div class='container'>
             <h1 class='title text-xs-center'>{$productTitle}</h1>
-            <div class='{$cssImageSlider}' data-columns='{$columnsEscaped}'>
-                <figure class='woocommerce-product-gallery__wrapper'>{$htmlSliderContent}{$htmlSliderContentThumb}</figure>
+            <div class='{$cssImageSlider} col-sm-5' data-columns='{$columnsEscaped}'>
+                <figure class='woocommerce-product-gallery__wrapper'>
+                {$htmlSliderContent}
+                <figcaption>{$htmlSale}</figcaption>
+                {$htmlSliderContentThumb}
+                </figure>
             </div>
-            <div class='summary entry-summary'>
+            <div class='summary entry-summary  col-sm-7'>
                 <div class='product_meta'>
                     {$actionProductMetaStart}
-                    <fieldset class='row'>
-                        <div class='{$styleColumnLeft}'>{$textPrice}</div>
-                        <div class='{$styleColumnRight}'>{$htmlProductPrice} {$htmlSale}</div>
-                    </fieldset>
                     {$contentVariations}
-                    {$htmlProductAddToCart}
-                    <fieldset class='row'>
+                    {$htmlSKU}
+                    <p class='row'>
                         <div class='{$styleColumnLeft}'>{$textBrand}</div>
                         <div class='{$styleColumnRight}'>{$productBrands}</div>
-                    </fieldset>
-                    <fieldset class='row'>
+                    </p>
+                    <p class='row'>
                         <div class='{$styleColumnLeft}'>{$textProductCategories}</div>
                         <div class='{$styleColumnRight}'>{$htmlProductCategories}</div>
-                    </fieldset>
-                    {$htmlRating}
-                    {$htmlReviews}
-                    <fieldset class='row'>
+                    </p>
+                    
+                    <p class='row'>
                         <div class='{$styleColumnLeft}'>{$textProductTags}</div>
                         <div class='{$styleColumnRight}'>{$htmlProductTags}</div>
-                    </fieldset>
-                    {$htmlSKU}
+                    </p>
                     {$htmlProductMeasures}
                     {$htmlProductAttributes}
+                    {$htmlRating}
+                    {$htmlReviews}
                     {$htmlProductShare}
+                    <p class='row'>
+                        <div class='{$styleColumnLeft}'>{$textPrice}</div>
+                        <div class='{$styleColumnRight}'>{$htmlProductPrice}</div>
+                    </p>
+                    {$htmlProductAddToCart}
                 </div>
             </div>
         </div>

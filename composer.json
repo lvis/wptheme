@@ -24,7 +24,8 @@
   "minimum-stability": "dev",
   "require": {
     "php": ">=7",
-    "wpmetabox/meta-box": "dev-master"
+    "wpmetabox/meta-box": "dev-master",
+    "ext-gd": "*"
   },
   "autoload": {
     "psr-4": {

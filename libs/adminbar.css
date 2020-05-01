@@ -1,4 +1,7 @@
 /*--------------------------------------------------------- AdminBar*/
+#wp-admin-bar-wp-logo{
+    display: none !important;
+}
 #wpadminbar #wp-admin-bar-user-info {
     margin-bottom: 0;
     margin-top: 0;
@@ -44,4 +47,26 @@
     .admin-bar [class*='p-fixed-']{
         top: 46px;
     }
+}
+/* ------------------------------------------------- Change Icons*/
+#wp-admin-bar-network-admin > .ab-item:before{
+    font: normal 16px/1 dashicons !important;
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #eee;
+    content: "\f325";
+}
+#wpadminbar .quicklinks li .blavatar:before,
+.wp-admin #wpadminbar #wp-admin-bar-site-name > .ab-item:before{
+    content: "\f102" !important;
+}
+#adminmenu #toplevel_page_woocommerce .menu-icon-generic div.wp-menu-image::before {
+    /*font-family: dashicons, sans-serif !important;
+    content: "\f513";*/
+    content: "\e900" !important;
+}
+#wpadminbar #wp-admin-bar-customize > .ab-item:before {
+    /*content: "\f540";*/
+    content: "\f108" !important;
 }

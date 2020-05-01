@@ -84,7 +84,7 @@ class Customizer
         $uriToDirLibs = UtilsWp::getUriToLibsDir();
         wp_enqueue_style('customizer', "{$uriToDirLibs}/customizer.css", ['fa-all']);
         $uriToDirCustomizer = "{$uriToDirLibs}/customizer/";
-        wp_enqueue_style('customizer-general', $uriToDirCustomizer . 'general.css');
+        //wp_enqueue_style('customizer-general', $uriToDirCustomizer . 'general.css');
         wp_enqueue_script('customizer-general', $uriToDirCustomizer . 'general.js',
             ['jquery', 'customize-base'], false, true);
         if (is_rtl()) {
@@ -183,24 +183,6 @@ class Customizer
      */
     function registerSectionIdentity(WP_Customize_Manager $customizer)
     {
-        // Logo instead of Home Main Menu
-        $settingOptions = [
-            CustomizerSettingArgs::TYPE => CustomizerSettingType::OPTION,
-            CustomizerSettingArgs::TRANSPORT => CustomizerTransport::POST_MESSAGE,
-            CustomizerSettingArgs::STD => 0
-        ];
-        $customizer->add_setting(SettingsSite::LOGO_INSTEADOF_HOME, $settingOptions);
-        $controlOptions = [
-            CustomizerControlArgs::SECTION => CustomizerSection::IDENTITY,
-            CustomizerControlArgs::TYPE => CustomizerInputTypes::RADIO,
-            CustomizerControlArgs::PRIORITY => 8,
-            CustomizerControlArgs::LABEL => __('Use Logo instead of Home menu item', WpApp::TEXT_DOMAIN),
-            CustomizerControlArgs::CHOICES => [
-                true => __('Yes'),
-                false => __('No'),
-            ]
-        ];
-        $customizer->add_control(SettingsSite::LOGO_INSTEADOF_HOME, $controlOptions);
         // Site Watermark
         $customizer->add_setting(SettingsSite::WATERMARK);
         $customLogoArgs = get_theme_support(WPOptions::SITE_LOGO);

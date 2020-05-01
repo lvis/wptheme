@@ -1,0 +1,292 @@
+/* [COLORS] {handler}-{name}
+ * handler: text, bg
+ * names: red, blue, green, blue, orange, yellow, purple, white, grey, black
+ */
+/*------------------ CONTROLS*/
+.text-primary {
+    color: #af0035;
+}
+.text-info {
+    color: #2b180a;
+}
+.text-success {
+    color: #4caf50;
+}
+.text-warning {
+    color: #ff9800;
+}
+.text-danger {
+    color: #f44336;
+}
+.bg-primary {
+    background-color: #af0035;
+}
+.bg-info {
+    background-color: #00bcd4;
+}
+.bg-success {
+    background-color: #4caf50;
+}
+.bg-warning {
+    background-color: #ff9800;
+}
+.bg-danger {
+    background-color: #f44336;
+}
+/*------------------ RED*/
+.text-red {
+    color: #f44336
+}
+.text-alizarin {
+    color: #e74c3c
+}
+.text-pumpkin {
+    color: #d35400
+}
+.text-pomegranate {
+    color: #c0392b
+}
+.text-pink {
+    color: #e91e63
+}
+.bg-red {
+    background-color: #f44336
+}
+.bg-alizarin {
+    background-color: #e74c3c
+}
+.bg-pumpkin {
+    background-color: #d35400
+}
+.bg-pomegranate {
+    background-color: #c0392b
+}
+.bg-pink {
+    background-color: #e91e63
+}
+/*------------------ GREEN*/
+.text-green {
+    color: #4caf50
+}
+.text-green-sea {
+    color: #16a085
+}
+.text-light-green {
+    color: #8bc34a
+}
+.text-emerald {
+    color: #2ecc71
+}
+.text-nephritis {
+    color: #27ae60
+}
+.text-teal {
+    color: #009688
+}
+.text-cyan {
+    color: #00bcd4
+}
+.bg-green {
+    background-color: #4caf50
+}
+.bg-green-sea {
+    background-color: #16a085
+}
+.bg-light-green {
+    background-color: #8bc34a
+}
+.bg-emerald {
+    background-color: #2ecc71
+}
+.bg-nephritis {
+    background-color: #27ae60
+}
+.bg-teal {
+    background-color: #009688
+}
+.bg-cyan {
+    background-color: #00bcd4
+}
+/*------------------ BLUE*/
+.text-blue {
+    color: #2196f3
+}
+.text-light-blue {
+    color: #03a9f4
+}
+.text-river {
+    color: #3498db
+}
+.text-belize {
+    color: #2980b9
+}
+.text-indigo {
+    color: #3f51b5
+}
+.bg-blue {
+    background-color: #2196f3
+}
+.bg-light-blue {
+    background-color: #03a9f4
+}
+.bg-river {
+    background-color: #3498db
+}
+.bg-belize {
+    background-color: #2980b9
+}
+.bg-indigo {
+    background-color: #3f51b5
+}
+/*------------------ ORANGE*/
+.text-orange {
+    color: #ff9800
+}
+.text-dull-orange {
+    color: #f39c12
+}
+.text-carrot {
+    color: #e67e22
+}
+.text-blood-orange {
+    color: #ff5722
+}
+.bg-orange {
+    background-color: #ff9800
+}
+.bg-dull-orange {
+    background-color: #f39c12
+}
+.bg-carrot {
+    background-color: #e67e22
+}
+.bg-blood-orange {
+    background-color: #ff5722
+}
+/*YELLOW*/
+.bg-yellow {
+    background-color: #ffeb3b
+}
+.bg-amber {
+    background-color: #ffc107
+}
+.bg-sunflower {
+    background-color: #f1c40f
+}
+.bg-lime {
+    background-color: #cddc39
+}
+/*------------------ YELLOW*/
+.text-yellow {
+    color: #ffeb3b
+}
+.text-amber {
+    color: #ffc107
+}
+.text-sunflower {
+    color: #f1c40f
+}
+.text-lime {
+    color: #cddc39
+}
+/*------------------ PURPLE*/
+.text-purple {
+    color: #af0035
+}
+.text-amethyst {
+    color: #9b59b6
+}
+.text-plum {
+    color: #8e44ad
+}
+.text-deep-purple {
+    color: #673ab7
+}
+.bg-purple {
+    background-color: #af0035
+}
+.bg-amethyst {
+    background-color: #9b59b6
+}
+.bg-plum {
+    background-color: #8e44ad
+}
+.bg-deep-purple {
+    background-color: #673ab7
+}
+/*------------------ WHITE*/
+.text-white {
+    color: #fff;
+}
+.text-paper {
+    color: #efefef
+}
+.text-clouds {
+    color: #dde4e6
+}
+.bg-white {
+    background-color: #fff
+}
+.bg-paper {
+    background-color: #efefef
+}
+.bg-clouds {
+    background-color: #dde4e6
+}
+/*------------------ GREY*/
+.text-grey {
+    color: #9e9e9e
+}
+.text-silver {
+    color: #bdc3c7
+}
+.text-concrete {
+    color: #95a5a6
+}
+.text-asbestos {
+    color: #7f8c8d
+}
+.text-gun-metal {
+    color: #607d8b
+}
+.bg-grey {
+    background-color: #9e9e9e
+}
+.bg-silver {
+    background-color: #bdc3c7
+}
+.bg-concrete {
+    background-color: #95a5a6
+}
+.bg-asbestos {
+    background-color: #7f8c8d
+}
+.bg-gun-metal {
+    background-color: #607d8b
+}
+/*------------------ BROWN*/
+.text-brown {
+    color: #795548
+}
+.bg-brown {
+    background-color: #795548
+}
+/*------------------ BLACK*/
+.text-black {
+    color: #212121
+}
+.text-asphalt {
+    color: #34495e
+}
+.text-midnight-blue {
+    color: #2c3e50
+}
+.bg-black {
+    background-color: #212121
+}
+.bg-asphalt {
+    background-color: #34495e
+}
+.bg-midnight-blue {
+    background-color: #2c3e50
+}

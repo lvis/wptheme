@@ -1,7 +1,7 @@
 /**
  * Created by Vitalie Lupu on 6/3/17.
  */
-function AppViewModel() {
+function ViewModelApp() {
     var self = this;
     var settings = appViewSettings;
     self.areaSearch = ko.observable(0);
@@ -72,7 +72,7 @@ function AppViewModel() {
 
     self.getFavorites();
 }
-var vmApp = new AppViewModel();
+var vmApp = new ViewModelApp();
 if (window.frames.length > 0) {
     ko.applyBindings(vmApp, window.frames[0].document.body);
 } else {

@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by IntelliJ IDEA.
- * User: vitalielupu
- * Date: 9/2/17
- * Time: 15:09
- */
 function deleteRecursively($path,$match){
 	static $deleted = 0,
 	$dsize = 0;
@@ -41,6 +35,6 @@ function show_recursively($path, $match){
 		}
 	}
 }
-$uploadDir = wp_upload_dir();
+/*$uploadDir = wp_upload_dir();
 $uploadDirName = trailingslashit( $uploadDir['basedir'] );
-echo deleteRecursively($uploadDirName,"*wmarked*");
+echo deleteRecursively($uploadDirName,"*wmarked*");*/

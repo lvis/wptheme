@@ -10,6 +10,31 @@ namespace wp;
 final class WPImages
 {
     /**
+     * Add Related Image Sizes
+     * Docs: https://developer.wordpress.org/reference/functions/add_image_size/
+     * Docs: https://codex.wordpress.org/Post_Thumbnails
+     * Optimize: https://www.elegantthemes.com/blog/tips-tricks/optimize-images-for-your-wordpress-website
+     * 1920x1080 - 13% 1366x768 - 27%
+     */
+    /** Thumb sizes
+     * 'thumbnail' - Thumbnail (150 x 150 hard cropped)
+     * 'medium' - Medium resolution (300 x 300 max height 300px)
+     * 'medium_large' - Medium Large (added in WP 4.4) resolution (768 x 0 infinite height)
+     * 'large' - Large resolution (1024 x 1024 max height 1024px)
+     * 'full' - Full resolution (original size uploaded)
+     * CSS
+     * img.wp-post-image
+     * img.attachment-thumbnail
+     * img.attachment-medium
+     * img.attachment-large
+     * img.attachment-full
+     * Updates defaults
+     * update_option( 'thumbnail_size_w', 160 );
+     * update_option( 'thumbnail_size_h', 160 );
+     * update_option( 'thumbnail_crop', 1 );
+     */
+    //This work only for new added images, but for old images if you change this parameter it won't recognize them
+    /**
      * @const
      */
     const THUMB = 'thumbnail';
@@ -78,28 +103,18 @@ final class WPImages
      */
     const FULL = 'full';
     /**
-     * Add Related Image Sizes
-     * Docs: https://developer.wordpress.org/reference/functions/add_image_size/
-     * Docs: https://codex.wordpress.org/Post_Thumbnails
-     * Optimize: https://www.elegantthemes.com/blog/tips-tricks/optimize-images-for-your-wordpress-website
-     * 1920x1080 - 13% 1366x768 - 27%
+     * @const  image used below the main image on the single product page to switch the gallery
+     * @see https://docs.woocommerce.com/document/image-sizes-theme-developers/#
      */
-    /** Thumb sizes
-     * 'thumbnail' - Thumbnail (150 x 150 hard cropped)
-     * 'medium' - Medium resolution (300 x 300 max height 300px)
-     * 'medium_large' - Medium Large (added in WP 4.4) resolution (768 x 0 infinite height)
-     * 'large' - Large resolution (1024 x 1024 max height 1024px)
-     * 'full' - Full resolution (original size uploaded)
-     * CSS
-     * img.wp-post-image
-     * img.attachment-thumbnail
-     * img.attachment-medium
-     * img.attachment-large
-     * img.attachment-full
-     * Updates defaults
-     * update_option( 'thumbnail_size_w', 160 );
-     * update_option( 'thumbnail_size_h', 160 );
-     * update_option( 'thumbnail_crop', 1 );
+    const WC_THUMB_GALLERY = 'woocommerce_gallery_thumbnail';
+    /**
+     * @const  feature image used in the product ‘grids’ in places such as the shop page.
+     * @see https://docs.woocommerce.com/document/image-sizes-theme-developers/#
      */
-    //This work only for new added images, but for old images if you change this parameter it won't recognize them
+    const WC_THUMB = 'woocommerce_thumbnail';
+    /**
+     * @const main image used on single product pages
+     * https://docs.woocommerce.com/document/image-sizes-theme-developers/#
+     */
+    const WC_SINGLE = 'woocommerce_single';
 }

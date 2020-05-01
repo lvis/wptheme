@@ -15,22 +15,20 @@ if (WC()->cart->is_empty()) {
     wc_get_template('cart/cart-empty.php');
 } else {
     $contentCheckoutForm = '';
-    if ($checkout->is_registration_enabled() == false &&
-        $checkout->is_registration_required() == true &&
-        is_user_logged_in() == false) {
+    if ($checkout->is_registration_enabled() == false && $checkout->is_registration_required() && is_user_logged_in() == false){
         $textYouMustBeLoggedIn = __('You must be logged in to checkout.', 'woocommerce');
         $contentCheckoutForm = apply_filters('woocommerce_checkout_must_be_logged_in_message', $textYouMustBeLoggedIn);
     } else {
         /**---------------------------------- Form: Login*/
         $contentLoginForm = '';
-        if (is_user_logged_in() == false && get_option('woocommerce_enable_checkout_login_reminder') !== 'no') {
+        $optionEnableCheckoutLoginReminder = get_option('woocommerce_enable_checkout_login_reminder');
+        if ($optionEnableCheckoutLoginReminder !== 'no' && is_user_logged_in() == false) {
             $textReturningCustomer = __('Returning customer?', 'woocommerce');
             $textClickHereToLogin = __('Click here to login', 'woocommerce');
-            $textYouOurClient = __('If you have shopped with us before, please enter your details below. If you are a new customer, please proceed to the Billing &amp; Shipping section.',
-                'woocommerce');
+            $textYouOurClient = __('If you have shopped with us before, please enter your details below. If you are a new customer, please proceed to the Billing section.', 'woocommerce');
             $linkCheckout = wc_get_page_permalink('checkout');
             $textReturningCustomer = apply_filters('woocommerce_checkout_login_message', $textReturningCustomer);
-            //TODO Change In tabb with customer details in same Navigator
+            //TODO Change In tab with customer details in same Navigator
             ob_start();
             woocommerce_login_form(['redirect' => $linkCheckout, 'hidden' => false, 'checkout' => true]);
             $contentLoginForm = ob_get_clean();
@@ -42,17 +40,16 @@ if (WC()->cart->is_empty()) {
         $cssOrderReview = 'col-sm-12';
         $contentCheckoutFormFields = '';
         if ($checkout->get_checkout_fields()) {
-            $cssOrderReview .= ' col-lg-6';
+            $cssOrderReview .= ' col-md-6';
             $actionCheckoutCustomerDetailsBefore = UtilsWp::doAction('woocommerce_checkout_before_customer_details');
             $actionCheckoutCustomerDetailsAfter = UtilsWp::doAction('woocommerce_checkout_after_customer_details');
             $actionCheckoutBilling = UtilsWp::doAction('woocommerce_checkout_billing');
             $actionCheckoutShipping = UtilsWp::doAction('woocommerce_checkout_shipping');
-            $textBillingAndShipping = __('Billing &amp; Shipping', 'woocommerce');
-            $contentCheckoutFormFields = "{$actionCheckoutCustomerDetailsBefore}
-            <div id='customer_details' class='{$cssOrderReview}'>
+            $contentCheckoutFormFields = "{$actionCheckoutCustomerDetailsBefore}<div class='{$cssOrderReview}'>
+            <fieldset id='customer_details'>
             {$actionCheckoutBilling}
             {$actionCheckoutShipping}
-            </div>{$actionCheckoutCustomerDetailsAfter}";
+            </fieldset></div>{$actionCheckoutCustomerDetailsAfter}";
         }
 
         $textPaymentForOrder = __('Pay for order', 'woocommerce');
@@ -75,21 +72,16 @@ if (WC()->cart->is_empty()) {
         $contentCheckoutForm = "{$actionCheckoutFormBefore}
         {$contentCart}
         {$contentLoginForm}
-        <form action='{$urlCheckoutForm}' method='post' enctype='multipart/form-data' name='checkout' class='row woocommerce-checkout checkout'>
+        <form action='{$urlCheckoutForm}' method='post' enctype='multipart/form-data' name='checkout' class='woocommerce-checkout checkout row'>
         {$contentCheckoutFormFields}
         <div class='{$cssOrderReview}'>
-            <h3 id='order_review_heading'>
-                <i class='fas fa-hand-holding-usd'></i> 
-                <span>{$textPaymentForOrder}</span>
-            </h3>
-            {$actionCheckoutOrderReviewBefore}
-            <div id='order_review' class='woocommerce-checkout-review-order'>
-                {$actionCheckoutOrderReview}
-            </div>
-            {$actionCheckoutOrderReviewAfter}
-        </div>
-        </form>
-        {$actionCheckoutFormAfter}";
+        {$actionCheckoutOrderReviewBefore}
+        <fieldset id='order_review' class='woocommerce-checkout-review-order'>
+            <legend id='order_review_heading'><i class='fas fa-credit-card'></i> {$textPaymentForOrder}</legend>
+            {$actionCheckoutOrderReview}
+        </fieldset>
+        {$actionCheckoutOrderReviewAfter}
+        </div></form>{$actionCheckoutFormAfter}";
     }
     echo $contentCheckoutForm;
 }

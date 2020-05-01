@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../libs/menu.css">
+    <link rel="stylesheet" type="text/css" href="../libs/input.css">
+    <link rel="stylesheet" type="text/css" href="../libs/button.css">
+    <link rel="stylesheet" type="text/css" href="../libs/range.css">
+    <link rel="stylesheet" type="text/css" href="../libs/checkbox.css">
+    <link rel="stylesheet" type="text/css" href="../libs/radio.css">
+    <link rel="stylesheet" type="text/css" href="../libs/modal.css">
+    <link rel="stylesheet" type="text/css" href="../libs/utils.css">
+    <link rel="stylesheet" type="text/css" href="../libs/grid.css">
+    <link rel="stylesheet" type="text/css" href="../libs/generic.css">
+    <link rel="stylesheet" type="text/css" href="../libs/fonts/font-awesome/css/all.css">
+</head>
+<body class="raised">
+<form action="http://etnikwines.sunhouz.com/ro/checkout/" method="post" data-bind="css:cssForm">
+    <div class="row title">
+        <div class="col-xs-6">
+            <i class="fal fa-wine-bottle"></i>
+            <span class="d-md-inline-block">Produs</span>
+        </div>
+        <div class="col-xs-3 text-xs-center text-truncate">
+            <i class="fal fa-box-full"></i>
+            <span class="d-xs-none d-md-inline-block">Cantitate</span>
+        </div>
+        <div class="col-xs-3 text-xs-center">
+            <i class="fal fa-file-invoice-dollar"></i>
+            <span class="d-xs-none d-md-inline-block">Total</span>
+        </div>
+    </div>
+    <hr>
+    <div class="row woocommerce-cart-form__cart-item cart_item">
+        <div class="col-xs-6">
+            <a href="http://etnikwines.sunhouz.com/ro/produit/dac-merlot-2014/">
+                <img width="78" height="78"
+                     src="http://etnikwines.sunhouz.com/wp-content/uploads/Dac-Merlot-2014-240x240.png"
+                     class="float-xs-left" alt="">
+                <span style="vertical-align: top;">Dac Merlot 2014</span>
+                <span class="woocommerce-Price-amount amount">12,00<span
+                        class="woocommerce-Price-currencySymbol">€</span></span>
+            </a>
+        </div>
+        <div class="col-xs-3 text-xs-center">
+            <select name="cart[819f46e52c25763a55cc642422644317][qty]" data-bind="event:{change:changeQuantity}">
+                <option value="1" selected="selected">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+            <a href="http://etnikwines.sunhouz.com/ro/checkout/?remove_item=819f46e52c25763a55cc642422644317&amp;_wpnonce=69b766d47f"
+               data-product_id="338"
+               data-product_sku="D2"
+               data-cart_item_key="819f46e52c25763a55cc642422644317"
+               title="Înlătură"
+               data-bind='click:removeCartProduct'>
+                <i class="far fa-trash-alt"></i></a>
+        </div>
+        <div class="col-xs-3 text-xs-center"><span class="woocommerce-Price-amount amount">12,00<span
+                class="woocommerce-Price-currencySymbol">€</span></span>
+        </div>
+    </div>
+    <input type="hidden" id="woocommerce-cart-nonce" name="woocommerce-cart-nonce" value="69b766d47f"><input
+        type="hidden" name="_wp_http_referer" value="/ro/cart/">
+    <input type='hidden' name='update_cart' value='{$textUpdateCart}'>
+</form>
+<script type="text/javascript" src="wp/wp-includes/js/jquery/jquery.js"></script>
+<script type="text/javascript" src="wp/wp-content/themes/wptheme/vendor/lvis/wplib/src/libs/knockout.js"></script>
+<script type="text/javascript" src="../../libs/shop.js"></script>
+</body>
+</html>

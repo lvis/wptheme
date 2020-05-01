@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS: Input</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../libs/utils.css">
+    <link rel="stylesheet" type="text/css" href="../libs/grid.css">
+    <link rel="stylesheet" type="text/css" href="../libs/generic.css">
+    <link rel="stylesheet" type="text/css" href="../libs/input.css">
+    <link rel="stylesheet" type="text/css" href="../libs/menu.css">
+    <link rel="stylesheet" type="text/css" href="../libs/fonts/font-awesome/css/all.css">
+    <style>
+        html, body {
+            height: 100%;
+            background-color: white;
+        }
+        .popover {
+            display: inline-block;
+        }
+        .popover input[type=checkbox]:checked + .card {
+            opacity: 1;
+            visibility: visible;
+        }
+        .popover .card {
+            width: 234px;
+            opacity: 0;
+            position: absolute;
+            visibility: hidden;
+            z-index: 888;
+            -moz-transition: visibility 0.2s;
+            -webkit-transition: visibility 0.2s;
+            transition: visibility 0.2s;
+        }
+        .popover .card button[type=button] {
+            min-height: 2.5rem;
+            min-width: 2.5rem;
+            vertical-align: middle;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<form class="widget_nav_menu">
+    <ul class="menu">
+        <li class="menu-item menu-item-has-children">
+            <a href="#" tabindex="0"><i class="fa fa-user-circle"></i></a>
+            <div class="sub-menu">
+                <input type="search" placeholder="Type to filter">
+                <button type="button" title="Clear">
+                    <i class="fa fa-times"></i>
+                </button>
+                <button type="button" title=".fa-accessible-icon">
+                    <i class="fa fa-accessible-icon"></i>
+                </button>
+                <button type="button" title=".fa-address-book">
+                    <i class="fa fa-address-book"></i>
+                </button>
+                <button type="button" title=".fa-address-card">
+                    <i class="fa fa-address-card"></i>
+                </button>
+            </div>
+        </li>
+    </ul>
+</form>
+<script type="text/javascript" src="../libs/knockout.js"></script>
+<script type="text/javascript" src="../../../../wp-includes/js/jquery/jquery.js"></script>
+</body>
+</html>

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: wpTheme\n"
 "POT-Creation-Date: 2019-08-17 23:00+0200\n"
-"PO-Revision-Date: 2019-08-25 00:02+0300\n"
+"PO-Revision-Date: 2020-01-15 09:34+0200\n"
 "Language-Team: Vitalie Lupu <vitaliix@gmail.com>\n"
 "Last-Translator: Vitalie Lupu <vitaliix@gmail.com>\n"
 "Language: ru\n"
@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Poedit 1.8.7\n"
+"X-Generator: Poedit 2.2.4\n"
 
 #: footer.php:12
 msgid "Copyright"
@@ -219,3 +219,35 @@ msgstr "Размер площадь недвижимости"
 #: wp/PostProperty.php:512
 msgid "%s measure unit"
 msgstr "%s, единица измерения"
+
+#: wp/PostEmployee.php:18
+msgid "Employee"
+msgstr "Сотрудник"
+
+#: wp/PostEmployee.php:19
+msgid "Employees"
+msgstr "Сотрудники"
+
+#: wp/PostEmployee.php:15
+msgid "Job Title"
+msgstr "Должность"
+
+#: wp/PostEmployee.php:16
+msgid "Job Titles"
+msgstr "Должности"
+
+#: wp/PostEmployee.php:80
+msgid "Education"
+msgstr "Образование"
+
+#: wp/PostEmployee.php:85
+msgid "Work Experience"
+msgstr "Опыт работы"
+
+#: wp/PostEmployee.php:90
+msgid "Specialization"
+msgstr "Специализация"
+
+#: wp/PostEmployee.php:63
+msgid "Certificates and Documents"
+msgstr "Сертификаты и Документы"
